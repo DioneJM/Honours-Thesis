@@ -5,10 +5,10 @@
 \contentsline {chapter}{List of Tables}{xiii}{section*.7}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Project Goal}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Project Planning}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Project Scope}{1}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Project Timeline}{1}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Project Cost}{1}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.2}Project Planning}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Project Scope}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Project Timeline}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Project Cost}{2}{subsection.1.2.3}
 \contentsline {chapter}{\numberline {2}Background and Related Work}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Things to cover}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Prior Approaches}{3}{section.2.2}
