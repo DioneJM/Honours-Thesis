@@ -1,0 +1,26 @@
+\contentsline {chapter}{Acknowledgments}{iii}{section*.1}
+\contentsline {chapter}{Abstract}{vii}{section*.2}
+\contentsline {chapter}{Table of Contents}{ix}{section*.3}
+\contentsline {chapter}{List of Figures}{xi}{section*.5}
+\contentsline {chapter}{List of Tables}{xiii}{section*.7}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}MIMO Broadcast Channels}{1}{section.1.1}
+\contentsline {subsubsection}{MIMO Broadcast Channel Capacity}{1}{section*.9}
+\contentsline {chapter}{\numberline {2}Background and Related Work}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Capacity of MIMO Downlink Channels }{3}{section.2.1}
+\contentsline {subsubsection}{Channel Knowledge at the Base Station}{3}{section*.11}
+\contentsline {subsubsection}{MAC-BC Duality}{3}{section*.12}
+\contentsline {chapter}{\numberline {3}User Selection in MIMO Broadcast Channels}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction }{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Related Work }{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}System Model }{6}{section.3.3}
+\contentsline {chapter}{\numberline {4}Conclusions and Future Work}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusions}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Abbreviations}{9}{chapter.5}
+\contentsline {chapter}{\numberline {A}name of appendix A}{11}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{11}{section.A.1}
+\contentsline {section}{\numberline {A.2}Name of this section}{11}{section.A.2}
+\contentsline {chapter}{\numberline {B}name of appendix B}{13}{appendix.B}
+\contentsline {section}{\numberline {B.1}Overview}{13}{section.B.1}
+\contentsline {section}{\numberline {B.2}Name of this section}{13}{section.B.2}
+\contentsline {chapter}{Bibliography}{13}{section*.13}
