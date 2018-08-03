@@ -122,9 +122,6 @@
 
 % Defining the symbols
 
-
-
-
 % The hyperref package provides automatic linking and bookmarking for the table
 % of contents, index, equation references, and figure references.  It must be
 % included for the BYU Physics class to make a properly functioning electronic
@@ -244,26 +241,19 @@ This is where you write your abstract ...
 \chapter{Introduction}
 \label{chap:Introduction}
 
-Why we should care about minimizing the spread of misinformation online:
-\begin{itemize}
-	\item The large amount of information being passed around today (where a large majority of the content being shared is not verified). This is largely due to the ubiquity of social network sites (SNS) today whose main function is to spread information, factual or not.
-	
-	\item Information that is classified to be as rumors tend to generally have more reach than non-rumor based information (3x more shares)
-	
-	\item With the increase prevalence of social media, popular users and communities are capable of spreading factually incorrect content as they are generally not expected to filter the content they share based on its factual accuracy 
-	
-	\item The increase use of 'trending', 'discover' etc. sections that encourage users to post content that aim to maximize the number of clicks their content receive rather than the accuracy and reliability of the content
-\end{itemize}
+With the popularity and ubiquity of social platforms in today's society, the amount and the rate at which information is able to propagate online greatly outnumbers the manpower available that can evaluate the accuracy and determine the amount of misinformation within online articles. Considering factors such as the 'click-bait' nature and the lack of rigour surrounding the publishing of online content \cite{Sommariva2018} has caused an increase in the number of 'fake news' related content \cite{Vosoughi}. This can be attributed to the trending or discover-based model commonly implemented by social media platforms that aim to maximize the reach and interaction of the content with no regards to its quality. In specific domains, such as for health related articles, the spread of misinformation can lead to the mistreatment and mismanagement of a range of health conditions, views on vaccination decisions is a commonly referenced example.  \newline
+
+One of the key components required to minimize the propagation of misinformation online is the ability to automatically evaluate and quantify the credibility of the information within articles. However, traditional automated methods, such as machine learning-based techniques, still need the domain knowledge of experts to be able to extract the features required by the model. Thus, this project aims to investigate the performance of deep learning models in evaluating the credibility of information within domain specific articles, specifically, this project will focus on evaluating the credibility of online health articles related to vaccination. \newline
 
 
 
-
-
-\section{Project Goal}
+\section{Deep Learning}
 \label{sec:ProjectGoal}
 
-This project aims to...
+Is when you think deeply of things.
 
+\section{Project Overview}
+\label{sec:ProjectPlan}
 \begin{itemize}
 	\item Evaluate the performance of deep learning based text classification algorithms in determining the amount of misinformation present within health related online articles.
 	
@@ -271,10 +261,6 @@ This project aims to...
 	
 	\item Investigate the effectiveness of the application of transfer learning methods on the algorithm as the amount of data available will be limited.
 \end{itemize}
-
-\section{Project Planning}
-\label{sec:ProjectPlan}
-Introduction for this section
 
 \subsection{Project Scope}
 \label{sec:ProjectScope}
@@ -360,8 +346,6 @@ In order to find an a
 \end{itemize}
 
 
-This chapter is organised as follows. Section \ref{sect:RelWorksingle-user} presents work related to this chapter. In Section \ref{sect:chap2sysmodel}, the system model is described. Section \ref{sect:precoding} describes precoding techniques. Section \ref{sect:sus} is devoted to the proposed user selection algorithms and presents the analytical bounds on the sum-capacity of the proposed user selection algorithms. Performance analysis of different user selection algorithms along with the proposed user selection algorithms is presented in Section \ref{sect:simresults}. Finally, Section \ref{sect:conc3} concludes the chapter.
-
 \section{Related Work \label{sect:RelWorksingle-user}}
 
 In this section, we review some current user selection algorithms for MIMO broadcast wireless channels.
@@ -374,7 +358,7 @@ A user select.
 We now consider a
 
 
-This chapter examined current user selection \cite{andrews05} algorithms for wireless broadcast channels. It compared the performance of the algorithms, identified situations where they were suboptimal and developed modifications to reduce computation time without reducing effectiveness. In particular, we presented a modified user selection algorithm, and then two variants were developed that could be used for both ZF and DPC precoding. It was shown that the proposed algorithms work reasonably well compared to other user selection algorithms. The modifications were tested and suggestions for setting parameters were made.
+This chapter examined current user selection algorithms for wireless broadcast channels. It compared the performance of the algorithms, identified situations where they were suboptimal and developed modifications to reduce computation time without reducing effectiveness. In particular, we presented a modified user selection algorithm, and then two variants were developed that could be used for both ZF and DPC precoding. It was shown that the proposed algorithms work reasonably well compared to other user selection algorithms. The modifications were tested and suggestions for setting parameters were made.
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
