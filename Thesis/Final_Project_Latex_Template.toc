@@ -4,24 +4,30 @@
 \contentsline {chapter}{List of Figures}{xi}{section*.5}
 \contentsline {chapter}{List of Tables}{xiii}{section*.7}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Deep Learning}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Project Overview}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Project Scope}{2}{subsection.1.2.1}
-\contentsline {subsubsection}{Main Goals}{2}{section*.9}
-\contentsline {subsubsection}{Sub Goals}{2}{section*.10}
-\contentsline {subsection}{\numberline {1.2.2}Project Timeline}{2}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Project Cost}{2}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.1}Project Overview}{1}{section.1.1}
+\contentsline {subsubsection}{Primary Objectives}{2}{section*.9}
+\contentsline {subsection}{\numberline {1.1.1}Project Scope}{2}{subsection.1.1.1}
+\contentsline {subsubsection}{Main Goals}{2}{section*.10}
+\contentsline {subsubsection}{Stretch Goals}{2}{section*.11}
+\contentsline {subsection}{\numberline {1.1.2}Project Cost}{2}{subsection.1.1.2}
 \contentsline {chapter}{\numberline {2}Background and Related Work}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Things to cover}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Credibility and Misinformation}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Prior Approaches}{3}{section.2.2}
-\contentsline {subsubsection}{Channel Knowledge at the Base Station}{3}{section*.12}
-\contentsline {subsubsection}{MAC-BC Duality}{3}{section*.13}
-\contentsline {chapter}{\numberline {3}User Selection in MIMO Broadcast Channels}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction }{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Related Work }{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}System Model }{5}{section.3.3}
+\contentsline {section}{\numberline {2.3}Feature Selection}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}Deep Learning}{3}{section.2.4}
+\contentsline {section}{\numberline {2.5}Transfer Learning}{4}{section.2.5}
+\contentsline {section}{\numberline {2.6}N-Shot Learning}{4}{section.2.6}
+\contentsline {section}{\numberline {2.7}Conclusion}{4}{section.2.7}
+\contentsline {chapter}{\numberline {3}Proposed Approach}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rationale}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Credibility Criteria}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Study Data}{5}{section.3.3}
+\contentsline {section}{\numberline {3.4}System Model}{5}{section.3.4}
+\contentsline {section}{\numberline {3.5}Experiments}{5}{section.3.5}
+\contentsline {section}{\numberline {3.6}Outcome Measures}{5}{section.3.6}
 \contentsline {chapter}{\numberline {4}Conclusions and Future Work}{7}{chapter.4}
 \contentsline {section}{\numberline {4.1}Conclusions}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Future Work}{7}{section.4.2}
 \contentsline {chapter}{\numberline {5}Abbreviations}{9}{chapter.5}
 \contentsline {chapter}{\numberline {A}name of appendix A}{11}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{11}{section.A.1}
@@ -29,4 +35,4 @@
 \contentsline {chapter}{\numberline {B}name of appendix B}{13}{appendix.B}
 \contentsline {section}{\numberline {B.1}Overview}{13}{section.B.1}
 \contentsline {section}{\numberline {B.2}Name of this section}{13}{section.B.2}
-\contentsline {chapter}{Bibliography}{13}{section*.14}
+\contentsline {chapter}{Bibliography}{13}{section*.12}

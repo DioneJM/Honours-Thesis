@@ -241,52 +241,44 @@ This is where you write your abstract ...
 \chapter{Introduction}
 \label{chap:Introduction}
 
-With the popularity and ubiquity of social platforms in today's society, the amount and the rate at which information is able to propagate online greatly outnumbers the manpower available that can evaluate the accuracy and determine the amount of misinformation within online articles. Considering factors such as the 'click-bait' nature and the lack of rigour surrounding the publishing of online content \cite{Sommariva2018} has caused an increase in the number of 'fake news' related content \cite{Vosoughi}. This can be attributed to the trending or discover-based model commonly implemented by social media platforms that aim to maximize the reach and interaction of the content with no regards to its quality. In specific domains, such as for health related articles, the spread of misinformation can lead to the mistreatment and mismanagement of a range of health conditions, views on vaccination decisions is a commonly referenced example.  \newline
+With the popularity and ubiquity of social platforms in today's society, the amount and the rate at which information is able to propagate online greatly outnumbers the manpower available that can evaluate the accuracy and determine the amount of misinformation within online articles. With factors such as the 'click-bait' nature and the lack of rigour surrounding the publishing of online content \cite{Sommariva2018} has caused an increase in the number of 'fake news' related content \cite{Vosoughi} \cite{germanFN}. This can be attributed to the trending or discover-based model commonly implemented by social media platforms that aim to maximize the reach and interaction of the content with no regards to its quality. In specific domains, such as for health related articles, the spread of misinformation can lead to the mistreatment and mismanagement of a range of health conditions.  \newline
 
-One of the key components required to minimize the propagation of misinformation online is the ability to automatically evaluate and quantify the credibility of the information within articles. However, traditional automated methods, such as machine learning-based techniques, still need the domain knowledge of experts to be able to extract the features required by the model. Thus, this project aims to investigate the performance of deep learning models in evaluating the credibility of information within domain specific articles, specifically, this project will focus on evaluating the credibility of online health articles related to vaccination. \newline
+One of the key components required to minimize the propagation of misinformation online is the ability to automatically evaluate and quantify the credibility of the information within articles. However, traditional automated methods - such as shallow learning-based techniques, still require the domain knowledge of experts to be able to develop the features required by the model. Thus, this project aims to investigate the performance of Deep Learning-based (DL) techniques in evaluating the credibility of information within domain-specific articles via the classification of set criteria that have deemed to be highly correlated with articles that have low credibility. Specifically, this project will focus on evaluating the credibility of online health articles related to vaccination due to the commonly misinformed and controversial views associated with its effects \cite{Burgess2006}. \newline
 
-
-
-\section{Deep Learning}
-\label{sec:ProjectGoal}
-
-Is when you think deeply of things.
 
 \section{Project Overview}
-\label{sec:ProjectPlan}
+This section details the scope of the project and its associated outcomes outlining the various tasks that must be accomplished to successfully complete the project.
+
+\label{sec:ProjectOverview}
+\subsubsection{Primary Objectives}
 \begin{itemize}
-	\item Evaluate the performance of deep learning based text classification algorithms in determining the amount of misinformation present within health related online articles.
+	\item Evaluate the performance of deep learning based text classification algorithms in determining the credibility of information present within health related online articles.
 	
-	\item EITHER investigate the effectiveness of attention based mechanisms in explaining the underlying workings of the algorithm OR
-	
-	\item Investigate the effectiveness of the application of transfer learning methods on the algorithm as the amount of data available will be limited.
 \end{itemize}
 
 \subsection{Project Scope}
 \label{sec:ProjectScope}
 
+\textit{The primary objective of this project is to evaluate the effectiveness of deep learning models in determining the credibility of online health-related articles. Due to the complexity of this project, a set of activities - divided into main goals and stretch goals, have been defined to ensure that the completion of this project remains feasible in the given time frame. The completion of all activities categorized as main goals will signal the realization of the primary objective and the completion of the project. The stretch goals are activities of interest that have been identified as non-essential to the completion of the primary objective but (talk about the overarching goal that all stretch goals have in common e.g. understand the model, utilize the model etc.) and will be worked on after the completion of the project.}
 
 \subsubsection{Main Goals}
 \begin{itemize}
-	\item 
+	\item \textit{Evaluate the performance of common ML-based methods for the classification of the 7 criteria in a specific domain}
+	\item \textit{Evaluate the performance of the chosen DL method for the same thing above}
+	\item \textit{Evaluate the effect of transfer learning methods in the performance of the DL method (assuming that the chosen method doesn't rely on transfer learning)}
+	\item \textit{Or maybe evaluate the performance of different transfer learning methods? e.g. zero vs few shot }
 \end{itemize}
 
 
 
-\subsubsection{Sub Goals}
+\subsubsection{Stretch Goals}
 \begin{itemize}
-	\item Utilize attention mechanisms to understand how the previously evaluated models work?
-	\item OR Evaluate the performance of transfer learning
+	\item \textit{Utilize attention mechanisms to understand how the previously evaluated models work?}
 \end{itemize}
-
-
-\subsection{Project Timeline}
-\label{sec:ProjectTimeline}
-When things should be done by
 
 \subsection{Project Cost}
 \label{sec:ProjectCost}
-Expected cost of the project
+\textit{Expected cost of the project}
 
 
 
@@ -294,71 +286,62 @@ Expected cost of the project
 \chapter{Background and Related Work}
 \label{chap:LitReview}
 
-\section{Things to cover}
-\begin{itemize}
-	\item Previous approaches (e.g. NLP, ML) and lead to why DL are/should be preferred.
-	\item Deep Learning background info
-	\item Deep learning based approaches
-	\item How attention or transfer learning works
-	\item Fake news challenge top 4 solutions
-\end{itemize}
-
-
+\section{Credibility and Misinformation}
+\textit{Talk about the work done in establishing the measurement of quality in online health information e.g. DISCERN, QIMR and that document from the slack channel}
 
 \section{Prior Approaches}
-\label{sec:CapResultsReview}
+\label{sec:PriorApproaches}
+\textit{Talk about commonly used ML models for text classification e.g. SVM, Random Forest or Naive Bayes and justify which model(s) I will use as a baseline}
 
-In a
+\section{Feature Selection}
+\label{sec:FeatureSelection}
+\textit{Talk about word embeddings e.g. GloVe, word2vec, fastText, ngrams and its variants (skip-grams, sn-grams), BoW etc. and justify which features I will be using for this project.}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=8cm]{cap1}
-\caption{Comparison of capacity for single and multiple antenna systems.}
-\label{fig:cap1}
-\end{figure}
+\section{Deep Learning}
+\label{sec:DeepLearningReview}
+\textit{Introduce the state-of-the-art DL based approaches for text classification and try to compare it performance with state-of-the-art ML approaches} \newline
 
-\
+Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of text classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang} \textit{(note: look into the datasets used by state of the art approaches)}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.
 
-\subsubsection{Channel Knowledge at the Base Station}
+\section{Transfer Learning}
+\label{sec:TransferLearningReview}
+\textit{Talk about transfer learning and how it works and how it is applicable to this project.}
 
-The channel.
+\section{N-Shot Learning}
+\label{sec:NShotLearningReview}
+\textit{Talk about zero/few/etc-shot learning and how it works and how it is applicable to this project.}
 
-\subsubsection{MAC-BC Duality}
+\section{Conclusion}
+\label{sec:LitReviewConclusion}
+\textit{Summarize lit review and describe why DL-based approaches should be preferred over ML-based for this type of problem. Also talk about Transfer/N-Shot learning and describe which one will be feasible given the project's time constraints}
 
-In order to find an a
-\chapter{User Selection in MIMO Broadcast Channels}
-\label{chap:singleuser}
+\chapter{Proposed Approach}
+\label{chap:approach}
 
-\section{Introduction \label{sec:Intro-ChapUserSelec}}
-
-\begin{itemize}
-
-\item We identify the limitations of current algorithms and situations where these algorithms are suboptimal.
-
-\item We propose modifications of user selection algorithms that reduce execution complexity but retain efficiency.
-
-\item We develop analytical bounds to show that the proposed algorithms are asymptotically effective.
-
-\item We compare the performance of the proposed user selection algorithms with the current user selection algorithms under both DPC and ZF precoding techniques.
-
-\item We show that the proposed user selection algorithms reduce the computational complexity while retaining a high degree of effectiveness in terms of sum-capacity, as compared to other user selection algorithms, under both precoding techniques.
-
-\end{itemize}
+\section{Rationale}
+\label{sec:ProposedRationale}
+\textit{Introduce and discuss the factors that led to me choosing the proposed approach}
 
 
-\section{Related Work \label{sect:RelWorksingle-user}}
+\section{Credibility Criteria}
+\label{sect:CredibilityCriteria}
+\textit{Introduce and discuss the 7 criteria that will be classified and describe how the criteria was determined}
 
-In this section, we review some current user selection algorithms for MIMO broadcast wireless channels.
+\section{Study Data}
+\label{sec:StudyData}
+\textit{Talk about the data I'll be using, how we got it, its characteristics etc.}
 
+\section{System Model}
+\label{sect:chap2sysmodel}
+\textit{Describe the architecture of the model}
 
-A user select.
+\section{Experiments}
+\label{sec:Experiments}
+\textit{Describe the experiments that I'm planning to do (in such a way that they are easily reproducible)}
 
-\section{System Model \label{sect:chap2sysmodel}}
-
-We now consider a
-
-
-This chapter examined current user selection algorithms for wireless broadcast channels. It compared the performance of the algorithms, identified situations where they were suboptimal and developed modifications to reduce computation time without reducing effectiveness. In particular, we presented a modified user selection algorithm, and then two variants were developed that could be used for both ZF and DPC precoding. It was shown that the proposed algorithms work reasonably well compared to other user selection algorithms. The modifications were tested and suggestions for setting parameters were made.
+\section{Outcome Measures}
+\label{sec:OutcomeMeasures}
+\textit{Talk about the type of analyses that I'll be doing to determine the performance of my proposed model}
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
@@ -367,7 +350,10 @@ This chapter examined current user selection algorithms for wireless broadcast c
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
 
-This
+The end
+
+\section{Future Work}
+\label{FutureWork}
 
 
 

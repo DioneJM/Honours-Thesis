@@ -21,6 +21,22 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Burgess2006}
+\BIBentryALTinterwordspacing
+D.~C. Burgess, M.~A. Burgess, and J.~Leask, ``{The MMR vaccination and autism
+  controversy in United Kingdom 1998-2005: Inevitable community outrage or a
+  failure of risk communication?}'' \emph{Vaccine}, vol.~24, pp. 3921--3928,
+  2006. [Online]. Available:
+  \url{https://ac.els-cdn.com/S0264410X06002076/1-s2.0-S0264410X06002076-main.pdf?{\_}tid=46d1dda6-f576-4f5e-ad53-d550f1cd9990{\&}acdnat=1534726962{\_}1b237371d8bb916694f34f0f951c84bc}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Conneau2017}
+\BIBentryALTinterwordspacing
+A.~Conneau, H.~Schwenk, Y.~{Le Cun}, and L.~{Loıc Barrault}, ``{Very Deep
+  Convolutional Networks for Text Classification},'' 2017. [Online]. Available:
+  \url{https://arxiv.org/pdf/1606.01781.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Sommariva2018}
 \BIBentryALTinterwordspacing
 S.~Sommariva, C.~Vamos, A.~Mantzarlis, L.~U.-L. Đ{\`{a}}o, and D.~{Martinez
@@ -31,11 +47,25 @@ S.~Sommariva, C.~Vamos, A.~Mantzarlis, L.~U.-L. Đ{\`{a}}o, and D.~{Martinez
   \url{https://www.tandfonline.com/doi/full/10.1080/19325037.2018.1473178}
 \BIBentrySTDinterwordspacing
 
+\bibitem{germanFN}
+\BIBentryALTinterwordspacing
+``{Germany investigating unprecedented spread of fake news online | World news
+  | The Guardian},'' 2017. [Online]. Available:
+  \url{https://www.theguardian.com/world/2017/jan/09/germany-investigating-spread-fake-news-online-russia-election}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Vosoughi}
 \BIBentryALTinterwordspacing
 S.~Vosoughi, D.~Roy, and S.~Aral, ``{SI:The spread of true and false news
   online},'' Tech. Rep. 6380, 2018. [Online]. Available:
   \url{http://science.sciencemag.org/content/sci/359/6380/1146.full.pdf{\%}0Ahttp://www.sciencemag.org/lookup/doi/10.1126/science.aap9559}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Zhang}
+\BIBentryALTinterwordspacing
+X.~Zhang, J.~Zhao, and Y.~Lecun, ``{Character-level Convolutional Networks for
+  Text Classification},'' 2015. [Online]. Available:
+  \url{https://arxiv.org/pdf/1509.01626.pdf}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
