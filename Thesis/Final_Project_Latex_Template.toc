@@ -11,7 +11,7 @@
 \contentsline {chapter}{\numberline {2}Background and Related Work}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Credibility and Misinformation}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Prior Approaches}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Machine Learning Models}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Shallow Learning Models}{3}{subsection.2.2.1}
 \contentsline {subsubsection}{Support Vector Machines}{3}{section*.11}
 \contentsline {subsubsection}{Naive Bayes}{3}{section*.12}
 \contentsline {subsubsection}{Artificial Neural Networks}{3}{section*.13}
@@ -20,15 +20,16 @@
 \contentsline {subsubsection}{N-Grams}{4}{section*.15}
 \contentsline {subsubsection}{GloVe}{4}{section*.16}
 \contentsline {subsubsection}{Word2Vec}{4}{section*.17}
+\contentsline {subsubsection}{Language Models}{4}{section*.18}
 \contentsline {section}{\numberline {2.3}Deep Learning}{4}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Deep Learning Models}{4}{subsection.2.3.1}
-\contentsline {subsubsection}{Recurrent Neural Networks}{4}{section*.18}
-\contentsline {subsubsection}{Gated Recurrent Unit Networks}{4}{section*.19}
-\contentsline {subsubsection}{Long Short-Term Memory Networks}{4}{section*.20}
-\contentsline {subsubsection}{Convolutional Neural Networks}{4}{section*.21}
-\contentsline {subsection}{\numberline {2.3.2}FIND PROPER NAME FOR THIS SECTION}{4}{subsection.2.3.2}
-\contentsline {subsubsection}{Transfer Learning}{4}{section*.22}
-\contentsline {subsubsection}{N-Shot Learning}{5}{section*.23}
+\contentsline {subsubsection}{Recurrent Neural Networks}{4}{section*.19}
+\contentsline {subsubsection}{Gated Recurrent Unit Networks}{4}{section*.20}
+\contentsline {subsubsection}{Long Short-Term Memory Networks}{4}{section*.21}
+\contentsline {subsubsection}{Convolutional Neural Networks}{4}{section*.22}
+\contentsline {subsection}{\numberline {2.3.2}GET PROPER NAME FOR THIS SECTION}{4}{subsection.2.3.2}
+\contentsline {subsubsection}{Transfer Learning}{4}{section*.23}
+\contentsline {subsubsection}{N-Shot Learning}{5}{section*.24}
 \contentsline {section}{\numberline {2.4}Conclusion}{5}{section.2.4}
 \contentsline {chapter}{\numberline {3}Proposed Approach}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rationale}{7}{section.3.1}
@@ -47,4 +48,4 @@
 \contentsline {chapter}{\numberline {B}name of appendix B}{15}{appendix.B}
 \contentsline {section}{\numberline {B.1}Overview}{15}{section.B.1}
 \contentsline {section}{\numberline {B.2}Name of this section}{15}{section.B.2}
-\contentsline {chapter}{Bibliography}{15}{section*.24}
+\contentsline {chapter}{Bibliography}{15}{section*.25}
