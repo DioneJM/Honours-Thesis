@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {2.1}Credibility and Misinformation}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Prior Approaches}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Shallow Learning Models}{3}{subsection.2.2.1}
-\contentsline {subsubsection}{Support Vector Machines}{3}{section*.11}
-\contentsline {subsubsection}{Naive Bayes}{3}{section*.12}
-\contentsline {subsubsection}{Artificial Neural Networks}{3}{section*.13}
-\contentsline {subsection}{\numberline {2.2.2}Feature Selection}{3}{subsection.2.2.2}
+\contentsline {subsubsection}{Naive Bayes}{4}{section*.11}
+\contentsline {subsubsection}{Support Vector Machines}{4}{section*.12}
+\contentsline {subsubsection}{Artificial Neural Networks}{4}{section*.13}
+\contentsline {subsection}{\numberline {2.2.2}Feature Selection}{4}{subsection.2.2.2}
 \contentsline {subsubsection}{Bag of Words}{4}{section*.14}
 \contentsline {subsubsection}{N-Grams}{4}{section*.15}
 \contentsline {subsubsection}{GloVe}{4}{section*.16}
