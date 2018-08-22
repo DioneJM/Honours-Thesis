@@ -37,9 +37,17 @@ A.~Conneau, H.~Schwenk, Y.~{Le Cun}, and L.~{Loıc Barrault}, ``{Very Deep
   \url{https://arxiv.org/pdf/1606.01781.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Hasan2011}
+\BIBentryALTinterwordspacing
+L.~Hasan and E.~Abuelrub, ``{Assessing the quality of web sites},''
+  \emph{Applied Computing and Informatics}, vol.~9, no.~1, pp. 11--29, jan
+  2011. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S2210832710000037}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Sommariva2018}
 \BIBentryALTinterwordspacing
-S.~Sommariva, C.~Vamos, A.~Mantzarlis, L.~U.-L. Đ{\`{a}}o, and D.~{Martinez
+S.~Sommariva, C.~Vamos, L.~U.-L. Mantzarlis, Alexios~Dao, and D.~{Martinez
   Tyson}, ``{Spreading the (Fake) News: Exploring Health Messages on Social
   Media and the Implications for Health Professionals Using a Case Study},''
   \emph{American Journal of Health Education}, vol.~49, no.~4, pp. 246--255,
