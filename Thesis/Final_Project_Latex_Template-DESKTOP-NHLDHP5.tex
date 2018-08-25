@@ -256,9 +256,8 @@ With the primary objective of this project being the evaluation on the effective
 
 \subsubsection{Main Goals}
 \begin{itemize}
-	\item Develop a set of criteria that will be used to determine the credibility of online articles.
-	\item Evaluate the performance of common ML-based methods on the classification of online vaccine-related articles, based on the criteria developed.
-	\item Evaluate the performance of the proposed DL model on the classification of online vaccine-related articles, based on the criteria developed.
+	\item Evaluate the performance of common ML-based methods for the classification of the 7 credibility criteria for vaccine-related articles.
+	\item Evaluate the performance of the proposed DL model in the classification of the credibility criteria for vaccine-related articles.
 	\item Evaluate the effect of transfer learning methods in the performance of the proposed DL method (assuming that the chosen method doesn't rely on transfer learning)
 	\item Evaluate the effectiveness of various transfer learning methods for the classification task
 \end{itemize}
@@ -277,10 +276,8 @@ With the primary objective of this project being the evaluation on the effective
 
 A literature review has been conducted to develop an understanding on the research that has been done in the assessment of the credibility of information, specifically in the context of information related to health and the limitations and capabilities of shallow learning techniques and how it differs from deep learning-based methods for the task of text classification. 
 
-\section{Assessing Credibility of Information}
 
-To have the capability of automating the process of evaluating the quality or credibility of online information, a definition that outlines of what is required by an article to be considered as a credible source of information must be developed. While there has been a significant amount of research that has been done on the development of tools and frameworks that aim to assess the credibility of online health information, there is currently no standardized method or benchmark that is universally used. Commonly used tools and frameworks are (\textit{Note: add citation for each one}): DISCERN \cite{DISCERN}, HealthNewsReview \cite{HealthNewsReview}, QIMR \cite{QIMR} and (\textit{Wiley 2017 - update this when you find the source})
-
+\section{Credibility and Misinformation}
 \textit{Talk about the work done in establishing the measurement of quality in online health information e.g. DISCERN, QIMR and the sources from that document in the slack channel}
 
 Try to understand the following for each source:
@@ -289,17 +286,7 @@ Try to understand the following for each source:
 	\item How credibility is defined
 \end{itemize}
 
-\subsection{DISCERN}
-\label{sec:DISCERN}
-
-\subsection{HealthNewsReview}
-\label{sec:HealthNewsReview}
-
-\subsection{QIMR}
-\label{sec:QIMR}
-
-\subsection{Wiley 2017}
-
+There is currently no standard benchmark or method in determining the quality or credibility of information due to the complexity of the task. However, in order to be able to automate the evaluation of the credibility of information, a reasonable definition must be created that must be general enough such that the rate of false-positives and false-negatives is minimized. There has been significant research on the development of methods that aim to assess the quality or credibility of information online which tended to manifest as either a framework or tool. The work accomplished by Hasan et al. which aimed to assess the quality of websites by developing a framework that considered multiple factors such as the quality of its deisgn, content, organization and user experience.
 
 \section{Prior Approaches}
 \label{sec:PriorApproaches}

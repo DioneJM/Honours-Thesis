@@ -5,9 +5,10 @@ Database file #1: my_reference.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for normal IEEE work.
+Warning--to sort, need author, organization, or key in DISCERN
+Warning--to sort, need author, organization, or key in HealthNewsReview
 Warning--empty journal in Conneau2017
-Warning--missing institution in Vosoughi
 Warning--empty journal in Zhang
 
 Done.
-(There were 3 warnings)
+(There were 4 warnings)
