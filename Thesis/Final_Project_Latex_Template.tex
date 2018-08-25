@@ -277,9 +277,9 @@ With the primary objective of this project being the evaluation on the effective
 
 A literature review has been conducted to develop an understanding on the research that has been done in the assessment of the credibility of information, specifically in the context of information related to health and the limitations and capabilities of shallow learning techniques and how it differs from deep learning-based methods for the task of text classification. 
 
-\section{Assessing Credibility of Information}
+\section{Assessing the Credibility of Information}
 
-To have the capability of automating the process of evaluating the quality or credibility of online information, a definition that outlines of what is required by an article to be considered as a credible source of information must be developed. While there has been a significant amount of research that has been done on the development of tools and frameworks that aim to assess the credibility of online health information, there is currently no standardized method or benchmark that is universally used. Commonly used tools and frameworks are (\textit{Note: add citation for each one}): DISCERN \cite{DISCERN}, HealthNewsReview \cite{HealthNewsReview}, QIMR \cite{QIMR} and (\textit{Wiley 2017 - update this when you find the source})
+To have the capability of automating the process of evaluating the quality or credibility of online information, a definition that outlines of what is required by an article to be considered as a credible source of information must be developed. While there has been a significant amount of research that has been done on the development of tools and frameworks that aim to assess the credibility of online health information, there is currently no standardized method or benchmark that is universally used. Tools and frameworks that have been identified to be applicable for this project are (\textit{Note: add citation for each one}): DISCERN \cite{DISCERN}, HealthNewsReview \cite{HealthNewsReview}, Quality Index for health-related Media Reports (QIMR) \cite{QIMR} and (\textit{Wiley 2017 - update this when you find the source})
 
 \textit{Talk about the work done in establishing the measurement of quality in online health information e.g. DISCERN, QIMR and the sources from that document in the slack channel}
 
@@ -292,11 +292,21 @@ Try to understand the following for each source:
 \subsection{DISCERN}
 \label{sec:DISCERN}
 
+DISCERN is a questionnaire designed to assess the reliability of a publication, it consists of 16 questions each with a Likert scale, ranging from 1 (no) to 5 (yes) and is divided into 3 sections. The first section (questions 1 - 8) investigate the reliability of the information and is comprised of questions such as "Are the aims clear?", "Is it balanced and unbiased?" and "Does it refer to areas of uncertainty?". The second section (questions 9 - 15) assesses the quality of information provided by the publication for treatment choices and is composed of questions such as "Does it describe the risks/benefits of each treatment?" and "Does it provide support for shared decision-making?". The final section (question 16) assesses the overall rating of the publication ("Based on the answers to all of the above questions, rate the overall quality of the publication as a source of information about treatment choices").
+
+\textit{Note: Need to talk about advantages/disadvantages, limitations, relevance to this project etc.}
+
 \subsection{HealthNewsReview}
 \label{sec:HealthNewsReview}
 
+HealthNewsReview provides a set of 10 criteria designed to act as a framework for evaluating the credibility of health-related media. The criteria is based on the various elements that all health-related media should consist of, the criteria is composed of criterion such as "Does the story compare the new approach with existing alternatives?", "Does the story use independent sources and identify conflicts of interest?" and "Does the story appear to rely solely or largely on a news release?".
+
+\textit{Note: Need to talk about advantages/disadvantages, limitations, relevance to this project etc.}
+
 \subsection{QIMR}
 \label{sec:QIMR}
+
+
 
 \subsection{Wiley 2017}
 
@@ -314,13 +324,15 @@ Try to understand the following for each source:
 	\item \textit{Limitations}
 \end{itemize}
 
+\textit{Another thing to consider is why I'm looking at ML models in the first place, which is because I plan to compare the performance of ml models against dl models using typical features that don't require domain-specific knowledge to create e.g. BoW, language models, ngrams etc.}
+
 \subsection{Naive Bayes}
 \label{sec:NaiveBayes}
 
 \subsection{Support Vector Machines}
 \label{sec:SVM}
 
-\subsection{Random Forest}
+\subsection{Random Forests}
 
 \subsection{Artificial Neural Networks}
 \label{sec:ANN}
@@ -328,6 +340,9 @@ Try to understand the following for each source:
 
 \section{Deep Learning}
 \label{sec:DeepLearningReview}
+
+Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of text classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang} \textit{(note: look into the datasets used by state of the art approaches)}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.
+
 \textit{Introduce the state-of-the-art DL based approaches for text classification and try to compare it performance with state-of-the-art ML approaches} \newline
 \textit{For each model, talk about the following:}
 \newline
@@ -337,8 +352,6 @@ Try to understand the following for each source:
 	\item \textit{Advantages}
 	\item \textit{Limitations}
 \end{itemize} 
-
-Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of text classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang} \textit{(note: look into the datasets used by state of the art approaches)}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.
 
 \textit{Introduce the typical architectures used for text classification e.g. RNNs, LSTMs, CNNs, GRUs?}
 
