@@ -18,14 +18,14 @@
 \contentsline {subsection}{\numberline {2.2.2}Support Vector Machines}{5}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Artificial Neural Networks}{6}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Deep Learning Approaches}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Deep Learning Models}{6}{subsection.2.3.1}
-\contentsline {subsubsection}{Recurrent Neural Networks}{6}{section*.11}
-\contentsline {subsubsection}{Gated Recurrent Unit Networks}{6}{section*.12}
-\contentsline {subsubsection}{Long Short-Term Memory Networks}{6}{section*.13}
-\contentsline {subsubsection}{Convolutional Neural Networks}{6}{section*.14}
-\contentsline {subsection}{\numberline {2.3.2}GET PROPER NAME FOR THIS SECTION}{6}{subsection.2.3.2}
-\contentsline {subsubsection}{Transfer Learning}{6}{section*.15}
-\contentsline {subsubsection}{N-Shot Learning}{7}{section*.16}
+\contentsline {subsection}{\numberline {2.3.1}Deep Learning Models}{7}{subsection.2.3.1}
+\contentsline {subsubsection}{Recurrent Neural Networks}{7}{section*.12}
+\contentsline {subsubsection}{Gated Recurrent Unit Networks}{7}{section*.13}
+\contentsline {subsubsection}{Long Short-Term Memory Networks}{7}{section*.14}
+\contentsline {subsubsection}{Convolutional Neural Networks}{7}{section*.15}
+\contentsline {subsection}{\numberline {2.3.2}GET PROPER NAME FOR THIS SECTION}{7}{subsection.2.3.2}
+\contentsline {subsubsection}{Transfer Learning}{7}{section*.16}
+\contentsline {subsubsection}{N-Shot Learning}{7}{section*.17}
 \contentsline {section}{\numberline {2.4}Conclusion}{7}{section.2.4}
 \contentsline {chapter}{\numberline {3}Proposed Approach}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rationale}{9}{section.3.1}
@@ -44,4 +44,4 @@
 \contentsline {chapter}{\numberline {B}name of appendix B}{17}{appendix.B}
 \contentsline {section}{\numberline {B.1}Overview}{17}{section.B.1}
 \contentsline {section}{\numberline {B.2}Name of this section}{17}{section.B.2}
-\contentsline {chapter}{Bibliography}{17}{section*.17}
+\contentsline {chapter}{Bibliography}{17}{section*.18}
