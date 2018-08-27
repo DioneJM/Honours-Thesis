@@ -279,15 +279,7 @@ A literature review has been conducted to develop an understanding on the resear
 
 \section{Assessing the Credibility of Information}
 
-To have the capability of automating the process of evaluating the quality or credibility of online information, a definition that outlines of what is required by an article to be considered as a credible source of information must be developed. While there has been a significant amount of research that has been done on the development of tools and frameworks that aim to assess the credibility of online health information, there is currently no standardized method or benchmark that is universally used. Tools and frameworks that have been identified to be applicable for this project are (\textit{Note: add citation for each one}): DISCERN \cite{DISCERN}, HealthNewsReview \cite{HealthNewsReview}, Quality Index for health-related Media Reports (QIMR) \cite{QIMR} and (\textit{Wiley 2017 - update this when you find the source})
-
-\textit{Talk about the work done in establishing the measurement of quality in online health information e.g. DISCERN, QIMR and the sources from that document in the slack channel}
-
-Try to understand the following for each source:
-\begin{itemize}
-	\item How the scoring system works
-	\item How credibility is defined
-\end{itemize}
+To have the capability of automating the process of evaluating the quality or credibility of online information, a definition that outlines of what is required by an article to be considered as a credible source of information must be developed. While there has been a significant amount of research that has been done on the development of tools and frameworks that aim to assess the credibility of online health information, there is currently no standardized method or benchmark that is universally used. Tools and frameworks that have been identified to be applicable in the context of this project are: DISCERN \cite{DISCERN}, HealthNewsReview \cite{HealthNewsReview} and Quality Index for health-related Media Reports (QIMR) \cite{QIMR}.
 
 \subsection{DISCERN}
 \label{sec:DISCERN}
@@ -306,39 +298,43 @@ HealthNewsReview provides a set of 10 criteria designed to act as a framework fo
 \subsection{QIMR}
 \label{sec:QIMR}
 
-
-
-\subsection{Wiley 2017}
+QIMR is a tool developed to monitor the quality of health research reports presented in the media. The tool considers 5 main factors that have been deemed to be correlated with the quality of research reports based on interviews with health journalists and researchers. The 5 main factors are: background information provided, sources of information used, manner in which results were analysed, context of the research and the validity of their methodology. 
 
 
 \section{Prior Approaches}
 \label{sec:PriorApproaches}
 
-\textit{Discuss the prior work that has been done in terms of text classification e.g. spam, sentiment, topic}
+The task of text classification is a heavily researched topic due to its wide number of applications in various domains. Formally, text classification is defined to be the task of finding a classifier $f: D \rightarrow L$ where $D = \{d_1, d_2, \dots, d_n\} $ is a collection of documents and $L = \{l_1, l_2,\dots, l_k\}$ is the set of possible labels that a document $d$ can be classified as. 
+\begin{equation}
+\label{eq:TextClassification}
+f: D \rightarrow L \text{ where } f(d) = l
+\end{equation}
+Common applications of text classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}. 
 
+Traditional shallow learning-based approaches for text classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016}. These features are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text.
 
-\textit{For each model, talk about the following:}
-\begin{itemize}
-	\item \textit{How it works and the mechanisms involved}
-	\item \textit{Advantages}
-	\item \textit{Limitations}
-\end{itemize}
-
-\textit{Another thing to consider is why I'm looking at ML models in the first place, which is because I plan to compare the performance of ml models against dl models using typical features that don't require domain-specific knowledge to create e.g. BoW, language models, ngrams etc.}
-
-\subsection{Naive Bayes}
+\subsection{Naive Bayes Classifier}
 \label{sec:NaiveBayes}
+
+Naive Bayes is a probabilistic classifier that functions on an assumption in how the data (i.e. the words in a document) is generated. The assumption that these Bayesian classifiers are based on is that the distribution of different words within a corpus are independent from each other. Despite this assumption clearly being wrong when considering the distribution of words within a document (due to the sequential nature of text), Naive Bayes classifiers are still able to perform well in text classification tasks such as the filtering of spam emails \cite{Sahami}.
+
+Naive Bayes classifiers utilize Bayes' theorem, which attempts to find the probability of an event $B$ occurring given some prior condition $A$ i.e. $P(B| A)$. In the context of text classification, Naive Bayes classifiers classifies a document $d$ by calculating the probabilities that the document belongs for all labels $l_i \in L$ and then selecting the highest probability \cite{Allahyari2017}:
+\begin{equation}
+P(L = l_i| d) = \frac{P(l_i)P(d| l_i)}{P(d)}
+\end{equation}
+
+According to Aggarwal et al. \cite{Aggarwal2012}, there are two main types of Naive Bayes classifiers that are commonly used, they are the multivariate Bernoulli model and the multinomial model. The main discriminating factor between these two models is that the Bernoulli model does not take into account the frequency of words as it represents a document using a vector of binary features which signify the presence or absence of words, based on some vocabulary, for a given document. This is in contrast with the multinomial model, which accounts for the frequency of words as the document is represented using a BoW model. Deciding on which model to use for text classification largely depends on the size of the vocabulary as, according to McCallum et al. \cite{McCallum1998}, the multinomial models almost always outperforms the Bernoulli models if the size of the vocabulary is large ($> 1000$) or even if the size has been optimally chosen for both models.
 
 \subsection{Support Vector Machines}
 \label{sec:SVM}
 
-\subsection{Random Forests}
+SVMs are a type of supervised machine learning-based binary classifiers that are extensively used for text classification due to their capability of handling the high dimensional and sparse nature of common representations of text documents \cite{Informatik1997}. SVMs are able to classify a document by using a hyperplane to separate the different classes into their own regions. The hyperplane used is determined by choosing the one that maximizes the margin of separation (the normal distance between the hyperplane and all data points in the representation space) between the two classes.
 
 \subsection{Artificial Neural Networks}
 \label{sec:ANN}
 
 
-\section{Deep Learning}
+\section{Deep Learning Approaches}
 \label{sec:DeepLearningReview}
 
 Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of text classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang} \textit{(note: look into the datasets used by state of the art approaches)}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.

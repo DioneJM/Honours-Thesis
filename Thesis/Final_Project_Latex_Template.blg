@@ -7,8 +7,14 @@ Database file #1: my_reference.bib
 ** Sorting version - not for normal IEEE work.
 Warning--to sort, need author, organization, or key in DISCERN
 Warning--to sort, need author, organization, or key in HealthNewsReview
+Warning--empty journal in Aggarwal2012
+Warning--missing institution in Allahyari2017
 Warning--empty journal in Conneau2017
+Warning--missing institution in Informatik1997
+Warning--missing institution in McCallum1998
+Warning--empty journal in Pasupa2016
+Warning--missing institution in Sahami
 Warning--empty journal in Zhang
 
 Done.
-(There were 4 warnings)
+(There were 10 warnings)
