@@ -328,15 +328,35 @@ According to Aggarwal et al. \cite{Aggarwal2012}, there are two main types of Na
 \subsection{Support Vector Machines}
 \label{sec:SVM}
 
-SVMs are a type of supervised machine learning-based binary classifiers that are extensively used for text classification due to their capability of handling the high dimensional and sparse nature of common representations of text documents \cite{Informatik1997}. SVMs are able to classify a document by using a hyperplane to separate the different classes into their own regions. The hyperplane used is determined by choosing the one that maximizes the margin of separation (the normal distance between the hyperplane and all data points in the representation space) between the two classes.
+SVMs are a type of supervised machine learning-based binary classifiers that are extensively used for text classification due to their capability of handling the high dimensional and sparse nature of common representations of text documents \cite{Informatik1997}. SVMs are able to classify a document by using a hyperplane to separate the different classes into separate regions. The hyperplane used is determined by choosing the one that maximises the margin of separation (the Euclidean distance between the hyperplane and all data points in the representation space) between the two classes \cite{Aggarwal2012}.
 
-\begin{figure}
-	\includegraphics{images/svm-example.png}
-	\caption{caption text}
+Consider the illustration shown in figure \ref{fig:SVMExample} that presents three  two-dimensional hyperplanes, $A$, $B$ and $C$, which separates the classes 'x' and 'o'. Visually, we can determine that $A$ is the hyperplane that maximises the margin of separation, thus, $A$ will be used as a decision rule to classify any new document based on its location with respect to $A$. Mathematically, determining which hyperplane to use as the decision rule is an optimisation problem that attempts to maximise the margin represented as shown in equation \ref{eq:MaxSVM}:
+
+\begin{equation}
+	max(\frac{1}{2}||\frac{1}{w}||^2)
+	\label{eq:MaxSVM}
+\end{equation}
+
+This optimisation problem is often restructured to the minimisation of equation \ref{eq:MinSVM}:
+
+\begin{equation}
+	min(\frac{1}{2}||w||^2)
+	\label{eq:MinSVM}
+\end{equation}
+
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[totalheight=8cm]{images/svm-example.png}
+	\caption{What is the Best Separating Hyperplane? \cite{Aggarwal2012}}
+	\label{fig:SVMExample}
 \end{figure}
 
 \subsection{Artificial Neural Networks}
 \label{sec:ANN}
+
+A neural network consists of three kinds of layers: an input layer, hidden layer and an output layer. The differentiating factor between shallow neural networks (SNNs) and deep neural networks (DNNs) is that SNNs consist of only a single hidden layer \cite{Pasupa2016} 
 
 
 \section{Deep Learning Approaches}
