@@ -47,6 +47,13 @@ M.~Allahyari, S.~Pouriyeh, M.~Assefi, S.~Safaei, E.~D. Trippe, J.~B. Gutierrez,
   \url{http://en.wikipedia.org/wiki/Statistics}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Basheer2000}
+\BIBentryALTinterwordspacing
+I.~A. Basheer and M.~Hajmeer, ``{Artificial neural networks: fundamentals,
+  computing, design, and application},'' Tech. Rep., 2000. [Online]. Available:
+  \url{www.elsevier.com/locate/jmicmeth}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Burgess2006}
 \BIBentryALTinterwordspacing
 D.~C. Burgess, M.~A. Burgess, and J.~Leask, ``{The MMR vaccination and autism
