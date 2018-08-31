@@ -32,22 +32,22 @@
 \contentsline {subsection}{\numberline {2.3.3}GET PROPER NAME FOR THIS SECTION}{8}{subsection.2.3.3}
 \contentsline {subsubsection}{Transfer Learning}{8}{section*.23}
 \contentsline {subsubsection}{N-Shot Learning}{8}{section*.24}
-\contentsline {section}{\numberline {2.4}Conclusion}{8}{section.2.4}
-\contentsline {chapter}{\numberline {3}Proposed Approach}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Rationale}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Credibility Criteria}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Study Data}{9}{section.3.3}
-\contentsline {section}{\numberline {3.4}System Model}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Experiments}{9}{section.3.5}
-\contentsline {section}{\numberline {3.6}Outcome Measures}{9}{section.3.6}
-\contentsline {chapter}{\numberline {4}Conclusions and Future Work}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusions}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Future Work}{11}{section.4.2}
-\contentsline {chapter}{\numberline {5}Abbreviations}{13}{chapter.5}
-\contentsline {chapter}{\numberline {A}name of appendix A}{15}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{15}{section.A.1}
-\contentsline {section}{\numberline {A.2}Name of this section}{15}{section.A.2}
-\contentsline {chapter}{\numberline {B}name of appendix B}{17}{appendix.B}
-\contentsline {section}{\numberline {B.1}Overview}{17}{section.B.1}
-\contentsline {section}{\numberline {B.2}Name of this section}{17}{section.B.2}
-\contentsline {chapter}{Bibliography}{17}{section*.25}
+\contentsline {section}{\numberline {2.4}Conclusion}{9}{section.2.4}
+\contentsline {chapter}{\numberline {3}Proposed Approach}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rationale}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Credibility Criteria}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Study Data}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}System Model}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Experiments}{11}{section.3.5}
+\contentsline {section}{\numberline {3.6}Outcome Measures}{11}{section.3.6}
+\contentsline {chapter}{\numberline {4}Conclusions and Future Work}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclusions}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Future Work}{13}{section.4.2}
+\contentsline {chapter}{\numberline {5}Abbreviations}{15}{chapter.5}
+\contentsline {chapter}{\numberline {A}name of appendix A}{17}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{17}{section.A.1}
+\contentsline {section}{\numberline {A.2}Name of this section}{17}{section.A.2}
+\contentsline {chapter}{\numberline {B}name of appendix B}{19}{appendix.B}
+\contentsline {section}{\numberline {B.1}Overview}{19}{section.B.1}
+\contentsline {section}{\numberline {B.2}Name of this section}{19}{section.B.2}
+\contentsline {chapter}{Bibliography}{19}{section*.25}

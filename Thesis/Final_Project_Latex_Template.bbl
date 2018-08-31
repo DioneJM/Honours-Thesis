@@ -109,6 +109,13 @@ A.~McCallum and K.~Nigam, ``{A Comparison of Event Models for Naive Bayes Text
 K.~Pasupa, ``{A Comparison between Shallow and Deep Architecture Classifiers on
   Small Dataset},'' 2016.
 
+\bibitem{Rosenfeld2000}
+\BIBentryALTinterwordspacing
+R.~Rosenfeld, ``{TWO DECADES OF STATISTICAL LANGUAGE MODELING: WHERE DO WE GO
+  FROM HERE?}'' Tech. Rep., 2000. [Online]. Available:
+  \url{https://www.cs.cmu.edu/{~}roni/papers/survey-slm-IEEE-PROC-0004.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Sahami}
 \BIBentryALTinterwordspacing
 M.~Sahami, S.~Dumais, D.~Heckerman, and E.~Horvitz, ``{A Bayesian approach to

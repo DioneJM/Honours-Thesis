@@ -309,7 +309,7 @@ The task of text classification is a heavily researched topic due to its wide nu
 \label{eq:TextClassification}
 f: D \rightarrow L \text{ where } f(d) = l
 \end{equation}
-Common applications of text classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}. 
+Common applications of text classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}. For the purpose of this literature review, a shallow-based method refers to one in which it is unable to capture a high-level, general representation of information.
 
 \subsection{Shallow Learning Models}
 \label{sec:ShallowLearning}
@@ -360,7 +360,7 @@ This technique of determining the hyperplane requires that the two classes are l
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[totalheight=8cm]{images/kernel-trick.png}
-	\caption{(Left) Non-linear data of two classes in a 2D representation space. \newline
+	\caption{(Left) Non-linearly distributed data of two classes in a 2D representation space. \newline
 	(Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite{UnderstandingKernel}.}
 	\label{fig:KernelTrick}
 \end{figure}
@@ -368,7 +368,7 @@ This technique of determining the hyperplane requires that the two classes are l
 \subsection{Shallow Textual Representation Techniques}
 \label{sec:ShallowTextRepresentations}
 
-Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model.
+Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \textbf{(GET CITE FOR THIS)}, these methods are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000}.
 
 \subsubsection{TF-IDF}
 \label{sec:TFIDF}
