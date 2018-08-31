@@ -355,13 +355,20 @@ This optimisation problem is often re-framed to the minimisation of Equation \re
 	\label{fig:SVMExample}
 \end{figure}
 
-\subsection{Textual Representation Techniques}
-\label{sec:TextRepresentations}
+This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps the classes in a particular representation space to another representation space of a different dimension. This change of dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=8cm]{images/kernel-trick.png}
+	\caption{(Left) Non-linear data of two classes in a 2D representation space. \newline
+	(Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite{UnderstandingKernel}.}
+	\label{fig:KernelTrick}
+\end{figure}
 
+\subsection{Shallow Textual Representation Techniques}
+\label{sec:ShallowTextRepresentations}
 
-\subsubsection{Bag of Words}
-\label{sec:BoW}
+Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model.
 
 \subsubsection{TF-IDF}
 \label{sec:TFIDF}
@@ -373,15 +380,11 @@ This optimisation problem is often re-framed to the minimisation of Equation \re
 \label{sec:word2vec}
 
 \subsubsection{Word Embeddings}
-\label{sec:WordEmbeddings}
-
-\subsubsection{Language Models}
-\label{sec:LanguageModels}
+\label{sec:WordEmbeddings} 
 
 \begin{itemize}
 	\item ngrams
-	\item neural language models e.g. word2vec
-	\item 
+	\item neural language models e.g. word2vec 
 \end{itemize}
 
 
@@ -419,6 +422,9 @@ Deep learning models are a class of machine learning models that have the capabi
 
 \subsubsection{Convolutional Neural Networks}
 \label{sec:CNN}
+
+\subsection{Deep Textual Representation Techniques}
+\label{sec:DeepTextRepresentations}
 
 \subsection{GET PROPER NAME FOR THIS SECTION}
 \subsubsection{Transfer Learning}

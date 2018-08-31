@@ -17,17 +17,22 @@
 \contentsline {subsection}{\numberline {2.2.1}Shallow Learning Models}{4}{subsection.2.2.1}
 \contentsline {subsubsection}{Naive Bayes Classifier}{5}{section*.11}
 \contentsline {subsubsection}{Support Vector Machines}{5}{section*.12}
-\contentsline {subsection}{\numberline {2.2.2}Textual Representation Techniques}{6}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Deep Learning Approaches}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Deep Learning Models}{7}{subsection.2.3.1}
-\contentsline {subsubsection}{Recurrent Neural Networks}{7}{section*.14}
-\contentsline {subsubsection}{Gated Recurrent Unit Networks}{7}{section*.15}
-\contentsline {subsubsection}{Long Short-Term Memory Networks}{7}{section*.16}
-\contentsline {subsubsection}{Convolutional Neural Networks}{7}{section*.17}
-\contentsline {subsection}{\numberline {2.3.2}GET PROPER NAME FOR THIS SECTION}{7}{subsection.2.3.2}
-\contentsline {subsubsection}{Transfer Learning}{7}{section*.18}
-\contentsline {subsubsection}{N-Shot Learning}{7}{section*.19}
-\contentsline {section}{\numberline {2.4}Conclusion}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.2.2}Shallow Textual Representation Techniques}{6}{subsection.2.2.2}
+\contentsline {subsubsection}{TF-IDF}{7}{section*.15}
+\contentsline {subsubsection}{N-Grams}{7}{section*.16}
+\contentsline {subsubsection}{Word2Vec}{7}{section*.17}
+\contentsline {subsubsection}{Word Embeddings}{7}{section*.18}
+\contentsline {section}{\numberline {2.3}Deep Learning Approaches}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Deep Learning Models}{8}{subsection.2.3.1}
+\contentsline {subsubsection}{Recurrent Neural Networks}{8}{section*.19}
+\contentsline {subsubsection}{Gated Recurrent Unit Networks}{8}{section*.20}
+\contentsline {subsubsection}{Long Short-Term Memory Networks}{8}{section*.21}
+\contentsline {subsubsection}{Convolutional Neural Networks}{8}{section*.22}
+\contentsline {subsection}{\numberline {2.3.2}Deep Textual Representation Techniques}{8}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}GET PROPER NAME FOR THIS SECTION}{8}{subsection.2.3.3}
+\contentsline {subsubsection}{Transfer Learning}{8}{section*.23}
+\contentsline {subsubsection}{N-Shot Learning}{8}{section*.24}
+\contentsline {section}{\numberline {2.4}Conclusion}{8}{section.2.4}
 \contentsline {chapter}{\numberline {3}Proposed Approach}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rationale}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Credibility Criteria}{9}{section.3.2}
@@ -45,4 +50,4 @@
 \contentsline {chapter}{\numberline {B}name of appendix B}{17}{appendix.B}
 \contentsline {section}{\numberline {B.1}Overview}{17}{section.B.1}
 \contentsline {section}{\numberline {B.2}Name of this section}{17}{section.B.2}
-\contentsline {chapter}{Bibliography}{17}{section*.20}
+\contentsline {chapter}{Bibliography}{17}{section*.25}

@@ -1,6 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces What is the Best Separating Hyperplane? \cite {Aggarwal2012}\relax }}{6}{figure.caption.13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (Left) Non-linear data of two classes in a 2D representation space. \newline (Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite {UnderstandingKernel}.\relax }}{7}{figure.caption.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

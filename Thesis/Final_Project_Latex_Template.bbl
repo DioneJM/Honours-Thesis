@@ -33,11 +33,23 @@
   \url{https://www.healthnewsreview.org/about-us/review-criteria/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{UnderstandingKernel}
+\BIBentryALTinterwordspacing
+``{Understanding the kernel trick. – Towards Data Science}.'' [Online].
+  Available:
+  \url{https://towardsdatascience.com/understanding-the-kernel-trick-e0bc6112ef78}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Aggarwal2012}
 \BIBentryALTinterwordspacing
 C.~C. Aggarwal and C.~Zhai, ``{A SURVEY OF TEXT CLASSIFICATION ALGORITHMS},''
   2012. [Online]. Available: \url{http://alias-i.com/lingpipe/}
 \BIBentrySTDinterwordspacing
+
+\bibitem{aizerman67theoretical}
+M.~A. Aizerman, E.~A. Braverman, and L.~Rozonoer, ``Theoretical foundations of
+  the potential function method in pattern recognition learning,''
+  \emph{Automation and Remote Control}, vol.~25, pp. 821--837, June 1964.
 
 \bibitem{Allahyari2017}
 \BIBentryALTinterwordspacing
