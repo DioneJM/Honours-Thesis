@@ -241,16 +241,30 @@ This is where you write your abstract ...
 \chapter{Introduction}
 \label{chap:Introduction}
 
-  
-
-One of the key components required to minimize the propagation of misinformation online is to have the ability of automatically evaluating and quantifying the credibility of articles. However, traditional automated methods - such as shallow learning-based techniques, still require the domain knowledge of experts to be able to develop the features required by the model. Thus, this project aims to investigate the performance of Deep Learning-based (DL) techniques in evaluating the credibility of information within domain-specific articles via the classification of set criteria that have deemed to be highly correlated with articles that have low credibility. Specifically, this project will focus on evaluating the credibility of online health articles related to vaccination due to the commonly misinformed and controversial views associated with its effects \cite{Burgess2006}. \newline
+Things to talk about:
+\begin{itemize}
+	\item focus on the scenario if we were able to evaluate the quality/credibility of information at scale
+	\item this would allows us t identify information (and the communities that are susceptible to it) - allowing us to intervene and minimise the spread and effect on behaviour
+	\item being able to do this at scales either requires a lot of experts assessing the online health information (resource intensive) or have an algorithm that can learn to do it autoatically (less resource intensive)
+\end{itemize}
 
 
 \section{Project Overview}
 This section details the scope of the project and its associated outcomes outlining the various tasks that must be accomplished to successfully complete the project.
 
-\subsection{Project Scope}
-\label{sec:ProjectScope}
+One of the key components required to minimize the propagation of misinformation online is to have the ability of automatically evaluating and quantifying the credibility of articles. However, traditional automated methods - such as shallow learning-based techniques, still require the domain knowledge of experts to be able to develop the features required by the model. Thus, this project aims to investigate the performance of Deep Learning-based (DL) techniques in evaluating the credibility of information within domain-specific articles via the classification of set criteria that have deemed to be highly correlated with articles that have low credibility. Specifically, this project will focus on evaluating the credibility of online health articles related to vaccination due to the commonly misinformed and controversial views associated with its effects \cite{Burgess2006}. \newline
+
+\section{Motivation}
+\label{chap:Motivation}
+
+Try to answer some of the following questions:
+\begin{itemize}
+	\item Why is misinformation and the spread of low credibility information a problem?
+	\item What is vaccine hesitancy, how many people believe that vaccines are harmful? Explain specific examples
+\end{itemize}
+
+\section{Aims}
+\label{chap:Aims}
 
 With the primary objective of this project being the evaluation on the effectiveness of deep learning models in determining the credibility of online health-related articles. Due to the complexity of this project, a set of activities - divided into main goals and stretch goals, have been defined to ensure that the completion of this project remains feasible in the given time frame. The completion of all activities categorized as main goals will signal the realization of the primary objective and the completion of the project. Stretch goals are activities of interest that have been identified as non-essential to the completion of the primary objective but (talk about the overarching goal that all stretch goals have in common e.g. understand the model, utilize the model etc.) and will be worked on after the completion of the project.
 
@@ -263,13 +277,10 @@ With the primary objective of this project being the evaluation on the effective
 	\item Evaluate the effectiveness of various transfer learning methods for the classification task
 \end{itemize}
 
-
-
 \subsubsection{Stretch Goals}
 \begin{itemize}
 	\item Utilize attention mechanisms to understand how the aforementioned DL model classifies the criteria for credibility.
 \end{itemize}
-
 
 
 \chapter{Background and Related Work}
@@ -372,7 +383,7 @@ Due to the unstructured nature of natural text, it is common practice for natura
 
 \subsubsection{TF-IDF Score}
 \label{sec:TFIDF}
-REEEEEEEEEEEEE
+
 The TF-IDF score of a word represents its importance in a specific document relative to all other documents within a corpus. Based on the BoW model, the TF-IDF calculates both the frequency of a word within a document (term frequency) and the 
 
 
