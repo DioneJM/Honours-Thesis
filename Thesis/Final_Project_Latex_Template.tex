@@ -250,12 +250,13 @@ Things to talk about:
 
 
 \section{Project Overview}
+\label{sec:ProjectOverview}
 This section details the scope of the project and its associated outcomes outlining the various tasks that must be accomplished to successfully complete the project.
 
-One of the key components required to minimize the propagation of misinformation online is to have the ability of automatically evaluating and quantifying the credibility of articles. However, traditional automated methods - such as shallow learning-based techniques, still require the domain knowledge of experts to be able to develop the features required by the model. Thus, this project aims to investigate the performance of Deep Learning-based (DL) techniques in evaluating the credibility of information within domain-specific articles via the classification of set criteria that have deemed to be highly correlated with articles that have low credibility. Specifically, this project will focus on evaluating the credibility of online health articles related to vaccination due to the commonly misinformed and controversial views associated with its effects \cite{Burgess2006}. \newline
+One of the key components required to minimize the propagation of misinformation online is to have the ability of automatically evaluating and quantifying the credibility of articles. However, traditional automated methods - such as machine learning-based techniques, still require the domain knowledge of experts to be able to develop the features required by the model. Thus, this project aims to investigate the performance of Deep Learning-based (DL) techniques in evaluating the credibility of information within domain-specific articles via the classification of set criteria that have deemed to be highly correlated with articles that have low credibility. Specifically, this project will focus on evaluating the credibility of online health articles related to vaccination due to the commonly misinformed and controversial views associated with its effects \cite{Burgess2006}. \newline
 
 \section{Motivation}
-\label{chap:Motivation}
+\label{sec:Motivation}
 
 Try to answer some of the following questions:
 \begin{itemize}
@@ -264,120 +265,73 @@ Try to answer some of the following questions:
 \end{itemize}
 
 \section{Aims}
-\label{chap:Aims}
+\label{sec:Aims}
 
 With the primary objective of this project being the evaluation on the effectiveness of deep learning models in determining the credibility of online health-related articles. Due to the complexity of this project, a set of activities - divided into main goals and stretch goals, have been defined to ensure that the completion of this project remains feasible in the given time frame. The completion of all activities categorized as main goals will signal the realization of the primary objective and the completion of the project. Stretch goals are activities of interest that have been identified as non-essential to the completion of the primary objective but (talk about the overarching goal that all stretch goals have in common e.g. understand the model, utilize the model etc.) and will be worked on after the completion of the project.
 
 \subsubsection{Main Goals}
+\label{sec:MainGoals}
 \begin{itemize}
-	\item Develop a set of criteria that will be used to determine the credibility of online articles.
-	\item Evaluate the performance of common ML-based methods on the classification of online vaccine-related articles, based on the criteria developed.
-	\item Evaluate the performance of the proposed DL model on the classification of online vaccine-related articles, based on the criteria developed.
-	\item Evaluate the effect of transfer learning methods in the performance of the proposed DL method (assuming that the chosen method doesn't rely on transfer learning)
-	\item Evaluate the effectiveness of various transfer learning methods for the classification task
+	\item Implement and evaluate the performance of machine learning methods for assessing the quality and credibility of vaccine-related text.
+	\item Implement a deep neural network method to assess the quality and credibility of vaccine-related text and compare the performance with the previous approaches.
 \end{itemize}
 
 \subsubsection{Stretch Goals}
+\label{sec:StretchGoals}
 \begin{itemize}
-	\item Utilize attention mechanisms to understand how the aforementioned DL model classifies the criteria for credibility.
+	\item Evaluate the effect of transfer learning methods on the training time and performance of the proposed deep neural network method.
 \end{itemize}
 
 
 \chapter{Background and Related Work}
 \label{chap:LitReview}
 
-A literature review has been conducted to develop an understanding on the research that has been done in the assessment of the credibility of information, specifically in the context of information related to health and the limitations and capabilities of shallow learning techniques and how it differs from deep learning-based methods for the task of text classification. 
+A literature review has been conducted to develop an understanding on the research that has been done in the assessment of the credibility of information, specifically in the context of information related to health and the limitations and capabilities of machine learning techniques and how it differs from deep learning-based methods for the task of document classification. 
 
-\section{Assessing the Credibility of Information}
+\section{Assessing the Quality and Credibility of Health Information}
+\label{sec:AssessingInformation}
 
 To have the capability of automating the process of evaluating the quality or credibility of online information, a definition that outlines of what is required by an article to be considered as a credible source of information must be developed. While there has been a significant amount of research that has been done on the development of tools and frameworks that aim to assess the credibility of online health information, there is currently no standardized method or benchmark that is universally used. Tools and frameworks that have been identified to be applicable in the context of this project are: DISCERN \cite{DISCERN}, HealthNewsReview \cite{HealthNewsReview} and Quality Index for health-related Media Reports (QIMR) \cite{QIMR}.
 
-\subsection{DISCERN}
+\subsection{Checklists and Criteria}
+\label{sec:Checklists}
+
+\subsubsection{DISCERN}
 \label{sec:DISCERN}
 
 DISCERN is a questionnaire designed to assess the reliability of a publication, it consists of 16 questions each with a Likert scale, ranging from 1 (no) to 5 (yes) and is divided into 3 sections. The first section (questions 1 - 8) investigate the reliability of the information and is comprised of questions such as "Are the aims clear?", "Is it balanced and unbiased?" and "Does it refer to areas of uncertainty?". The second section (questions 9 - 15) assesses the quality of information provided by the publication for treatment choices and is composed of questions such as "Does it describe the risks/benefits of each treatment?" and "Does it provide support for shared decision-making?". The final section (question 16) assesses the overall rating of the publication ("Based on the answers to all of the above questions, rate the overall quality of the publication as a source of information about treatment choices").
 
 \textit{Note: Need to talk about advantages/disadvantages, limitations, relevance to this project etc.}
 
-\subsection{HealthNewsReview}
+\subsubsection{HealthNewsReview}
 \label{sec:HealthNewsReview}
 
 HealthNewsReview provides a set of 10 criteria designed to act as a framework for evaluating the credibility of health-related media. The criteria is based on the various elements that all health-related media should consist of, the criteria is composed of criterion such as "Does the story compare the new approach with existing alternatives?", "Does the story use independent sources and identify conflicts of interest?" and "Does the story appear to rely solely or largely on a news release?".
 
 \textit{Note: Need to talk about advantages/disadvantages, limitations, relevance to this project etc.}
 
-\subsection{QIMR}
+\subsubsection{QIMR}
 \label{sec:QIMR}
 
-QIMR is a tool developed to monitor the quality of health research reports presented in the media. The tool considers 5 main factors that have been deemed to be correlated with the quality of research reports based on interviews with health journalists and researchers. The 5 main factors are: background information provided, sources of information used, manner in which results were analysed, context of the research and the validity of their methodology. 
+QIMR is a tool developed to monitor the quality of health research reports presented in the media. The tool considers 5 main factors that have been deemed to be correlated with the quality of research reports based on interviews with health journalists and researchers. The 5 main factors are: background information provided, sources of information used, manner in which results were analysed, context of the research and the validity of their methodology.
 
+\subsection{Studies Applying Checklists to Health Information Online}
+\label{sec:ChecklistStudies}
 
-\section{Prior Approaches}
-\label{sec:PriorApproaches}
+\section{Document Classification Methods}
+\label{sec:DocumentClassification}
 
-The task of text classification is a heavily researched topic due to its wide number of applications in various domains. Formally, text classification is defined to be the task of finding a classifier $f: D \rightarrow L$ where $D = \{d_1, d_2, \dots, d_n\} $ is a collection of documents and $L = \{l_1, l_2,\dots, l_k\}$ is the set of possible labels that a document $d$ can be classified as. 
+The task of document classification is a heavily researched topic due to its wide number of applications in various domains. Formally, document classification is defined to be the task of finding a classifier $f: D \rightarrow L$ where $D = \{d_1, d_2, \dots, d_n\} $ is a collection of documents and $L = \{l_1, l_2,\dots, l_k\}$ is the set of possible labels that a document $d$ can be classified as. 
 \begin{equation}
 \label{eq:TextClassification}
 f: D \rightarrow L \text{ where } f(d) = l
 \end{equation}
-Common applications of text classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}. For the purpose of this literature review, a shallow-based method refers to one in which it is unable to capture a high-level, general representation of information.
+Common applications of document classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}.
 
-\subsection{Shallow Learning Models}
-\label{sec:ShallowLearning}
+Traditional machine learning-based approaches for document classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016} as they are incapable of performing feature learning \cite{Basheer2000}. These features are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. being unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text.
 
-Traditional shallow learning-based approaches for text classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016} as they are incapable of performing feature learning \cite{Basheer2000}. These features are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. being unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text.
-
-\subsubsection{Naive Bayes Classifier}
-\label{sec:NaiveBayes}
-
-Naive Bayes is a probabilistic classifier that functions on an assumption in how the data (i.e. the words in a document) is generated. The assumption that these Bayesian classifiers are based on is that the distribution of different words within a corpus are independent from each other. Despite this assumption clearly being wrong when considering the distribution of words within a document (due to the sequential nature of text), Naive Bayes classifiers are still able to perform well in text classification tasks such as the filtering of spam emails \cite{Sahami}.
-
-Naive Bayes classifiers utilize Bayes' theorem, which attempts to find the probability of an event $B$ occurring given some prior condition $A$ i.e. $P(B| A)$. In the context of text classification, Naive Bayes classifiers classifies a document $d$ by calculating the probabilities that the document belongs for all labels $l_i \in L$ and then selecting the highest probability \cite{Allahyari2017}:
-\begin{equation}
-P(L = l_i| d) = \frac{P(l_i)P(d| l_i)}{P(d)}
-\end{equation}
-
-According to Aggarwal et al. \cite{Aggarwal2012}, there are two main types of Naive Bayes classifiers that are commonly used, they are the multivariate Bernoulli model and the multinomial model. The main discriminating factor between these two models is that the Bernoulli model does not take into account the frequency of words as it represents a document using a vector of binary features which signify the presence or absence of words, based on some vocabulary, for a given document. This is in contrast with the multinomial model, which accounts for the frequency of words as the document is represented using a BoW model. Deciding on which model to use for text classification largely depends on the size of the vocabulary as, according to McCallum et al. \cite{McCallum1998}, the multinomial models almost always outperforms the Bernoulli models if the size of the vocabulary is large ($> 1000$) or even if the size has been optimally chosen for both models.
-
-\subsubsection{Support Vector Machines}
-\label{sec:SVM}
-
-SVMs are a type of supervised machine learning-based binary classifiers that are extensively used for text classification due to their capability of handling the high dimensional and sparse nature of the common techniques used to represent text documents \cite{Informatik1997}. SVMs are able to classify a document by using a hyperplane to separate the different classes into separate regions. The hyperplane used is determined by choosing the one that maximises the margin of separation (i.e. The Euclidean distance between the hyperplane and all data points in the representation space) between the two classes \cite{Aggarwal2012}.
-
-Consider the illustration shown in figure \ref{fig:SVMExample} that presents three  two-dimensional hyperplanes, $A$, $B$ and $C$, which separates the classes 'x' and 'o'. Visually, we can determine that $A$ is the hyperplane that maximises the margin of separation, thus, $A$ will be used as a decision rule to classify any new document based on its location with respect to $A$. Mathematically, determining which hyperplane to use as the decision rule is an optimisation problem that attempts to maximise the margin represented as shown in Equation \ref{eq:MaxSVM}:
-
-\begin{equation}
-	\text{maximise: } \frac{1}{2}||\frac{1}{w}||^2
-	\label{eq:MaxSVM}
-\end{equation}
-
-This optimisation problem is often re-framed to the minimisation of Equation \ref{eq:MinSVM}:
-
-\begin{equation}
-	\text{minimise: } \frac{1}{2}||w||^2
-	\label{eq:MinSVM}
-\end{equation}
-
-
-\begin{figure}[!h]
-	\centering
-	\includegraphics[totalheight=8cm]{images/svm-example.png}
-	\caption{What is the Best Separating Hyperplane? \cite{Aggarwal2012}}
-	\label{fig:SVMExample}
-\end{figure}
-
-This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[totalheight=8cm]{images/kernel-trick.png}
-	\caption{(Left) Non-linearly distributed data of two classes in a 2D representation space. \newline
-	(Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite{UnderstandingKernel}.}
-	\label{fig:KernelTrick}
-\end{figure}
-
-\subsection{Shallow Textual Representation Techniques}
-\label{sec:ShallowTextRepresentations}
+\subsection{Representing Text as Features}
+\label{sec:TextRepresentations}
 
 Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words..
 
@@ -402,16 +356,64 @@ The TF-IDF score of a word represents its importance in a specific document rela
 	\item neural language models e.g. word2vec 
 \end{itemize}
 
+\subsection{Machine Learning Methods for Document Classification}
+\label{MLDocumentClassificaiton}
+
+\subsubsection{Naive Bayes Classifier}
+\label{sec:NaiveBayes}
+
+Naive Bayes is a probabilistic classifier that functions on an assumption in how the data (i.e. the words in a document) is generated. The assumption that these Bayesian classifiers are based on is that the distribution of different words within a corpus are independent from each other. Despite this assumption clearly being wrong when considering the distribution of words within a document (due to the sequential nature of text), Naive Bayes classifiers are still able to perform well in document classification tasks such as the filtering of spam emails \cite{Sahami}.
+
+Naive Bayes classifiers utilize Bayes' theorem, which attempts to find the probability of an event $B$ occurring given some prior condition $A$ i.e. $P(B| A)$. In the context of document classification, Naive Bayes classifiers classifies a document $d$ by calculating the probabilities that the document belongs for all labels $l_i \in L$ and then selecting the highest probability \cite{Allahyari2017}:
+\begin{equation}
+P(L = l_i| d) = \frac{P(l_i)P(d| l_i)}{P(d)}
+\end{equation}
+
+According to Aggarwal et al. \cite{Aggarwal2012}, there are two main types of Naive Bayes classifiers that are commonly used, they are the multivariate Bernoulli model and the multinomial model. The main discriminating factor between these two models is that the Bernoulli model does not take into account the frequency of words as it represents a document using a vector of binary features which signify the presence or absence of words, based on some vocabulary, for a given document. This is in contrast with the multinomial model, which accounts for the frequency of words as the document is represented using a BoW model. Deciding on which model to use for document classification largely depends on the size of the vocabulary as, according to McCallum et al. \cite{McCallum1998}, the multinomial models almost always outperforms the Bernoulli models if the size of the vocabulary is large ($> 1000$) or even if the size has been optimally chosen for both models.
+
+\subsubsection{Support Vector Machines}
+\label{sec:SVM}
+
+SVMs are a type of supervised machine learning-based binary classifiers that are extensively used for document classification due to their capability of handling the high dimensional and sparse nature of the common techniques used to represent text documents \cite{Informatik1997}. SVMs are able to classify a document by using a hyperplane to separate the different classes into separate regions. The hyperplane used is determined by choosing the one that maximises the margin of separation (i.e. The Euclidean distance between the hyperplane and all data points in the representation space) between the two classes \cite{Aggarwal2012}.
+
+Consider the illustration shown in figure \ref{fig:SVMExample} that presents three  two-dimensional hyperplanes, $A$, $B$ and $C$, which separates the classes 'x' and 'o'. Visually, we can determine that $A$ is the hyperplane that maximises the margin of separation, thus, $A$ will be used as a decision rule to classify any new document based on its location with respect to $A$. Mathematically, determining which hyperplane to use as the decision rule is an optimisation problem that attempts to maximise the margin represented as shown in Equation \ref{eq:MaxSVM}:
+
+\begin{equation}
+\text{maximise: } \frac{1}{2}||\frac{1}{w}||^2
+\label{eq:MaxSVM}
+\end{equation}
+
+This optimisation problem is often re-framed to the minimisation of Equation \ref{eq:MinSVM}:
+
+\begin{equation}
+\text{minimise: } \frac{1}{2}||w||^2
+\label{eq:MinSVM}
+\end{equation}
 
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[totalheight=7cm]{images/svm-example.png}
+	\caption{What is the Best Separating Hyperplane? \cite{Aggarwal2012}}
+	\label{fig:SVMExample}
+\end{figure}
 
+This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
 
-\section{Deep Learning Approaches}
-\label{sec:DeepLearningReview}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=7cm]{images/kernel-trick.png}
+	\caption{(Left) Non-linearly distributed data of two classes in a 2D representation space. \newline
+		(Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite{UnderstandingKernel}.}
+	\label{fig:KernelTrick}
+\end{figure}
 
-Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of text classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang} \textit{(note: look into the datasets used by state of the art approaches)}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.
+\subsection{Deep Learning Methods for Document Classification}
+\label{sec:DLDocumentClassification}
 
-\textit{Introduce the state-of-the-art DL based approaches for text classification and try to compare it performance with state-of-the-art ML approaches} \newline
+Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang} \textit{(note: look into the datasets used by state of the art approaches)}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.
+
+\textit{Introduce the state-of-the-art DL based approaches for document classification and try to compare it performance with state-of-the-art ML approaches} \newline
 \textit{For each model, talk about the following:}
 \newline
 \textbf{\textit{NOTE: REMEMBER WHEN WRITING THIS SECTION TO ALWAYS CONSIDER HOW IT DIFFERS TO ML TECHNIQUES}}
@@ -421,7 +423,7 @@ Deep learning models are a class of machine learning models that have the capabi
 	\item \textit{Limitations}
 \end{itemize} 
 
-\textit{Introduce the typical architectures used for text classification e.g. RNNs, LSTMs, CNNs, GRUs?}
+\textit{Introduce the typical architectures used for document classification e.g. RNNs, LSTMs, CNNs, GRUs?}
 
 \subsection{Deep Learning Models}
 \label{sec:DLModels}
@@ -438,10 +440,10 @@ Deep learning models are a class of machine learning models that have the capabi
 \subsubsection{Convolutional Neural Networks}
 \label{sec:CNN}
 
-\subsection{Deep Textual Representation Techniques}
-\label{sec:DeepTextRepresentations}
 
-\subsection{GET PROPER NAME FOR THIS SECTION}
+\subsection{Classifying Documents with Limited Labelled Examples}
+\label{sec:TransferLearning}
+
 \subsubsection{Transfer Learning}
 \label{sec:TransferLearningReview}
 \textit{Talk about transfer learning and how it works and how it is applicable to this project.}
@@ -450,9 +452,19 @@ Deep learning models are a class of machine learning models that have the capabi
 \label{sec:NShotLearningReview}
 \textit{Talk about zero/few/etc-shot learning and how it works and how it is applicable to this project.}
 
-\section{Conclusion}
-\label{sec:LitReviewConclusion}
+\section{Discussion}
+\label{sec:LitReviewDiscussion}
 \textit{Summarize lit review and describe why DL-based approaches should be preferred over ML-based for this type of problem. Also talk about Transfer/N-Shot learning and describe which one will be feasible given the project's time constraints}
+
+\subsection{Scaling the Assessment of Quality and Credibility of Health Information}
+\label{sec:ScalingAssessment}
+\textit{Summarise the idea that the previous studies applying instruments/tools to assess the quality of online health information have been relatively small because they rely on experts. It would be useful to be able to develop a way to  automate the assessment of nline health information because it could lead to new ways of dealing with the spread of misinformation online, and that is hasn't been done properly before.}
+
+\subsection{Using Deep Learning Methods to Automate Quality and Credibility Assessments}
+\label{sec:DLForAutommation}
+\textit{Explain that deep learning is a good choice for building an automated assessment tool because it should outperform traditional methods of document classification, but because DL methos usually require large datasets of labelled exampled than it makes sense to investigate transfer learning/n-shot lerning.}
+
+
 
 \chapter{Proposed Approach}
 \label{chap:approach}
