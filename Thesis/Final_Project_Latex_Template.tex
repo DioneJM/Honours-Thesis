@@ -336,14 +336,14 @@ SVMs are a type of supervised machine learning-based binary classifiers that are
 Consider the illustration shown in figure \ref{fig:SVMExample} that presents three  two-dimensional hyperplanes, $A$, $B$ and $C$, which separates the classes 'x' and 'o'. Visually, we can determine that $A$ is the hyperplane that maximises the margin of separation, thus, $A$ will be used as a decision rule to classify any new document based on its location with respect to $A$. Mathematically, determining which hyperplane to use as the decision rule is an optimisation problem that attempts to maximise the margin represented as shown in Equation \ref{eq:MaxSVM}:
 
 \begin{equation}
-	\text{maximize: } \frac{1}{2}||\frac{1}{w}||^2
+	\text{maximise: } \frac{1}{2}||\frac{1}{w}||^2
 	\label{eq:MaxSVM}
 \end{equation}
 
 This optimisation problem is often re-framed to the minimisation of Equation \ref{eq:MinSVM}:
 
 \begin{equation}
-	\text{minimize: } \frac{1}{2}||w||^2
+	\text{minimise: } \frac{1}{2}||w||^2
 	\label{eq:MinSVM}
 \end{equation}
 
@@ -355,7 +355,7 @@ This optimisation problem is often re-framed to the minimisation of Equation \re
 	\label{fig:SVMExample}
 \end{figure}
 
-This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps the classes in a particular representation space to another representation space of a different dimension. This change of dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
+This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
 
 \begin{figure}[!htb]
 	\centering
@@ -368,10 +368,14 @@ This technique of determining the hyperplane requires that the two classes are l
 \subsection{Shallow Textual Representation Techniques}
 \label{sec:ShallowTextRepresentations}
 
-Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \textbf{(GET CITE FOR THIS)}, these methods are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000}.
+Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words..
 
-\subsubsection{TF-IDF}
+\subsubsection{TF-IDF Score}
 \label{sec:TFIDF}
+
+The TF-IDF score of a word represents its importance in a specific document relative to all other documents within a corpus. Based on the BoW model, the TF-IDF calculates both the frequency of a word within a document (term frequency) and the 
+
+
 
 \subsubsection{N-Grams}
 \label{sec:ngrams}

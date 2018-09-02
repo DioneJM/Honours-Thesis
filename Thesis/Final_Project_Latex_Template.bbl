@@ -139,4 +139,11 @@ X.~Zhang, J.~Zhao, and Y.~Lecun, ``{Character-level Convolutional Networks for
   \url{https://arxiv.org/pdf/1509.01626.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Zhou2015}
+\BIBentryALTinterwordspacing
+C.~Zhou, C.~Sun, Z.~Liu, and F.~C.~M. Lau, ``{A C-LSTM Neural Network for Text
+  Classification},'' 2015. [Online]. Available:
+  \url{https://arxiv.org/pdf/1511.08630.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
