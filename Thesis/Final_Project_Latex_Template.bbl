@@ -66,6 +66,14 @@ I.~A. Basheer and M.~Hajmeer, ``{Artificial neural networks: fundamentals,
   \url{www.elsevier.com/locate/jmicmeth}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Batchelor2009}
+\BIBentryALTinterwordspacing
+J.~M. Batchelor and Y.~Ohya, ``{Use of the DISCERN Instrument by Patients and
+  Health Professionals to Assess Information Resources on Treatments for Asthma
+  and Atopic Dermatitis},'' Tech. Rep., 2009. [Online]. Available:
+  \url{www.jsaweb.jp!}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Burgess2006}
 \BIBentryALTinterwordspacing
 D.~C. Burgess, M.~A. Burgess, and J.~Leask, ``{The MMR vaccination and autism
@@ -131,6 +139,12 @@ V.~Korde and C.~N. Mahender, ``{TEXT CLASSIFICATION AND CLASSIFIERS: A
   Applications (IJAIA)}, vol.~3, no.~2, 2012. [Online]. Available:
   \url{http://aircconline.com/ijaia/V3N2/3212ijaia08.pdf}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Matsoukas2008}
+K.~Matsoukas, S.~Hyun, L.~Currie, M.~P. Joyce, J.~Oliver, S.~Patel, O.~Velez,
+  P.-Y. Yen, and S.~Bakken, ``{Expanding DISCERN to create a tool for assessing
+  the quality of Web-based health information resources},'' \emph{AMIA ...
+  Annual Symposium proceedings. AMIA Symposium}, p. 1048, 2008.
 
 \bibitem{McCallum1998}
 \BIBentryALTinterwordspacing

@@ -11,6 +11,7 @@ Warning--to sort, need author, organization, or key in HealthNewsReview
 Warning--empty journal in Aggarwal2012
 Warning--missing institution in Allahyari2017
 Warning--missing institution in Basheer2000
+Warning--missing institution in Batchelor2009
 Warning--empty year in Cipriani
 Warning--empty journal in Conneau2017
 Warning--missing institution in Informatik1997
@@ -24,4 +25,4 @@ Warning--empty journal in Zhang
 Warning--empty journal in Zhou2015
 
 Done.
-(There were 17 warnings)
+(There were 18 warnings)

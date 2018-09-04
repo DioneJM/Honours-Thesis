@@ -301,23 +301,23 @@ To have the capability of automating the process of evaluating the quality or cr
 \subsubsection{DISCERN}
 \label{sec:DISCERN}
 
-DISCERN is a questionnaire designed to assess the reliability of a publication, it consists of 16 questions each with a Likert scale, ranging from 1 (no) to 5 (yes) and is divided into 3 sections. The first section (questions 1 - 8) investigate the reliability of the information and is comprised of questions such as "Are the aims clear?", "Is it balanced and unbiased?" and "Does it refer to areas of uncertainty?". The second section (questions 9 - 15) assesses the quality of information provided by the publication for treatment choices and is composed of questions such as "Does it describe the risks/benefits of each treatment?" and "Does it provide support for shared decision-making?". The final section (question 16) assesses the overall rating of the publication ("Based on the answers to all of the above questions, rate the overall quality of the publication as a source of information about treatment choices").
+DISCERN \cite{DISCERN} is a questionnaire designed to assess the reliability of a publication, it consists of 16 questions each with a Likert scale, ranging from 1 (no) to 5 (yes) and is divided into 3 sections. The first section (questions 1 - 8) investigate the reliability of the information and is comprised of questions such as "Are the aims clear?", "Is it balanced and unbiased?" and "Does it refer to areas of uncertainty?". The second section (questions 9 - 15) assesses the quality of information provided by the publication for treatment choices and is composed of questions such as "Does it describe the risks/benefits of each treatment?" and "Does it provide support for shared decision-making?". The final section (question 16) assesses the overall rating of the publication ("Based on the answers to all of the above questions, rate the overall quality of the publication as a source of information about treatment choices").
 
 
 \subsubsection{HealthNewsReview}
 \label{sec:HealthNewsReview}
 
-HealthNewsReview provides a set of 10 criteria designed to act as a framework for evaluating the credibility of health-related media. The criteria is based on the various elements that all health-related media should consist of, the criteria is composed of criterion such as "Does the story compare the new approach with existing alternatives?", "Does the story use independent sources and identify conflicts of interest?" and "Does the story appear to rely solely or largely on a news release?".
+HealthNewsReview \cite{HealthNewsReview} provides a set of 10 criteria designed to act as a framework for evaluating the credibility of health-related media. The criteria is based on the various elements that all health-related media should consist of, the criteria is composed of criterion such as "Does the story compare the new approach with existing alternatives?", "Does the story use independent sources and identify conflicts of interest?" and "Does the story appear to rely solely or largely on a news release?".
 
 \subsubsection{QIMR}
 \label{sec:QIMR}
 
-QIMR is a tool developed to monitor the quality of health research reports presented in the media. The tool considers 5 main factors that have been deemed to be correlated with the quality of research reports based on interviews with health journalists and researchers. The 5 main factors are: background information provided, sources of information used, manner in which results were analysed, context of the research and the validity of their methodology.
+QIMR \cite{QIMR} is a tool developed to monitor the quality of health research reports presented in the media. The tool considers 5 main factors that have been deemed to be correlated with the quality of research reports based on interviews with health journalists and researchers. The 5 main factors are: background information provided, sources of information used, manner in which results were analysed, context of the research and the validity of their methodology.
 
 \subsection{Studies Applying Checklists to Health Information Online}
 \label{sec:ChecklistStudies}
 
-There has been an extensive amount of research conducted which aimed to assess the quality of content for various health-related domains using one of the aforementioned tools \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. A factor shared by these commonly performed studies however, is the use of experts to leverage the tool in assessing the quality and credibility of the information, indicating that commonly used tools such as DISCERN are designed to be used by domain experts in order to produce reliable and consistent results. Due to the resource intensive nature of expertly performing this task, the number of articles evaluated, among the various studies examined have been limited with the range being between 10 - 300 information sources. This highlights the issue that these tools are not designed to be capable of evaluating the quality and credibility of articles at the scale and speed required to match the pace of online activity and thus must be adapted for the automation of this process.
+There has been an extensive amount of research conducted which aimed to assess the quality of content for various health-related domains using one of the aforementioned tools \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. A factor shared by these commonly performed studies however, is the use of experts to leverage the tool in assessing the quality and credibility of the information, indicating that commonly used tools such as DISCERN are designed to be used by domain experts in order to produce reliable and consistent results \cite{Batchelor2009}. Due to the resource intensive nature of expertly performing this task, the number of articles evaluated, among the various studies examined have been limited with the range being between 10 - 300 information sources. This highlights the issue that these tools are not designed to be capable of evaluating the quality and credibility of articles at the scale and speed required to match the pace of online activity and thus must be adapted for the automation of this process. While there has been work in adapting criteria to better encompass the factors that are correlated to the quality and credibility of information within a specific context, such as by Matsoukas et al. \cite{Matsoukas2008}, who expanded the DISCERN tool to improve its capability in assessing the quality of online information. There has not been any published work found that aims to adapt these tools to provide the capability of autonomously assessing the quality and credibility of resources.
 
 \section{Document Classification Methods}
 \label{sec:DocumentClassification}
@@ -334,7 +334,25 @@ Traditional machine learning-based approaches for document classification, such 
 \subsection{Representing Text as Features}
 \label{sec:TextRepresentations}
 
-Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words..
+Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words.
+
+\subsubsection{Term Frequency Based Representations}
+\label{sec:TFRepresentations}
+
+\begin{itemize}
+	\item tfidf
+	\item GloVe
+\end{itemize}
+
+\subsubsection{Probabilistic Representations}
+\label{sec:ProbRepresentations}
+
+\begin{itemize}
+	\item n-grams
+	\item word2vec
+\end{itemize}
+
+
 
 \subsubsection{TF-IDF Score}
 \label{sec:TFIDF}
