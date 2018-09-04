@@ -82,6 +82,16 @@ A.~Conneau, H.~Schwenk, Y.~{Le Cun}, and L.~{Loıc Barrault}, ``{Very Deep
   \url{https://arxiv.org/pdf/1606.01781.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Hall2017}
+\BIBentryALTinterwordspacing
+V.~Hall, E.~Banerjee, C.~Kenyon, A.~Strain, J.~Griffith, K.~Como-Sabetti,
+  J.~Heath, L.~Bahta, K.~Martin, M.~McMahon, D.~Johnson, M.~Roddy, D.~Dunn, and
+  K.~Ehresmann, ``{Measles Outbreak — Minnesota April–May 2017},''
+  \emph{MMWR. Morbidity and Mortality Weekly Report}, vol.~66, no.~27, pp.
+  713--717, jul 2017. [Online]. Available:
+  \url{http://www.cdc.gov/mmwr/volumes/66/wr/mm6627a1.htm}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Informatik1997}
 \BIBentryALTinterwordspacing
 F.~Informatik, ``{UNIVERSIT AT D ORTMUND Text Categorization with Support
