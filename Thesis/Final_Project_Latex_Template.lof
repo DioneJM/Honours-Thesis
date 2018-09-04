@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces What is the Best Separating Hyperplane? \cite {Aggarwal2012}\relax }}{9}{figure.caption.20}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces (Left) Non-linearly distributed data of two classes in a 2D representation space. \newline (Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite {UnderstandingKernel}.\relax }}{9}{figure.caption.21}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Determining the optimal hyperplane \cite {Aggarwal2012}\relax }}{9}{figure.caption.20}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (Left) Non-linearly distributed data of two classes in a 2D representation space. \newline (Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite {UnderstandingKernel}.\relax }}{10}{figure.caption.21}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  4 SEP 2018 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  5 SEP 2018 00:57
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -404,7 +404,7 @@ LaTeX Info: Redefining \nameref on input line 205.
 \@outlinefile=\write3
 \openout3 = `Final_Project_Latex_Template.out'.
 
-<MQlogo_stacked.pdf, id=171, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=167, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 213.
@@ -500,23 +500,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
 ]
 Chapter 2.
-[5] [6] [7]
-<images/svm-example.png, id=398, 118.4425pt x 128.98187pt>
+[5] [6] [7] [8]
+<images/svm-example.png, id=408, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
-Package pdftex.def Info: images/svm-example.png  used on input line 396.
+Package pdftex.def Info: images/svm-example.png  used on input line 397.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/kernel-trick.png, id=403, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=413, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
-Package pdftex.def Info: images/kernel-trick.png  used on input line 405.
+Package pdftex.def Info: images/kernel-trick.png  used on input line 406.
 (pdftex.def)             Requested size: 426.48088pt x 199.16928pt.
-[8] [9 <./images/svm-example.png> <./images/kernel-trick.png>] [10]
-Overfull \hbox (5.10704pt too wide) in paragraph at lines 459--459
+ [9 <./images/svm-example.png>] [10 <./images/kernel-trick.png>]
+Overfull \hbox (5.10704pt too wide) in paragraph at lines 454--454
 []\OT1/cmr/bx/n/14.4 Scaling the As-sess-ment of Qual-ity and Cred-i-bil-ity of
  Health
  []
@@ -554,22 +550,22 @@ f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat
  []
 
 [23] [24])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 567.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 562.
  [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 567.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 562.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 567.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 567.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 562.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 562.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 9D115214C62CC6C217E4F61573E3284E;3005.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 567.
+(rerunfilecheck)             Checksum: 53E96A7F54CAFA8D16F5C34E74797256;2924.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 562.
  ) 
 Here is how much of TeX's memory you used:
- 7905 strings out of 492973
- 118152 string characters out of 3135933
- 216847 words of memory out of 3000000
- 11537 multiletter control sequences out of 15000+200000
+ 7909 strings out of 492973
+ 118222 string characters out of 3135933
+ 215864 words of memory out of 3000000
+ 11539 multiletter control sequences out of 15000+200000
  11767 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1589b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -582,9 +578,9 @@ e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (39 pages, 530265 bytes).
+Output written on Final_Project_Latex_Template.pdf (39 pages, 533746 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 352 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 344 words of extra memory for PDF output out of 10000 (max. 10000000)
 
