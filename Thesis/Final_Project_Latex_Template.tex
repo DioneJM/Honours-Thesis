@@ -336,24 +336,6 @@ Traditional machine learning-based approaches for document classification, such 
 
 Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of information stored within the original text whilst allowing the model to learn and analyse the features associated with the classification task. However, despite common representation methods such as count-based approaches (e.g. TF-IDF) or probabilistic-based approaches (e.g. N-Grams) showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically  represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words and is highly sensitive to the corpus used to construct these features. 
 
-\subsubsection{Count Based Representations}
-\label{sec:TFRepresentations}
-
-\begin{itemize}
-	\item tfidf
-	\item GloVe
-\end{itemize}
-
-Count based approaches such as BoW, TF-IDF are a class of simple representation techniques that rely on the frequency of words to extract or represent the information in a format that can be utilised by machine learning models. The BoW model, the simplest of these count based approaches, represents a document as the number of occurrences of each word within the document. 
-
-\subsubsection{Probabilistic Representations}
-\label{sec:ProbRepresentations}
-
-\begin{itemize}
-	\item n-grams
-	\item word2vec
-\end{itemize}
-
 
 \subsection{Machine Learning Methods for Document Classification}
 \label{MLDocumentClassificaiton}
