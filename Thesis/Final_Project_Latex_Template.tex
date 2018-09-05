@@ -317,7 +317,7 @@ QIMR \cite{QIMR} is a tool developed to monitor the quality of health research r
 \subsection{Studies Applying Checklists to Health Information Online}
 \label{sec:ChecklistStudies}
 
-There has been an extensive amount of research conducted which aimed to assess the quality of content for various health-related domains using one of the aforementioned tools \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. A factor shared by these commonly performed studies however, is the use of experts to leverage the tool in assessing the quality and credibility of the information, indicating that commonly used tools such as DISCERN are designed to be used by domain experts in order to produce reliable and consistent results \cite{Batchelor2009}. Due to the resource intensive nature of expertly performing this task, the number of articles evaluated, among the various studies examined have been limited with the range being between 10 - 300 information sources. This highlights the issue that these tools are not designed to be capable of evaluating the quality and credibility of articles at the scale and speed required to match the pace of online activity and thus must be adapted for the automation of this process. While there has been work in adapting criteria to better encompass the factors that are correlated to the quality and credibility of information within a specific context, such as by Matsoukas et al. \cite{Matsoukas2008}, who expanded the DISCERN tool to improve its capability in assessing the quality of online information. There has not been any published work found that aims to adapt these tools to provide the capability of autonomously assessing the quality and credibility of resources.
+There has been an extensive amount of research conducted which aimed to assess the quality of content for various health-related domains using one of the aforementioned tools \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. A factor shared by these commonly performed studies however, is the use of experts to leverage the tool in assessing the quality and credibility of the information, indicating that commonly used tools such as DISCERN is designed to be used by domain experts in order to produce reliable and consistent results. This sentiment is shared by Batchelor et al. \cite{Batchelor2009} who evaluated performance of the DISCERN tool when used by health professionals and patients. Due to the resource intensive nature of expertly performing this task, the number of articles evaluated, among the various studies examined have been limited ranging between 10 - 300 information sources. This highlights the issue that these tools are not designed to be capable of evaluating the quality and credibility of articles at the scale and speed required to match the pace of online activity and thus must be adapted for the automation of this process. While there has been work in adapting criteria to better encompass the factors that are correlated to the quality and credibility of information within a specific context, such as by Matsoukas et al. \cite{Matsoukas2008}, who expanded the DISCERN tool to improve its capability in assessing the quality of online information, there has not been any published work found that aims to adapt these tools to provide the capability of autonomously assessing the quality and credibility of resources.
 
 \section{Document Classification Methods}
 \label{sec:DocumentClassification}
@@ -329,20 +329,22 @@ f: D \rightarrow L \text{ where } f(d) = l
 \end{equation}
 Common applications of document classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}.
 
-Traditional machine learning-based approaches for document classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016} as they are incapable of performing feature learning \cite{Basheer2000}. These features are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. being unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text.
+Traditional machine learning-based approaches for document classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016} as they are incapable of performing feature learning \cite{Basheer2000}. These feoatures are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. being unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text. The sensitivity of a feature is a important issue 
 
 \subsection{Representing Text as Features}
 \label{sec:TextRepresentations}
 
-Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of the information required by the model. However, despite common shallow representation techniques of texts such as BoW, TF-IDF or N-Grams showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words.
+Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of information stored within the original text whilst allowing the model to learn and analyse the features associated with the classification task. However, despite common representation methods such as count-based approaches (e.g. TF-IDF) or probabilistic-based approaches (e.g. N-Grams) showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically  represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words and is highly sensitive to the corpus used to construct these features. 
 
-\subsubsection{Term Frequency Based Representations}
+\subsubsection{Count Based Representations}
 \label{sec:TFRepresentations}
 
 \begin{itemize}
 	\item tfidf
 	\item GloVe
 \end{itemize}
+
+Count based approaches such as BoW, TF-IDF are a class of simple representation techniques that rely on the frequency of words to extract or represent the information in a format that can be utilised by machine learning models. The BoW model, the simplest of these count based approaches, represents a document as the number of occurrences of each word within the document. 
 
 \subsubsection{Probabilistic Representations}
 \label{sec:ProbRepresentations}
@@ -352,28 +354,6 @@ Due to the unstructured nature of natural text, it is common practice for natura
 	\item word2vec
 \end{itemize}
 
-
-
-\subsubsection{TF-IDF Score}
-\label{sec:TFIDF}
-
-The TF-IDF score of a word represents its importance in a specific document relative to all other documents within a corpus. Based on the BoW model, the TF-IDF calculates both the frequency of a word within a document (term frequency) and the 
-
-
-
-\subsubsection{N-Grams}
-\label{sec:ngrams}
-
-\subsubsection{Word2Vec}
-\label{sec:word2vec}
-
-\subsubsection{Word Embeddings}
-\label{sec:WordEmbeddings} 
-
-\begin{itemize}
-	\item ngrams
-	\item neural language models e.g. word2vec 
-\end{itemize}
 
 \subsection{Machine Learning Methods for Document Classification}
 \label{MLDocumentClassificaiton}
