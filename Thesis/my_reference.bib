@@ -405,6 +405,78 @@
 	year = {2008}
 }
 
+@techreport{Young,
+	abstract = {Deep learning methods employ multiple processing layers to learn hierarchical representations of data, and have produced state-of-the-art results in many domains. Recently, a variety of model designs and methods have blossomed in the context of natural language processing (NLP). In this paper, we review significant deep learning related models and methods that have been employed for numerous NLP tasks and provide a walk-through of their evolution. We also summarize, compare and contrast the various models and put forward a detailed understanding of the past, present and future of deep learning in NLP. I. INTRODUCTION Natural language processing (NLP) is a theory-motivated range of computational techniques for the automatic analysis and representation of human language. NLP research has evolved from the era of punch cards and batch processing, in which the analysis of a sentence could take up to 7 minutes, to the era of Google and the likes of it, in which millions of webpages can be processed in less than a second [1]. NLP enables computers to perform a wide range of natural language related tasks at all levels, ranging from parsing and part-of-speech (POS) tagging, to machine translation and dialogue systems. Deep learning architectures and algorithms have already made impressive advances in fields such as computer vision and pattern recognition. Following this trend, recent NLP research is now increasingly focusing on the use of new deep learning methods (see Figure 1). For decades, machine learning approaches targeting NLP problems have been based on shallow models (e.g., SVM and logistic regression) trained on very high dimensional and sparse features. In the last few years, neural networks based on dense vector representations have been producing superior results on various NLP tasks. This trend is sparked by the success of word embeddings [2, 3] and deep learning methods [4]. Deep learning enables multi-level automatic feature representation learning. In contrast, traditional machine learning based NLP systems liaise heavily on hand-crafted features. Such hand-crafted features are time-consuming and often incomplete. Collobert et al. [5] demonstrated that a simple deep learning framework outperforms most state-of-the-art approaches in several NLP tasks such as named-entity recognition (NER), semantic role labeling (SRL), and POS tagging. Since then, numerous complex deep learning based algorithms have been proposed to solve difficult NLP tasks. We review major deep learning related models and methods applied to natural language tasks such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), and recursive neural networks. We also discuss memory-augmenting strategies, attention mechanisms and how unsupervised models, reinforcement learning methods and recently, deep generative models have been employed for language-related tasks. To the best of our knowledge, this work is the first of its type to comprehensively cover the most popular deep learning methods in NLP research today. The work by Goldberg [6] only presented the basic principles for applying neural networks to NLP in a tutorial manner. We believe this paper will give readers a more comprehensive idea of current practices in this domain. The structure of the paper is as follows: Section II introduces the concept of distributed representation, the basis of sophisticated deep learning models; next, Sections III, IV, and V discuss popular models such as convolutional, recurrent, and recursive neural networks, as well as their use in various NLP tasks; following, Section VI lists recent applications of reinforcement learning in NLP and new developments in unsupervised sentence representation learning; later, Section VII illustrates the recent trend of coupling deep learning models with memory modules; finally, Section VIII summarizes the performance of a series of deep learning methods on standard datasets about major NLP topics.},
+	archivePrefix = {arXiv},
+	arxivId = {arXiv:1708.02709v6},
+	author = {Young, Tom and Hazarika, Devamanyu and Poria, Soujanya and Cambria, Erik},
+	eprint = {arXiv:1708.02709v6},
+	file = {:C$\backslash$:/Users/Admin/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Young et al. - Unknown - Recent Trends in Deep Learning Based Natural Language Processing.pdf:pdf},
+	keywords = {Attention,Convolutional Neural Net-works,Deep Learning,Dialogue Systems,Index Terms Natural Language Processing,LSTM,Named-Entity Recognition,POS Tagging,Parsing,Question Answering,Recurrent Neural Networks,Semantic Role Labeling,Sentiment Analysis,Word2Vec},
+	mendeley-groups = {AIHI Thesis/Document Classification},
+	title = {{Recent Trends in Deep Learning Based Natural Language Processing}},
+	url = {http://veredshwartz.blogspot.sg.}
+}
+
+@techreport{Howard2018,
+	abstract = {Inductive transfer learning has greatly im-pacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outper-forms the state-of-the-art on six text classification tasks, reducing the error by 18-24{\%} on the majority of datasets. Furthermore , with only 100 labeled examples, it matches the performance of training from scratch on 100× more data. We open-source our pretrained models and code 1 .},
+	archivePrefix = {arXiv},
+	arxivId = {arXiv:1801.06146v5},
+	author = {Howard, Jeremy and Ruder, Sebastian},
+	eprint = {arXiv:1801.06146v5},
+	file = {:C$\backslash$:/Users/Admin/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Howard, Ruder - Unknown - Universal Language Model Fine-tuning for Text Classification.pdf:pdf},
+	mendeley-groups = {AIHI Thesis/Document Classification},
+	title = {{Universal Language Model Fine-tuning for Text Classification}},
+	url = {http://nlp.fast.ai/ulmfit.},
+	year = {2018}
+}
+
+@article{Hochreiter1997,
+	author = {Hochreiter, Sepp and Schmidhuber, J\"{u}rgen},
+	title = {Long Short-Term Memory},
+	journal = {Neural Comput.},
+	issue_date = {November 15, 1997},
+	volume = {9},
+	number = {8},
+	month = nov,
+	year = {1997},
+	issn = {0899-7667},
+	pages = {1735--1780},
+	numpages = {46},
+	url = {http://dx.doi.org/10.1162/neco.1997.9.8.1735},
+	doi = {10.1162/neco.1997.9.8.1735},
+	acmid = {1246450},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+} 
+
+@techreport{Socher,
+	abstract = {Semantic word spaces have been very useful but cannot express the meaning of longer phrases in a principled way. Further progress towards understanding compositionality in tasks such as sentiment detection requires richer supervised training and evaluation resources and more powerful models of composition. To remedy this, we introduce a Sentiment Treebank. It includes fine grained sentiment labels for 215,154 phrases in the parse trees of 11,855 sentences and presents new challenges for sentiment composition-ality. To address them, we introduce the Recursive Neural Tensor Network. When trained on the new treebank, this model out-performs all previous methods on several met-rics. It pushes the state of the art in single sentence positive/negative classification from 80{\%} up to 85.4{\%}. The accuracy of predicting fine-grained sentiment labels for all phrases reaches 80.7{\%}, an improvement of 9.7{\%} over bag of features baselines. Lastly, it is the only model that can accurately capture the effects of negation and its scope at various tree levels for both positive and negative phrases.},
+	author = {Socher, Richard and Perelygin, Alex and Wu, Jean Y and Chuang, Jason and Manning, Christopher D and Ng, Andrew Y and Potts, Christopher},
+	file = {:C$\backslash$:/Users/Admin/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Socher et al. - Unknown - Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank.pdf:pdf},
+	mendeley-groups = {AIHI Thesis/Document Classification},
+	pages = {1631--1642},
+	publisher = {Association for Computational Linguistics},
+	title = {{Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank}},
+	url = {http://nlp.stanford.edu/}
+}
+
+@article{Collobert2011,
+	abstract = {We propose a unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including part-of-speech tagging, chunking, named entity recognition, and semantic role labeling. This versatility is achieved by trying to avoid task-specific engineering and therefore disregarding a lot of prior knowledge. Instead of exploiting man-made input features carefully optimized for each task, our system learns internal representations on the basis of vast amounts of mostly unlabeled training data. This work is then used as a basis for building a freely available tagging system with good performance and minimal computational requirements .},
+	author = {Collobert, Ronan and Weston, Jason and Com, Jweston@google and Karlen, Michael and Kavukcuoglu, Koray and Kuksa, Pavel},
+	file = {:C$\backslash$:/Users/Admin/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Collobert et al. - 2011 - Natural Language Processing (Almost) from Scratch.pdf:pdf},
+	journal = {Journal of Machine Learning Research},
+	keywords = {natural language processing,neural networks},
+	mendeley-groups = {AIHI Thesis/Document Classification},
+	pages = {2493--2537},
+	title = {{Natural Language Processing (Almost) from Scratch}},
+	url = {http://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf},
+	volume = {12},
+	year = {2011}
+}
+
+
+
 
 
 

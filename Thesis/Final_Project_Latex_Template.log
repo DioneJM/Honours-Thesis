@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  5 SEP 2018 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  5 SEP 2018 21:38
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -512,7 +512,7 @@ File: images/kernel-trick.png Graphic file (type png)
 Package pdftex.def Info: images/kernel-trick.png  used on input line 386.
 (pdftex.def)             Requested size: 426.48088pt x 199.16928pt.
  [9 <./images/svm-example.png>] [10 <./images/kernel-trick.png>]
-Overfull \hbox (5.10704pt too wide) in paragraph at lines 434--434
+Overfull \hbox (5.10704pt too wide) in paragraph at lines 422--422
 []\OT1/cmr/bx/n/14.4 Scaling the As-sess-ment of Qual-ity and Cred-i-bil-ity of
  Health
  []
@@ -549,38 +549,38 @@ f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat
 = 1534726962\OMS/cmsy/m/n/12 f[] []
  []
 
-[23] [24])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 542.
- [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 542.
+[23] [24] [25])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 530.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 530.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 542.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 542.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 530.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 530.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: E8419ADAA19FD137140BE217EF2FFD30;2924.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 542.
+(rerunfilecheck)             Checksum: A8789B4A66DED6CC5C13E5733901BA6E;2924.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 530.
  ) 
 Here is how much of TeX's memory you used:
- 7905 strings out of 492973
- 118187 string characters out of 3135933
- 215778 words of memory out of 3000000
- 11537 multiletter control sequences out of 15000+200000
- 11767 words of font info for 43 fonts, out of 3000000 for 9000
+ 7910 strings out of 492973
+ 118247 string characters out of 3135933
+ 216843 words of memory out of 3000000
+ 11539 multiletter control sequences out of 15000+200000
+ 11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (39 pages, 535609 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
+pfb>
+Output written on Final_Project_Latex_Template.pdf (40 pages, 525492 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
  344 words of extra memory for PDF output out of 10000 (max. 10000000)
 

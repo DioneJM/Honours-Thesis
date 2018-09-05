@@ -14,15 +14,20 @@ Warning--missing institution in Basheer2000
 Warning--missing institution in Batchelor2009
 Warning--empty year in Cipriani
 Warning--empty journal in Conneau2017
+Warning--missing institution in Howard2018
 Warning--missing institution in Informatik1997
 Warning--missing institution in Kaicker2010
 Warning--missing institution in McCallum1998
 Warning--empty journal in Pasupa2016
 Warning--missing institution in Rosenfeld2000
 Warning--missing institution in Sahami
+Warning--missing institution in Socher
+Warning--empty year in Socher
 Warning--missing institution in Vosoughi
+Warning--missing institution in Young
+Warning--empty year in Young
 Warning--empty journal in Zhang
 Warning--empty journal in Zhou2015
 
 Done.
-(There were 18 warnings)
+(There were 23 warnings)

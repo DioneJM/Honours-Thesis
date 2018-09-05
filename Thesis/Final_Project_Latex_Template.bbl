@@ -116,6 +116,20 @@ V.~Hall, E.~Banerjee, C.~Kenyon, A.~Strain, J.~Griffith, K.~Como-Sabetti,
   \url{http://www.cdc.gov/mmwr/volumes/66/wr/mm6627a1.htm}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Hochreiter1997}
+\BIBentryALTinterwordspacing
+S.~Hochreiter and J.~Schmidhuber, ``Long short-term memory,'' \emph{Neural
+  Comput.}, vol.~9, no.~8, pp. 1735--1780, Nov. 1997. [Online]. Available:
+  \url{http://dx.doi.org/10.1162/neco.1997.9.8.1735}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Howard2018}
+\BIBentryALTinterwordspacing
+J.~Howard and S.~Ruder, ``{Universal Language Model Fine-tuning for Text
+  Classification},'' Tech. Rep., 2018. [Online]. Available:
+  \url{http://nlp.fast.ai/ulmfit.}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Informatik1997}
 \BIBentryALTinterwordspacing
 F.~Informatik, ``{UNIVERSIT AT D ORTMUND Text Categorization with Support
@@ -171,6 +185,14 @@ M.~Sahami, S.~Dumais, D.~Heckerman, and E.~Horvitz, ``{A Bayesian approach to
   \url{http://research.microsoft.com/en-us/um/people/horvitz/junkfilter.htm}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Socher}
+\BIBentryALTinterwordspacing
+R.~Socher, A.~Perelygin, J.~Y. Wu, J.~Chuang, C.~D. Manning, A.~Y. Ng, and
+  C.~Potts, ``{Recursive Deep Models for Semantic Compositionality Over a
+  Sentiment Treebank},'' Tech. Rep. [Online]. Available:
+  \url{http://nlp.stanford.edu/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Som2012}
 \BIBentryALTinterwordspacing
 R.~Som and N.~P. Gunawardana, ``{Internet chemotherapy information is of good
@@ -201,6 +223,13 @@ S.~Sommariva, C.~Vamos, L.~U.-L. Mantzarlis, Alexios~Dao, and D.~{Martinez
 S.~Vosoughi, D.~Roy, and S.~Aral, ``{SI:The spread of true and false news
   online},'' Tech. Rep. 6380, 2018. [Online]. Available:
   \url{http://science.sciencemag.org/content/sci/359/6380/1146.full.pdf{\%}0Ahttp://www.sciencemag.org/lookup/doi/10.1126/science.aap9559}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Young}
+\BIBentryALTinterwordspacing
+T.~Young, D.~Hazarika, S.~Poria, and E.~Cambria, ``{Recent Trends in Deep
+  Learning Based Natural Language Processing},'' Tech. Rep. [Online].
+  Available: \url{http://veredshwartz.blogspot.sg.}
 \BIBentrySTDinterwordspacing
 
 \bibitem{QIMR}
