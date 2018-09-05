@@ -329,12 +329,14 @@ f: D \rightarrow L \text{ where } f(d) = l
 \end{equation}
 Common applications of document classification algorithms are: organization and filtering of news articles, document retrieval, opinion mining, email classification and spam filtering \cite{Aggarwal2012}.
 
-Traditional machine learning-based approaches for document classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016} as they are incapable of performing feature learning \cite{Basheer2000}. These feoatures are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. being unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text. The sensitivity of a feature is a important issue 
+Traditional machine learning-based approaches for document classification, such as Naive Bayes, Support Vector Machines (SVM) and Random Forests, require the manual extraction of features \cite{Aggarwal2012} \cite{Allahyari2017} \cite{Korde2012} \cite{Pasupa2016} as they are incapable of performing feature learning \cite{Basheer2000}. These features are typically either hand-crafted and domain specific, requiring expert-level knowledge for the task domain \cite{Pasupa2016} or are simple and general but prone to the loss of information (e.g. being unable to account for context) since these features, such as term frequency-inverse document frequency (TF-IDF) scores or bag of words (BoW) models, are unable to represent and account for the sequential nature of text.
 
 \subsection{Representing Text as Features}
 \label{sec:TextRepresentations}
 
-Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of information stored within the original text whilst allowing the model to learn and analyse the features associated with the classification task. However, despite common representation methods such as count-based approaches (e.g. TF-IDF) or probabilistic-based approaches (e.g. N-Grams) showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are prone to being unable to generalise across multiple domains \cite{Rosenfeld2000} as the texts are typically  represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words and is highly sensitive to the corpus used to construct these features. 
+Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of information stored within the original text whilst allowing the model to learn and analyse the features associated with the classification task. However, despite traditional representation methods such as count-based approaches (e.g. TF-IDF) or probabilistic-based approaches (e.g. N-Grams) showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are typically sparsely distributed and have a high dimensionality that scales with the vocabulary size, has difficulty in generalising over unfamiliar information or writing styles \cite{Rosenfeld2000} as the texts are represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words. Due to the high dimensionality and sparseness of these features, they are computationally intensive to calculate and can require a relatively larger amount of space for storage.\newline
+
+Word embeddings are a more sophisticated language model that overcome these limitations as they are created by learning word vectors through the optimisation for a different task e.g. the prediction of a word based on its context. Through this, the learned embeddings are able to store information such as the similarity of different contexts, syntactic and semantic information within the text and analogies. These embeddings are relatively more efficient and require less time to compute due to their smaller dimensionality. Whilst these embeddings are able to be created using shallow neural networks, deep learning-based models for NLP tasks utilise these embeddings which can also be at the character, phrase or sentence levels \cite{Young}. Word embeddings have produced state-of-the-art results in not only classification tasks \cite{Howard2018} but also for a wide range of NLP tasks such as image annotation \cite{Weston} and sentiment analysis \cite{Cambria2017}, which used the popular word2vec embedding proposed by Mikolov et al. \cite{Mikolov}
 
 
 \subsection{Machine Learning Methods for Document Classification}
@@ -392,22 +394,42 @@ This technique of determining the hyperplane requires that the two classes are l
 \subsection{Deep Learning Methods for Document Classification}
 \label{sec:DLDocumentClassification}
 
-Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). RNNs and LSTMs are commonly used for document classification, or NLP tasks in general, due to their ability to create document representations that are able to capture the context and relationships of words within documents at a much more sophisticated level when compared to traditional features such as TF-IDF or n-grams \cite{Young}. 
+Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). RNNs and LSTMs are commonly used for document classification, or NLP tasks in general, due to their ability to create language models that are able to capture the context and relationships of words within documents at a much more sophisticated level when compared to traditional language models such as TF-IDF or n-grams \cite{Young}. 
 
 \subsubsection{Recurrent Neural Networks}
 \label{sec:RNN}
 
-RNNs are popular choice for solving NLP tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. This allows RNNs to have the ability to create language models that account for the semantical meaning of words based on the previously occurring words in the sentence, allowing models to be capable of differentiating between words such as understanding that the word "dog" is likely referring to the animal whereas "hot dog" is more likely to refer to food. Factoring RNNs' capability in working with variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in document classification tasks \cite{Howard2018}. LSTMs \cite{Hochreiter1997} is a specific variant of RNNs that further improve on it by solving the vanishing and exploding gradient problem \cite{Socher} that feedforward networks i.e. RNNs are prone to.
+RNNs have had widespread use in solving NLP-related tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. Consequently, RNNs have the ability to create language models that account for the semantic meaning of words based on the previously occurring words in the sentence, allowing models to be capable of understanding the difference between similar words or phrases (e.g. that the word "dog" is likely referring to the animal whereas "hot dog would be more likely to refer to food). Accounting for RNNs' capability in handling variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in classification tasks such as sentiment, question and topic classification \cite{Howard2018}.\newline
+
+The simplest form of an RNN, as illustrated in Figure \ref{fig:RNN}, consists of three layers: the input layer $x_t$, hidden state $s_t$ and the output layer $o_t$, where $t$ represents the current timestep. The input layer is typically represented as a one-hot encoding or embedding, the output layer is the resulting output which can take many forms, most commonly, it is the output of the softmax function and the hidden state is essentially network's memory, as it captures and incorporates the information from previous timesteps into the current one. The hidden state is calculated by evaluating Equation \ref{eq:HiddenState}:
+
+\begin{equation}
+s_t = f(Ux_t + Ws_{t-1})
+\label{eq:HiddenState}
+\end{equation}
+
+Where $f$ is a nonlinear function e.g. Rectifier Linear Unit (ReLU), $U$ and $W$ are weight matrices that are shared across timesteps \cite{Young}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=6cm]{images/RNN.jpg}
+	\caption{Layout of a simple RNN \cite{RNNDiagram}}
+	\label{fig:RNN}
+\end{figure}
+
+
+
+LSTMs \cite{Hochreiter1997} is a specific variant of RNNs that improve on it by introducing a 'forget' gate that regulates a cell state within the network as it allows information to be removed or added. This addition allows LSTMs to overcome the vanishing and exploding gradient problem \cite{Socher} that feedforward networks i.e. RNNs are prone to.
 
 \subsubsection{Convolutional Neural Networks}
 \label{sec:CNN}
 
-CNNs have traditionally seen extensive use for image classification tasks. However, with the work accomplished by Collbert et al. \cite{Collobert2011} who proposed a CNN-based model designed to solve various NLP tasks by extracting salient n-grams from the input text. 
+CNNs have traditionally seen more use for image classification tasks \cite{Young}. However, with the work accomplished by Collbert et al. \cite{Collobert2011} who proposed a CNN-based model designed to solve various NLP tasks by extracting the most important n-gram features to produce a language model. The language model created by 
 
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
-Typically, large amounts of training data is required to train a model in learning the language model required to attain state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required. Hence, \textit{(Talk about transfer learning/N-shot learning/domain adaptation here)} will be used to overcome this issue.
+Typically, large amounts of training data is required to train a deep learning model in learning the language model for state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required.
 
 \subsubsection{Transfer Learning}
 \label{sec:TransferLearningReview}

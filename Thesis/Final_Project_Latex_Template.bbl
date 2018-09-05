@@ -33,6 +33,13 @@
   \url{https://www.healthnewsreview.org/about-us/review-criteria/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{RNNDiagram}
+\BIBentryALTinterwordspacing
+``{Recurrent Neural Networks Tutorial, Part 1 – Introduction to RNNs –
+  WildML}.'' [Online]. Available:
+  \url{http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{UnderstandingKernel}
 \BIBentryALTinterwordspacing
 ``{Understanding the kernel trick. – Towards Data Science}.'' [Online].
@@ -83,6 +90,13 @@ D.~C. Burgess, M.~A. Burgess, and J.~Leask, ``{The MMR vaccination and autism
   \url{https://ac.els-cdn.com/S0264410X06002076/1-s2.0-S0264410X06002076-main.pdf?{\_}tid=46d1dda6-f576-4f5e-ad53-d550f1cd9990{\&}acdnat=1534726962{\_}1b237371d8bb916694f34f0f951c84bc}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Cambria2017}
+\BIBentryALTinterwordspacing
+E.~Cambria, S.~Poria, A.~Gelbukh, I.~P. Nacional, and M.~Thelwall, ``{AFFECTIVE
+  COMPUTING AND SENTIMENT ANALYSIS Sentiment Analysis Is a Big Suitcase},''
+  Tech. Rep., 2017. [Online]. Available: \url{www.computer.org/intelligent}
+\BIBentrySTDinterwordspacing
+
 \bibitem{CanteyBanasiak2017}
 \BIBentryALTinterwordspacing
 N.~{Cantey Banasiak} and M.~Meadows-Oliver, ``{Journal of Asthma and Allergy
@@ -97,6 +111,15 @@ C.~Cipriani, J.~Pepe, S.~Minisola, and {\textperiodcentered}.~E.~M. Lewiecki,
   ``{Adverse effects of media reports on the treatment of osteoporosis},''
   \emph{Journal of Endocrinological Investigation}. [Online]. Available:
   \url{https://doi.org/10.1007/s40618-018-0898-9}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Collobert2011}
+\BIBentryALTinterwordspacing
+R.~Collobert, J.~Weston, J.~Com, M.~Karlen, K.~Kavukcuoglu, and P.~Kuksa,
+  ``{Natural Language Processing (Almost) from Scratch},'' \emph{Journal of
+  Machine Learning Research}, vol.~12, pp. 2493--2537, 2011. [Online].
+  Available:
+  \url{http://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Conneau2017}
@@ -167,6 +190,14 @@ A.~McCallum and K.~Nigam, ``{A Comparison of Event Models for Naive Bayes Text
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.9324{\&}rep=rep1{\&}type=pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Mikolov}
+\BIBentryALTinterwordspacing
+T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
+  Words and Phrases and their Compositionality},'' Tech. Rep. [Online].
+  Available:
+  \url{https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Pasupa2016}
 K.~Pasupa, ``{A Comparison between Shallow and Deep Architecture Classifiers on
   Small Dataset},'' 2016.
@@ -223,6 +254,13 @@ S.~Sommariva, C.~Vamos, L.~U.-L. Mantzarlis, Alexios~Dao, and D.~{Martinez
 S.~Vosoughi, D.~Roy, and S.~Aral, ``{SI:The spread of true and false news
   online},'' Tech. Rep. 6380, 2018. [Online]. Available:
   \url{http://science.sciencemag.org/content/sci/359/6380/1146.full.pdf{\%}0Ahttp://www.sciencemag.org/lookup/doi/10.1126/science.aap9559}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Weston}
+\BIBentryALTinterwordspacing
+J.~Weston, S.~Bengio, and N.~Usunier, ``{WSABIE: Scaling Up To Large Vocabulary
+  Image Annotation},'' Tech. Rep. [Online]. Available:
+  \url{http://torch5.sourceforge.net/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Young}
