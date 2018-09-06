@@ -394,7 +394,33 @@ This technique of determining the hyperplane requires that the two classes are l
 \subsection{Deep Learning Methods for Document Classification}
 \label{sec:DLDocumentClassification}
 
-Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). 
+Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). \newline
+
+Common datasets for text classification can be found under the 5 papers of interest doc. \newline
+
+For DL language models, a common one is wikitext103 but there might be more in the paper by Jeremy Howard \newline
+
+For the task of text classification, there are commonly used, open datasets for specific classification tasks that aim to provide a benchmark in which the performance of different implementations can be compared and to facilitate the data needs of deep learning models. Table \ref{table:Datasets} contains the commonly used datasets for various text classification tasks.
+
+\begin{center}
+	\begin{table}[!htb]
+	\begin{tabular}{| l | p{6cm} | l | p{5cm} |}
+		\hline
+		Dataset & Description & Type & Objective \\ \hline
+		SST & Movie reviews from Stanford Sentiment Treebank & Sentence & Sentiment \\ \hline
+		
+		IMDB & Internet Movie Database & Document & Sentiment \\ \hline
+		
+		MDSD & Product Reviews & Document & Sentiment \\ \hline
+		
+		RN & Reuters Newswire topics classification & Document & Topics \\ \hline
+		
+		QC & Question Classification & Sentence & Question Types \\ \hline
+	\end{tabular}
+	\caption{Commonly used classification datasets}
+	\label{table:Datasets}
+	\end{table}
+\end{center}
 
 \subsubsection{Recurrent Neural Networks}
 \label{sec:RNN}
@@ -424,7 +450,7 @@ LSTMs \cite{Hochreiter1997} are a variant of RNNs that improves on it by introdu
 \subsubsection{Convolutional Neural Networks}
 \label{sec:CNN}
 
-Despite CNNs being initially developed for object recognition tasks \cite{LeCun1999}, CNNs are commonly employed for text classification tasks such as sentence classification and sentiment analysis as they have shown to produce competitive results when compared to RNNs and LSTMs \cite{Collobert2011} \cite{Kim} \cite{Nogueira}. \newline
+Despite CNNs being initially developed for object recognition tasks \cite{LeCun1999}, they are commonly employed for text classification tasks such as sentence classification and sentiment analysis as they have shown to produce competitive results when compared to RNNs and LSTMs \cite{Collobert2011} \cite{Kim} \cite{Nogueira}. \newline
 
 In the context of text classification, a typical CNN is composed of the following main elements \cite{Young}:
 
