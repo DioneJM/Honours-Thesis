@@ -424,10 +424,17 @@ LSTMs \cite{Hochreiter1997} are a variant of RNNs that improves on it by introdu
 \subsubsection{Convolutional Neural Networks}
 \label{sec:CNN}
 
-Despite CNNs being initially developed for object recognition tasks \cite{LeCun1999}, over the past few years, CNNs have seen extensive applications in text classification tasks such as sentence classification and sentiment analysis producing competitive results when compared to RNNs and its variants \cite{Collobert2011} \cite{Kim} \cite{Nogueira}. 
+Despite CNNs being initially developed for object recognition tasks \cite{LeCun1999}, CNNs are commonly employed for text classification tasks such as sentence classification and sentiment analysis as they have shown to produce competitive results when compared to RNNs and LSTMs \cite{Collobert2011} \cite{Kim} \cite{Nogueira}. \newline
 
-A CNN is composed of 
+In the context of text classification, a typical CNN is composed of the following main elements \cite{Young}:
 
+\begin{itemize}
+	\item Kernels - Convolutional filters that acts as a sliding window function through an embedding matrix. CNNs typically employ hundreds of kernels each of which learns to extract for a specific n-gram pattern.
+	\item Pooling layer - Commonly either a max or average pooling layer, which maps the input to a fixed dimension in order to reduce the dimensionality of the output and ensuring that the most salient n-gram features of a sentence is kept.
+	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction.
+\end{itemize}
+
+By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
