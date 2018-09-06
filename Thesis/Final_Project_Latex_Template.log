@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  6 SEP 2018 04:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  6 SEP 2018 10:40
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -521,14 +521,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+
+ []
+
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=453, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=452, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 415.
 (pdftex.def)             Requested size: 425.4607pt x 170.71652pt.
- [11 <./images/RNN.jpg>]
-Overfull \hbox (5.10704pt too wide) in paragraph at lines 446--446
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+[11 <./images/RNN.jpg>]
+Overfull \hbox (5.10704pt too wide) in paragraph at lines 448--448
 []\OT1/cmr/bx/n/14.4 Scaling the As-sess-ment of Qual-ity and Cred-i-bil-ity of
  Health
  []
@@ -566,28 +576,28 @@ f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat
  []
 
 [23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 195--200
+Underfull \hbox (badness 10000) in paragraph at lines 209--214
 \OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
 es-[]and-[]their-[]compositionality .
  []
 
 [25])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 554.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
  [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 554.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 554.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 554.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: E8419ADAA19FD137140BE217EF2FFD30;2924.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 554.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 556.
  ) 
 Here is how much of TeX's memory you used:
- 7930 strings out of 492973
- 118518 string characters out of 3135933
- 217134 words of memory out of 3000000
- 11550 multiletter control sequences out of 15000+200000
+ 7936 strings out of 492973
+ 118579 string characters out of 3135933
+ 217223 words of memory out of 3000000
+ 11553 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -600,9 +610,9 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Final_Project_Latex_Template.pdf (40 pages, 581800 bytes).
+Output written on Final_Project_Latex_Template.pdf (40 pages, 584210 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

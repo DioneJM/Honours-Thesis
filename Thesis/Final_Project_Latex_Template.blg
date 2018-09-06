@@ -19,9 +19,14 @@ Warning--empty journal in Conneau2017
 Warning--missing institution in Howard2018
 Warning--missing institution in Informatik1997
 Warning--missing institution in Kaicker2010
+Warning--missing institution in Kim
+Warning--empty year in Kim
+Warning--empty booktitle in LeCun1999
 Warning--missing institution in McCallum1998
 Warning--missing institution in Mikolov
 Warning--empty year in Mikolov
+Warning--missing institution in Nogueira
+Warning--empty year in Nogueira
 Warning--empty journal in Pasupa2016
 Warning--missing institution in Rosenfeld2000
 Warning--missing institution in Sahami
@@ -36,4 +41,4 @@ Warning--empty journal in Zhang
 Warning--empty journal in Zhou2015
 
 Done.
-(There were 29 warnings)
+(There were 34 warnings)

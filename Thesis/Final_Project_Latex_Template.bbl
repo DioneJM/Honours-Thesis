@@ -169,12 +169,26 @@ J.~Kaicker, V.~{Borg Debono}, W.~Dang, N.~Buckley, and L.~Thabane,
   Available: \url{http://www.biomedcentral.com/1741-7015/8/59}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Kim}
+\BIBentryALTinterwordspacing
+Y.~Kim, ``{Convolutional Neural Networks for Sentence Classification},'' Tech.
+  Rep. [Online]. Available: \url{http://nlp.stanford.edu/sentiment/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Korde2012}
 \BIBentryALTinterwordspacing
 V.~Korde and C.~N. Mahender, ``{TEXT CLASSIFICATION AND CLASSIFIERS: A
   SURVEY},'' \emph{International Journal of Artificial Intelligence {\&}
   Applications (IJAIA)}, vol.~3, no.~2, 2012. [Online]. Available:
   \url{http://aircconline.com/ijaia/V3N2/3212ijaia08.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{LeCun1999}
+\BIBentryALTinterwordspacing
+Y.~LeCun, P.~Haffner, L.~Bottou, and Y.~Bengio, ``{Object Recognition with
+  Gradient-Based Learning}.''\hskip 1em plus 0.5em minus 0.4em\relax Springer,
+  Berlin, Heidelberg, 1999, pp. 319--345. [Online]. Available:
+  \url{http://link.springer.com/10.1007/3-540-46805-6{\_}19}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Matsoukas2008}
@@ -196,6 +210,13 @@ T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
   Words and Phrases and their Compositionality},'' Tech. Rep. [Online].
   Available:
   \url{https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Nogueira}
+\BIBentryALTinterwordspacing
+C.~Nogueira, D.~Santos, and M.~Gatti, ``{Deep Convolutional Neural Networks for
+  Sentiment Analysis of Short Texts},'' Tech. Rep. [Online]. Available:
+  \url{http://www.aclweb.org/anthology/C14-1008}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Pasupa2016}

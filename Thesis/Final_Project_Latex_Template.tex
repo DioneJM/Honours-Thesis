@@ -394,21 +394,21 @@ This technique of determining the hyperplane requires that the two classes are l
 \subsection{Deep Learning Methods for Document Classification}
 \label{sec:DLDocumentClassification}
 
-Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). RNNs and LSTMs are commonly used for document classification, or NLP tasks in general, due to their ability to create language models that are able to capture the context and relationships of words within documents at a much more sophisticated level when compared to traditional language models such as TF-IDF or n-grams \cite{Young}. 
+Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). 
 
 \subsubsection{Recurrent Neural Networks}
 \label{sec:RNN}
 
-RNNs have had widespread use in solving NLP-related tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. Consequently, RNNs have the ability to create language models that account for the semantic meaning of words based on the previously occurring words in the sentence, allowing models to be capable of understanding the difference between similar words or phrases (e.g. that the word "dog" is likely referring to the animal whereas "hot dog would be more likely to refer to food). Accounting for RNNs' capability in handling variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in classification tasks such as sentiment, question and topic classification \cite{Howard2018}.\newline
+RNNs and LSTMs are commonly used for document classification, or NLP tasks in general, due to their ability to create language models that are able to capture the context and relationships of words within documents over long distances and represent this information at a much more sophisticated level when compared to traditional language models such as TF-IDF or n-grams \cite{Young}. \newline
+ 
+RNNs have had widespread use in solving NLP-related tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. Consequently, RNNs are capable of creating language models that account for the semantic meaning of words based on the previously occurring words in the sentence, allowing models to be capable of understanding the difference between similar words or phrases (e.g. that the word "dog" is likely referring to the animal whereas "hot dog" would be more likely to refer to food). Accounting for RNNs' capability in handling variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in classification tasks such as sentiment, question and topic classification \cite{Howard2018}.\newline
 
-The simplest form of an RNN, as illustrated in Figure \ref{fig:RNN}, consists of three layers: the input layer $x_t$, hidden state $s_t$ and the output layer $o_t$, where $t$ represents the current timestep. The input layer is typically represented as a one-hot encoding or embedding, the output layer is the resulting output which can take many forms, most commonly, it is the output of the softmax function and the hidden state is essentially network's memory, as it captures and incorporates the information from previous timesteps into the current one. The hidden state is calculated by evaluating Equation \ref{eq:HiddenState}:
+The simplest form of an RNN, as illustrated in Figure \ref{fig:RNN}, consists of three layers: the input layer $x_t$, hidden state $s_t$ and the output layer $o_t$, where $t$ represents the current timestep. The input layer is typically represented as a one-hot encoding or embedding, the output layer is the resulting output which can take many forms, most commonly, it is the output of the softmax function and the hidden state is essentially the network's memory, as it captures and incorporates the information from previous timesteps into the current one. The hidden state is calculated by evaluating Equation \ref{eq:HiddenState}:
 
 \begin{equation}
 s_t = f(Ux_t + Ws_{t-1})
 \label{eq:HiddenState}
 \end{equation}
-
-Where $f$ is a nonlinear function e.g. Rectifier Linear Unit (ReLU), $U$ and $W$ are weight matrices that are shared across timesteps \cite{Young}.
 
 \begin{figure}[!htb]
 	\centering
@@ -417,14 +417,16 @@ Where $f$ is a nonlinear function e.g. Rectifier Linear Unit (ReLU), $U$ and $W$
 	\label{fig:RNN}
 \end{figure}
 
+Where $f$ is a nonlinear function e.g. Rectifier Linear Unit (ReLU), $U$, $V$ and $W$ are weight matrices that are shared across timesteps \cite{Young}. \newline
 
-
-LSTMs \cite{Hochreiter1997} is a specific variant of RNNs that improve on it by introducing a 'forget' gate that regulates a cell state within the network as it allows information to be removed or added. This addition allows LSTMs to overcome the vanishing and exploding gradient problem \cite{Socher} that feedforward networks i.e. RNNs are prone to.
+LSTMs \cite{Hochreiter1997} are a variant of RNNs that improves on it by introducing a 'forget' gate which regulates a cell's state within the network as it can allow information from different cells to be removed or added. This addition allows LSTMs to overcome the vanishing and exploding gradient problem \cite{Socher} that feedforward networks i.e. RNNs are prone to.
 
 \subsubsection{Convolutional Neural Networks}
 \label{sec:CNN}
 
-CNNs have traditionally seen more use for image classification tasks \cite{Young}. However, with the work accomplished by Collbert et al. \cite{Collobert2011} who proposed a CNN-based model designed to solve various NLP tasks by extracting the most important n-gram features to produce a language model. The language model created by 
+Despite CNNs being initially developed for object recognition tasks \cite{LeCun1999}, over the past few years, CNNs have seen extensive applications in text classification tasks such as sentence classification and sentiment analysis producing competitive results when compared to RNNs and its variants \cite{Collobert2011} \cite{Kim} \cite{Nogueira}. 
+
+A CNN is composed of 
 
 
 \subsection{Classifying Documents with Limited Labelled Examples}
