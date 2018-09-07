@@ -396,31 +396,7 @@ This technique of determining the hyperplane requires that the two classes are l
 
 Deep learning models are a class of machine learning models that have the capability of automatically learning a hierarchical representation of data \cite{Basheer2000}. These hierarchical representations are constructed through the use of artificial neural networks, the main underlying mechanism of deep learning models. The most commonly used models for document classification are Recurrent Neural Networks (RNNs), Long Short-Term Memory Networks (LSTMs) - a variant of RNNs and Convolutional Neural Networks (CNNs). \newline
 
-Common datasets for text classification can be found under the 5 papers of interest doc. \newline
-
-For DL language models, a common one is wikitext103 but there might be more in the paper by Jeremy Howard \newline
-
-For the task of text classification, there are commonly used, open datasets for specific classification tasks that aim to provide a benchmark in which the performance of different implementations can be compared and to facilitate the data needs of deep learning models. Table \ref{table:Datasets} contains the commonly used datasets for various text classification tasks.
-
-\begin{center}
-	\begin{table}[!htb]
-	\begin{tabular}{| l | p{6cm} | l | p{5cm} |}
-		\hline
-		Dataset & Description & Type & Objective \\ \hline
-		SST & Movie reviews from Stanford Sentiment Treebank & Sentence & Sentiment \\ \hline
-		
-		IMDB & Internet Movie Database & Document & Sentiment \\ \hline
-		
-		MDSD & Product Reviews & Document & Sentiment \\ \hline
-		
-		RN & Reuters Newswire topics classification & Document & Topics \\ \hline
-		
-		QC & Question Classification & Sentence & Question Types \\ \hline
-	\end{tabular}
-	\caption{Commonly used classification datasets}
-	\label{table:Datasets}
-	\end{table}
-\end{center}
+For the task of text classification, there are commonly used, open datasets for specific classification tasks that aim to provide a benchmark in which the performance of different implementations can be compared and to facilitate the data needs of deep learning models. 
 
 \subsubsection{Recurrent Neural Networks}
 \label{sec:RNN}
@@ -460,19 +436,26 @@ In the context of text classification, a typical CNN is composed of the followin
 	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction.
 \end{itemize}
 
-By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
+By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to thet higher number of trai	nable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
-Typically, large amounts of training data is required to train a deep learning model in learning the language model for state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang}. Due to these constraints, it is not feasible to procure a dataset for the domain specific task of this project due to the aforementioned knowledge expertise and time requirements to manually label the articles required.
+Typically, large amounts of training data is required to train a deep learning model in learning the language model for state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang}. For situations where you are required to procure a completely new dataset, such as training a deep learning model for a novel or specific task, it can be unfeasible  or not worthwhile to invest the time and resources in creating the dataset. 
 
 \subsubsection{Transfer Learning}
 \label{sec:TransferLearningReview}
-\textit{Talk about transfer learning and how it works and how it is applicable to this project.}
 
-\subsubsection{N-Shot Learning}
-\label{sec:NShotLearningReview}
-\textit{Talk about zero/few/etc-shot learning and how it works and how it is applicable to this project.}
+Transfer learning involves the repurposing of an already existing deep learning model that has been trained to perform a different, but similar, task using an already existing and available dataset. It functions on the idea that the features automatically learned by a model for some similar task is general enough such that they can then be utilised on the completely new task. 
+
+Howard et al. \cite{Howard2018} has proposed a transfer learning methodology for text classification which was designed to be able to develop models with state-of-the-art results for tasks where there is a limited amount of training data available. \newline
+
+The proposed method involves the use of an inductive learning technique \cite{Pan2009}:
+\begin{enumerate}
+	\item Create a language model to capture general features of the language by training on a general-domain corpus (e.g. wikitext103 \cite{Merity2016}).
+	\item Learn task specific features by fine-tuning the language model using the target task data.
+	\item Adapt the high-level representations of the classifier that uses the language model, while preserving the low-level representations, using gradual unfreezing \cite{Howard2018}
+\end{enumerate}
+
 
 \section{Discussion}
 \label{sec:LitReviewDiscussion}
@@ -531,37 +514,6 @@ The end
 
 
 \clearemptydoublepage
-\chapter{Abbreviations}
-\label{chap:abbreviations}
-
-\begin{tabbing}
-
-AWGN \qquad \qquad \= Additive White Gaussian Noise\\
-BC \> Broadcast Channel\\
-BS \> Base Station\\
-CSI \> Channel State Information\\
-CSIR \> Channel State Information at Receiver\\
-CSIT \> Channel State Information at Transmitter\\
-dB \> Decibels\\
-DPC \> Dirty Paper Coding\\
-GS \> Gram-Schmidt\\
-RVQ \> Random Vector Quantisation\\
-SISO \> Single Input Single Output\\
-SNR \> Signal to Noise Ratio\\
-SINR \> Signal to Interference plus Noise Ratio\\
-MISO \> Multiple Input Single Output\\
-SIMO \> Single Input Multiple Output\\
-MIMO \> Multiple Input Multiple Output\\
-MMSE \> Minimum Mean Square Error\\
-MRC \> Maximum Ratio Combining\\
-QoS \> Quality of Service\\
-TDD \> Time Division Duplex\\
-FDD \> Frequency Division Duplex\\
-ZF \> Zero-Forcing\\
-ZFBF \> Zero-Forcing Beamforming\\
-ZMCSCG \> Zero Mean Circularly Symmetric Complex Gaussian\\
-
-\end{tabbing}
 
 %\phantomsection \addcontentsline{toc}{chapter}{Index}
 % \renewcommand{\baselinestretch}{1} \small \normalsize

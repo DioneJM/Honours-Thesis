@@ -204,6 +204,13 @@ A.~McCallum and K.~Nigam, ``{A Comparison of Event Models for Naive Bayes Text
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.9324{\&}rep=rep1{\&}type=pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Merity2016}
+\BIBentryALTinterwordspacing
+S.~Merity, ``{The wikitext long term dependency language modeling dataset},''
+  2016. [Online]. Available:
+  \url{https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Mikolov}
 \BIBentryALTinterwordspacing
 T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
@@ -217,6 +224,12 @@ T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
 C.~Nogueira, D.~Santos, and M.~Gatti, ``{Deep Convolutional Neural Networks for
   Sentiment Analysis of Short Texts},'' Tech. Rep. [Online]. Available:
   \url{http://www.aclweb.org/anthology/C14-1008}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Pan2009}
+\BIBentryALTinterwordspacing
+S.~J. Pan and Q.~Yang, ``{A Survey on Transfer Learning},'' 2009. [Online].
+  Available: \url{http://socrates.acadiau.ca/courses/comp/dsilver/NIPS95}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Pasupa2016}

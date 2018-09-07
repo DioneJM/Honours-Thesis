@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  6 SEP 2018 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  7 SEP 2018 14:24
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -506,12 +506,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--338
  []
 
 [7] [8]
-<images/svm-example.png, id=427, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=425, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 379.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=432, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=430, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 388.
@@ -522,42 +522,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 397--398
  []
 
 [9 <./images/svm-example.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
 [10 <./images/kernel-trick.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-<images/RNN.jpg, id=455, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=452, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
-Package pdftex.def Info: images/RNN.jpg  used on input line 441.
+Package pdftex.def Info: images/RNN.jpg  used on input line 417.
 (pdftex.def)             Requested size: 425.4607pt x 170.71652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--447
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
-[11] [12 <./images/RNN.jpg>]
-Overfull \hbox (5.10704pt too wide) in paragraph at lines 481--481
+[11 <./images/RNN.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+[12]
+Overfull \hbox (5.10704pt too wide) in paragraph at lines 464--464
 []\OT1/cmr/bx/n/14.4 Scaling the As-sess-ment of Qual-ity and Cred-i-bil-ity of
  Health
  []
@@ -574,18 +570,14 @@ Chapter 4.
 
 
 ]
-Chapter 5.
+Appendix A.
 [19
 
 ] [20
 
 ]
-Appendix A.
-[21] [22
-
-]
 Appendix B.
-(Final_Project_Latex_Template.bbl [23] [24
+(Final_Project_Latex_Template.bbl [21] [22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 86--92
@@ -594,44 +586,54 @@ f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat
 = 1534726962\OMS/cmsy/m/n/12 f[] []
  []
 
-[25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 209--214
+[23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 216--221
 \OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
 es-[]and-[]their-[]compositionality .
  []
 
-[27])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 589.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 589.
+[25])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 541.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 541.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 589.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 589.
-Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
-anged.
-(rerunfilecheck)             Checksum: D46333CF0FD235E6C6459C0A23687B3B;2924.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 589.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 541.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 541.
+
+
+Package rerunfilecheck Warning: File `Final_Project_Latex_Template.out' has cha
+nged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Final_Project_Latex_Template.out':
+(rerunfilecheck)             Before: A8789B4A66DED6CC5C13E5733901BA6E;2924
+(rerunfilecheck)             After:  34A7B7A372D11A40650443656999DF20;2872.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 541.
  ) 
 Here is how much of TeX's memory you used:
  7941 strings out of 492973
- 118642 string characters out of 3135933
- 217294 words of memory out of 3000000
- 11555 multiletter control sequences out of 15000+200000
+ 118609 string characters out of 3135933
+ 217241 words of memory out of 3000000
+ 11554 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
-pfb>
-Output written on Final_Project_Latex_Template.pdf (42 pages, 588739 bytes).
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist
+, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
+b>
+Output written on Final_Project_Latex_Template.pdf (40 pages, 587834 bytes).
 PDF statistics:
  675 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
+ 149 named destinations out of 1000 (max. 500000)
  349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

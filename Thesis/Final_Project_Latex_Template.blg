@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Final_Project_Latex_Template.aux
 The style file: IEEEtranS.bst
 Database file #1: my_reference.bib
+Repeated entry---line 559 of file my_reference.bib
+ : @article{Pan2009
+ :                 ,
+I'm skipping whatever remains of this entry
 -- IEEEtranS.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -27,6 +31,7 @@ Warning--missing institution in Mikolov
 Warning--empty year in Mikolov
 Warning--missing institution in Nogueira
 Warning--empty year in Nogueira
+Warning--empty journal in Pan2009
 Warning--empty journal in Pasupa2016
 Warning--missing institution in Rosenfeld2000
 Warning--missing institution in Sahami
@@ -41,4 +46,4 @@ Warning--empty journal in Zhang
 Warning--empty journal in Zhou2015
 
 Done.
-(There were 34 warnings)
+(There was 1 error message)

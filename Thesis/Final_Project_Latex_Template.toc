@@ -22,11 +22,10 @@
 \contentsline {subsubsection}{Naive Bayes Classifier}{8}{section*.14}
 \contentsline {subsubsection}{Support Vector Machines}{8}{section*.15}
 \contentsline {subsection}{\numberline {2.2.3}Deep Learning Methods for Document Classification}{10}{subsection.2.2.3}
-\contentsline {subsubsection}{Recurrent Neural Networks}{10}{section*.19}
-\contentsline {subsubsection}{Convolutional Neural Networks}{12}{section*.21}
-\contentsline {subsection}{\numberline {2.2.4}Classifying Documents with Limited Labelled Examples}{13}{subsection.2.2.4}
-\contentsline {subsubsection}{Transfer Learning}{13}{section*.22}
-\contentsline {subsubsection}{N-Shot Learning}{13}{section*.23}
+\contentsline {subsubsection}{Recurrent Neural Networks}{10}{section*.18}
+\contentsline {subsubsection}{Convolutional Neural Networks}{11}{section*.20}
+\contentsline {subsection}{\numberline {2.2.4}Classifying Documents with Limited Labelled Examples}{12}{subsection.2.2.4}
+\contentsline {subsubsection}{Transfer Learning}{12}{section*.21}
 \contentsline {section}{\numberline {2.3}Discussion}{13}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Scaling the Assessment of Quality and Credibility of Health Information}{13}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Using Deep Learning Methods to Automate Quality and Credibility Assessments}{13}{subsection.2.3.2}
@@ -40,11 +39,10 @@
 \contentsline {chapter}{\numberline {4}Conclusions and Future Work}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Conclusions}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Future Work}{17}{section.4.2}
-\contentsline {chapter}{\numberline {5}Abbreviations}{19}{chapter.5}
-\contentsline {chapter}{\numberline {A}name of appendix A}{21}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{21}{section.A.1}
-\contentsline {section}{\numberline {A.2}Name of this section}{21}{section.A.2}
-\contentsline {chapter}{\numberline {B}name of appendix B}{23}{appendix.B}
-\contentsline {section}{\numberline {B.1}Overview}{23}{section.B.1}
-\contentsline {section}{\numberline {B.2}Name of this section}{23}{section.B.2}
-\contentsline {chapter}{Bibliography}{23}{section*.24}
+\contentsline {chapter}{\numberline {A}name of appendix A}{19}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{19}{section.A.1}
+\contentsline {section}{\numberline {A.2}Name of this section}{19}{section.A.2}
+\contentsline {chapter}{\numberline {B}name of appendix B}{21}{appendix.B}
+\contentsline {section}{\numberline {B.1}Overview}{21}{section.B.1}
+\contentsline {section}{\numberline {B.2}Name of this section}{21}{section.B.2}
+\contentsline {chapter}{Bibliography}{21}{section*.22}
