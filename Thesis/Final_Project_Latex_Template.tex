@@ -241,7 +241,11 @@ This is where you write your abstract ...
 \chapter{Introduction}
 \label{chap:Introduction}
 
-With the popularity and ubiquity of social media platforms in today's society, the amount and rate at which information propagates online greatly outnumbers the resources available that can evaluate the quality and credibility of the information that gets shared. This is becoming an increasingly growing issue due to the clickbait model that is commonly adopted by social media platforms and the lack of rigour surrounding the publishing of content online \cite{Sommariva2018}, causing an increase in the number of articles that contain misinformed content \cite{germanFN} \cite{Vosoughi}. The lack of resources that attempt to minimise the spread of misinformation can be attributed to the expert-level knowledge required to determine the credibility of information since a variety of factors such as the actual information, information sources, conflicts of interest and writing style of the article must be evaluated to be able to determine its quality and credibility. This issue is further exacerbated in specific domains such as for health-related content, as the spread of misinformation can have a detrimental effect on people and their communities that don't have access to these kinds of limited resources. Thus, by developing a method that is capable of automatically assessing the quality and credibility of an article - various methods that intervene between an article and a user can then be developed to minimise the spread and effects of misinformation as the reliance on expert-level knowledge is no longer present.
+With the popularity and ubiquity of social media platforms in today's society, the amount and rate at which information propagates online greatly outnumbers the resources available that can evaluate the quality and credibility of the information that gets shared. This is becoming an increasingly growing issue due to the clickbait model that is commonly adopted by social media platforms and the lack of rigour surrounding the publishing of content online \cite{Sommariva2018}, causing an increase in the number of articles that contain misinformed content \cite{germanFN} \cite{Vosoughi}.\newline 
+
+The lack of resources that attempt to minimise the spread of misinformation can be attributed to the expert-level knowledge required to determine the credibility of information since a variety of factors such as the actual information, information sources, conflicts of interest and writing style of the article must be evaluated to be able to determine its quality and credibility. This issue is further exacerbated in specific domains such as for health-related content, as the spread of misinformation can have a detrimental effect on people and their communities that don't have access to these kinds of limited resources. \newline
+
+Thus, by developing a method that is capable of automatically assessing the quality and credibility of an article - various methods that intervene between an article and a user can then be developed to minimise the spread and effects of misinformation as the reliance on expert-level knowledge is no longer present.
 
 \section{Project Overview}
 \label{sec:ProjectOverview}
@@ -456,6 +460,14 @@ The proposed method involves the use of an inductive learning technique \cite{Pa
 	\item Adapt the high-level representations of the classifier that uses the language model, while preserving the low-level representations, using gradual unfreezing \cite{Howard2018}
 \end{enumerate}
 
+Whilst transfer learning is useful to train models for novel tasks where access to data is limited, it is also an optimisation technique, using previously acquired knowledge, to save time or improve model performance \cite{Pan2009}. This potential performance improvement is illustrated in Figure \ref{fig:TransferLearning} and is also demonstrated by Howard et al. \cite{Howard2018} for common text classification tasks such as question, topic  classification and sentiment analysis.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=7cm]{images/transfer-learning.png}
+	\caption{Potential improvements in performance using transfer learning \cite{Browniee2017}}
+	\label{fig:TransferLearning}
+\end{figure}
 
 \section{Discussion}
 \label{sec:LitReviewDiscussion}
