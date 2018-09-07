@@ -165,7 +165,8 @@
 
   \Acknowledgments{
   \vspace{-1.5cm}
-    \noindent I would like to acknowledge ...
+    \noindent I would like to acknowledge ...me, myself and I :) 
+    
 
   }
 
@@ -471,16 +472,11 @@ Whilst transfer learning is useful to train models for novel tasks where access 
 
 \section{Discussion}
 \label{sec:LitReviewDiscussion}
-\textit{Summarize lit review and describe why DL-based approaches should be preferred over ML-based for this type of problem. Also talk about Transfer/N-Shot learning and describe which one will be feasible given the project's time constraints}
 
 \subsection{Scaling the Assessment of Quality and Credibility of Health Information}
 \label{sec:ScalingAssessment}
-\textit{Summarise the idea that the previous studies applying instruments/tools to assess the quality of online health information have been relatively small because they rely on experts. It would be useful to be able to develop a way to  automate the assessment of nline health information because it could lead to new ways of dealing with the spread of misinformation online, and that is hasn't been done properly before.}
 
-\subsection{Using Deep Learning Methods to Automate Quality and Credibility Assessments}
-\label{sec:DLForAutommation}
-\textit{Explain that deep learning is a good choice for building an automated assessment tool because it should outperform traditional methods of document classification, but because DL methos usually require large datasets of labelled exampled than it makes sense to investigate transfer learning/n-shot lerning.}
-
+Among the studies that aim to assess the credibility and quality of information, the limited amount of articles that were evaluated was a common theme \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of online content. Due to the capabilities of deep learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles as they have shown the ability to develop high-level representations of the language and be able to differentiate between credible and misinformed articles.
 
 
 \chapter{Proposed Approach}
@@ -494,6 +490,32 @@ Whilst transfer learning is useful to train models for novel tasks where access 
 \section{Credibility Criteria}
 \label{sect:CredibilityCriteria}
 \textit{Introduce and discuss the 7 criteria that will be classified and describe how the criteria was determined}
+
+\begin{table}
+	\centering
+	\begin{tabular}{|p{1cm}|p{5cm}|p{8cm}|}
+		\hline
+		\# & Criteria                                                                           & Description                                                                                                                                                                                                                                                                                                                                                             \\
+		\hline
+		1  & Identifies the information sources supporting a position            & Score 1 if the article clearly indicates what sources of information are used to support its main claims or statements. \\
+		\hline
+
+		2  & Uses information sources based on objective, scientific research & Score 1 if the article's main claims are based on objective, scientific research. Score 0 if the article uses anecdotal evidence exclusively to support its main claims.                                                                                                                                                  \\
+		\hline
+		
+		3  & Communicates the strength or weakness of the evidence used to support a position & Score 1 if the article includes adequate details about the level of evidence offered by the research.                                                                                                                                                                                                                        \\
+		\hline
+		4  & Does not exaggerate or overstate a position                          & Score 0 if the article: \newline- Uses unjustified sensational language \newline- Presents information in a sensational, emotive or alarmist way \newline- Selectively or incorrectly presents evidence                                                                                                                                       \\
+		\hline
+		5  & Presents information in a balanced manner & Score 1 if the article:\newline- Identifies/acknowledges uncertainties and limitations in the research\newline - Acknowledges where an issue is controversial, and includes all reasonable sides in a fair way\newline - Uses a range of information sources\newline - Provides a balanced description of the strengths and weaknesses of the study
+		\\
+		\hline
+		6  & Uses clear, non-technical language that is easy to understand & Score 1 if the article:\newline - Is professionally written, with proper grammar, spelling, and composition\newline - Defines any technical jargon, or uses everyday examples to explain the technical terms or concepts                                                                  \\
+		\hline
+		7  & Is transparent about sponsorship and funding & Score 1 if the article:\newline - Clearly distinguishes content intended to promote or sell a product from servic,e from educational and scientific content\newline - Discloses sources of funding for the organisation/website
+		\hline                                                                                                       
+	\end{tabular}
+\end{table}
 
 \section{Study Data}
 \label{sec:StudyData}
