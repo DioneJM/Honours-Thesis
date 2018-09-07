@@ -268,9 +268,6 @@ The propagation of misinformed content can cause people within specific communit
 
 The effects of vaccination and their relation to causing autism within children is a popular example where the belief of inaccurate facts has had a detrimental effect to specific communities and their surrounding environments. The measles outbreak in Minnesota which occurred in April 2017 is a specific case where the misinformed views on the effects of vaccination caused people within a Somali-American community located in the United States to forego the vaccination of their children causing an outbreak of measles, a disease which was declared to be eliminated from the United States in the year 2000 \cite{Hall2017}. Within this specific instance, it was determined that the outbreak of measles was caused by a decline in the coverage of vaccination due to concerns of its effects in relation to the causation of autism. This can be seen in the decreasing trend of the percentage for 24 month-old children that received the measles-mumps-rubella vaccine which fell to a low of 40\% in 2014 where it was at a 90\% high 10 years prior.
 
-
-
-
 \section{Aims}
 \label{sec:Aims}
 
@@ -479,8 +476,8 @@ Whilst transfer learning is useful to train models for novel tasks where access 
 Among the studies that aim to assess the credibility and quality of information, the limited amount of articles that were evaluated was a common theme \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of online content. Due to the capabilities of deep learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles as they have shown the ability to develop high-level representations of the language and be able to differentiate between credible and misinformed articles.
 
 
-\chapter{Proposed Approach}
-\label{chap:approach}
+\chapter{Proposed Work}
+\label{chap:ProposedWork}
 
 \section{Rationale}
 \label{sec:ProposedRationale}
@@ -491,30 +488,33 @@ Among the studies that aim to assess the credibility and quality of information,
 \label{sect:CredibilityCriteria}
 \textit{Introduce and discuss the 7 criteria that will be classified and describe how the criteria was determined}
 
-\begin{table}
+\begin{table}[!htb]
 	\centering
-	\begin{tabular}{|p{1cm}|p{5cm}|p{8cm}|}
+	\begin{tabular}{|p{0.3cm}|p{5cm}|p{10cm}|}
 		\hline
 		\# & Criteria                                                                           & Description                                                                                                                                                                                                                                                                                                                                                             \\
 		\hline
 		1  & Identifies the information sources supporting a position            & Score 1 if the article clearly indicates what sources of information are used to support its main claims or statements. \\
 		\hline
 
-		2  & Uses information sources based on objective, scientific research & Score 1 if the article's main claims are based on objective, scientific research. Score 0 if the article uses anecdotal evidence exclusively to support its main claims.                                                                                                                                                  \\
+		2  & Uses information sources based on objective, scientific research. & Score 1 if the article's main claims are based on objective, scientific research.\newline Score 0 if the article uses anecdotal evidence exclusively to support its main claims.                                                                                                                                                  \\
 		\hline
 		
-		3  & Communicates the strength or weakness of the evidence used to support a position & Score 1 if the article includes adequate details about the level of evidence offered by the research.                                                                                                                                                                                                                        \\
+		3  & Communicates the strength or weakness of the evidence used to support a position. & Score 1 if the article includes adequate details about the level of evidence offered by the research.                                                                                                                                                                                                                        \\
 		\hline
-		4  & Does not exaggerate or overstate a position                          & Score 0 if the article: \newline- Uses unjustified sensational language \newline- Presents information in a sensational, emotive or alarmist way \newline- Selectively or incorrectly presents evidence                                                                                                                                       \\
+		4  & Does not exaggerate or overstate a position.                         & Score 0 if the article: \newline- Uses unjustified sensational language \newline- Presents information in a sensational, emotive or alarmist way \newline- Selectively or incorrectly presents evidence                                                                                                                                       \\
 		\hline
-		5  & Presents information in a balanced manner & Score 1 if the article:\newline- Identifies/acknowledges uncertainties and limitations in the research\newline - Acknowledges where an issue is controversial, and includes all reasonable sides in a fair way\newline - Uses a range of information sources\newline - Provides a balanced description of the strengths and weaknesses of the study
+		5  & Presents information in a balanced manner. & Score 1 if the article:\newline- Identifies/acknowledges uncertainties and limitations in the research\newline - Acknowledges where an issue is controversial, and includes all reasonable sides in a fair way\newline - Uses a range of information sources\newline - Provides a balanced description of the strengths and weaknesses of the study
 		\\
 		\hline
-		6  & Uses clear, non-technical language that is easy to understand & Score 1 if the article:\newline - Is professionally written, with proper grammar, spelling, and composition\newline - Defines any technical jargon, or uses everyday examples to explain the technical terms or concepts                                                                  \\
+		6  & Uses clear, non-technical language that is easy to understand. & Score 1 if the article:\newline - Is professionally written, with proper grammar, spelling, and composition\newline - Defines any technical jargon, or uses everyday examples to explain the technical terms or concepts                                                                  \\
 		\hline
-		7  & Is transparent about sponsorship and funding & Score 1 if the article:\newline - Clearly distinguishes content intended to promote or sell a product from servic,e from educational and scientific content\newline - Discloses sources of funding for the organisation/website
-		\hline                                                                                                       
+		7  & Is transparent about sponsorship and funding. & Score 1 if the article:\newline - Clearly distinguishes content intended to promote or sell a product from servic,e from educational and scientific content\newline - Discloses sources of funding for the organisation/website           
+		\\
+		\hline                                                                                            
 	\end{tabular}
+\caption{Credibility Criteria}
+\label{table:CredibilityCritieria}
 \end{table}
 
 \section{Study Data}
