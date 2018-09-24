@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  8 SEP 2018 00:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  25 SEP 2018 08:46
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -404,7 +404,7 @@ LaTeX Info: Redefining \nameref on input line 205.
 \@outlinefile=\write3
 \openout3 = `Final_Project_Latex_Template.out'.
 
-<MQlogo_stacked.pdf, id=139, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=155, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 213.
@@ -441,7 +441,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-])
+]
+Overfull \hbox (8.45871pt too wide) in paragraph at lines 38--38
+ [][] [][][]\OT1/cmr/m/n/12 **REMEMBER TO RE-RUN EX-PER-I-MENTS WHEN LA-BELLING
+ 
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `Final_Project_Latex_Template.toc'.
 
@@ -515,12 +521,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
  []
 
 [7] [8]
-<images/svm-example.png, id=395, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=418, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 372.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=400, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=423, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 381.
@@ -541,7 +547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=422, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=445, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 410.
@@ -562,7 +568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 443--444
  []
 
 [12]
-<images/transfer-learning.png, id=463, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=486, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 456.
@@ -581,85 +587,170 @@ Chapter 3.
 
 ]
 Chapter 4.
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (3.994pt too wide) in paragraph at lines 519--520
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
+[]|\OT1/cmr/m/n/12 RF +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+[]|\OT1/cmr/m/n/12 RF +
+ []
+
 [17] [18
+
+]
+Chapter 5.
+[19] [20
+
+]
+Chapter 6.
+[21] [22
 
 
 ]
 Appendix A.
 
-Overfull \hbox (1.25566pt too wide) in paragraph at lines 538--538
+Overfull \hbox (1.25566pt too wide) in paragraph at lines 586--586
 []|\OT1/cmr/m/n/12 #| 
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 540--540
+Underfull \hbox (badness 2856) in paragraph at lines 588--588
 []|\OT1/cmr/m/n/12 Identifies the in-for-ma-tion
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 543--543
+Underfull \hbox (badness 5288) in paragraph at lines 591--591
 []|\OT1/cmr/m/n/12 Uses in-for-ma-tion sources
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 548--548
+Underfull \hbox (badness 6445) in paragraph at lines 596--596
 []|\OT1/cmr/m/n/12 Does not ex-ag-ger-ate or
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 553--553
+Underfull \hbox (badness 4341) in paragraph at lines 601--601
 []|\OT1/cmr/m/n/12 Uses clear, non-technical
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 553--554
+Underfull \hbox (badness 1845) in paragraph at lines 601--602
 \OT1/cmr/m/n/12 - Is pro-fes-sion-ally writ-ten, with proper gram-mar,
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 555--557
+Underfull \hbox (badness 3701) in paragraph at lines 603--605
 \OT1/cmr/m/n/12 - Dis-closes sources of fund-ing for the or-gan-i-sa-
  []
 
 
-Overfull \hbox (17.68314pt too wide) in paragraph at lines 536--559
+Overfull \hbox (17.68314pt too wide) in paragraph at lines 584--607
  [][] 
  []
 
-(Final_Project_Latex_Template.bbl [19
+(Final_Project_Latex_Template.bbl [23
 
-] [20]
+] [24]
 Underfull \hbox (badness 10000) in paragraph at lines 93--99
 \OT1/cmr/m/n/12 pdf ? \OMS/cmsy/m/n/12 f[] [] \OT1/cmr/m/n/12 tid = 46d1dda6-[]
 f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat 
 = 1534726962\OMS/cmsy/m/n/12 f[] []
  []
 
-[21
+[25
 
-] [22]
+] [26]
 Underfull \hbox (badness 10000) in paragraph at lines 223--228
 \OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
 es-[]and-[]their-[]compositionality .
  []
 
-[23] [24])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 571.
- [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 571.
+[27] [28])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 619.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 619.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 571.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 571.
-Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
-anged.
-(rerunfilecheck)             Checksum: 27C518C57B152674A234F2B32B316CA1;2425.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 571.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 619.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 619.
+
+
+Package rerunfilecheck Warning: File `Final_Project_Latex_Template.out' has cha
+nged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Final_Project_Latex_Template.out':
+(rerunfilecheck)             Before: AE781E217FAC55B06A136FEBDBDD54EE;2708
+(rerunfilecheck)             After:  F8302B9373ED1BAD49E32607154E2DA2;2710.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 619.
  ) 
 Here is how much of TeX's memory you used:
- 7938 strings out of 492973
- 118661 string characters out of 3135933
- 219218 words of memory out of 3000000
- 11551 multiletter control sequences out of 15000+200000
+ 7954 strings out of 492973
+ 118858 string characters out of 3135933
+ 219345 words of memory out of 3000000
+ 11558 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -672,9 +763,9 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Final_Project_Latex_Template.pdf (39 pages, 639848 bytes).
+Output written on Final_Project_Latex_Template.pdf (43 pages, 647840 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
- 298 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 
