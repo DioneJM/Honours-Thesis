@@ -398,7 +398,7 @@ RNNs and LSTMs are commonly used for document classification, or NLP tasks in ge
  
 RNNs have had widespread use in solving NLP-related tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. Consequently, RNNs are capable of creating language models that account for the semantic meaning of words based on the previously occurring words in the sentence, allowing models to be capable of understanding the difference between similar words or phrases (e.g. that the word "dog" is likely referring to the animal whereas "hot dog" would be more likely to refer to food). Accounting for RNNs' capability in handling variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in classification tasks such as sentiment, question and topic classification \cite{Howard2018}.\newline
 
-The simplest form of an RNN, as illustrated in Figure \ref{fig:RNN}, consists of three layers: the input layer $x_t$, hidden state $s_t$ and the output layer $o_t$, where $t$ represents the current timestep. The input layer is typically represented as a one-hot encoding or embedding, the output layer is the resulting output which can take many forms, most commonly, it is the output of the softmax function and the hidden state is essentially the network's memory, as it captures and incorporates the information from previous timesteps into the current one. The hidden state is calculated by evaluating Equation \ref{eq:HiddenState}:
+The simplest form of an RNN, as illustrated in Figure \ref{fig:RNN}, consists of three layers: the input layer $x_t$, hidden state $s_t$ and the output layer $o_t$, where $t$ represents the current timestep. The input layer is typically represented as a one-hot encoding or embedding, the output layer is the resulting output which can take many forms, most commonly, it is the output of the softmax function and the hidden state is essentially the memory of the network as it captures and incorporates the information from previous timesteps into the current one. The hidden state is calculated by evaluating Equation \ref{eq:HiddenState}:
 
 \begin{equation}
 s_t = f(Ux_t + Ws_{t-1})
@@ -429,7 +429,7 @@ In the context of text classification, a typical CNN is composed of the followin
 	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction.
 \end{itemize}
 
-By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to thet higher number of trai	nable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
+By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
@@ -470,16 +470,24 @@ Among the studies that aim to assess the credibility and quality of information,
 \chapter{Proposed Work}
 \label{chap:ProposedWork}
 
-%\section{Rationale}
-%\label{sec:ProposedRationale}
+\section{Rationale}
+\label{sec:ProposedRationale}
 
 
 \section{Credibility Criteria}
 \label{sect:CredibilityCriteria}
-The criteria defined in Appendix A has been developed by health professionals which will be used to determine the credibility of health articles.
+The criteria defined in Appendix A has been developed by health professionals which will be used 
 
-%\section{Study Data}
-%\label{sec:StudyData}
+\section{Study Data}
+\label{sec:StudyData}
+
+- \textit{Discuss the relationship of each category e.g. are they independent from each other? Is there any correlation? etc.}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=6cm]{images/label-distribution-fig-draft.jpg}
+	\caption{Distribution of labels within the dataset \cite{RNNDiagram}}
+	\label{fig:LabelDistribution}
+\end{figure}
 
 
 \section{System Model}
@@ -510,36 +518,83 @@ The following metrics will be measured to evaluate the performance of the classi
 \chapter{Results}
 \label{chap:Results}
 
+\textit{To justify the decision to treat each category as a set of binary classification tasks rather than a single multi-label classification task, experiments that compare the performance in terms of accuracy, speed, storage and training time for binary and multi-label classifiers will be conducted.}
+
 \section{Baseline Results}
-\subsection{**REMEMBER TO RERUN EXPERIMENTS WHEN LABELLING IS COMPLETED**}
+\subsection{Classification Performance}
+\textbf{**REMEMBER TO RERUN EXPERIMENTS WHEN LABELLING IS COMPLETED**}
+- 
 \begin{table}[!htb]
 	\centering
-	\begin{tabular}{|p{2cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+	\begin{tabular}{|p{1.7cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
 		\hline
 		Model & Category 1                                                                           & Category 2    & Category 3 & Category 4 & Category 5 & Category 6 & Category 7                                                                                                                                                                                                                                                                                                                                                          \\
 		\hline
-		NB + BoW  & X.X & X.X & X.X & X.X & X.X  & X.X  & X.X  \\
+		NB + BoW  & 0.79 \newline ($\pm$ 0.16) & 0.70 \newline ($\pm$ 0.12) & 0.86 \newline ($\pm$ 0.07) & 0.84 \newline ($\pm$ 0.13) & 0.79 \newline ($\pm$ 0.04)  & 0.75 \newline ($\pm$ 0.07)  & 0.82 \newline ($\pm$ 0.07)   \\
 		\hline
 		
-		SVM + BoW  & X.X & X.X & X.X & X.X & X.X  & X.X  & X.X                                                                                                                                              \\
+		SVM + BoW  & 0.82 \newline ($\pm$ 0.7) & 0.70 \newline ($\pm$ 0.02) & 0.86 \newline ($\pm$ 0.03) & 0.80 \newline ($\pm$ 0.03) & 0.68 \newline ($\pm$ 0.07)  & 0.75 \newline ($\pm$ 0.7)  & 0.86 \newline ($\pm$ 0.05)                                                                                                                                             \\
 		\hline                                                                                                                                                                                                                
 				
-		NB + TF-IDF  & X.X & X.X & X.X & X.X & X.X  & X.X  & X.X  \\
+		NB + TF-IDF  & 0.79 \newline ($\pm$ 0.06) & 0.74 \newline ($\pm$ 0.07) & 0.87 \newline ($\pm$ 0.07) & 0.80 \newline ($\pm$ 0.04) & 0.79 \newline ($\pm$ 0.04)  & 0.62 \newline ($\pm$ 0.04)  & 0.80 \newline ($\pm$ 0.04)  \\
 		\hline
 		
-		SVM + TF-IDF  & X.X & X.X & X.X & X.X & X.X  & X.X  & X.X                                                                                                                                              \\
+		SVM + TF-IDF  & 0.80 \newline ($\pm$ 0.03) & 0.70 \newline ($\pm$ 0.02) & 0.84 \newline ($\pm$ 0.01) & 0.84 \newline ($\pm$ 0.05) & 0.80 \newline ($\pm$ 0.02)  & 0.68 \newline ($\pm$ 0.02)  & 0.82 \newline ($\pm$ 0.03)                                                                                                                                             \\
 		\hline                                                                                                                                              
 		
-		NB + Word2Vec  & X.X & X.X & X.X & X.X & X.X  & X.X  & X.X  \\
+		NB + Word2Vec  & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00) & 0.89 \newline ($\pm$ 0.00) & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00)  & 0.68 \newline ($\pm$ 0.00)   & 0.83 \newline ($\pm$ 0.01)  \\
 		\hline
 		
-		SVM + Word2Vec  & X.X & X.X & X.X & X.X & X.X  & X.X  & X.X                                                                                                                                              \\
+		SVM + Word2Vec  & 0.60 \newline ($\pm$ 0.29) & 0.77 \newline ($\pm$ 0.00) & 0.63 \newline ($\pm$ 0.37) & 0.61 \newline ($\pm$ 0.31) & 0.59 \newline ($\pm$ 0.25)  & 0.67 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01)                                                                                                                                              \\
 		\hline
-		                                                                                                                                                                                                                        
+		
+		fastText  & 0.X \newline ($\pm$ 0.Y) & 0.X \newline ($\pm$ 0.Y) & 0.X \newline ($\pm$ 0.Y) & 0.X \newline ($\pm$ 0.Y) & 0.X \newline ($\pm$ 0.Y)  & 0.X \newline ($\pm$ 0.Y) & 0.X \newline ($\pm$ 0.Y)                                                                                                                                              \\
+		\hline
+		                                                                                                                                                                                         
 	\end{tabular}
-	\caption{F1-Scores of baseline models}
+	\caption{Average micro f1-Scores of baseline models}
 	\label{table:BaselineAccuracy}
 \end{table}
+
+\textit{The following are draft results using tf-idf weighted w2v}
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|p{1.7cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
+		\hline
+		Model & Category 1                                                                           & Category 2    & Category 3 & Category 4 & Category 5 & Category 6 & Category 7                                                                                                                                                                                                                                                                                                                                                          \\
+		\hline                                                                                                                                              
+		
+		NB + Word2Vec  & 0.78 \newline ($\pm$ 0.01) & 0.79 \newline ($\pm$ 0.00) & 0.90 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01) & 0.77 \newline ($\pm$ 0.01)  & 0.68 \newline ($\pm$ 0.00)   & 0.81 \newline ($\pm$ 0.00)  \\
+		\hline
+		
+		SVM + Word2Vec  & 0.41 \newline ($\pm$ 0.27) & 0.40 \newline ($\pm$ 0.28) & 0.90 \newline ($\pm$ 0.01) & 0.60 \newline ($\pm$ 0.30) & 0.77 \newline ($\pm$ 0.01)  & 0.44 \newline ($\pm$ 0.17) & 0.X \newline ($\pm$ 0.Y)                                                                                                                                              \\
+		\hline
+		
+	\end{tabular}
+	\caption{w2v with tf-idf weights}
+	\label{table:w2vtfidf}
+\end{table}
+
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=6cm]{images/classifier-performance-figure-draft.jpg}
+	\caption{Effects of dataset size }
+	\label{fig:AccruracyFig}
+\end{figure}
+
+\subsection{Storage Requirements}
+
+\textit{This will probably be focusing the features used rather than the model itself}
+
+\subsection{Training time}
+
+\textit{This will also probably be focusing the features used rather than the model itself}
+
+\subsection{Model speed}
+
 
 \chapter{Discussion}
 \label{chap:Discussion}

@@ -5,7 +5,9 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Layout of a simple RNN \cite {RNNDiagram}\relax }}{11}{figure.caption.19}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Potential improvements in performance using transfer learning \cite {Browniee2017}\relax }}{13}{figure.caption.22}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of labels within the dataset \cite {RNNDiagram}\relax }}{15}{figure.caption.23}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Effects of dataset size \relax }}{18}{figure.caption.26}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
