@@ -556,6 +556,30 @@ The following metrics will be measured to evaluate the performance of the classi
 	\label{table:BaselineAccuracy}
 \end{table}
 
+\textit{The following are draft results for BoW/Tf-idf with stopwords removed}
+
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|p{1.7cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
+		\hline
+		Model & Category 1                                                                           & Category 2    & Category 3 & Category 4 & Category 5 & Category 6 & Category 7                                                                                                                                                                                                                                                                                                                                                          \\
+		\hline
+		NB + BoW  & 0.85 \newline ($\pm$ 0.06) &  0.79 \newline ($\pm$ 0.08)  & 0.90 \newline ($\pm$ 0.03)  &  0.84 \newline ($\pm$ 0.12)  &  0.80 \newline ($\pm$ 0.07)   &  0.74 \newline ($\pm$ 0.09)   &  0.80 \newline ($\pm$ 0.07)    \\
+		\hline
+		
+		SVM + BoW  &  0.78 \newline ($\pm$ 0.07)  &  0.80 \newline ($\pm$ 0.11)  & 0.90 \newline ($\pm$ 0.04)  &  0.87 \newline ($\pm$ 0.08)  & 0.78 \newline ($\pm$ 0.08)   &  0.72 \newline ($\pm$ 0.08)   &  0.81 \newline ($\pm$ 0.06)  \\
+		\hline                                                                                                                                                                                                                
+				
+		NB + TF-IDF  &  0.79 \newline ($\pm$ 0.01)  & 0.80 \newline ($\pm$ 0.02)  &  0.89 \newline ($\pm$ 0.00)  &  0.81 \newline ($\pm$ 0.02)  & 0.77 \newline ($\pm$ 0.01)   & 0.69 \newline ($\pm$ 0.02)   &  0.81 \newline ($\pm$ 0.02)   \\
+		\hline
+		
+		SVM + TF-IDF  &  0.86 \newline ($\pm$ 0.06)  & 0.85 \newline ($\pm$ 0.08)  & 0.89 \newline ($\pm$ 0.02)  &  0.86 \newline ($\pm$ 0.08)  &  0.80 \newline ($\pm$ 0.08)   & 0.77 \newline ($\pm$ 0.08)   & 0.82 \newline ($\pm$ 0.07)  \\
+		\hline                                                                                                                                                                                                                                                                                                                             
+	\end{tabular}
+	\caption{Average micro f1-Scores of baseline models with stopwords removed}
+	\label{table:BaselineAccuracy}
+\end{table}
+
 \textit{The following are draft results using tf-idf weighted w2v}
 
 \begin{table}[!htb]
@@ -568,7 +592,7 @@ The following metrics will be measured to evaluate the performance of the classi
 		NB + Word2Vec  & 0.78 \newline ($\pm$ 0.01) & 0.79 \newline ($\pm$ 0.00) & 0.90 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01) & 0.77 \newline ($\pm$ 0.01)  & 0.68 \newline ($\pm$ 0.00)   & 0.81 \newline ($\pm$ 0.00)  \\
 		\hline
 		
-		SVM + Word2Vec  & 0.41 \newline ($\pm$ 0.27) & 0.40 \newline ($\pm$ 0.28) & 0.90 \newline ($\pm$ 0.01) & 0.60 \newline ($\pm$ 0.30) & 0.77 \newline ($\pm$ 0.01)  & 0.44 \newline ($\pm$ 0.17) & 0.X \newline ($\pm$ 0.Y)                                                                                                                                              \\
+		SVM + Word2Vec  & 0.41 \newline ($\pm$ 0.27) & 0.40 \newline ($\pm$ 0.28) & 0.90 \newline ($\pm$ 0.01) & 0.60 \newline ($\pm$ 0.30) & 0.77 \newline ($\pm$ 0.01)  & 0.44 \newline ($\pm$ 0.17) & 0.60 \newline ($\pm$ 0.29)                                                                                                                                              \\
 		\hline
 		
 	\end{tabular}
