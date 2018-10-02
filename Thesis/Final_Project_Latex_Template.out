@@ -20,24 +20,22 @@
 \BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Classifying Documents with Limited Labelled Examples}{section.2.2}% 20
 \BOOKMARK [1][-]{section.2.3}{2.3 Discussion}{chapter.2}% 21
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Scaling the Assessment of Quality and Credibility of Health Information}{section.2.3}% 22
-\BOOKMARK [0][-]{chapter.3}{3 Proposed Work}{}% 23
-\BOOKMARK [1][-]{section.3.1}{3.1 Rationale}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{3.2 Credibility Criteria}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{3.3 Study Data}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.4}{3.4 System Model}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.5}{3.5 Experiments}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.6}{3.6 Outcome Measures}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{4 Results}{}% 30
-\BOOKMARK [1][-]{section.4.1}{4.1 Baseline Results}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Classification Performance}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Storage Requirements}{section.4.1}% 33
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Training time}{section.4.1}% 34
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Model speed}{section.4.1}% 35
-\BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 36
-\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 37
-\BOOKMARK [1][-]{section.6.1}{6.1 Conclusions}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 39
-\BOOKMARK [0][-]{appendix.A}{A Credibility Criteria}{}% 40
-\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 41
-\BOOKMARK [1][-]{section.A.2}{A.2 Credibility Criteria Table}{appendix.A}% 42
-\BOOKMARK [0][-]{section*.28}{Bibliography}{}% 43
+\BOOKMARK [0][-]{chapter.3}{3 Methods}{}% 23
+\BOOKMARK [1][-]{section.3.1}{3.1 Credibility Criteria}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{3.2 Study Data}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.3}{3.3 System Model}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.4}{3.4 Experiments}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.5}{3.5 Outcome Measures}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{4 Results}{}% 29
+\BOOKMARK [1][-]{section.4.1}{4.1 Baseline Results}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Classification Performance}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Storage Requirements}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Training time}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Model speed}{section.4.1}% 34
+\BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 35
+\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 36
+\BOOKMARK [1][-]{section.6.1}{6.1 Conclusions}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 38
+\BOOKMARK [0][-]{appendix.A}{A Exmaple}{}% 39
+\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 40
+\BOOKMARK [0][-]{section*.29}{Bibliography}{}% 41
