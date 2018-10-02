@@ -507,11 +507,17 @@ The criteria defined in Table \ref{table:Criteria}, developed by health professi
 \section{Study Data}
 \label{sec:StudyData}
 
-- \textit{Discuss the relationship of each category e.g. are they independent from each other? Is there any correlation? etc.}
+Things to discuss:
+\begin{enumerate}[-]
+	\item The number of articles used and how this was achieved
+	\item Unbalanced nature of the dataset and how it can affect the classifier's performance
+	\item The correlation between each criteria e.g. if meeting one criteria increases the likelihood that another criteria will be satisfied
+\end{enumerate}
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[totalheight=8cm]{images/label-distribution-208.png}
-	\caption{Distribution of labels amongst the labelled samples}
+	\caption{Distribution of labels amongst the samples}
 	\label{fig:LabelDistribution}
 \end{figure}
 
@@ -525,7 +531,7 @@ The criteria defined in Table \ref{table:Criteria}, developed by health professi
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[totalheight=8cm]{images/article-score-distribution-208.png}
-	\caption{Distribution of article scores amongst the labelled samples}
+	\caption{Distribution of article scores amongst the samples}
 	\label{fig:ArticleDistribution}
 \end{figure}
 
@@ -533,26 +539,36 @@ The criteria defined in Table \ref{table:Criteria}, developed by health professi
 \label{sect:chap2sysmodel}
 The development of the system model will be heavily based by the work proposed by Howard et al. \cite{Howard2018} following the process outlined in Section \ref{sec:TransferLearningReview}.
 
-\section{Experiments}
-\label{sec:Experiments}
-Experiments will be designed and conducted to achieve the following tasks:
-
-\begin{itemize}
-	\item Evaluate the performance of the classifiers as outlined in Section \ref{sec:OutcomeMeasures}.
-	\item Verify the correctness of the training data and ensure that the manually labelled training examples have been consistently labelled amongst the reviewers.
-\end{itemize} 
-
 \section{Outcome Measures}
 \label{sec:OutcomeMeasures}
 
 The following metrics will be measured to evaluate the performance of the classifier and the baseline models:
 
-\begin{enumerate}[(a)]
+\begin{enumerate}[1)]
+	\item Accuracy - The rate at which the classifier correctly labels each criteria
 	\item Time - The time it takes to train the classifier
 	\item Space - The storage requirements of the classifier
 	\item Speed - The time it takes for the model to output a predicted label
-	\item Accuracy - The rate at which the classifier correctly labels each criteria
 \end{enumerate}
+
+\textit{Discuss the reasoning in using these outcomes as the measurement for the performance of the classifier}
+
+\section{Experiments}
+\label{sec:Experiments}
+Experiments will be designed and conducted to achieve the following tasks:
+
+\begin{itemize}
+	\item Evaluate the performance of the classifiers using the outcome measures as described in in Section \ref{sec:OutcomeMeasures}.
+	\item Verify the correctness of the training data and ensure that the manually labelled training examples have been consistently labelled amongst the reviewers. (if possible)
+\end{itemize} 
+
+
+Experiments that will be done:
+\begin{enumerate}[-]
+	\item Evaluate the performance of classic ml text classifiers (NB, SVM) and modern text classifiers (fasttext) for this classification task in the context of both as a sequence of binary classification tasks and as a single multi-label classification task
+	\item These experiments will be conducted within a contained environment (e.g. AWS + docker) to ensure the results obtained are reproducible 
+\end{enumerate}
+
 
 \chapter{Results}
 \label{chap:Results}
