@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  2 OCT 2018 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  2 OCT 2018 12:28
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -518,12 +518,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
  []
 
 [7] [8]
-<images/svm-example.png, id=441, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=442, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 372.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=446, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=447, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 381.
@@ -544,7 +544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=468, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=469, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 410.
@@ -565,7 +565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 443--444
  []
 
 [12]
-<images/transfer-learning.png, id=510, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=511, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 456.
@@ -604,75 +604,62 @@ Underfull \hbox (badness 4341) in paragraph at lines 497--497
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 497--498
-\OT1/cmr/m/n/12 - Is pro-fes-sion-ally writ-ten, with proper gram-mar,
- []
-
-
-Underfull \hbox (badness 3701) in paragraph at lines 499--501
-\OT1/cmr/m/n/12 - Dis-closes sources of fund-ing for the or-gan-i-sa-
- []
-
-
-Overfull \hbox (17.68314pt too wide) in paragraph at lines 480--503
+Overfull \hbox (74.58864pt too wide) in paragraph at lines 480--503
  [][] 
  []
 
-<images/label-distribution-fig-draft.jpg, id=533, 2844.6275pt x 1991.44pt>
-File: images/label-distribution-fig-draft.jpg Graphic file (type jpg)
-<use images/label-distribution-fig-draft.jpg>
-Package pdftex.def Info: images/label-distribution-fig-draft.jpg  used on input
- line 513.
-(pdftex.def)             Requested size: 243.8519pt x 170.71652pt.
+<images/label-distribution-208.png, id=534, 420.06938pt x 304.13625pt>
+File: images/label-distribution-208.png Graphic file (type png)
+<use images/label-distribution-208.png>
+Package pdftex.def Info: images/label-distribution-208.png  used on input line 
+513.
+(pdftex.def)             Requested size: 314.39748pt x 227.62204pt.
+<images/article-score-distribution-208.png, id=535, 414.54875pt x 320.19624pt>
+File: images/article-score-distribution-208.png Graphic file (type png)
+<use images/article-score-distribution-208.png>
+Package pdftex.def Info: images/article-score-distribution-208.png  used on inp
+ut line 520.
+(pdftex.def)             Requested size: 294.69855pt x 227.62204pt.
 [15
 
- <./images/label-distribution-fig-draft.jpg>] [16] [17] [18
+ <./images/label-distribution-208.png>] [16] [17 <./images/article-score-distri
+bution-208.png>] [18
 
 ]
 Chapter 4.
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--557
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Category
  []
 
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--557
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Category
  []
 
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--557
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Category
  []
 
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--557
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Category
  []
 
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--557
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Category
  []
 
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--557
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Category
  []
 
 
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 557--558
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 563--564
 []|\OT1/cmr/m/n/12 Category
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--559
-[]|\OT1/cmr/m/n/12 NB +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--562
-[]|\OT1/cmr/m/n/12 SVM +
  []
 
 
@@ -691,73 +678,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 571--571
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 571--571
-\OT1/cmr/m/n/12 Word2Vec| 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 574--574
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 574--574
-\OT1/cmr/m/n/12 Word2Vec| 
- []
-
-
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 555--581
- [][] 
- []
-
-
-Overfull \hbox (4.42624pt too wide) in paragraph at lines 551--584
-\OT1/cmr/bx/n/12 **REMEMBER TO RE-RUN EX-PER-I-MENTS WHEN LA-BELLING IS COM-
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--591
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--591
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--591
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--591
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--591
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--591
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 591--592
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 593--593
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 596--596
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 577--577
+\OT1/cmr/m/n/12 Word2Vec| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--580
 []|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 580--580
+\OT1/cmr/m/n/12 Word2Vec| 
+ []
+
+
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 561--587
+ [][] 
+ []
+
+
+Overfull \hbox (4.42624pt too wide) in paragraph at lines 557--590
+\OT1/cmr/bx/n/12 **REMEMBER TO RE-RUN EX-PER-I-MENTS WHEN LA-BELLING IS COM-
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--597
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--597
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--597
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--597
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--597
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--597
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 597--598
+[]|\OT1/cmr/m/n/12 Category
  []
 
 
@@ -771,76 +758,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 602--602
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 589--605
- [][] 
- []
-
-[19]
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--615
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--615
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--615
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--615
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--615
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--615
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Overfull \hbox (1.14854pt too wide) in paragraph at lines 615--616
-[]|\OT1/cmr/m/n/12 Category
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 618--618
+Underfull \hbox (badness 10000) in paragraph at lines 605--605
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 618--618
-\OT1/cmr/m/n/12 Word2Vec| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 621--621
+Underfull \hbox (badness 10000) in paragraph at lines 608--608
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 621--621
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 595--611
+ [][] 
+ []
+
+[19]
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Overfull \hbox (1.14854pt too wide) in paragraph at lines 621--622
+[]|\OT1/cmr/m/n/12 Category
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--624
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 624--624
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 613--625
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 627--627
+\OT1/cmr/m/n/12 Word2Vec| 
+ []
+
+
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 619--631
  [][] 
  []
 
-<images/classifier-performance-figure-draft.jpg, id=562, 2609.75pt x 2031.59pt>
+<images/classifier-performance-figure-draft.jpg, id=565, 2609.75pt x 2031.59pt>
 
 File: images/classifier-performance-figure-draft.jpg Graphic file (type jpg)
 <use images/classifier-performance-figure-draft.jpg>
 Package pdftex.def Info: images/classifier-performance-figure-draft.jpg  used o
-n input line 633.
+n input line 639.
 (pdftex.def)             Requested size: 219.29715pt x 170.71652pt.
 [20 <./images/classifier-performance-figure-draft.jpg>] [21] [22
 
@@ -852,7 +849,7 @@ Chapter 5.
 Chapter 6.
 
 LaTeX Warning: Reference `chap:ProposedWork' on page 25 undefined on input line
- 654.
+ 660.
 
 [25] [26
 
@@ -877,15 +874,15 @@ es-[]and-[]their-[]compositionality .
  []
 
 [31] [32])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 685.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 691.
  [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 691.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 691.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 691.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: FD045968100B3B09E86E3BAAD4B8BDC1;2866.
+(rerunfilecheck)             Checksum: ED1061549B5A644CB5467B46DEFC063C;2866.
 
 
 LaTeX Warning: There were undefined references.
@@ -893,13 +890,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 691.
  ) 
 Here is how much of TeX's memory you used:
- 7983 strings out of 492973
- 119577 string characters out of 3135933
- 227659 words of memory out of 3000000
- 11574 multiletter control sequences out of 15000+200000
+ 7990 strings out of 492973
+ 119806 string characters out of 3135933
+ 227749 words of memory out of 3000000
+ 11579 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -912,9 +909,9 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Final_Project_Latex_Template.pdf (47 pages, 7139196 bytes).
+Output written on Final_Project_Latex_Template.pdf (47 pages, 3610513 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
