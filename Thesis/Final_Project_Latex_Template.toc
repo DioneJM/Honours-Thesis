@@ -29,14 +29,18 @@
 \contentsline {section}{\numberline {2.3}Discussion}{14}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Scaling the Assessment of Quality and Credibility of Health Information}{14}{subsection.2.3.1}
 \contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Study Data}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Credibility Criteria}{15}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dataset}{15}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}System Model}{17}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Baseline Models}{17}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Deep Learning Models}{18}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Outcome Measures}{18}{section.3.3}
-\contentsline {section}{\numberline {3.4}Experiments}{19}{section.3.4}
+\contentsline {section}{\numberline {3.1}Approach}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Study Data}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Dataset}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Credibility Criteria}{16}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}System Model}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Baseline Models}{17}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Deep Learning Models}{19}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Outcome Measures}{19}{section.3.4}
+\contentsline {section}{\numberline {3.5}Experiments}{20}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Accuracy}{20}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Training}{20}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Storage}{20}{subsection.3.5.3}
 \contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Baseline Results}{21}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Classification Performance}{21}{subsection.4.1.1}

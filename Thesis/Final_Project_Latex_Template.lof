@@ -5,9 +5,9 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Layout of a simple RNN \cite {RNNDiagram}\relax }}{11}{figure.caption.19}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Potential improvements in performance using transfer learning \cite {Browniee2017}\relax }}{13}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of labels amongst the samples\relax }}{17}{figure.caption.24}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pearson correlation of each criteria\relax }}{17}{figure.caption.25}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of article scores amongst the samples\relax }}{18}{figure.caption.26}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of labels amongst the samples\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pearson correlation of each criteria\relax }}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of article scores amongst the samples\relax }}{19}{figure.caption.26}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Effects of dataset size \relax }}{22}{figure.caption.30}
 \addvspace {10\p@ }

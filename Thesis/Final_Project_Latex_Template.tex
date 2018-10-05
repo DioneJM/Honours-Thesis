@@ -472,19 +472,21 @@ Among the studies that aim to assess the credibility and quality of information,
 \chapter{Methods}
 \label{chap:Methods}
 
+\section{Approach}
+\label{sec:Approach}
+\textit{Discuss how I'm planning to breakdown this problem to be able to evaluate the effectiveness of deep learning models.}
+
+\textbf{Basic idea:}
+\begin{enumerate}[-]
+	\item Develop a framework of what credible articles are - in this case I used an already existing set of criteria
+	\item The framework is a set of criteria, where the number of criteria met is proportional to the article's credibility
+	\item Treat each criteria as a label which then transforms the problem into a multi-label classification problem which then allows us to use ML and DL models
+	\item Evaluate the performance not only for accuracy but also for training time and storage requirement because we care of the model's real-world applicability
+\end{enumerate}
+
 
 \section{Study Data}
 \label{sec:StudyData}
-
-
-
-\subsection{Credibility Criteria}
-\label{sec:CredibilityCriteria}
-The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project, will be used to define the structure and content that a vaccine-related health article must have to be considered as a credible source of information. \newline
-
-The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. However, extending this work for evaluating the credibility of articles in a different area or in a general case should remain feasible due to the novelty and specificity of the criteria being used provided that the criteria is adapted for the new classification task. \newline
-
-Prior to the creation of the dataset used for this project, a small pilot experiment was conducted between the team that developed the criteria to ensure that the criteria was simple and objective enough such that the labelling of the articles remained consistent and reliable. The pilot experiment consisted of the labelling of the same \textbf{\textit{\#Num-articles}} articles by all three members of the team.
 
 \subsection{Dataset}
 \label{sec:Dataset}
@@ -496,7 +498,11 @@ Things to discuss:
 	\item The correlation between each criteria e.g. if meeting one criteria increases the likelihood that another criteria will be satisfied
 \end{enumerate}
 
-For the purposes of training and evaluating the performance of the baseline and deep learning models for this novel classification task, a dataset consisting of \textbf{\textit{1 Billion}} articles that have been manually and expertly labelled based on whether the article satisfies each criteria outlined in Table \ref{table:Criteria} has been developed. Due to the expert-level knowledge required to manually label the articles and the training to develop the knowledge required being out of the scope of this project, the articles within the dataset used were manually labelled by the same team that developed the credibility criteria as introduced in Section \ref{sec:CredibilityCriteria}.
+For the purposes of training and evaluating the performance of the baseline and deep learning models for this novel classification task, a dataset consisting of \textbf{\textit{1 billion}} articles that have been manually and expertly labelled based on the criteria outlined in Table \ref{table:Criteria} has been produced. Due to the expert-level knowledge and skill set required to manually label the articles being out of the scope of this project and unfeasible given the time constraints of this project, the articles within of dataset were manually labelled by the same team that developed the credibility criteria as discussed in Section \ref{sec:CredibilityCriteria}.
+
+\subsection{Credibility Criteria}
+\label{sec:CredibilityCriteria}
+The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project. This set of criteria will be used to define the structure and content that a vaccine-related health article must have in order to be considered as a credible source of information. The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. Prior to creating the dataset for this project, a small pilot experiment was conducted between the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced.
 
 \begin{table}[H]
 	\centering
@@ -563,16 +569,17 @@ Things to talk about:
 \subsection{Deep Learning Models}
 \label{sec:DLModels}
 
+\textit{This section should discuss the work proposed by Howard et al. and go into the limitations, advantages of this specific technique and how/why it is applicable in the context of this project}
+
 The development of the system model will be heavily based by the work proposed by Howard et al. \cite{Howard2018} following the process outlined in Section \ref{sec:TransferLearningReview}.
 
-\begin{enumerate}[-]
-	\item This section should discuss the work proposed by Howard et al. and go into the limitations, advantages of this specific technique and how/why it is applicable in the context of this project
-\end{enumerate}
 
 \section{Outcome Measures}
 \label{sec:OutcomeMeasures}
 
 The following metrics will be measured to evaluate the performance of the classifier and the baseline models:
+
+\textit{In addition to the typically used accuracy metric to determine the performance of the classifiers, we also care about the classifier's training time and storage requirements as we are also interested in using this method for a real-world application (which should be discussed in the future work section)}
 
 \begin{enumerate}[1)]
 	\item Accuracy - The rate at which the classifier correctly labels each criteria
@@ -598,6 +605,31 @@ Experiments that will be done:
 	\item Evaluate the performance of classic ml text classifiers (NB, SVM) and modern text classifiers (fasttext) for this classification task in the context of both as a sequence of binary classification tasks and as a single multi-label classification task
 	\item These experiments will be conducted within a contained environment (e.g. AWS + docker) to ensure the results obtained are reproducible 
 \end{enumerate}
+
+\textit{Subsection titles are not final}
+\subsection{Accuracy}
+\label{sec:AccuracyExperiments}
+\textit{This section will go into the experiments conducted to evaluate the performance of all the classifiers.}
+
+Current Strategy for baseline:
+\begin{enumerate}[-]
+	\item Classifiers were optimised using gridsearchcv
+	\item Performance was evaluated via 10-fold stratified cross validation measuring the average micro f1-score.
+\end{enumerate}
+
+Current strategy for deep learning:
+\begin{enumerate}[-]
+	\item 
+\end{enumerate}
+
+\subsection{Training}
+\label{sec:TrainingExperiments}
+\textit{This section will go into the experiments conducted to evaluate and optimise the training time of the models used. I think this will largely be dependent on the complexity of the features used.}
+
+\subsection{Storage}
+\label{sec:StorageExperiments}
+\textit{This section will discuss the storage requirements which will also be largely dependent on the features used by the classifiers}
+
 
 
 \chapter{Results}
