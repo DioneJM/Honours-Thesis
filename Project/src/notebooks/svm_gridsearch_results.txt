@@ -1,0 +1,98 @@
+For: Cat1
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
+For: Cat2
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
+For: Cat3
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
+For: Cat4
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
+For: Cat5
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
+For: Cat6
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
+For: Cat7
+GridSearchCV(cv=10, error_score='raise',
+       estimator=Pipeline(memory=None,
+     steps=[('vec', CountVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words='english',
+        s...='l2', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False))]),
+       fit_params=None, iid=True, n_jobs=-1,
+       param_grid={'vec__max_df': (0.5, 0.625, 0.75, 0.875, 1.0), 'vec__max_features': (None, 5000, 10000, 20000), 'vec__min_df': (1, 5, 10, 20, 50), 'tfidf__use_idf': (True, False), 'tfidf__sublinear_tf': (True, False), 'vec__binary': (True, False), 'tfidf__norm': ('l1', 'l2'), 'clf__penalty': [None, 'l1', 'l2', 'elasticnet'], 'clf__alpha': [1e-05, 0.0001, 0.001, 0.01, 0.1, 1]},
+       pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
+       scoring=None, verbose=2)
+=======================
