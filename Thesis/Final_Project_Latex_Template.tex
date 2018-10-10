@@ -485,9 +485,11 @@ Among the studies that aim to assess the credibility and quality of information,
 	\item Maybe a good point to discuss about is the novelty of the classification task so evaluation using standard methods e.g. testing the performance on different datasets isn't applicable.
 \end{enumerate}
 
-To achieve the overarching goal of this project which is, as discussed in Section \ref{sec:Aims}, to evaluate the performance of automation techniques, specifically, using deep learning models to automate the resource intensive task of determining the credibility of online articles, the task must be framed in a way that can be used by the models in order to be evaluated. \newline
+To achieve the overarching goal of this project which is, as discussed in Section \ref{sec:Aims}, which is to evaluate the performance of automation techniques, specifically, using deep learning models to automate the resource intensive task of determining the credibility of online articles, the task must be framed in a way that can be used by the models in order to be evaluated. \newline
 
-This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility which was manually determined by a team of health professionals using a pre-existing framework. Details on the procurement process and the framework used to evaluate an article's credibility is further discussed in Section \ref{sec:StudyData}. Once the dataset was created, a set of baseline models were implemented in order to have a point of reference for the performance of the deep learning model. The baseline results were comprised of the performance of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation techniques and the state-of-the-art text classifier FastText. The implementation details of the baseline experiments and deep learning model is further discussed under Section \ref{sec:SystemModel}. \textit{Need to talk about the experiments and outcome measures}
+This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility which was manually determined by a team of health professionals using a pre-existing framework. Details on the procurement process and the framework used to evaluate an article's credibility is further discussed in Section \ref{sec:StudyData}. 
+Once the dataset was created, a set of baseline models were implemented in order to have a point of reference for the performance of the deep learning model. The baseline results were comprised of the performance of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation techniques and the state-of-the-art text classifier FastText. The implementation details of the baseline experiments and deep learning model is further discussed under Section \ref{sec:SystemModel}. 
+\textit{Need to talk about the experiments and outcome measures}
 
 \section{Study Data}
 \label{sec:StudyData}
@@ -622,7 +624,8 @@ Experiments that will be done:
 Current Strategy for baseline:
 \begin{enumerate}[-]
 	\item Classifiers were optimised using gridsearchcv
-	\item Performance was evaluated via 10-fold stratified cross validation measuring the average micro f1-score.
+	\item Performance was evaluated via 10-fold stratified cross validation measuring the average micro f1-score or ROC value.
+	\item ROC curve might be better to show the performance since it visualises the ratio between true positives and false positives
 \end{enumerate}
 
 Current strategy for deep learning:
