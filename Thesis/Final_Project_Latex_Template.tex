@@ -475,19 +475,11 @@ Among the studies that aim to assess the credibility and quality of information,
 \section{Approach}
 \label{sec:Approach}
 
-\textbf{Basic idea:}
-\begin{enumerate}[-]
-
-	\item Treat each criteria as a label which then transforms the problem into a multi-label classification problem which then allows us to use ML and DL models
-	\item Evaluate the performance not only for accuracy but also for training time and storage requirement because we care of the model's real-world applicability
-	\item Maybe a good point to discuss about is the novelty of the classification task so evaluation using standard methods e.g. testing the performance on different datasets isn't applicable.
-\end{enumerate}
-
 To achieve the overarching goal of this project which, as discussed in Section \ref{sec:Aims}, is to evaluate the performance of automation techniques, specifically, using deep learning models to automate the resource intensive task of determining the credibility of online articles, the task must be framed in a way that can be used by the models in order to be evaluated. \newline
 
-This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility which was manually determined by a team of health professionals using a pre-existing framework. Details on the procurement process and the framework used to evaluate an article's credibility is outlined in Section \ref{sec:StudyData}. 
-Once the dataset was created, a set of baseline models were implemented in order to have a point of reference for the performance of the deep learning model. The baseline results comprised of the performance of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation methods and the state-of-the-art text classifier FastText. The implementation details of the baseline models and the implemented deep learning model is further discussed under Section \ref{sec:SystemModel}. 
-\textit{Need to talk about the experiments and outcome measures}
+This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework. Details on the procurement process and the framework used to evaluate an article's credibility is outlined in Section \ref{sec:StudyData}. 
+Once the dataset was created, a set of baseline models were implemented in order to have a baseline reference for the performance of the deep learning model. The baseline reference models comprised of the performance of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation methods and the state-of-the-art text classifier FastText. The implementation details of the baseline models and the implemented deep learning model is further discussed under Section \ref{sec:SystemModel}. 
+Section \ref{sec:Experiments} then outlines the comparison and analysis methodology for the performance of the deep learning model against the baseline implementations based on its ability to correctly predict the label for each category and other factors with regards to its feasibility in deploying the model for a real-world application.
 
 \section{Study Data}
 \label{sec:StudyData}
@@ -508,9 +500,9 @@ For the purposes of training and evaluating the performance of the baseline and 
 \label{sec:CredibilityCriteria}
 The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project. This set of criteria will be used to define the structure and content that a vaccine-related health article must have in order to be considered as a credible source of information. The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. Prior to creating the dataset for this project, a small pilot experiment was conducted between the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced.
 
-\begin{table}[H]
+\begin{table}[!htb]
 	\centering
-	\begin{tabular}{|p{0.3cm}|p{5cm}|p{12cm}|}
+	\begin{tabular}{|p{0.3cm}|p{5cm}|p{10cm}|}
 		\hline
 		\# & Criteria                                                                           & Description                                                                                                                                                                                                                                                                                                                                                             \\
 		\hline
