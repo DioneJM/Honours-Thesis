@@ -33,24 +33,24 @@
 \contentsline {section}{\numberline {3.2}Study Data}{15}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Dataset}{15}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Credibility Criteria}{16}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}System Model}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Baseline Models}{17}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Deep Learning Models}{19}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.3}System Model}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Baseline Models}{16}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Deep Learning Models}{17}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Experiments}{19}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Outcome Measures}{19}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Accuracy}{20}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Training}{20}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Storage}{20}{subsection.3.4.4}
-\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Baseline Results}{21}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Classification Performance}{21}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Storage Requirements}{22}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Training time}{23}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Model speed}{23}{subsection.4.1.4}
-\contentsline {chapter}{\numberline {5}Discussion}{25}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{27}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{29}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{29}{section.A.1}
-\contentsline {chapter}{Bibliography}{29}{section*.31}
+\contentsline {subsection}{\numberline {3.4.4}Storage}{21}{subsection.3.4.4}
+\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Baseline Results}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Classification Performance}{23}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Storage Requirements}{24}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Training time}{25}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Model speed}{25}{subsection.4.1.4}
+\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{29}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{31}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{31}{section.A.1}
+\contentsline {chapter}{Bibliography}{31}{section*.31}

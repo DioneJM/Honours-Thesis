@@ -451,6 +451,8 @@ The proposed method involves the use of an inductive learning technique \cite{Pa
 	\item Adapt the high-level representations of the classifier that uses the language model, while preserving the low-level representations, using gradual unfreezing \cite{Howard2018}
 \end{enumerate}
 
+\textit{\textbf{Talk about the fact that this method was only evaluated on common classification tasks using commonly used datasets whereas this project is interested in using this method on a novel classification task using a dataset made specifically for the task.}}
+
 Whilst transfer learning is useful to train models for novel tasks where access to data is limited, it is also an optimisation technique, using previously acquired knowledge, to save time or improve model performance \cite{Pan2009}. This potential performance improvement is illustrated in Figure \ref{fig:TransferLearning} and is also demonstrated by Howard et al. \cite{Howard2018} for common text classification tasks such as question, topic  classification and sentiment analysis.
 
 \begin{figure}[H]
@@ -487,18 +489,15 @@ Section \ref{sec:Experiments} then outlines the comparison and analysis methodol
 \subsection{Dataset}
 \label{sec:Dataset}
 
-Things to discuss:
-\begin{enumerate}[-]
-	\item The number of articles used and where it was retrieved.
-	\item Unbalanced nature of the dataset and how it can affect the classifier's performance
-	\item The correlation between each criteria e.g. if meeting one criteria increases the likelihood that another criteria will be satisfied
-\end{enumerate}
+For the purposes of training and evaluating the performance of the baseline and deep learning models for this novel classification task, a dataset consisting of \textbf{\textit{1 billion}} articles that have been manually and expertly labelled based on the criteria outlined in Table \ref{table:Criteria} has been produced. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, the articles within of dataset were manually labelled by the same team that developed the credibility criteria which will be discussed in Section \ref{sec:CredibilityCriteria}.\newline
 
-For the purposes of training and evaluating the performance of the baseline and deep learning models for this novel classification task, a dataset consisting of \textbf{\textit{1 billion}} articles that have been manually and expertly labelled based on the criteria outlined in Table \ref{table:Criteria} has been produced. Due to the unfeasiblity of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, the articles within of dataset were manually labelled by the same team that developed the credibility criteria as discussed in Section \ref{sec:CredibilityCriteria}.
+The articles used during the labelling process were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the ones chosen are the articles being shared and discussed online.  
+However, this makes the dataset susceptible to sampling bias as the selective collection process places a higher priority in collecting articles that were discussed and shared rather than creating a collection of articles that showed a representative distribution of the credibility of vaccine-related articles distributed online.
+
 
 \subsection{Credibility Criteria}
 \label{sec:CredibilityCriteria}
-The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project. This set of criteria will be used to define the structure and content that a vaccine-related health article must have in order to be considered as a credible source of information. The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. Prior to creating the dataset for this project, a small pilot experiment was conducted between the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced.
+The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project. This set of criteria will be used to define the structure and content that a vaccine-related health article must have in order to be considered as a credible source of information. The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. Prior to creating the dataset for this project, a small pilot experiment was conducted by the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced. The pilot experiment involved each team member manually labelling the same set of \textbf{\textit{200 hundred billion}} articles after which each member's labels were compared and adjustments to the criteria were applied if a particular category was susceptible to inconsistent labelling.
 
 \begin{table}[!htb]
 	\centering
@@ -530,23 +529,18 @@ The seven criteria defined in Table \ref{table:Criteria} was developed by a team
 \end{table}
 
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[totalheight=8cm]{images/label-distribution-208.png}
-	\caption{Distribution of labels amongst the samples}
-	\label{fig:LabelDistribution}
-\end{figure}
+
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[totalheight=8cm]{images/criteria-correlation-208.png}
+	\includegraphics[totalheight=8cm]{images/criteria-correlation.png}
 	\caption{Pearson correlation of each criteria}
 	\label{fig:CriteriaCorrelation}
 \end{figure}
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[totalheight=8cm]{images/article-score-distribution-208.png}
+	\includegraphics[totalheight=8cm]{images/article-score-distribution.png}
 	\caption{Distribution of article scores amongst the samples}
 	\label{fig:ArticleDistribution}
 \end{figure}
@@ -569,8 +563,6 @@ Things to talk about:
 \textit{This section should discuss the work proposed by Howard et al. and go into the limitations, advantages of this specific technique and how/why it is applicable in the context of this project}
 
 The development of the system model will be heavily based by the work proposed by Howard et al. \cite{Howard2018} following the process outlined in Section \ref{sec:TransferLearningReview}.
-
-
 
 
 \section{Experiments}
@@ -616,7 +608,15 @@ Current Strategy for baseline:
 	\item Classifiers were optimised using gridsearchcv
 	\item Performance was evaluated via 10-fold stratified cross validation measuring the average micro f1-score or ROC value.
 	\item ROC curve might be better to show the performance since it visualises the ratio between true positives and false positives
+	\item \textbf{Explain the reason for evaluating performance using micro f1/ROC which is due to the imbalance of the labels and that these metrics take the imbalance into account, unlike accuracy}
 \end{enumerate}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[totalheight=8cm]{images/label-distribution.png}
+	\caption{Distribution of labels amongst the samples}
+	\label{fig:LabelDistribution}
+\end{figure}
 
 Current strategy for deep learning:
 \begin{enumerate}[-]

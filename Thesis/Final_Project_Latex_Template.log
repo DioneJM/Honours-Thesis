@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  11 OCT 2018 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  11 OCT 2018 15:54
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -577,10 +577,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--446
 <images/transfer-learning.png, id=548, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
-Package pdftex.def Info: images/transfer-learning.png  used on input line 458.
+Package pdftex.def Info: images/transfer-learning.png  used on input line 460.
 (pdftex.def)             Requested size: 243.37952pt x 199.16928pt.
 
-Overfull \hbox (5.10704pt too wide) in paragraph at lines 466--466
+Overfull \hbox (5.10704pt too wide) in paragraph at lines 468--468
 []\OT1/cmr/bx/n/14.4 Scaling the As-sess-ment of Qual-ity and Cred-i-bil-ity of
  Health
  []
@@ -588,90 +588,94 @@ Overfull \hbox (5.10704pt too wide) in paragraph at lines 466--466
 [13 <./images/transfer-learning.png>] [14]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 491.
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
+
+ []
 
 [15
 
 ]
-Overfull \hbox (1.25566pt too wide) in paragraph at lines 507--507
+Overfull \hbox (1.25566pt too wide) in paragraph at lines 506--506
 []|\OT1/cmr/m/n/12 #| 
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 509--509
+Underfull \hbox (badness 2856) in paragraph at lines 508--508
 []|\OT1/cmr/m/n/12 Identifies the in-for-ma-tion
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 512--512
+Underfull \hbox (badness 5288) in paragraph at lines 511--511
 []|\OT1/cmr/m/n/12 Uses in-for-ma-tion sources
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 517--517
+Underfull \hbox (badness 6445) in paragraph at lines 516--516
 []|\OT1/cmr/m/n/12 Does not ex-ag-ger-ate or
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 522--522
+Underfull \hbox (badness 4341) in paragraph at lines 521--521
 []|\OT1/cmr/m/n/12 Uses clear, non-technical
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 522--523
+Underfull \hbox (badness 1845) in paragraph at lines 521--522
 \OT1/cmr/m/n/12 - Is pro-fes-sion-ally writ-ten, with proper gram-mar,
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 524--526
+Underfull \hbox (badness 3701) in paragraph at lines 523--525
 \OT1/cmr/m/n/12 - Dis-closes sources of fund-ing for the or-gan-i-sa-
  []
 
 
-Overfull \hbox (17.68314pt too wide) in paragraph at lines 505--528
+Overfull \hbox (17.68314pt too wide) in paragraph at lines 504--527
  [][] 
  []
 
-<images/label-distribution-208.png, id=584, 420.06938pt x 304.13625pt>
-File: images/label-distribution-208.png Graphic file (type png)
-<use images/label-distribution-208.png>
-Package pdftex.def Info: images/label-distribution-208.png  used on input line 
-535.
-(pdftex.def)             Requested size: 314.39748pt x 227.62204pt.
-<images/criteria-correlation-208.png, id=585, 338.76563pt x 304.63812pt>
-File: images/criteria-correlation-208.png Graphic file (type png)
-<use images/criteria-correlation-208.png>
-Package pdftex.def Info: images/criteria-correlation-208.png  used on input lin
-e 542.
-(pdftex.def)             Requested size: 253.12762pt x 227.62204pt.
-<images/article-score-distribution-208.png, id=586, 414.54875pt x 320.19624pt>
-File: images/article-score-distribution-208.png Graphic file (type png)
-<use images/article-score-distribution-208.png>
-Package pdftex.def Info: images/article-score-distribution-208.png  used on inp
-ut line 549.
-(pdftex.def)             Requested size: 294.69855pt x 227.62204pt.
-[16 <./images/label-distribution-208.png>] [17] [18 <./images/criteria-correlat
-ion-208.png> <./images/article-score-distribution-208.png>]
+<images/criteria-correlation.png, id=583, 409.22888pt x 369.48038pt>
+File: images/criteria-correlation.png Graphic file (type png)
+<use images/criteria-correlation.png>
+Package pdftex.def Info: images/criteria-correlation.png  used on input line 53
+6.
+(pdftex.def)             Requested size: 252.11449pt x 227.62204pt.
+<images/article-score-distribution.png, id=584, 510.40688pt x 391.16138pt>
+File: images/article-score-distribution.png Graphic file (type png)
+<use images/article-score-distribution.png>
+Package pdftex.def Info: images/article-score-distribution.png  used on input l
+ine 543.
+(pdftex.def)             Requested size: 297.0097pt x 227.62204pt.
+[16] [17] [18 <./images/criteria-correlation.png> <./images/article-score-distr
+ibution.png>]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 604.
+             The label is: - on input line 596.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 607.
 
 [19]
+<images/label-distribution.png, id=615, 510.40688pt x 382.12762pt>
+File: images/label-distribution.png Graphic file (type png)
+<use images/label-distribution.png>
+Package pdftex.def Info: images/label-distribution.png  used on input line 616.
 
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 615.
+(pdftex.def)             Requested size: 304.03464pt x 227.62204pt.
 
 
 LaTeX Warning: The counter will not be printed.
              The label is: - on input line 622.
 
-[20]
+[20 <./images/label-distribution.png>] [21] [22
+
+]
 Chapter 4.
 
 Overfull \hbox (1.14854pt too wide) in paragraph at lines 649--649
@@ -818,9 +822,7 @@ Overfull \hbox (11.39752pt too wide) in paragraph at lines 681--697
  [][] 
  []
 
-[21
-
-]
+[23]
 Overfull \hbox (1.14854pt too wide) in paragraph at lines 707--707
 []|\OT1/cmr/m/n/12 Category
  []
@@ -880,33 +882,33 @@ Overfull \hbox (11.39752pt too wide) in paragraph at lines 705--717
  [][] 
  []
 
-<images/classifier-performance-figure-draft.jpg, id=631, 2609.75pt x 2031.59pt>
+<images/classifier-performance-figure-draft.jpg, id=639, 2609.75pt x 2031.59pt>
 
 File: images/classifier-performance-figure-draft.jpg Graphic file (type jpg)
 <use images/classifier-performance-figure-draft.jpg>
 Package pdftex.def Info: images/classifier-performance-figure-draft.jpg  used o
 n input line 725.
 (pdftex.def)             Requested size: 219.29715pt x 170.71652pt.
-[22 <./images/classifier-performance-figure-draft.jpg>] [23] [24
+[24 <./images/classifier-performance-figure-draft.jpg>] [25] [26
 
 ]
 Chapter 5.
-[25] [26
+[27] [28
 
 ]
 Chapter 6.
 
-LaTeX Warning: Reference `chap:ProposedWork' on page 27 undefined on input line
+LaTeX Warning: Reference `chap:ProposedWork' on page 29 undefined on input line
  746.
 
-[27] [28
+[29] [30
 
 
 ]
 Appendix A.
-(Final_Project_Latex_Template.bbl [29
+(Final_Project_Latex_Template.bbl [31
 
-] [30
+] [32
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 93--99
@@ -915,15 +917,15 @@ f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat
 = 1534726962\OMS/cmsy/m/n/12 f[] []
  []
 
-[31] [32]
+[33] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 223--228
 \OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
 es-[]and-[]their-[]compositionality .
  []
 
-[33] [34])
+[35] [36])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 777.
- [35]
+ [37]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 777.
  (Final_Project_Latex_Template.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 777.
@@ -942,7 +944,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 777.
  ) 
 Here is how much of TeX's memory you used:
  8084 strings out of 492973
- 121196 string characters out of 3135933
+ 121136 string characters out of 3135933
  229352 words of memory out of 3000000
  11646 multiletter control sequences out of 15000+200000
  11767 words of font info for 43 fonts, out of 3000000 for 9000
@@ -957,9 +959,9 @@ e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (49 pages, 3725948 bytes).
+Output written on Final_Project_Latex_Template.pdf (51 pages, 3616777 bytes).
 PDF statistics:
- 823 PDF objects out of 1000 (max. 8388607)
+ 830 PDF objects out of 1000 (max. 8388607)
  190 named destinations out of 1000 (max. 500000)
  430 words of extra memory for PDF output out of 10000 (max. 10000000)
 
