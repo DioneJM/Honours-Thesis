@@ -30,16 +30,22 @@
 \contentsline {subsection}{\numberline {2.3.1}Scaling the Assessment of Quality and Credibility of Health Information}{14}{subsection.2.3.1}
 \contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Approach}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Study Data}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Dataset}{15}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.2}Study Data}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Dataset}{16}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Credibility Criteria}{16}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}System Model}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Baseline Models}{16}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Deep Learning Models}{17}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Experiments}{19}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Outcome Measures}{19}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Accuracy}{20}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Training}{20}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.2.3}Study Data Limitations}{16}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Model Implementation}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Baseline Models}{19}{subsection.3.3.1}
+\contentsline {subsubsection}{Preprocessing}{19}{section*.27}
+\contentsline {subsubsection}{Feature Selection}{19}{section*.28}
+\contentsline {subsubsection}{Model Selection}{19}{section*.29}
+\contentsline {subsection}{\numberline {3.3.2}Deep Learning Models}{19}{subsection.3.3.2}
+\contentsline {subsubsection}{Preprocessing}{20}{section*.30}
+\contentsline {subsubsection}{Model Implementation}{20}{section*.31}
+\contentsline {section}{\numberline {3.4}Experiments}{20}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Outcome Measures}{20}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Accuracy}{21}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Training}{21}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Storage}{21}{subsection.3.4.4}
 \contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Baseline Results}{23}{section.4.1}
@@ -53,4 +59,4 @@
 \contentsline {section}{\numberline {6.2}Future Work}{29}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{31}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{31}{section.A.1}
-\contentsline {chapter}{Bibliography}{31}{section*.31}
+\contentsline {chapter}{Bibliography}{31}{section*.36}

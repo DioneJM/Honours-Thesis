@@ -1,15 +1,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Determining the optimal hyperplane \cite {Aggarwal2012}\relax }}{9}{figure.caption.16}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces (Left) Non-linearly distributed data of two classes in a 2D representation space. \newline (Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel \cite {UnderstandingKernel}.\relax }}{10}{figure.caption.17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (Left) Non-linearly distributed data of two classes in a 2D representation space. \newline (Right) Linearly separable data of the same classes in a 3D representation space after the application of a kernel function \cite {UnderstandingKernel}.\relax }}{10}{figure.caption.17}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Layout of a simple RNN \cite {RNNDiagram}\relax }}{11}{figure.caption.19}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Potential improvements in performance using transfer learning \cite {Browniee2017}\relax }}{13}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Pearson correlation of each criteria\relax }}{18}{figure.caption.24}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Distribution of article scores amongst the samples\relax }}{18}{figure.caption.25}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of labels amongst the samples\relax }}{20}{figure.caption.26}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of labels amongst the collected articles.\relax }}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Distribution of article scores amongst the manually labelled articles.\relax }}{17}{figure.caption.24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Pearson correlation of each criteria\relax }}{19}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Effects of dataset size \relax }}{24}{figure.caption.30}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Effects of dataset size \relax }}{24}{figure.caption.35}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
