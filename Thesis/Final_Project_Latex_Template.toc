@@ -35,18 +35,16 @@
 \contentsline {subsection}{\numberline {3.2.2}Credibility Criteria}{16}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Study Data Limitations}{16}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Model Implementation}{18}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Baseline Models}{19}{subsection.3.3.1}
-\contentsline {subsubsection}{Preprocessing}{19}{section*.27}
-\contentsline {subsubsection}{Feature Selection}{20}{section*.28}
-\contentsline {subsubsection}{Model Selection}{20}{section*.29}
-\contentsline {subsection}{\numberline {3.3.2}Deep Learning Models}{20}{subsection.3.3.2}
-\contentsline {subsubsection}{Preprocessing}{20}{section*.30}
-\contentsline {subsubsection}{Model Implementation}{20}{section*.31}
+\contentsline {subsection}{\numberline {3.3.1}Preprocessing}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Feature Selection}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Model Selection}{20}{subsection.3.3.3}
+\contentsline {subsubsection}{Baseline Models}{20}{section*.27}
+\contentsline {subsubsection}{Deep Learning Model}{20}{section*.28}
 \contentsline {section}{\numberline {3.4}Experiments}{20}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Outcome Measures}{20}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Accuracy}{21}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Training}{21}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Storage}{21}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.3}Training}{22}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Storage}{22}{subsection.3.4.4}
 \contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Baseline Results}{23}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Classification Performance}{23}{subsection.4.1.1}
@@ -59,4 +57,4 @@
 \contentsline {section}{\numberline {6.2}Future Work}{29}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{31}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{31}{section.A.1}
-\contentsline {chapter}{Bibliography}{31}{section*.36}
+\contentsline {chapter}{Bibliography}{31}{section*.33}

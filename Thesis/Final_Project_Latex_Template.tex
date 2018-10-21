@@ -499,7 +499,7 @@ The seven criteria defined in Table \ref{table:Criteria} was developed by a team
 
 \subsection{Study Data Limitations}
 \label{sec:StudyDataLimitations}
-Because of the selective collection process for the articles, the procured dataset has become susceptible to sampling bias as it emphasises a higher priority in collecting articles that were discussed and shared rather than creating a collection of articles that showed a representative distribution of the credibility of vaccine-related articles published online. Effects of the biased sampling methods is illustrated in Figure \ref{fig:LabelDistribution} which shows that, for the majority of the categories, the articles collected is highly biased to either satisfy or fail to satisfy a specific criteria. However, other factors such as the varying difficulty of satisfying each criteria also affect the imbalance of the label distribution.
+Because of the selective collection process for the articles, the procured dataset has become susceptible to sampling bias as it placed a higher priority on collecting articles that were discussed and shared rather than creating a collection of articles that showed a representative distribution of the credibility of vaccine-related articles published and available online. Effects of the biased sampling methods is illustrated in Figure \ref{fig:LabelDistribution} which shows that, for the majority of the categories, the articles collected are highly skewed to either satisfy or fail to satisfy a specific criteria. However, other factors such as the varying difficulty to satisfy a specific criteria also affect the imbalance of the label distribution.
 
 
 \begin{figure}[H]
@@ -561,36 +561,47 @@ This also highlights an issue in regards to the quantification of an article's c
 \section{Model Implementation}
 \label{sec:SystemModel}
 
-To assess the deep learning model's performance, a set of machine learning classifiers have been implemented and optimised for this classification task to act as a baseline reference.
+\textit{Developing and implementing the deep learning model + baseline models involved three main phases: preprocessing, feature selection and model selection}
+
+\subsection{Preprocessing}
+\label{sec:ModelPreprocessing}
+
+\begin{enumerate}
+	\item Preprocessing had to be general, as each feature required a specific kind transformation (discuss any further preprocessing that was done under the respective feature in Section \ref{sec:ModelFeatureSelection}) which retained/loss varying amounts of information
+	\item Created 3 datasets: list of articles, list of sentences within each article where the sentences are a list of words and list of words of each article
+\end{enumerate}
+
+\subsection{Feature Selection}
+\label{sec:ModelFeatureSelection}
+
+\begin{enumerate}
+	\item BoW of unigrams
+	\item Tf-idf of bigrams
+	\item Pre-trained w2v
+	\item Pre-trained + fine-tuned w2v
+	\item Pre-trained LM
+	\item Pre-trained + fine-tuned LM
+		\item The pretrained corpus used for the LM can be from various corpora i.e. wikipedia, pubmed, the collected articles
+\end{enumerate}
+
+\subsection{Model Selection}
+\label{sec:ModelSelection}
 
 
-\subsection{Baseline Models}
+\subsubsection{Baseline Models}
 \label{sec:BaselineModels}
 
 Machine learning-based classifiers were mainly considered for the baseline models due to their reliance on domain specific knowledge during the feature extraction process as it is in the project's interest to reduce the reliance on domain-specific knowledge and leverage a deep learning-based classifier's ability to automate the feature extraction process. Hence the implementation of the baseline models did not aim to utilise domain-specific knowledge so as to evaluate the effectiveness of the automated feature extraction process of deep learning-based classifiers.
 
 Things to talk about:
 \begin{enumerate}
-	\item The classifiers that will be used: SVM, NB and maybe fasttext
-	\item Features that will be used: BoW, tfidf, w2v (mean or tfidf-weighted), and, if applicable, language models that have not been fine tuned
+	\item The classifiers that will be used: SVM, NB
+	\item NB, Logistic Regression due to its simplicity and wide use in text classification tasks in real-world applications
+	\item SVM because of its scalability with high dimensional data
+
 \end{enumerate}
 
-\subsubsection{Preprocessing}
-\label{sec:BaselinePreprocessing}
-\begin{enumerate}
-	\item Preprocessing had to be general, as each feature required a specific kind transformation
-	\item Created 3 datasets: list of articles, list of sentences where the sentences were a list of words and list of words
-\end{enumerate}
-
-
-\subsubsection{Feature Selection}
-\label{sec:BaselineFeatureSelection}
-
-\subsubsection{Model Selection}
-\label{sec:BaselineModelSelection}
-
-
-\subsection{Deep Learning Models}
+\subsubsection{Deep Learning Model}
 \label{sec:DLModels}
 
 \textit{This section should discuss the work proposed by Howard et al. and go into the limitations, advantages of this specific technique and how/why it is applicable in the context of this project}
@@ -599,11 +610,9 @@ The development of the system model will be heavily based by the work proposed b
 
 \textit{\textbf{Talk about the fact that this method was only evaluated on common classification tasks using commonly used datasets whereas this project is interested in using this method on a non-standard classification task using a dataset made specifically for the task.}}
 
-\subsubsection{Preprocessing}
-\label{sec:DLPreprocessing}
 
-\subsubsection{Model Implementation}
-\label{sec:DLImplementation}
+
+
 
 
 \section{Experiments}

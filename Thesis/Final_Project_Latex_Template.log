@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  15 OCT 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  16 OCT 2018 14:29
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -416,7 +416,7 @@ LaTeX Info: Redefining \nameref on input line 207.
 \@outlinefile=\write3
 \openout3 = `Final_Project_Latex_Template.out'.
 
-<MQlogo_stacked.pdf, id=199, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=203, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 215.
@@ -527,12 +527,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--333
  []
 
 [7] [8]
-<images/svm-example.png, id=484, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=489, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 372.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=489, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=494, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 381.
@@ -553,7 +553,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=511, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=516, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 410.
@@ -574,7 +574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 443--444
  []
 
 [12]
-<images/transfer-learning.png, id=553, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=558, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 456.
@@ -610,13 +610,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--491
 [15
 
 ] [16]
-<images/label-distribution.png, id=593, 510.40688pt x 382.12762pt>
+<images/label-distribution.png, id=598, 510.40688pt x 382.12762pt>
 File: images/label-distribution.png Graphic file (type png)
 <use images/label-distribution.png>
 Package pdftex.def Info: images/label-distribution.png  used on input line 507.
 
 (pdftex.def)             Requested size: 228.02208pt x 170.71652pt.
-<images/article-score-distribution.png, id=595, 510.40688pt x 391.16138pt>
+<images/article-score-distribution.png, id=600, 510.40688pt x 391.16138pt>
 File: images/article-score-distribution.png Graphic file (type png)
 <use images/article-score-distribution.png>
 Package pdftex.def Info: images/article-score-distribution.png  used on input l
@@ -664,7 +664,7 @@ Overfull \hbox (17.68314pt too wide) in paragraph at lines 523--546
 
 [17 <./images/label-distribution.png> <./images/article-score-distribution.png>
 ]
-<images/criteria-correlation.png, id=603, 409.22888pt x 369.48038pt>
+<images/criteria-correlation.png, id=608, 409.22888pt x 369.48038pt>
 File: images/criteria-correlation.png Graphic file (type png)
 <use images/criteria-correlation.png>
 Package pdftex.def Info: images/criteria-correlation.png  used on input line 55
@@ -673,231 +673,231 @@ Package pdftex.def Info: images/criteria-correlation.png  used on input line 55
  [18] [19 <./images/criteria-correlation.png>] [20]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 637.
+             The label is: - on input line 646.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 648.
+             The label is: - on input line 657.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 656.
+             The label is: - on input line 665.
 
-[21] [22
-
-]
+[21] [22]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
 []|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 685--685
-[]|\OT1/cmr/m/n/12 NB +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 688--688
-[]|\OT1/cmr/m/n/12 SVM +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 691--691
-[]|\OT1/cmr/m/n/12 NB +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 694--694
-[]|\OT1/cmr/m/n/12 SVM +
+[]|\OT1/cmr/m/n/12 NB +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 697--697
-[]|\OT1/cmr/m/n/12 NB +
- []
-
-
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 697--697
-\OT1/cmr/m/n/12 Word2Vec| 
+[]|\OT1/cmr/m/n/12 SVM +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 700--700
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--703
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 700--700
+Underfull \hbox (badness 10000) in paragraph at lines 706--706
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 706--706
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 681--707
+Underfull \hbox (badness 10000) in paragraph at lines 709--709
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 709--709
+\OT1/cmr/m/n/12 Word2Vec| 
+ []
+
+
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 690--716
  [][] 
  []
 
 
-Overfull \hbox (4.42624pt too wide) in paragraph at lines 677--709
+Overfull \hbox (4.42624pt too wide) in paragraph at lines 686--718
 \OT1/cmr/bx/n/12 **REMEMBER TO RE-RUN EX-PER-I-MENTS WHEN LA-BELLING IS COM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 []|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 719--719
-[]|\OT1/cmr/m/n/12 NB +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--722
-[]|\OT1/cmr/m/n/12 SVM +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
-[]|\OT1/cmr/m/n/12 NB +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 728--728
-[]|\OT1/cmr/m/n/12 SVM +
- []
-
-
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 715--731
- [][] 
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--741
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 744--744
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 744--744
-\OT1/cmr/m/n/12 Word2Vec| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 747--747
+Underfull \hbox (badness 10000) in paragraph at lines 734--734
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 724--740
+ [][] 
+ []
+
+[23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
+[]|\OT1/cmr/m/n/12 NB +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 753--753
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 739--751
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
+[]|\OT1/cmr/m/n/12 SVM +
+ []
+
+
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 756--756
+\OT1/cmr/m/n/12 Word2Vec| 
+ []
+
+
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 748--760
  [][] 
  []
 
-<images/classifier-performance-figure-draft.jpg, id=653, 2609.75pt x 2031.59pt>
+<images/classifier-performance-figure-draft.jpg, id=664, 2609.75pt x 2031.59pt>
 
 File: images/classifier-performance-figure-draft.jpg Graphic file (type jpg)
 <use images/classifier-performance-figure-draft.jpg>
 Package pdftex.def Info: images/classifier-performance-figure-draft.jpg  used o
-n input line 759.
+n input line 768.
 (pdftex.def)             Requested size: 219.29715pt x 170.71652pt.
 [24 <./images/classifier-performance-figure-draft.jpg>] [25] [26
 
@@ -909,7 +909,7 @@ Chapter 5.
 Chapter 6.
 
 LaTeX Warning: Reference `chap:ProposedWork' on page 29 undefined on input line
- 780.
+ 789.
 
 [29] [30
 
@@ -934,15 +934,15 @@ es-[]and-[]their-[]compositionality .
  []
 
 [35] [36])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 811.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 820.
  [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 811.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 820.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 811.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 811.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 820.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 820.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 749217B3502461116B374F08D6346F65;3466.
+(rerunfilecheck)             Checksum: 8ED0BA13D783BF20525B6D6D7B198765;3537.
 
 
 LaTeX Warning: There were undefined references.
@@ -950,13 +950,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 811.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 820.
  ) 
 Here is how much of TeX's memory you used:
- 8099 strings out of 492973
+ 8104 strings out of 492973
  121393 string characters out of 3135933
- 229686 words of memory out of 3000000
- 11653 multiletter control sequences out of 15000+200000
+ 229597 words of memory out of 3000000
+ 11652 multiletter control sequences out of 15000+200000
  11767 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -969,9 +969,9 @@ e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (51 pages, 3621021 bytes).
+Output written on Final_Project_Latex_Template.pdf (51 pages, 3622980 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 198 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 857 PDF objects out of 1000 (max. 8388607)
+ 204 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
