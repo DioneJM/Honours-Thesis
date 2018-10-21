@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  21 OCT 2018 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  21 OCT 2018 23:49
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -1565,13 +1565,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 888--889
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-[]|\OT1/cmr/m/n/12 PT
- []
-
-
-Overfull \hbox (25.87271pt too wide) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 Wiki/PubMed| 
+Underfull \hbox (badness 1796) in paragraph at lines 891--891
+[]|\OT1/cmr/m/n/12 PT Cor-
  []
 
 
@@ -1610,96 +1605,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 891--892
  []
 
 
-Overfull \hbox (25.87271pt too wide) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 Wiki/PubMed| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 894--895
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (19.93124pt too wide) in paragraph at lines 874--899
+Overfull \hbox (19.93124pt too wide) in paragraph at lines 874--897
  [][] 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 922--922
+
+Underfull \hbox (badness 10000) in paragraph at lines 920--920
 []|\OT1/cmr/m/n/12 PT + FT
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 925--925
+Underfull \hbox (badness 10000) in paragraph at lines 923--923
 []|\OT1/cmr/m/n/12 PT
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--928
+Underfull \hbox (badness 10000) in paragraph at lines 926--926
 []|\OT1/cmr/m/n/12 PT + FT
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 944--945
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 942--943
 []|\OT1/cmr/m/n/12 Training
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 956--956
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
 []|\OT1/cmr/m/n/12 PT + FT
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 959--959
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
 []|\OT1/cmr/m/n/12 PT
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 962--962
+Underfull \hbox (badness 10000) in paragraph at lines 960--960
 []|\OT1/cmr/m/n/12 PT + FT
  []
 
-[27] [28]
-Chapter 5.
-[29
+[27] [28
 
-] [30
+]
+Chapter 5.
+[29] [30
 
 ]
 Chapter 6.
 
 LaTeX Warning: Reference `chap:ProposedWork' on page 31 undefined on input line
- 980.
+ 978.
 
 [31] [32
 
@@ -1724,12 +1679,12 @@ es-[]and-[]their-[]compositionality .
  []
 
 [37] [38])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1011.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1009.
  [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1011.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1009.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1011.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1011.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1009.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1009.
 
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
@@ -1741,7 +1696,7 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1011.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1009.
  ) 
 Here is how much of TeX's memory you used:
  8143 strings out of 492973
@@ -1760,7 +1715,7 @@ e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (53 pages, 3634145 bytes).
+Output written on Final_Project_Latex_Template.pdf (53 pages, 3633744 bytes).
 PDF statistics:
  912 PDF objects out of 1000 (max. 8388607)
  220 named destinations out of 1000 (max. 500000)
