@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  21 OCT 2018 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  29 OCT 2018 14:22
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -416,7 +416,7 @@ LaTeX Info: Redefining \nameref on input line 207.
 \@outlinefile=\write3
 \openout3 = `Final_Project_Latex_Template.out'.
 
-<MQlogo_stacked.pdf, id=223, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=211, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 215.
@@ -527,12 +527,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--333
  []
 
 [7] [8]
-<images/svm-example.png, id=527, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=512, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 372.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=532, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=517, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 381.
@@ -553,7 +553,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=554, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=539, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 410.
@@ -574,7 +574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 443--444
  []
 
 [12]
-<images/transfer-learning.png, id=595, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=580, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 456.
@@ -610,13 +610,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--491
 [15
 
 ] [16]
-<images/label-distribution.png, id=635, 510.40688pt x 382.12762pt>
+<images/label-distribution.png, id=620, 510.40688pt x 382.12762pt>
 File: images/label-distribution.png Graphic file (type png)
 <use images/label-distribution.png>
 Package pdftex.def Info: images/label-distribution.png  used on input line 507.
 
 (pdftex.def)             Requested size: 228.02208pt x 170.71652pt.
-<images/article-score-distribution.png, id=637, 510.40688pt x 391.16138pt>
+<images/article-score-distribution.png, id=622, 510.40688pt x 391.16138pt>
 File: images/article-score-distribution.png Graphic file (type png)
 <use images/article-score-distribution.png>
 Package pdftex.def Info: images/article-score-distribution.png  used on input l
@@ -664,7 +664,7 @@ Overfull \hbox (17.68314pt too wide) in paragraph at lines 523--546
 
 [17 <./images/label-distribution.png> <./images/article-score-distribution.png>
 ]
-<images/criteria-correlation.png, id=645, 409.22888pt x 369.48038pt>
+<images/criteria-correlation.png, id=630, 409.22888pt x 369.48038pt>
 File: images/criteria-correlation.png Graphic file (type png)
 <use images/criteria-correlation.png>
 Package pdftex.def Info: images/criteria-correlation.png  used on input line 55
@@ -686,232 +686,227 @@ LaTeX Warning: The counter will not be printed.
 [21] [22]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 700--700
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--702
+Underfull \hbox (badness 10000) in paragraph at lines 703--703
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--705
+Underfull \hbox (badness 10000) in paragraph at lines 706--706
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--708
+Underfull \hbox (badness 10000) in paragraph at lines 709--709
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 708--708
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 709--709
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--711
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 711--711
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 712--712
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 692--715
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 693--716
  [][] 
  []
 
 
-Overfull \hbox (4.42624pt too wide) in paragraph at lines 688--717
+Overfull \hbox (4.42624pt too wide) in paragraph at lines 689--718
 \OT1/cmr/bx/n/12 **REMEMBER TO RE-RUN EX-PER-I-MENTS WHEN LA-BELLING IS COM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--725
+Underfull \hbox (badness 10000) in paragraph at lines 726--726
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--727
+Underfull \hbox (badness 10000) in paragraph at lines 728--728
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--730
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--733
+Underfull \hbox (badness 10000) in paragraph at lines 734--734
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 736--736
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 723--739
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 724--740
  [][] 
  []
 
 [23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 750--750
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--750
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
 []|\OT1/cmr/m/n/12 NB +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 752--752
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 753--753
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
 []|\OT1/cmr/m/n/12 SVM +
  []
 
 
-Overfull \hbox (3.84377pt too wide) in paragraph at lines 755--755
+Overfull \hbox (3.84377pt too wide) in paragraph at lines 756--756
 \OT1/cmr/m/n/12 Word2Vec| 
  []
 
 
-Overfull \hbox (11.39752pt too wide) in paragraph at lines 747--759
+Overfull \hbox (11.39752pt too wide) in paragraph at lines 748--760
  [][] 
  []
 
-<images/classifier-performance-figure-draft.jpg, id=701, 2609.75pt x 2031.59pt>
+<images/classifier-performance-figure-draft.jpg, id=686, 2609.75pt x 2031.59pt>
 
 File: images/classifier-performance-figure-draft.jpg Graphic file (type jpg)
 <use images/classifier-performance-figure-draft.jpg>
 Package pdftex.def Info: images/classifier-performance-figure-draft.jpg  used o
-n input line 767.
+n input line 768.
 (pdftex.def)             Requested size: 219.29715pt x 170.71652pt.
 
-Overfull \hbox (9.72287pt too wide) in paragraph at lines 786--786
-[]|\OT1/cmr/m/n/12 Vocabulary
+Underfull \hbox (badness 10000) in paragraph at lines 776--781
+
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 786--786
-[]|\OT1/cmr/m/n/12 Storage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 786--786
-\OT1/cmr/m/n/12 Size
+[24 <./images/classifier-performance-figure-draft.jpg>]
+Overfull \hbox (0.74936pt too wide) in paragraph at lines 786--786
+[]|\OT1/cmr/m/n/12 Language
  []
 
 
@@ -950,701 +945,496 @@ Underfull \hbox (badness 10000) in paragraph at lines 786--787
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--790
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--792
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--793
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--796
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 784--804
-[][] 
- []
-
-[24 <./images/classifier-performance-figure-draft.jpg>]
-Overfull \hbox (9.72287pt too wide) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Vocabulary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Storage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-\OT1/cmr/m/n/12 Size
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--815
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 815--816
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--818
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 818--819
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--828
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 813--833
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Vector
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Storage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-\OT1/cmr/m/n/12 Size
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--844
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 846--847
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 841--852
- [][] 
- []
-
-[25]
-Overfull \hbox (0.74936pt too wide) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Language
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--877
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--880
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--882
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 882--883
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-[]|\OT1/cmr/m/n/12 PT
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--885
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--888
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--889
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 891--891
+Underfull \hbox (badness 1796) in paragraph at lines 796--796
 []|\OT1/cmr/m/n/12 PT Cor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--891
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--892
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (19.93124pt too wide) in paragraph at lines 874--897
+Overfull \hbox (19.93124pt too wide) in paragraph at lines 784--802
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 920--920
-[]|\OT1/cmr/m/n/12 PT + FT
+Overfull \hbox (9.72287pt too wide) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Vocabulary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 923--923
-[]|\OT1/cmr/m/n/12 PT
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Storage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 926--926
-[]|\OT1/cmr/m/n/12 PT + FT
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 942--943
-[]|\OT1/cmr/m/n/12 Training
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\OT1/cmr/m/n/12 Size
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--954
-[]|\OT1/cmr/m/n/12 PT + FT
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--957
-[]|\OT1/cmr/m/n/12 PT
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 960--960
-[]|\OT1/cmr/m/n/12 PT + FT
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Criteria
  []
 
-[27] [28
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--821
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--826
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--827
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--830
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--833
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 818--838
+[][] 
+ []
+
+
+Overfull \hbox (9.72287pt too wide) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Vocabulary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Storage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+\OT1/cmr/m/n/12 Size
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--850
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 855--856
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--858
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 861--862
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 847--867
+ [][] 
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Vector
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Storage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 Size
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--881
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 875--886
+ [][] 
+ []
+
+[26] [27] [28
 
 ]
 Chapter 5.
@@ -1654,7 +1444,7 @@ Chapter 5.
 Chapter 6.
 
 LaTeX Warning: Reference `chap:ProposedWork' on page 31 undefined on input line
- 978.
+ 948.
 
 [31] [32
 
@@ -1679,16 +1469,15 @@ es-[]and-[]their-[]compositionality .
  []
 
 [37] [38])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1009.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 979.
  [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1009.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 979.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1009.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1009.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 979.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 979.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 99538BBD650E6D204DBC50A754B57846;3915.
+(rerunfilecheck)             Checksum: 9E1EB1A776AB348D6BB2AA8A954AAD92;3673.
 
 
 LaTeX Warning: There were undefined references.
@@ -1696,13 +1485,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1009.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 979.
  ) 
 Here is how much of TeX's memory you used:
- 8143 strings out of 492973
- 122138 string characters out of 3135933
- 231485 words of memory out of 3000000
- 11675 multiletter control sequences out of 15000+200000
+ 8134 strings out of 492973
+ 121932 string characters out of 3135933
+ 232340 words of memory out of 3000000
+ 11669 multiletter control sequences out of 15000+200000
  11767 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1715,9 +1504,9 @@ e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (53 pages, 3633744 bytes).
+Output written on Final_Project_Latex_Template.pdf (53 pages, 3632469 bytes).
 PDF statistics:
- 912 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
- 486 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 217 named destinations out of 1000 (max. 500000)
+ 462 words of extra memory for PDF output out of 10000 (max. 10000000)
 

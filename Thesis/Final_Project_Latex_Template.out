@@ -36,20 +36,17 @@
 \BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Training}{section.3.4}% 36
 \BOOKMARK [2][-]{subsection.3.4.4}{3.4.4 Storage}{section.3.4}% 37
 \BOOKMARK [0][-]{chapter.4}{4 Results}{}% 38
-\BOOKMARK [1][-]{section.4.1}{4.1 Baseline Results}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Classification Performance}{section.4.1}% 40
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Storage Requirements}{section.4.1}% 41
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Training time}{section.4.1}% 42
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Model speed}{section.4.1}% 43
-\BOOKMARK [1][-]{section.4.2}{4.2 Deep Learning Results}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Model Performance}{section.4.2}% 45
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Storage Requirements}{section.4.2}% 46
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Training Time}{section.4.2}% 47
-\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Model Speed}{section.4.2}% 48
-\BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 49
-\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 50
-\BOOKMARK [1][-]{section.6.1}{6.1 Conclusions}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 52
-\BOOKMARK [0][-]{appendix.A}{A Exmaple}{}% 53
-\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 54
-\BOOKMARK [0][-]{section*.42}{Bibliography}{}% 55
+\BOOKMARK [1][-]{section.4.1}{4.1 Classification Performance}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Baseline Results}{section.4.1}% 40
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Deep Learning Results}{section.4.1}% 41
+\BOOKMARK [1][-]{section.4.2}{4.2 Storage Requirements}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.3}{4.3 Training Time}{chapter.4}% 43
+\BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 44
+\BOOKMARK [1][-]{section.5.1}{5.1 Model Performance}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.2}{5.2 Real World Applications}{chapter.5}% 46
+\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 47
+\BOOKMARK [1][-]{section.6.1}{6.1 Conclusions}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 49
+\BOOKMARK [0][-]{appendix.A}{A Exmaple}{}% 50
+\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 51
+\BOOKMARK [0][-]{section*.42}{Bibliography}{}% 52

@@ -424,7 +424,7 @@ Despite CNNs being initially developed for object recognition tasks \cite{LeCun1
 In the context of text classification, a typical CNN is composed of the following main elements \cite{Young}:
 
 \begin{itemize}
-	\item Kernels - Convolutional filters that acts as a sliding window function through an embedding matrix. CNNs typically employ hundreds of kernels each of which learns to extract for a specific n-gram pattern.
+	\item Kernels - Convolutional filters that acts as a sliding window function through an embedding matrix. CNNs typically employ hundreds of kernels each of which learns to extract for specific n-gram pattern.
 	\item Pooling layer - Commonly either a max or average pooling layer, which maps the input to a fixed dimension in order to reduce the dimensionality of the output and ensuring that the most salient n-gram features of a sentence is kept.
 	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction. \textit{Briefly describe the purpose of nonlinear activation functions and why it's needed to output a prediction}
 \end{itemize}
@@ -681,10 +681,11 @@ Current strategy for deep learning:
 
 \textit{To justify the decision to treat each criteria as a set of binary classification tasks rather than a single multi-label classification task, experiments that compare the performance in terms of accuracy, speed, storage and training time for binary and multi-label classifiers will be conducted.}
 
-\section{Baseline Results}
-\label{sec:BaselineResults}
-\subsection{Classification Performance}
+
+\section{Classification Performance}
 \label{sec:ClassificationPerformance}
+\subsection{Baseline Results}
+\label{sec:BaselineResults}
 \textbf{**REMEMBER TO RERUN EXPERIMENTS WHEN LABELLING IS COMPLETED**}
 - 
 \begin{table}[H]
@@ -769,7 +770,40 @@ Current strategy for deep learning:
 	\label{fig:AccruracyFig}
 \end{figure}
 
-\subsection{Storage Requirements}
+\subsection{Deep Learning Results}
+\label{sec:DLModelPerformanceResults}
+
+epochs = 5 \newline
+layers = 4 \newline
+units per layer = 2500 \newline
+batch size = 100 \newline
+embedding size = 150 \newline
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{1.7cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
+		\hline
+		Language Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
+		\hline       
+		
+		
+		PT Wiki  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39  \\
+		\hline
+		
+		PT + FT Wiki  & 0.42 & 0.39 & 0.44 & 0.40 & 0.41 & 0.41  & 0.43   \\
+		\hline
+		
+		PT Corpus  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08\\
+		\hline
+		
+		
+		
+	\end{tabular}
+	\caption{\textit{Best performing accuracy scores}}
+	\label{table:DLPerformance}
+\end{table}
+
+\section{Storage Requirements}
 \label{sec:BaselineStorageRequirements}
 
 \textit{This will probably be focusing the features used rather than the model itself}
@@ -853,54 +887,6 @@ The performance listed along with the varying parameters of the baseline feature
 	\label{table:w2vStorage}
 \end{table}
 
-\subsection{Training time}
-\label{sec:BaselineTrainingTime}
-
-\textit{This will also probably be focusing the features used rather than the model itself}
-
-\subsection{Model speed}
-\label{sec:BaselineModelSpeed}
-\textit{Discuss the computational complexity of the baseline models - experiments might not be necessary for this}
-
-
-\section{Deep Learning Results}
-\label{sec:DeepLearningResults}
-
-\subsection{Model Performance}
-\label{sec:DLModelPerformanceResults}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-		Language Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline                                                                                                                                              
-		
-		PT Wiki  & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		PT + FT Wiki  & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		PT PubMed  & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		PT + FT PubMed  & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		PT Corpus  & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		
-		
-	\end{tabular}
-	\caption{\textit{Insert Caption}}
-	\label{table:DLPerformance}
-\end{table}
-
-\subsection{Storage Requirements}
-\label{sec:DLStorageRequirements}
-
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|p{3cm}|p{2cm}|}
@@ -908,23 +894,12 @@ The performance listed along with the varying parameters of the baseline feature
 		Language Model & Size (MB)                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
-		PT Wiki  & 100  \\
+		PT Wiki  & 516  \\
 		\hline
 		
-		PT + FT Wiki  & 100  \\
+		PT + FT Wiki  & 599  \\
 		\hline
 		
-		PT PubMed  & 100  \\
-		\hline
-		
-		PT + FT PubMed  & 100  \\
-		\hline
-		
-		PT Wiki/PubMed  & 100  \\
-		\hline
-		
-		PT + FT Wiki/PubMed  & 100  \\
-		\hline
 		
 		
 	\end{tabular}
@@ -932,33 +907,23 @@ The performance listed along with the varying parameters of the baseline feature
 	\label{table:DLStorageRequirements}
 \end{table}
 
-\subsection{Training Time}
-\label{sec:DLTrainingTime}
+
+\section{Training Time}
+\label{sec:TrainingTime}
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{3cm}|p{2cm}|}
+	\begin{tabular}{|p{3cm}|p{5.5cm}|}
 		\hline
-		Language Model & Training Time (s)                                                                                                                                                                                                                                                                                                                                                    \\
+		Language Model & Epoch Completion (minutes)                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
-		PT Wiki  & 100  \\
+		PT Wiki  & 271  \\
 		\hline
 		
-		PT + FT Wiki  & 100  \\
+		PT + FT Wiki  & 292  \\
 		\hline
 		
-		PT PubMed  & 100  \\
-		\hline
-		
-		PT + FT PubMed  & 100  \\
-		\hline
-		
-		PT Wiki/PubMed  & 100  \\
-		\hline
-		
-		PT + FT Wiki/PubMed  & 100  \\
-		\hline
 		
 		
 	\end{tabular}
@@ -966,12 +931,17 @@ The performance listed along with the varying parameters of the baseline feature
 	\label{table:DLTrainingTime}
 \end{table}
 
-\subsection{Model Speed}
-\label{sec:DLModelSpeed}
-\textit{Again talk about the computational complexity of the model's architecture}
 
 \chapter{Discussion}
 \label{chap:Discussion}
+
+\section{Model Performance}
+\label{sec:ModelPerformance}
+\textit{Discuss and highlight the key points of what we have learnt based on the results obtained. E.g. The performance of the classifiers across the board, its performance relative to the other criteria (i.e. how the subjectivity of the criteria affected the performance of the classifier)}
+
+\section{Real World Applications}
+\label{sec:RealWorldApplication}
+\textit{This is where I'll be talking about the performance of constructing and testing the low credibility classifiers}
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
