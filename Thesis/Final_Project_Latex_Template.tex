@@ -566,23 +566,22 @@ This also highlights an issue in regards to the quantification of an article's c
 \subsection{Preprocessing}
 \label{sec:ModelPreprocessing}
 
-\begin{enumerate}
-	\item Preprocessing had to be general, as each feature required a specific kind transformation (discuss any further preprocessing that was done under the respective feature in Section \ref{sec:ModelFeatureSelection}) which retained/loss varying amounts of information
-	\item Created 3 datasets: list of articles, list of sentences within each article where the sentences are a list of words and list of words of each article
-\end{enumerate}
+Preprocessing of the online articles to obtain the raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria that was used. Once the unstructured article text was obtained, it was transformed into a structured representation by tokenising each article by sentences that consisted of unigrams. The entire process was ensured to be general and simple as the various features that have been implemented and tested would require various kinds of transformations which will be explained in further detail under their respective section in Section \ref{sec:ModelFeatureSelection}.
 
 \subsection{Feature Selection}
 \label{sec:ModelFeatureSelection}
 
 \begin{enumerate}
 	\item BoW of unigrams
-	\item Tf-idf of bigrams
+	\item Tf-idf of unigrams
 	\item Pre-trained w2v
 	\item Pre-trained + fine-tuned w2v
 	\item Pre-trained LM
 	\item Pre-trained + fine-tuned LM
 		\item The pretrained corpus used for the LM can be from various corpora i.e. wikipedia, pubmed, the collected articles
 \end{enumerate}
+
+
 
 \subsection{Model Selection}
 \label{sec:ModelSelection}
@@ -609,10 +608,6 @@ Things to talk about:
 The development of the system model will be heavily based by the work proposed by Howard et al. \cite{Howard2018} following the process outlined in Section \ref{sec:TransferLearningReview}.
 
 \textit{\textbf{Talk about the fact that this method was only evaluated on common classification tasks using commonly used datasets whereas this project is interested in using this method on a non-standard classification task using a dataset made specifically for the task.}}
-
-
-
-
 
 
 \section{Experiments}
