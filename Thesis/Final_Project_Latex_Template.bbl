@@ -27,6 +27,12 @@
   \url{http://www.discern.org.uk/discern{\_}instrument.php}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Googlew2v}
+\BIBentryALTinterwordspacing
+``{Google Code Archive - word2vec}.'' [Online]. Available:
+  \url{https://code.google.com/archive/p/word2vec/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{HealthNewsReview}
 \BIBentryALTinterwordspacing
 ``{Our Review Criteria - HealthNewsReview.org}.'' [Online]. Available:
@@ -80,6 +86,18 @@ J.~M. Batchelor and Y.~Ohya, ``{Use of the DISCERN Instrument by Patients and
   and Atopic Dermatitis},'' Tech. Rep., 2009. [Online]. Available:
   \url{www.jsaweb.jp!}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Bird2009}
+\BIBentryALTinterwordspacing
+S.~Bird, E.~Klein, and E.~Loper, \emph{{Natural Language Processing with
+  Python}}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly Media Inc., 2009.
+  [Online]. Available: \url{https://www.nltk.org/book/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bradbury2016quasi}
+J.~Bradbury, S.~Merity, C.~Xiong, and R.~Socher, ``{Quasi-Recurrent Neural
+  Networks},'' \emph{International Conference on Learning Representations (ICLR
+  2017)}, 2017.
 
 \bibitem{Browniee2017}
 \BIBentryALTinterwordspacing
@@ -224,6 +242,12 @@ T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
   Words and Phrases and their Compositionality},'' Tech. Rep. [Online].
   Available:
   \url{https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Mikolov2013}
+\BIBentryALTinterwordspacing
+------, ``{Efficient Estimation of Word Representations in Vector Space},''
+  2013. [Online]. Available: \url{http://ronan.collobert.com/senna/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Nogueira}

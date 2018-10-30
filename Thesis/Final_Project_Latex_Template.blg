@@ -5,6 +5,10 @@ Repeated entry---line 559 of file my_reference.bib
  : @article{Pan2009
  :                 ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 619 of file my_reference.bib
+ : @techreport{Merity2016
+ :                       ,
+I'm skipping whatever remains of this entry
 -- IEEEtranS.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -13,6 +17,7 @@ Warning--to sort, need author, organization, or key in UnderstandingKernel
 Warning--to sort, need author, organization, or key in RNNDiagram
 Warning--to sort, need author, organization, or key in DISCERN
 Warning--to sort, need author, organization, or key in HealthNewsReview
+Warning--to sort, need author, organization, or key in Googlew2v
 Warning--empty journal in Aggarwal2012
 Warning--missing institution in Allahyari2017
 Warning--missing institution in Basheer2000
@@ -29,6 +34,7 @@ Warning--empty booktitle in LeCun1999
 Warning--missing institution in McCallum1998
 Warning--missing institution in Mikolov
 Warning--empty year in Mikolov
+Warning--empty journal in Mikolov2013
 Warning--missing institution in Nogueira
 Warning--empty year in Nogueira
 Warning--empty journal in Pan2009
@@ -46,4 +52,4 @@ Warning--empty journal in Zhang
 Warning--empty journal in Zhou2015
 
 Done.
-(There was 1 error message)
+(There were 2 error messages)

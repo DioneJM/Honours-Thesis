@@ -566,25 +566,41 @@ This also highlights an issue in regards to the quantification of an article's c
 \subsection{Preprocessing}
 \label{sec:ModelPreprocessing}
 
-Preprocessing of the online articles to obtain the raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria that was used. Once the unstructured article text was obtained, it was transformed into a structured representation by tokenising each article by sentences that consisted of unigrams. The entire process was ensured to be general and simple as the various features that have been implemented and tested would require various kinds of transformations which will be explained in further detail under their respective section in Section \ref{sec:ModelFeatureSelection}.
+Preprocessing of the unlabelled and expert-labelled articles of the dataset to obtain its raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria. Once the unstructured article text was obtained, it was transformed into a structured representation via tokenising each article by sentences that consisted of unigrams. The entire process was ensured to be general and simple as the various features that have been implemented and tested would require various kinds of transformations as explained in further detail under their respective section in Section \ref{sec:ModelFeatureSelection}.
 
 \subsection{Feature Selection}
 \label{sec:ModelFeatureSelection}
 
-\begin{enumerate}
-	\item BoW of unigrams
-	\item Tf-idf of unigrams
-	\item Pre-trained w2v
-	\item Pre-trained + fine-tuned w2v
-	\item Pre-trained LM
-	\item Pre-trained + fine-tuned LM
-		\item The pretrained corpus used for the LM can be from various corpora i.e. wikipedia, pubmed, the collected articles
-\end{enumerate}
+\subsubsection{Bag of Words}
+\label{sec:FeatureSelectionBoW}
+Two n-gram BoW variants, a unigram and bigram BoW model, was constructed using the expert-labelled articles both of which were limited to a maximum of 20K n-grams. Similar BoW models were also constructed for different n-gram amounts, specifically, BoW models for 5K, 10K and 15K n-grams were also tested. Common English stopwords such as 'the', 'is' and 'are' listed in NLTK's English stopwords corpus \cite{Bird2009} were removed from the unigram BoW model but remained for the bigram BoW model.
+
+\subsubsection{Term Frequency - Inverse Document Frequency}
+\label{sec:FeatureSelectionTFIDF}
+TF-IDF scores of the unigrams extracted from the expert-labelled articles which were limited to the top 10K scores were calculated and used for evaluation. The top 10K TF-IDF scores consisted of scores for unigrams that appeared in at least two expert-labelled articles with no maximum occurrence limit.
+
+\subsubsection{Word2Vec}
+\label{sec:FeatureSelectionw2v}
+Google's pre-trained word2vec model \cite{Googlew2v} which was based on the research conducted by Mikolov et al. \cite{Mikolov2013} was also used for evaluation by calculating the mean value of a word's vector which was limited to limited to 20K words.
+
+\subsubsection{Language Models}
+\label{sec:FeatureSelectionLM}
+
+A non-domain specific language model (LM) was constructed by training a Quasi-Recurrent Neural Network (QRNN) \cite{bradbury2016quasi} on Wikitext-103, a dataset that consists of 28K Wikipedia articles that meet either the 'Good' or 'Featured' article criteria \cite{Merity2016}. The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the \textbf{\textit{1.5 billion}} unlabelled articles of the dataset in order to learn the task-specific features required for classification.
 
 
 
 \subsection{Model Selection}
 \label{sec:ModelSelection}
+
+\subsubsection{Naive Bayes}
+\label{sec:ModelNB}
+
+\subsubsection{Support Vector Machine}
+\label{sec:ModelSVM}
+
+\subsubsection{Quasi-Recurrent Neural Network}
+\label{sec:ModelQRNN}
 
 
 \subsubsection{Baseline Models}
@@ -849,12 +865,6 @@ The performance listed along with the varying parameters of the baseline feature
 		
 		10,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
 		\hline 
-		
-		15,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline                                                                                                                                    
-		
-		20,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
 		
 		
 		
