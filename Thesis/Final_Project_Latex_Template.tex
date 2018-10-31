@@ -331,7 +331,7 @@ Traditional machine learning-based approaches for document classification, such 
 
 Due to the unstructured nature of natural text, it is common practice for natural language processing (NLP) tasks to transform the text into a structured representation that minimises the loss of information stored within the original text whilst allowing the model to learn and analyse the features associated with the classification task. However, despite traditional representation methods such as count-based approaches (e.g. TF-IDF) or probabilistic-based approaches (e.g. N-Grams) showing respectable performances in the classification of texts \cite{Zhang} \cite{Zhou2015}, these representations are typically sparsely distributed and have a high dimensionality that scales with the vocabulary size, has difficulty in generalising over unfamiliar information or writing styles \cite{Rosenfeld2000} as the texts are represented using simple mechanisms that are unable to represent high-level information such as context or the semantic relationship of words. Due to the high dimensionality and sparseness of these features, they are computationally intensive to calculate and can require a relatively larger amount of space for storage.\newline
 
-Word embeddings are a more sophisticated language model that overcome these limitations as they are created by learning word vectors through the optimisation for a different task e.g. the prediction of a word based on its context. Through this, the learned embeddings are able to store information such as the similarity of different contexts, syntactic and semantic information within the text and analogies. These embeddings are relatively more efficient and require less time to compute due to their smaller dimensionality. Whilst these embeddings are able to be created using shallow neural networks, deep learning-based models for NLP tasks utilise these embeddings which can also be at the character, phrase or sentence levels \cite{Young}. Word embeddings have produced state-of-the-art results in not only classification tasks \cite{Howard2018} but also for a wide range of NLP tasks such as image annotation \cite{Weston} and sentiment analysis \cite{Cambria2017}, which used the popular word2vec embedding proposed by Mikolov et al. \cite{Mikolov}
+Word embeddings are a more sophisticated language model that overcome these limitations as they are created by learning word vectors through the optimisation for a different task e.g. the prediction of a word based on its context. Through this, the learned embeddings are able to store information such as the similarity of different contexts, syntactic and semantic information within the text and analogies. These embeddings are relatively more efficient and require less time to compute due to their smaller dimensionality. Whilst these embeddings are able to be created using shallow neural networks, deep learning-based models for NLP tasks utilise these embeddings which can also be at the character, phrase or sentence levels \cite{Young}. Word embeddings, such as Word2Vec or GloVe, have produced state-of-the-art results in not only classification tasks \cite{Howard2018} but also for a wide range of NLP tasks such as image annotation \cite{Weston} and sentiment analysis \cite{Cambria2017}, which used the popular word2vec embedding proposed by Mikolov et al. \cite{Mikolov}
 
 
 \subsection{Machine Learning Methods for Document Classification}
@@ -487,7 +487,7 @@ Section \ref{sec:Experiments} then outlines the comparison and analysis methodol
 \subsection{Dataset}
 \label{sec:Dataset}
 
-For the purposes of training and evaluating the performance of the baseline and deep learning models for this non-standard classification task, a dataset consisting of \textbf{\textit{1 billion}} articles that have been manually and expertly labelled based on the seven criteria outlined in Table \ref{table:Criteria} has been produced. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, the articles within of dataset were manually labelled by the same team that developed the credibility criteria which will be discussed in Section \ref{sec:CredibilityCriteria}.\newline
+For the purposes of training and evaluating the performance of the baseline and deep learning models for this non-standard classification task, a dataset consisting of 3.5K unlabelled and manually labelled articles vaccine-related articles have been procured. \textit{\textbf{Insert that stuff Adam talked about in email feedback}}. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, the articles within the dataset were manually labelled by the team that developed the credibility criteria which will be discussed in Section \ref{sec:CredibilityCriteria}.\newline
 
 The articles used during the labelling process were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the articles that have been collected and labelled are the ones being shared and discussed online. Once labelled, the article's credibility is then quantified using a credibility score which is equivalent to the total number of criteria satisfied by the article.
 
@@ -571,119 +571,76 @@ Preprocessing of the unlabelled and expert-labelled articles of the dataset to o
 \subsection{Feature Selection}
 \label{sec:ModelFeatureSelection}
 
+
+
 \subsubsection{Bag of Words}
 \label{sec:FeatureSelectionBoW}
-Two n-gram BoW variants, a unigram and bigram BoW model, was constructed using the expert-labelled articles both of which were limited to a maximum of 20K n-grams. Similar BoW models were also constructed for different n-gram amounts, specifically, BoW models for 5K, 10K and 15K n-grams were also tested. Common English stopwords such as 'the', 'is' and 'are' listed in NLTK's English stopwords corpus \cite{Bird2009} were removed from the unigram BoW model but remained for the bigram BoW model.
+Two n-gram BoW variants, a unigram and bigram BoW model, was constructed using the expert-labelled articles both of which were limited to a maximum of 20K n-grams. Similar BoW models were also constructed for different n-gram amounts, specifically, BoW models for 5K and 10K n-grams were also tested. Common English stopwords such as 'the', 'is' and 'are' listed in NLTK's English stopwords corpus \cite{Bird2009} were removed from the unigram BoW model but remained for the bigram BoW model.
 
 \subsubsection{Term Frequency - Inverse Document Frequency}
 \label{sec:FeatureSelectionTFIDF}
 TF-IDF scores of the unigrams extracted from the expert-labelled articles which were limited to the top 10K scores were calculated and used for evaluation. The top 10K TF-IDF scores consisted of scores for unigrams that appeared in at least two expert-labelled articles with no maximum occurrence limit.
 
-\subsubsection{Word2Vec}
-\label{sec:FeatureSelectionw2v}
-Google's pre-trained word2vec model \cite{Googlew2v} which was based on the research conducted by Mikolov et al. \cite{Mikolov2013} was also used for evaluation by calculating the mean value of a word's vector which was limited to limited to 20K words.
+\subsubsection{GloVe}
+\label{sec:FeatureSelectionGloVe}
+
+A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was achieved by using the mean value of each word's vector representation. The GloVe vector used was trained on six billion tokens, with a vocabulary size of 400K and a dimensionality of 300.
 
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
 
-A non-domain specific language model (LM) was constructed by training a Quasi-Recurrent Neural Network (QRNN) \cite{bradbury2016quasi} on Wikitext-103, a dataset that consists of 28K Wikipedia articles that meet either the 'Good' or 'Featured' article criteria \cite{Merity2016}. The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the \textbf{\textit{1.5 billion}} unlabelled articles of the dataset in order to learn the task-specific features required for classification.
+A non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same hyperparameter settings and training scheme outlined in \cite{bradbury2016quasi} on the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of 28K Wikipedia articles that meet either the 'Good' or 'Featured' article criteria \cite{Merity2016}. \newline
+
+The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using 3.5K unlabelled articles from the dataset in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing} sans the removal of webpage elements. 
 
 
 
 \subsection{Model Selection}
 \label{sec:ModelSelection}
 
+For the software used to implement the models, the machine learning-based models were implemented using scikit-learn, an open source machine learning library in Python \cite{scikit-learn}. The QRNN model for the language model and classifier was implemented using the open-source code available from \cite{bradbury2016quasi}. 
+
 \subsubsection{Naive Bayes}
 \label{sec:ModelNB}
+
+A multinomial NB classifier was used for evaluation, based on the reasoning discussed in Section \ref{sec:NaiveBayes}. A total of seven classifiers, one for each credibility criteria, was constructed whose hyperparameters were optimised via grid search and evaluated using 10-fold cross-validation. The optimal hyperparameters for all classifier were identical with an alpha value of 1.0, with fit prior set to true and no class prior. 
 
 \subsubsection{Support Vector Machine}
 \label{sec:ModelSVM}
 
+A linear support vector classifier (linear SVC), an SVM with a linear kernel, was used for evaluation. Similar to Naive Bayes, a classifier was trained for each criteria and the hyperparameter values were optimised and evaluated using grid search and 10-fold cross-validation respectively. Whilst the resulting grid search for each classifier returned varying results for the optimal hyperparameter values, the results reported in Section \ref{sec:BaselineResults} used the same hyperparameter values for all classifiers. This was due to the performance of each classifier having similar results and remaining within the standard deviation of each other.  
+
 \subsubsection{Quasi-Recurrent Neural Network}
 \label{sec:ModelQRNN}
 
-
-\subsubsection{Baseline Models}
-\label{sec:BaselineModels}
-
-Machine learning-based classifiers were mainly considered for the baseline models due to their reliance on domain specific knowledge during the feature extraction process as it is in the project's interest to reduce the reliance on domain-specific knowledge and leverage a deep learning-based classifier's ability to automate the feature extraction process. Hence the implementation of the baseline models did not aim to utilise domain-specific knowledge so as to evaluate the effectiveness of the automated feature extraction process of deep learning-based classifiers.
-
-Things to talk about:
-\begin{enumerate}
-	\item The classifiers that will be used: SVM, NB
-	\item NB, Logistic Regression due to its simplicity and wide use in text classification tasks in real-world applications
-	\item SVM because of its scalability with high dimensional data
-
-\end{enumerate}
-
-\subsubsection{Deep Learning Model}
-\label{sec:DLModels}
-
-\textit{This section should discuss the work proposed by Howard et al. and go into the limitations, advantages of this specific technique and how/why it is applicable in the context of this project}
-
-The development of the system model will be heavily based by the work proposed by Howard et al. \cite{Howard2018} following the process outlined in Section \ref{sec:TransferLearningReview}.
-
-\textit{\textbf{Talk about the fact that this method was only evaluated on common classification tasks using commonly used datasets whereas this project is interested in using this method on a non-standard classification task using a dataset made specifically for the task.}}
-
+In addition to using a QRNN for constructing the fine-tuned LM, another variant was implemented as a classifier. The architecture of the model was adapted from the classifier that Bradbury et al. \cite{bradbury2016quasi} used for sentiment classification. From this model, the number of units within each layer was increased to 2500 and the embedding size was changed to 150. The model was trained for up to 20 epochs with a batch size of 100, however the model began to converge after only 5 epochs. In contrast to the ML-based classifiers, only a single QRNN was used to predict the correct label for each criteria via a softmax applied to the output layer.
 
 \section{Experiments}
 \label{sec:Experiments}
 
-\subsection{Outcome Measures}
-\label{sec:OutcomeMeasures}
+Considering the context of this project, other factors such as the size of the model and its training speed must be considered in addition to its performance on correctly producing the correct labels to determine the feasibility of deploying the model for a real-world application. 
 
-The following metrics will be measured to evaluate the performance of the classifier and the baseline models:
-
-\textit{In addition to the typically used accuracy metric to determine the performance of the classifiers, we also care about the classifier's training time and storage requirements as we are also interested in using this method for a real-world application (which should be discussed in the future work section)}
-
-\begin{enumerate}[1)]
-	\item Accuracy - The rate at which the classifier correctly labels each criteria
-	\item Time - The time it takes to train the classifier
-	\item Space - The storage requirements of the classifier
-	\item Speed - The time it takes for the model to output a predicted label
-\end{enumerate}
-
-\textit{Discuss the reasoning in using these outcomes as the measurement for the performance of the classifier}
-
-Experiments will be designed and conducted to achieve the following tasks:
-
-\begin{itemize}
-	\item Evaluate the performance of the classifiers using the outcome measures as described in in Section \ref{sec:OutcomeMeasures}.
-	\item Verify the correctness of the training data and ensure that the manually labelled training examples have been consistently labelled amongst the reviewers. (if possible)
-\end{itemize} 
-
-
-Experiments that will be done:
-\begin{enumerate}[-]
-	\item Evaluate the performance of classic ml text classifiers (NB, SVM) and modern text classifiers (fasttext) for this classification task in the context of both as a sequence of binary classification tasks and as a single multi-label classification task
-	\item These experiments will be conducted within a contained environment (e.g. AWS + docker) to ensure the results obtained are reproducible 
-\end{enumerate}
-
-\textit{Subsection titles are not final}
 \subsection{Accuracy}
 \label{sec:AccuracyExperiments}
-\textit{This section will go into the experiments conducted to evaluate the performance of all the classifiers.}
 
-Current Strategy for baseline:
-\begin{enumerate}[-]
-	\item Classifiers were optimised using gridsearchcv
-	\item Performance was evaluated via 10-fold stratified cross validation measuring the average micro f1-score or AUC value.
-	\item AUC (Area under ROC curve) might be better to show the performance since it visualises the ratio between true positives and false positives
-	\item \textbf{Explain the reason for evaluating performance using micro f1/ROC which is due to the imbalance of the labels and that these metrics take the imbalance into account, unlike accuracy}
-\end{enumerate}
+Two experiments have been conducted to evaluate the performance of a model. The first experiment is designed to determine the model's ability to produce the correct label on a criteria-level allowing for a more detailed insight on the reasoning for a particular article's credibility score. Whereas the second experiment is designed to determine the model's ability to correctly determine whether an article is considered to have low credibility or not for situations where the detailed insight is unnecessary.
 
-Current strategy for deep learning:
-\begin{enumerate}[-]
-	\item 
-\end{enumerate}
+\subsubsection{Credibility Classification Experiment}
+\label{sec:CredibilityClassificationExperiment}
+The Credibility Classification Experiment (CCE) aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. For each criteria, the respective model was evaluated by measuring the micro averaged f1-scores of that model.
+
+
+\subsubsection{Low Credibility Identification Experiment}
+\label{sec:LowCredibilityIdentification}
+The Low Credibility Identification Experiment (LCIE) was designed to evaluate the capability of a model to identify credibility articles (credibility score $< 3$) 
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
-\textit{This section will go into the experiments conducted to evaluate and optimise the training time of the models used. I think this will largely be dependent on the complexity of the features used.}
+
 
 \subsection{Storage}
 \label{sec:StorageExperiments}
-\textit{This section will discuss the storage requirements which will also be largely dependent on the features used by the classifiers}
+
 
 
 
@@ -717,10 +674,10 @@ Current strategy for deep learning:
 		SVM + TF-IDF  & 0.80 \newline ($\pm$ 0.03) & 0.70 \newline ($\pm$ 0.02) & 0.84 \newline ($\pm$ 0.01) & 0.84 \newline ($\pm$ 0.05) & 0.80 \newline ($\pm$ 0.02)  & 0.68 \newline ($\pm$ 0.02)  & 0.82 \newline ($\pm$ 0.03)                                                                                                                                             \\
 		\hline                                                                                                                                              
 		
-		NB + Word2Vec  & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00) & 0.89 \newline ($\pm$ 0.00) & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00)  & 0.68 \newline ($\pm$ 0.00)   & 0.83 \newline ($\pm$ 0.01)  \\
+		NB + GloVe  & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00) & 0.89 \newline ($\pm$ 0.00) & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00)  & 0.68 \newline ($\pm$ 0.00)   & 0.83 \newline ($\pm$ 0.01)  \\
 		\hline
 		
-		SVM + Word2Vec  & 0.60 \newline ($\pm$ 0.29) & 0.77 \newline ($\pm$ 0.00) & 0.63 \newline ($\pm$ 0.37) & 0.61 \newline ($\pm$ 0.31) & 0.59 \newline ($\pm$ 0.25)  & 0.67 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01)                                                                                                                                              \\
+		SVM + GloVe  & 0.60 \newline ($\pm$ 0.29) & 0.77 \newline ($\pm$ 0.00) & 0.63 \newline ($\pm$ 0.37) & 0.61 \newline ($\pm$ 0.31) & 0.59 \newline ($\pm$ 0.25)  & 0.67 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01)                                                                                                                                              \\
 		\hline                                                                
 		                                                                                                                                                                  
 	\end{tabular}
@@ -761,10 +718,10 @@ Current strategy for deep learning:
 		Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
 		\hline                                                                                                                                              
 		
-		NB + Word2Vec  & 0.78 \newline ($\pm$ 0.01) & 0.79 \newline ($\pm$ 0.00) & 0.90 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01) & 0.77 \newline ($\pm$ 0.01)  & 0.68 \newline ($\pm$ 0.00)   & 0.81 \newline ($\pm$ 0.00)  \\
+		NB + GloVe  & 0.78 \newline ($\pm$ 0.01) & 0.79 \newline ($\pm$ 0.00) & 0.90 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01) & 0.77 \newline ($\pm$ 0.01)  & 0.68 \newline ($\pm$ 0.00)   & 0.81 \newline ($\pm$ 0.00)  \\
 		\hline
 		
-		SVM + Word2Vec  & 0.41 \newline ($\pm$ 0.27) & 0.40 \newline ($\pm$ 0.28) & 0.90 \newline ($\pm$ 0.01) & 0.60 \newline ($\pm$ 0.30) & 0.77 \newline ($\pm$ 0.01)  & 0.44 \newline ($\pm$ 0.17) & 0.60 \newline ($\pm$ 0.29)                                                                                                                                              \\
+		SVM + GloVe  & 0.41 \newline ($\pm$ 0.27) & 0.40 \newline ($\pm$ 0.28) & 0.90 \newline ($\pm$ 0.01) & 0.60 \newline ($\pm$ 0.30) & 0.77 \newline ($\pm$ 0.01)  & 0.44 \newline ($\pm$ 0.17) & 0.60 \newline ($\pm$ 0.29)                                                                                                                                              \\
 		\hline
 		
 	\end{tabular}
@@ -873,7 +830,7 @@ The performance listed along with the varying parameters of the baseline feature
 	\label{table:TFIDFStorage}
 \end{table}
 
-\subsubsection{Word2Vec}
+\subsubsection{GloVe}
 
 \begin{table}[H]
 	\centering
@@ -952,12 +909,11 @@ The performance listed along with the varying parameters of the baseline feature
 \label{chap:Conclusions}
 This section will be completed after the fulfilment of the proposed work detailed in Section \ref{chap:ProposedWork}
 
+\section{Future Work}
+\label{FutureWork}
 
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-
-\section{Future Work}
-\label{FutureWork}
 
 
 

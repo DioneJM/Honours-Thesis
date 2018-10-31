@@ -267,6 +267,21 @@ S.~J. Pan and Q.~Yang, ``{A Survey on Transfer Learning},'' 2009. [Online].
 K.~Pasupa, ``{A Comparison between Shallow and Deep Architecture Classifiers on
   Small Dataset},'' 2016.
 
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay, ``{Scikit-learn:
+  Machine Learning in Python },'' \emph{Journal of Machine Learning Research},
+  vol.~12, pp. 2825--2830, 2011.
+
+\bibitem{pennington2014glove}
+\BIBentryALTinterwordspacing
+J.~Pennington, R.~Socher, and C.~D. Manning, ``Glove: Global vectors for word
+  representation,'' in \emph{Empirical Methods in Natural Language Processing
+  (EMNLP)}, 2014, pp. 1532--1543. [Online]. Available:
+  \url{http://www.aclweb.org/anthology/D14-1162}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Rosenfeld2000}
 \BIBentryALTinterwordspacing
 R.~Rosenfeld, ``{TWO DECADES OF STATISTICAL LANGUAGE MODELING: WHERE DO WE GO
