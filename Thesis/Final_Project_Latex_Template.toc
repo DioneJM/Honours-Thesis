@@ -43,22 +43,22 @@
 \contentsline {subsection}{\numberline {3.3.3}Model Selection}{21}{subsection.3.3.3}
 \contentsline {subsubsection}{Naive Bayes}{21}{section*.32}
 \contentsline {subsubsection}{Support Vector Machine}{21}{section*.33}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{22}{section*.34}
+\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{22}{section*.35}
 \contentsline {section}{\numberline {3.4}Experiments}{22}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Accuracy}{22}{subsection.3.4.1}
-\contentsline {subsubsection}{Credibility Classification Experiment}{22}{section*.35}
-\contentsline {subsubsection}{Low Credibility Identification Experiment}{22}{section*.36}
+\contentsline {subsection}{\numberline {3.4.1}Accuracy}{23}{subsection.3.4.1}
+\contentsline {subsubsection}{Credibility Classification Experiment}{23}{section*.37}
+\contentsline {subsubsection}{Low Credibility Identification Experiment}{23}{section*.38}
 \contentsline {subsection}{\numberline {3.4.2}Training}{23}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Storage}{23}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Storage}{24}{subsection.3.4.3}
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Classification Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{25}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{26}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Training Time}{27}{section.4.2}
 \contentsline {section}{\numberline {4.3}Storage Requirements}{27}{section.4.3}
-\contentsline {subsubsection}{Bag Of Words}{28}{section*.43}
-\contentsline {subsubsection}{TF-IDF}{28}{section*.45}
-\contentsline {subsubsection}{GloVe}{29}{section*.47}
+\contentsline {subsubsection}{Bag Of Words}{28}{section*.45}
+\contentsline {subsubsection}{TF-IDF}{28}{section*.47}
+\contentsline {subsubsection}{GloVe}{29}{section*.49}
 \contentsline {chapter}{\numberline {5}Discussion}{31}{chapter.5}
 \contentsline {section}{\numberline {5.1}Model Performance}{31}{section.5.1}
 \contentsline {section}{\numberline {5.2}Real World Applications}{31}{section.5.2}
@@ -67,4 +67,4 @@
 \contentsline {section}{\numberline {6.2}Conclusions}{33}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{35}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{35}{section.A.1}
-\contentsline {chapter}{Bibliography}{35}{section*.50}
+\contentsline {chapter}{Bibliography}{35}{section*.52}
