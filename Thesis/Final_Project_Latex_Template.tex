@@ -80,6 +80,7 @@
 % wants superscript citations, use the overcite package instead of the cite package.
 \usepackage{cite}
 \usepackage{float}
+\usepackage{framed}
 
 
 % The makeidx package makes your index for you.  To make an index entry,
@@ -487,9 +488,35 @@ The models are then analysed and evaluated on their feasibility for real-world u
 \subsection{Dataset}
 \label{sec:Dataset}
 
-I obtained a set of vaccine-related online articles via the URLs included in a set of 6.59 million Twitter posts (tweets) from 1.86 million Twitter users collected between January 2017 and March 2018. There were 1.27 million unique URLs included in the set of tweets. A majority of the URLs led to web pages that could not be used as they were either broken or were links to other social media posts and YouTube videos. After removing web pages that could not be used in the analysis, I finally included a set of 3,348 vaccine-related online articles (the corpus). The content of the set of online articles included in the corpus ranged from descriptions of recent research to discussions of conspiracy theories (Figure 3.1). \newline
+I obtained a set of vaccine-related online articles via the URLs included in a set of 6.59 million Twitter posts (tweets) from 1.86 million Twitter users collected between January 2017 and March 2018. There were 1.27 million unique URLs included in the set of tweets. A majority of the URLs led to web pages that could not be used as they were either broken or were links to other social media posts and YouTube videos. After removing web pages that could not be used in the analysis, I finally included a set of 3,348 vaccine-related online articles (the corpus). The content of the set of online articles included in the corpus ranged from descriptions of recent research to discussions (Figure \ref{fig:ArticleExample}) . \newline
+
+\begin{figure}
+	\begin{framed}
+	\begin{quotation}
+		Thousands of parents describe their children as ‘fine’ one day, then their children suddenly develop autism (a neurological regression) after vaccines.\newline
+		
+		What does the science say? It agrees... \newline
+				
+		But first let’s go through the numbers. The increase in autism cases in the last three decades is truly shocking. Before the 1980s, autism was so rare, it was not even tracked. Remember the eye-opening movie RainMan with Dustin Hoffman? Before that movie came out in the early 1980s, many had no idea what autism was.\newline
+		
+		At that time, statistics put the rate of autism at 1 in every 8,000 children. By the mid-1990s, it was around 1 in 1000 children, but by the mid-2000s, it had risen to 1 in 250. The epidemic has continued and in 2017, the US National Center for Health Statistics just released the latest rate: 1 in every 36 children now have autism (link to report here). These skyrocketing rates clearly prove there is a true epidemic of autism in the United States.\newline
+		
+		So what is autism? Autism is brain damage caused by brain inflammation, which can be triggered by the heavy metals used as adjuvants (aka ingredients) in vaccines. Just as thousands of parents saw firsthand with their own children. Read some of these stories here.\newline
+		
+		Doctors usually try to deny any responsibility and connection to the vaccines they gave by saying “Autism is genetic.” But autism is even listed as a possible reaction (or side effect) of vaccines on some of the vaccine inserts. Unfortunately, doctors rarely see these inserts, favoring the pharmaceutical marketing sheets over real science.\newline
+		
+		So let’s get to that real science — the type that is NOT funded by the pharmaceutical industry that wants to sell vaccines and then the prescription drugs that these children are on to control the symptoms of autism, an issue possibly caused by the vaccines.\newline
+		
+		
+	\end{quotation}
+	\end{framed}
+	\caption{Excerpt from a low credibility vaccine-related online article \cite{AutismVaccine}.}
+	\label{fig:ArticleExample}
+\end{figure}
 
 The articles included in the corpus were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the articles that have been collected and labelled are the ones being shared and discussed online. \newline
+
+
 
 
 \subsection{Credibility Criteria and Appraisal}
@@ -511,7 +538,8 @@ When the team sampled articles for expert labelling, they over-sampled from onli
 	\label{fig:LabelDistribution}
 \end{figure}
 
-This also highlights an issue in regards to the quantification of an article's credibility. Since the credibility score of an article is defined to be the total number of criteria that the article satisfies which implies that the weighting, or contribution, of each criteria are equivalent in making the article a more credible source. However, this is not reflective of the credibility criteria as the difficulty in satisfying a specific criteria, or its contribution in making an article more credible varies between each one. This causes the credibility score of an article to be biased towards credibility scores that have the highest number of combinations as shown in Figure \ref{fig:ArticleDistribution} making it difficult to differentiate and rank articles that achieved similar scores by satisfying different combinations of the credibility criteria.
+
+I then aggregated the total number of criteria met by an aritcle to produce a credibility score for each of the 470 documents, which produces a score that may take any integer value between 0 and 7. Partly because of the way the online articles were sampled for expert labelling, the credibility scores for the expert-labelled set were unevenly distributed. The largest proportion of the expert-labelled articles received a credibility score of 4; only X and X received a credibility score of 0 and 7, respectively (Figure \ref{fig:ArticleDistribution}).
 
 \begin{figure}[!htb]
 	\centering
@@ -557,7 +585,14 @@ This also highlights an issue in regards to the quantification of an article's c
 \subsection{Preprocessing}
 \label{sec:ModelPreprocessing}
 
-Preprocessing of the unlabelled and expert-labelled articles of the dataset to obtain its raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria. Once the unstructured article text was obtained, it was transformed into a structured representation via tokenising each article by sentences that consisted of unigrams. The entire process was ensured to be general and simple as the various features that have been implemented and tested would require various kinds of transformations as explained in further detail under their respective section in Section \ref{sec:ModelFeatureSelection}.
+Preprocessing of the unlabelled and expert-labelled articles of the dataset to obtain its raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria. Once the unstructured article text was obtained, it was transformed into a more functional representation via tokenising each article into sentences that consisted of unigrams (Figure \ref{fig:PreprocessingExample}). The entire process was ensured to be general and simple as the various features that have been implemented and tested would require various kinds of transformations as explained in further detail under their respective section in Section \ref{sec:ModelFeatureSelection}.
+
+\begin{figure}[H]
+
+	\includegraphics[width=16cm]{images/Preprocessing-example.png}
+	\caption{Example output of preprocessing phase.}
+	\label{fig:PreprocessingExample}
+\end{figure}
 
 \subsection{Feature Selection}
 \label{sec:ModelFeatureSelection}

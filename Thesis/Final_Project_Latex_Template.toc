@@ -33,38 +33,38 @@
 \contentsline {section}{\numberline {3.2}Study Data}{16}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Dataset}{16}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Credibility Criteria and Appraisal}{16}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Model Implementation}{19}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Preprocessing}{19}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Feature Selection}{19}{subsection.3.3.2}
-\contentsline {subsubsection}{Bag of Words}{19}{section*.26}
-\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{19}{section*.27}
-\contentsline {subsubsection}{GloVe}{19}{section*.28}
-\contentsline {subsubsection}{Language Models}{19}{section*.29}
-\contentsline {subsection}{\numberline {3.3.3}Model Selection}{20}{subsection.3.3.3}
-\contentsline {subsubsection}{Naive Bayes}{20}{section*.30}
-\contentsline {subsubsection}{Support Vector Machine}{20}{section*.31}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{20}{section*.32}
-\contentsline {section}{\numberline {3.4}Experiments}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Accuracy}{21}{subsection.3.4.1}
-\contentsline {subsubsection}{Credibility Classification Experiment}{21}{section*.33}
-\contentsline {subsubsection}{Low Credibility Identification Experiment}{21}{section*.34}
-\contentsline {subsection}{\numberline {3.4.2}Training}{21}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Storage}{22}{subsection.3.4.3}
-\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Classification Performance}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{24}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Training Time}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Storage Requirements}{25}{section.4.3}
-\contentsline {subsubsection}{Bag Of Words}{26}{section*.41}
-\contentsline {subsubsection}{TF-IDF}{26}{section*.43}
-\contentsline {subsubsection}{GloVe}{27}{section*.45}
-\contentsline {chapter}{\numberline {5}Discussion}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Model Performance}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Real World Applications}{29}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusions}{31}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{33}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{33}{section.A.1}
-\contentsline {chapter}{Bibliography}{33}{section*.48}
+\contentsline {section}{\numberline {3.3}Model Implementation}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Preprocessing}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Feature Selection}{20}{subsection.3.3.2}
+\contentsline {subsubsection}{Bag of Words}{20}{section*.28}
+\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{20}{section*.29}
+\contentsline {subsubsection}{GloVe}{21}{section*.30}
+\contentsline {subsubsection}{Language Models}{21}{section*.31}
+\contentsline {subsection}{\numberline {3.3.3}Model Selection}{21}{subsection.3.3.3}
+\contentsline {subsubsection}{Naive Bayes}{21}{section*.32}
+\contentsline {subsubsection}{Support Vector Machine}{21}{section*.33}
+\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{22}{section*.34}
+\contentsline {section}{\numberline {3.4}Experiments}{22}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Accuracy}{22}{subsection.3.4.1}
+\contentsline {subsubsection}{Credibility Classification Experiment}{22}{section*.35}
+\contentsline {subsubsection}{Low Credibility Identification Experiment}{22}{section*.36}
+\contentsline {subsection}{\numberline {3.4.2}Training}{23}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Storage}{23}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Classification Performance}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{25}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{26}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Training Time}{27}{section.4.2}
+\contentsline {section}{\numberline {4.3}Storage Requirements}{27}{section.4.3}
+\contentsline {subsubsection}{Bag Of Words}{28}{section*.43}
+\contentsline {subsubsection}{TF-IDF}{28}{section*.45}
+\contentsline {subsubsection}{GloVe}{29}{section*.47}
+\contentsline {chapter}{\numberline {5}Discussion}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Model Performance}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Real World Applications}{31}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusions}{33}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{35}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{35}{section.A.1}
+\contentsline {chapter}{Bibliography}{35}{section*.50}
