@@ -473,13 +473,13 @@ Among the studies that aim to assess the credibility and quality of information,
 \section{Approach}
 \label{sec:Approach}
 
-To achieve the overarching goal of this project which, as discussed in Section \ref{sec:Aims}, is to evaluate the performance of automation techniques, specifically, using deep learning models to automate the resource intensive task of determining the credibility of online articles, the task must be framed in a way that can be used by the models in order to be evaluated. \newline
+Through a review of the relevant literature, I found that there is value in being able to appraise the credibility of online health information for use in tools that could help limit the spread of misinformation. However, it is a challenge to apply credibility appraisal tools at scale because the process is time-consuming and often requires certain expertise. Tools for automating this task are therefore likely to be of value but to date most research in the area simply aims to label fake news or uses heuristics to identify misinformation available online. In this chapter, I describe the approach I used to address this challenge using machine learning to train classifiers capable of predicting whether an online article meets a set of credibility criteria.\newline
 
-This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework. Details on the procurement process and the framework used to evaluate an article's credibility is outlined in Section \ref{sec:StudyData}. \newline
+This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework (Section \ref{sec:StudyData}). \newline
 
-Once the dataset was created, a set of baseline models were implemented in order to have a baseline reference for the performance of the deep learning model. The baseline reference models comprised of the performance of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation methods and the state-of-the-art text classifier FastText. The implementation details of the baseline models and the implemented deep learning model is further discussed under Section \ref{sec:SystemModel}. \newline
+Once the dataset was created, a set of machine learning and deep learning models were implemented (Section \ref{sec:SystemModel}). The machine learning models comprised of the implementation of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation methods. The deep learning model involved the construction of a Quasi-Recurrent Neural Network (QRNN) in conjunction with a fine-tuned language model (LM). \newline
 
-Section \ref{sec:Experiments} then outlines the comparison and analysis methodology for the performance of the deep learning model against the baseline implementations based on its ability to correctly predict the label for each criteria and other factors with regards to its feasibility in deploying the model for a real-world application.
+The models are then analysed and evaluated on their feasibility for real-world use based on their ability to correctly predict the label for each criteria and other factors such as the training time of the models and their storage requirements (Section \ref{sec:Experiments}).
 
 \section{Study Data}
 \label{sec:StudyData}
@@ -487,25 +487,27 @@ Section \ref{sec:Experiments} then outlines the comparison and analysis methodol
 \subsection{Dataset}
 \label{sec:Dataset}
 
-For the purposes of training and evaluating the performance of the baseline and deep learning models for this non-standard classification task, a dataset consisting of 3.5K unlabelled and manually labelled articles vaccine-related articles have been procured. \textit{\textbf{Insert that stuff Adam talked about in email feedback}}. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, the articles within the dataset were manually labelled by the team that developed the credibility criteria which will be discussed in Section \ref{sec:CredibilityCriteria}.\newline
+I obtained a set of vaccine-related online articles via the URLs included in a set of 6.59 million Twitter posts (tweets) from 1.86 million Twitter users collected between January 2017 and March 2018. There were 1.27 million unique URLs included in the set of tweets. A majority of the URLs led to web pages that could not be used as they were either broken or were links to other social media posts and YouTube videos. After removing web pages that could not be used in the analysis, I finally included a set of 3,348 vaccine-related online articles (the corpus). The content of the set of online articles included in the corpus ranged from descriptions of recent research to discussions of conspiracy theories (Figure 3.1). \newline
 
-The articles used during the labelling process were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the articles that have been collected and labelled are the ones being shared and discussed online. Once labelled, the article's credibility is then quantified using a credibility score which is equivalent to the total number of criteria satisfied by the article.
+The articles included in the corpus were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the articles that have been collected and labelled are the ones being shared and discussed online. \newline
 
-\subsection{Credibility Criteria}
+
+\subsection{Credibility Criteria and Appraisal}
 \label{sec:CredibilityCriteria}
-The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project. This set of criteria will be used to define the structure and content that a vaccine-related health article must have in order to be considered as a credible source of information. The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. Prior to creating the dataset for this project, a small pilot experiment was conducted by the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced. The pilot experiment involved each team member manually labelling the same set of \textbf{\textit{200 hundred billion}} articles after which each member's labels were compared and adjustments to the criteria were applied if a particular criteria was susceptible to inconsistent labelling.
+The credibility criteria were developed by a team of three researchers from the Centre for Health Informatics as part of a separate project funded by the National Health \& Medical Research Council. The seven criteria describe a set of desirable characteristics for online health information (Table \ref{table:Criteria}). The development of the criteria was based on a set of existing tools and checklists (see Section 2.1), which was adapted by the researchers to be applicable to online articles about vaccination. \newline
+
+Prior to creating the dataset for this project, a small pilot experiment was conducted by the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced. In the pilot test of the credibility criteria, each of the three researchers manually and independently labelled the same set of 30 online articles. The team then measured how well their answers matched, resolving differences by discussion, and updating the definitions of the criteria to improve the consistency. \newline
+
+For the purposes of training and evaluating the performance of the machine learning and deep learning models for this non-standard classification task, the team then manually labelled an additional 470 online articles based on the criteria outlined in Table 3.1. Once labelled, the article's credibility was then quantified using a credibility score which is equivalent to the total number of labels an article has. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, I did not participate in this labelling process.\newline
 
 
-
-\subsection{Study Data Limitations}
-\label{sec:StudyDataLimitations}
-Because of the selective collection process for the articles, the procured dataset has become susceptible to sampling bias as it placed a higher priority on collecting articles that were discussed and shared rather than creating a collection of articles that showed a representative distribution of the credibility of vaccine-related articles published and available online. Effects of the biased sampling methods is illustrated in Figure \ref{fig:LabelDistribution} which shows that, for the majority of the categories, the articles collected are highly skewed to either satisfy or fail to satisfy a specific criteria. However, other factors such as the varying difficulty to satisfy a specific criteria also affect the imbalance of the label distribution.
+When the team sampled articles for expert labelling, they over-sampled from online articles that were linked to published peer-reviewed research literature using Altmetric, an organisation that provides access to information about how often research articles are mentioned in online media. As a consequence, the proportion of online articles that met the first criterion (identifying the source of evidence) was higher than might be expected from a random sample (Figure \ref{fig:LabelDistribution}). Relatively few articles satisfied criterion 3 or criterion 7, while most articles satisfied criterion 4 and criterion 6. Overall, the resulting data were relatively unbalanced, which has implications in relation to the training of classifiers, as discussed in Chapter \ref{chap:Results}.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[totalheight=6cm]{images/label-distribution.png}
-	\caption{Distribution of labels amongst the collected articles.}
+	\caption{Distribution of labels amongst the expert-labelled articles.}
 	\label{fig:LabelDistribution}
 \end{figure}
 
@@ -514,7 +516,7 @@ This also highlights an issue in regards to the quantification of an article's c
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[totalheight=6.5cm]{images/article-score-distribution.png}
-	\caption{Distribution of article scores amongst the manually labelled articles.}
+	\caption{Distribution of article scores amongst the expert-labelled articles.}
 	\label{fig:ArticleDistribution}
 \end{figure}
 
@@ -621,7 +623,7 @@ The credibility classification experiment aims to determine a model's ability in
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
-The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score $< 3$. The manually labelled articles are separated into two separate classes based on this condition and the best performing model, which was determined from the results of the credibility classification experiment, is then applied and evaluated using the resulting micro averaged f1-scores. 
+The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score $< 3$. The expert-labelled articles are separated into two separate classes based on this condition and the best performing model, which was determined from the results of the credibility classification experiment, is then applied and evaluated using the resulting micro averaged f1-scores. 
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
@@ -630,7 +632,7 @@ The training time for a model is another factor that must be considered when det
 
 \subsection{Storage}
 \label{sec:StorageExperiments}
-To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream is then recorded and reported in Section \ref{sec:StorageRequirements}.
+To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream is then recorded and reported in Section \ref{sec:StorageRequirements}. test
 
 
 
