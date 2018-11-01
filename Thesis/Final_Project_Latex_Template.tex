@@ -426,7 +426,7 @@ In the context of text classification, a typical CNN is composed of the followin
 \begin{itemize}
 	\item Kernels - Convolutional filters that acts as a sliding window function through an embedding matrix. CNNs typically employ hundreds of kernels each of which learns to extract for specific n-gram pattern.
 	\item Pooling layer - Commonly either a max or average pooling layer, which maps the input to a fixed dimension in order to reduce the dimensionality of the output and ensuring that the most salient n-gram features of a sentence is kept.
-	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction. \textit{Briefly describe the purpose of nonlinear activation functions and why it's needed to output a prediction}
+	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction.
 \end{itemize}
 
 By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
@@ -549,19 +549,8 @@ This also highlights an issue in regards to the quantification of an article's c
 
 
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[totalheight=8cm]{images/criteria-correlation.png}
-	\caption{Pearson correlation of each criteria}
-	\label{fig:CriteriaCorrelation}
-\end{figure}
-
-
-
 \section{Model Implementation}
 \label{sec:SystemModel}
-
-\textit{Developing and implementing the deep learning model + baseline models involved three main phases: preprocessing, feature selection and model selection}
 
 \subsection{Preprocessing}
 \label{sec:ModelPreprocessing}
@@ -584,21 +573,21 @@ TF-IDF scores of the unigrams extracted from the expert-labelled articles which 
 \subsubsection{GloVe}
 \label{sec:FeatureSelectionGloVe}
 
-A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was achieved by using the mean value of each word's vector representation. The GloVe vector used was trained on six billion tokens, with a vocabulary size of 400K and a dimensionality of 300.
+A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was achieved by using the mean value of each word's vector representation. The GloVe vector used was trained on six billion tokens, with a vocabulary size of 400K and a has dimensionality of 300.
 
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
 
 A non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same hyperparameter settings and training scheme outlined in \cite{bradbury2016quasi} on the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of 28K Wikipedia articles that meet either the 'Good' or 'Featured' article criteria \cite{Merity2016}. \newline
 
-The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using 3.5K unlabelled articles from the dataset in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing} sans the removal of webpage elements. 
+The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the 3.5K unlabelled articles from the dataset in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing} sans the removal of webpage elements. 
 
 
 
 \subsection{Model Selection}
 \label{sec:ModelSelection}
 
-For the software used to implement the models, the machine learning-based models were implemented using scikit-learn, an open source machine learning library in Python \cite{scikit-learn}. The QRNN model for the language model and classifier was implemented using the open-source code available from \cite{bradbury2016quasi}. 
+For the software used to implement the models, the machine learning-based models were implemented using scikit-learn, an open source machine learning library in Python \cite{scikit-learn}. The QRNN model for the language model and classifier was implemented using PyTorch \cite{paszke2017automatic} and the open-source software developed by Bradbury et al. \cite{bradbury2016quasi}. 
 
 \subsubsection{Naive Bayes}
 \label{sec:ModelNB}
@@ -623,19 +612,20 @@ Considering the context of this project, other factors such as the size of the m
 \subsection{Accuracy}
 \label{sec:AccuracyExperiments}
 
-Two experiments have been conducted to evaluate the performance of a model. The first experiment is designed to determine the model's ability to produce the correct label on a criteria-level allowing for a more detailed insight on the reasoning for a particular article's credibility score. Whereas the second experiment is designed to determine the model's ability to correctly determine whether an article is considered to have low credibility or not for situations where the detailed insight is unnecessary.
+Two experiments have been conducted to evaluate the performance of a model. The credibility classification experiment is designed to determine the model's ability to produce the correct label on a criteria-level allowing for a more detailed insight on the reasoning for a particular article's credibility score. Whereas the low credibility identification experiment is designed to determine the model's ability to correctly determine whether an article is considered to have low credibility or not for situations where the detailed insight is not required.
 
 \subsubsection{Credibility Classification Experiment}
 \label{sec:CredibilityClassificationExperiment}
-The Credibility Classification Experiment (CCE) aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. For each criteria, the respective model was evaluated by measuring the micro averaged f1-scores of that model.
+The credibility classification experiment aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. For each criteria, the respective NB and SVM model is employed along with the QRNN model and is then evaluated by measuring the micro averaged f1-scores. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article.
 
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
-The Low Credibility Identification Experiment (LCIE) was designed to evaluate the capability of a model to identify credibility articles (credibility score $< 3$) 
+The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score $< 3$. The manually labelled articles are separated into two separate classes based on this condition and the best performing model, which was determined from the results of the credibility classification experiment, is then applied and evaluated using the resulting micro averaged f1-scores. 
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
+The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will require to be constantly re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN classifiers and also  the creation of the LM. The NB and SVM classifiers were trained within a c5.2xlarge instance utilising all CPU cores. Both the QRNN classifier and LM were trained using the P3 instances on a single K80 GPU.
 
 
 \subsection{Storage}
@@ -652,7 +642,7 @@ The Low Credibility Identification Experiment (LCIE) was designed to evaluate th
 
 \section{Classification Performance}
 \label{sec:ClassificationPerformance}
-\subsection{Baseline Results}
+\subsection{Machine Learning Models}
 \label{sec:BaselineResults}
 \textbf{**REMEMBER TO RERUN EXPERIMENTS WHEN LABELLING IS COMPLETED**}
 - 
@@ -738,7 +728,7 @@ The Low Credibility Identification Experiment (LCIE) was designed to evaluate th
 	\label{fig:AccruracyFig}
 \end{figure}
 
-\subsection{Deep Learning Results}
+\subsection{Deep Learning Model}
 \label{sec:DLModelPerformanceResults}
 
 epochs = 5 \newline

@@ -17,7 +17,7 @@ Warning--to sort, need author, organization, or key in UnderstandingKernel
 Warning--to sort, need author, organization, or key in RNNDiagram
 Warning--to sort, need author, organization, or key in DISCERN
 Warning--to sort, need author, organization, or key in HealthNewsReview
-Warning--to sort, need author, organization, or key in Googlew2v
+Warning--to sort, need author, organization, or key in AWS
 Warning--empty journal in Aggarwal2012
 Warning--missing institution in Allahyari2017
 Warning--missing institution in Basheer2000
@@ -34,7 +34,6 @@ Warning--empty booktitle in LeCun1999
 Warning--missing institution in McCallum1998
 Warning--missing institution in Mikolov
 Warning--empty year in Mikolov
-Warning--empty journal in Mikolov2013
 Warning--missing institution in Nogueira
 Warning--empty year in Nogueira
 Warning--empty journal in Pan2009

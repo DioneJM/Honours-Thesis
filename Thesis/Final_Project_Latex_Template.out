@@ -36,8 +36,8 @@
 \BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Storage}{section.3.4}% 36
 \BOOKMARK [0][-]{chapter.4}{4 Results}{}% 37
 \BOOKMARK [1][-]{section.4.1}{4.1 Classification Performance}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Baseline Results}{section.4.1}% 39
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Deep Learning Results}{section.4.1}% 40
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Machine Learning Models}{section.4.1}% 39
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Deep Learning Model}{section.4.1}% 40
 \BOOKMARK [1][-]{section.4.2}{4.2 Storage Requirements}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.3}{4.3 Training Time}{chapter.4}% 42
 \BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 43
@@ -48,4 +48,4 @@
 \BOOKMARK [1][-]{section.6.2}{6.2 Conclusions}{chapter.6}% 48
 \BOOKMARK [0][-]{appendix.A}{A Exmaple}{}% 49
 \BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 50
-\BOOKMARK [0][-]{section*.49}{Bibliography}{}% 51
+\BOOKMARK [0][-]{section*.48}{Bibliography}{}% 51

@@ -21,16 +21,16 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{AWS}
+\BIBentryALTinterwordspacing
+``{Amazon EC2 Instance Types – Amazon Web Services (AWS)}.'' [Online].
+  Available: \url{https://aws.amazon.com/ec2/instance-types/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{DISCERN}
 \BIBentryALTinterwordspacing
 ``{DISCERN - The DISCERN Instrument}.'' [Online]. Available:
   \url{http://www.discern.org.uk/discern{\_}instrument.php}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Googlew2v}
-\BIBentryALTinterwordspacing
-``{Google Code Archive - word2vec}.'' [Online]. Available:
-  \url{https://code.google.com/archive/p/word2vec/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{HealthNewsReview}
@@ -244,12 +244,6 @@ T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
   \url{https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Mikolov2013}
-\BIBentryALTinterwordspacing
-------, ``{Efficient Estimation of Word Representations in Vector Space},''
-  2013. [Online]. Available: \url{http://ronan.collobert.com/senna/}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Nogueira}
 \BIBentryALTinterwordspacing
 C.~Nogueira, D.~Santos, and M.~Gatti, ``{Deep Convolutional Neural Networks for
@@ -266,6 +260,11 @@ S.~J. Pan and Q.~Yang, ``{A Survey on Transfer Learning},'' 2009. [Online].
 \bibitem{Pasupa2016}
 K.~Pasupa, ``{A Comparison between Shallow and Deep Architecture Classifiers on
   Small Dataset},'' 2016.
+
+\bibitem{paszke2017automatic}
+A.~Paszke, S.~Gross, S.~Chintala, G.~Chanan, E.~Yang, Z.~DeVito, Z.~Lin,
+  A.~Desmaison, L.~Antiga, and A.~Lerer, ``Automatic differentiation in
+  pytorch,'' in \emph{NIPS-W}, 2017.
 
 \bibitem{scikit-learn}
 F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,

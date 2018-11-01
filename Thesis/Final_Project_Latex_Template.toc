@@ -26,39 +26,39 @@
 \contentsline {subsubsection}{Convolutional Neural Networks}{11}{section*.20}
 \contentsline {subsection}{\numberline {2.2.4}Classifying Documents with Limited Labelled Examples}{12}{subsection.2.2.4}
 \contentsline {subsubsection}{Transfer Learning}{12}{section*.21}
-\contentsline {section}{\numberline {2.3}Discussion}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Scaling the Assessment of Quality and Credibility of Health Information}{14}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.3}Discussion}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Scaling the Assessment of Quality and Credibility of Health Information}{13}{subsection.2.3.1}
 \contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Approach}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Study Data}{16}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Dataset}{16}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Credibility Criteria}{16}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Study Data Limitations}{16}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Model Implementation}{18}{section.3.3}
+\contentsline {section}{\numberline {3.3}Model Implementation}{19}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Preprocessing}{19}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Feature Selection}{19}{subsection.3.3.2}
-\contentsline {subsubsection}{Bag of Words}{19}{section*.27}
-\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{20}{section*.28}
-\contentsline {subsubsection}{GloVe}{20}{section*.29}
-\contentsline {subsubsection}{Language Models}{20}{section*.30}
+\contentsline {subsubsection}{Bag of Words}{19}{section*.26}
+\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{19}{section*.27}
+\contentsline {subsubsection}{GloVe}{19}{section*.28}
+\contentsline {subsubsection}{Language Models}{19}{section*.29}
 \contentsline {subsection}{\numberline {3.3.3}Model Selection}{20}{subsection.3.3.3}
-\contentsline {subsubsection}{Naive Bayes}{20}{section*.31}
-\contentsline {subsubsection}{Support Vector Machine}{21}{section*.32}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{21}{section*.33}
+\contentsline {subsubsection}{Naive Bayes}{20}{section*.30}
+\contentsline {subsubsection}{Support Vector Machine}{20}{section*.31}
+\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{20}{section*.32}
 \contentsline {section}{\numberline {3.4}Experiments}{21}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Accuracy}{21}{subsection.3.4.1}
-\contentsline {subsubsection}{Credibility Classification Experiment}{21}{section*.34}
-\contentsline {subsubsection}{Low Credibility Identification Experiment}{22}{section*.35}
-\contentsline {subsection}{\numberline {3.4.2}Training}{22}{subsection.3.4.2}
+\contentsline {subsubsection}{Credibility Classification Experiment}{21}{section*.33}
+\contentsline {subsubsection}{Low Credibility Identification Experiment}{21}{section*.34}
+\contentsline {subsection}{\numberline {3.4.2}Training}{21}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Storage}{22}{subsection.3.4.3}
 \contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Classification Performance}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Baseline Results}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Deep Learning Results}{24}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{23}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{24}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Storage Requirements}{25}{section.4.2}
-\contentsline {subsubsection}{Bag Of Words}{25}{section*.41}
-\contentsline {subsubsection}{TF-IDF}{26}{section*.43}
-\contentsline {subsubsection}{GloVe}{26}{section*.45}
+\contentsline {subsubsection}{Bag Of Words}{25}{section*.40}
+\contentsline {subsubsection}{TF-IDF}{26}{section*.42}
+\contentsline {subsubsection}{GloVe}{26}{section*.44}
 \contentsline {section}{\numberline {4.3}Training Time}{26}{section.4.3}
 \contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}Model Performance}{27}{section.5.1}
@@ -68,4 +68,4 @@
 \contentsline {section}{\numberline {6.2}Conclusions}{29}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{31}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{31}{section.A.1}
-\contentsline {chapter}{Bibliography}{31}{section*.49}
+\contentsline {chapter}{Bibliography}{31}{section*.48}
