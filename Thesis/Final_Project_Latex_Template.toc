@@ -55,17 +55,17 @@
 \contentsline {section}{\numberline {4.1}Classification Performance}{23}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{23}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{24}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Storage Requirements}{25}{section.4.2}
-\contentsline {subsubsection}{Bag Of Words}{25}{section*.40}
-\contentsline {subsubsection}{TF-IDF}{26}{section*.42}
-\contentsline {subsubsection}{GloVe}{26}{section*.44}
-\contentsline {section}{\numberline {4.3}Training Time}{26}{section.4.3}
-\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Model Performance}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Real World Applications}{27}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{29}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{29}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusions}{29}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{31}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{31}{section.A.1}
-\contentsline {chapter}{Bibliography}{31}{section*.48}
+\contentsline {section}{\numberline {4.2}Training Time}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Storage Requirements}{25}{section.4.3}
+\contentsline {subsubsection}{Bag Of Words}{26}{section*.41}
+\contentsline {subsubsection}{TF-IDF}{26}{section*.43}
+\contentsline {subsubsection}{GloVe}{27}{section*.45}
+\contentsline {chapter}{\numberline {5}Discussion}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Model Performance}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}Real World Applications}{29}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusions}{31}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{33}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{33}{section.A.1}
+\contentsline {chapter}{Bibliography}{33}{section*.48}

@@ -625,12 +625,12 @@ The Low Credibility Identification Experiment was designed to evaluate the capab
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
-The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will require to be constantly re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN classifiers and also  the creation of the LM. The NB and SVM classifiers were trained within a c5.2xlarge instance utilising all CPU cores. Both the QRNN classifier and LM were trained using the P3 instances on a single K80 GPU.
+The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will require to be constantly re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN classifiers and also  the creation of the LM. The reported training times in Section \ref{sec:TrainingTime} are for the best performing NB and SVM-based models, which were trained within a c5.2xlarge instance utilising all CPU cores. The reported training times for the QRNN classifier and LM were obtained using the P3 instances and utilising only a single K80 GPU.
 
 
 \subsection{Storage}
 \label{sec:StorageExperiments}
-
+To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream is then recorded and reported in Section \ref{sec:StorageRequirements}.
 
 
 
@@ -761,8 +761,31 @@ embedding size = 150 \newline
 	\label{table:DLPerformance}
 \end{table}
 
+\section{Training Time}
+\label{sec:TrainingTime}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{3cm}|p{5.5cm}|}
+		\hline
+		Language Model & Epoch Completion (minutes)                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		
+		PT Wiki  & 271  \\
+		\hline
+		
+		PT + FT Wiki  & 292  \\
+		\hline
+		
+		
+		
+	\end{tabular}
+	\caption{\textit{Insert Caption}}
+	\label{table:DLTrainingTime}
+\end{table}
+
 \section{Storage Requirements}
-\label{sec:BaselineStorageRequirements}
+\label{sec:StorageRequirements}
 
 \textit{This will probably be focusing the features used rather than the model itself}
 
@@ -857,30 +880,6 @@ The performance listed along with the varying parameters of the baseline feature
 	\end{tabular}
 	\caption{\textit{Insert Caption}}
 	\label{table:DLStorageRequirements}
-\end{table}
-
-
-\section{Training Time}
-\label{sec:TrainingTime}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|p{3cm}|p{5.5cm}|}
-		\hline
-		Language Model & Epoch Completion (minutes)                                                                                                                                                                                                                                                                                                                                                    \\
-		\hline                                                                                                                                              
-		
-		PT Wiki  & 271  \\
-		\hline
-		
-		PT + FT Wiki  & 292  \\
-		\hline
-		
-		
-		
-	\end{tabular}
-	\caption{\textit{Insert Caption}}
-	\label{table:DLTrainingTime}
 \end{table}
 
 
