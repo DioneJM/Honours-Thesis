@@ -612,7 +612,7 @@ TF-IDF scores of the unigrams extracted from the expert-labelled articles which 
 \subsubsection{GloVe}
 \label{sec:FeatureSelectionGloVe}
 
-A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was achieved by using the mean value of each word's vector representation. The GloVe vector used was trained on 6 billion tokens, with a vocabulary size of 400,000 and a has dimensionality of 300.
+A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was accomplished by using the mean value of each word's vector representation. The GloVe vector used was trained on 6 billion tokens, with a vocabulary size of 400,000 and a has dimensionality of 300.
 
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
@@ -693,57 +693,58 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 \label{sec:AccuracyResults}
 \subsection{Credibility Classification}
 \label{sec:CredibilityClassificationResults}
-\textbf{**REMEMBER TO RERUN EXPERIMENTS WHEN LABELLING IS COMPLETED**}
-- 
-\begin{table}[]
+
+The performance of all 91 models were evaluated using the credibility classification experiment. 
+
+\begin{table}[H]
 	\centering
 	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
+	\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{2.5cm}|}
 
 
 		\hline
 
-		\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         }                                                                                                                                                                                                                                                                                                                                                 \\
+		\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
 		\hline
 
-		NB + BoW (all words)  & 0.79  & 0.70  & 0.86  & 0.84  & 0.79   & 0.75   & 0.82    \\
+		NB + BoW (all words)  & 0.79  & 0.70  & 0.86  & 0.84  & 0.79   & 0.75   & 0.82 & 0.792  \\
 		\hline
 		
-		SVM + BoW (all words)   & 0.82  & 0.70 & 0.86 & 0.80 & 0.68  & 0.75 &  \textbf{0.86}                                                                                                                                    \\
+		SVM + BoW (all words)   & 0.82  & 0.70 & 0.86 & 0.80 & 0.68  & 0.75 &  \textbf{0.86} & 0.799                                                                                                                                  \\
 		\hline
 		
-		NB + BoW (stopwords \newline removed) & 0.85 &  0.79 &  \textbf{0.90}  &  0.84 &   \textbf{0.80}   &  0.74   &  0.80    \\
+		NB + BoW (stopwords \newline removed) & 0.85 &  0.79 &  \textbf{0.90}  &  0.84 &   \textbf{0.80}   &  0.74   &  0.80 & 0.820    \\
 		\hline
 		
-		SVM + BoW (stopwords \newline removed)  &  0.78 &  0.80  &  \textbf{0.90} &   \textbf{0.87} & 0.78  &  0.72   &  0.81 \\
+		SVM + BoW (stopwords \newline removed)  &  0.78 &  0.80  &  \textbf{0.90} &   \textbf{0.87} & 0.78  &  0.72   &  0.81 & 0.809 \\
         \hline                                                                                                                                                                                                  
 				
-		NB + \newline TF-IDF \newline (all words)   & 0.79 & 0.74 & 0.87 & 0.80 & 0.79  & 0.62  & 0.80  \\
+		NB + \newline TF-IDF \newline (all words)   & 0.79 & 0.74 & 0.87 & 0.80 & 0.79  & 0.62  & 0.80 & 0.773 \\
 		\hline
 		
-		SVM + \newline TF-IDF \newline (all words)   & 0.80 & 0.70 & 0.84 & 0.84 & \textbf{0.80}  & 0.68  & 0.82                                                                                                                                             \\
+		SVM + \newline TF-IDF \newline (all words)   & 0.80 & 0.70 & 0.84 & 0.84 & \textbf{0.80}  & 0.68  &  0.82 & 0.783                                                                                                                                             \\
 		\hline
 		
-		NB + \newline TF-IDF \newline (stopwords \newline removed)  &  0.79 & 0.80  &  0.89 &  0.81 & 0.77   & 0.69   &  0.81  \\
+		NB + \newline TF-IDF \newline (stopwords \newline removed)  &  0.79 & 0.80  &  0.89 &  0.81 & 0.77   & 0.69   &  0.81 & 0.794  \\
 		\hline
 		
-		SVM + \newline TF-IDF \newline (stopwords \newline removed)  &   \textbf{0.86} &  \textbf{0.85} & 0.89  &  0.86  &   \textbf{0.80}  & \textbf{0.77}  & 0.82  \\
+		SVM + \newline TF-IDF \newline (stopwords \newline removed)  &   \textbf{0.86} &  \textbf{0.85} & 0.89  &  0.86  &   \textbf{0.80}  & \textbf{0.77}  & 0.82 & \textbf{0.836}  \\
 		\hline
 		
-		NB + GloVe  & 0.82 & 0.78 & 0.89 & 0.82  & 0.78   & 0.68    & 0.83   \\
+		NB + GloVe  & 0.82 & 0.78 & 0.89 & 0.82  & 0.78   & 0.68    & 0.83 & 0.800   \\
 		\hline
 
 		
-		SVM + GloVe  & 0.60 & 0.77 & 0.63 & 0.61 & 0.59  & 0.67 & 0.81                                                                                                                                            \\		   
+		SVM + GloVe  & 0.60 & 0.77 & 0.63 & 0.61 & 0.59  & 0.67 & 0.81 & 0.669                                                                                                                                           \\		   
 		\hline
 		
-		QRNN + General LM  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39  \\
+		QRNN + \newline General LM  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39 & 0.379  \\
 		\hline
 		
-		QRNN + FT LM  & 0.42 & 0.39 & 0.44 & 0.40 & 0.41 & 0.41  & 0.43   \\
+		QRNN + \newline Fine-tuned LM  & 0.42 & 0.39 & 0.44 & 0.40 & 0.41 & 0.41  & 0.43 & 0.414   \\
 		\hline
 		
-		QRNN + \newline Domain \newline Specific LM  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08\\
+		QRNN + \newline Domain \newline Specific LM  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08 & 0.103\\
 		\hline                                                          
 		                                                                                                                                                                  
 	\end{tabular}}
@@ -755,13 +756,15 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 \label{sec:LowCredibilityIdentificationResults}
 
 
+
+
 \section{Training Time}
 \label{sec:TrainingTime}
 
 \subsection{Naive Bayes Models}
 \label{sec:TrainingTimeNB}
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
@@ -782,7 +785,7 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 		NB + TF-IDF \newline (stopwords removed) & 5.05 \\
 		\hline
 		
-		NB + GloVe & XX \\
+		NB + GloVe & 3628.82 \\
 		\hline
 		
 		
@@ -794,7 +797,7 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 \subsection{Support Vector Machine Models}
 \label{sec:TrainingTimeSVM}
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	
 	\begin{tabular}{|p{4.4cm}|p{5cm}|}
@@ -815,7 +818,7 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 		SVM + TF-IDF \newline (stopwords removed) & 5.58 \\
 		\hline
 		
-		SVM + GloVe & XX \\
+		SVM + GloVe & 3,435.51 \\
 		\hline
 		
 		
@@ -826,22 +829,22 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 
 \subsection{QRNN Model}
 \label{sec:TrainingTimeQRNN}
-\begin{table}[]
+\begin{table}[H]
 	\centering
 
 	\begin{tabular}{|p{4cm}|p{5cm}|}
 		\hline
 
-		\textbf{Language Model} & \textbf{Epoch Completion \newline (minutes)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{QRNN Model} & \textbf{Epoch Completion \newline (minutes)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
 		QRNN + General LM  & 271  \\
 		\hline
 		
-		QRNN + \newline Finetuned LM  & 292  \\
+		QRNN + \newline Fine-tuned LM  & 292  \\
 		\hline
 		
-		QRNN + \newline Domain Specific LM  & XX  \\
+		QRNN + \newline Domain Specific LM  & TBD  \\
 		\hline
 		
 		
@@ -851,85 +854,98 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 	\label{table:DLTrainingTime}
 \end{table}
 
-\section{Storage Requirements}
+\section{Model Storage Requirements}
 \label{sec:StorageRequirements}
 
 \textit{This will probably be focusing the features used rather than the model itself}
 
 The performance listed along with the varying parameters of the baseline features will be obtained from the respective best performing classifier as identified in \ref{sec:ClassificationPerformance}
 
-\subsubsection{Bag Of Words}
-\label{sec:BoWStorageRequirements}
+\subsection{Naive Bayes Models}
+\label{sec:TrainingTimeNB}
 
-\begin{table}[]
-	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{|p{2.5cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-
-		\textbf{Vocabulary Size Limit} & \textbf{Storage Size (MB) }& \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         }                                                                                                                                                                                                                                                                                                                                                         \\
-		\hline      
-		
-		5,000  & 100 & 0.XX & 0.XX & 0.XX  & 0.XX & 0.XX & 0.XX  & 0.XX \\
-		\hline
-		
-		10,000  & 100 & 0.XX & 0.XX & 0.XX & 0.XX & 0.XX & 0.XX   & 0.XX  \\
-		\hline 
-		
-		15,000  & 100 & 0.XX & 0.XX & 0.XX & 0.XX& 0.XX & 0.XX  & 0.XX  \\
-		\hline                                                                                                                                    
-		
-		20,000  & 100 & 0.XX & 0.XX & 0.XX & 0.XX & 0.XX  & 0.XX   & 0.XX  \\
-		\hline
-		
-		
-		
-	\end{tabular}}
-	\caption{\textit{Insert caption}}
-	\label{table:BoWStorage}
-\end{table}
-
-\subsubsection{TF-IDF}
-\label{sec:TFIDFStorageRequirements}
-
-\begin{table}[]
+\begin{table}[H]
 	\centering
-	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{|p{2.5cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-
-		\textbf{Vocabulary Size Limit} & \textbf{Storage Size (MB)} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         }                                                                                                                                                                                                                                                                                                                                                         \\
-		\hline      
-		
-		5,000  & 100 & 0.XX & 0.XX & 0.XX & 0.XX & 0.XX  & 0.XX  & 0.XX  \\
+	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		10,000  & 100 & 0.XX & 0.XX & 0.XX & 0.XX & 0.XX  & 0.XX   & 0.XX \\
-		\hline 
+		\textbf{NB Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		
+		NB + BoW (all words)  & 11.10  \\
+		\hline
+		
+		NB + BoW \newline (stopwords  removed)  & 11.00 \\
+		\hline
+		
+		NB + TF-IDF \newline (all words) & 13.20 \\
+		\hline
+		
+		NB + TF-IDF \newline (stopwords removed) & 13.20 \\
+		\hline
+		
+		NB + GloVe & 25,410.00 \\
+		\hline
 		
 		
-		
-	\end{tabular}}
-	\caption{\textit{Insert caption}}
-	\label{table:TFIDFStorage}
+	\end{tabular}
+	\caption{Average training time of NB model variants.}
+	\label{table:NBStorageRequirements}
 \end{table}
 
-\subsubsection{Language Model}
+\subsection{Support Vector Machine Models}
+\label{sec:TrainingTimeSVM}
 
-\begin{table}[]
+\begin{table}[H]
+	\centering
+	
+	\begin{tabular}{|p{4.4cm}|p{5cm}|}
+		\hline
+		
+		\textbf{SVM Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		
+		SVM + BoW  (all words)  & 7.91  \\
+		\hline
+		
+		SVM + BoW \newline (stopwords removed)  & 7.87  \\
+		\hline
+		
+		SVM + TF-IDF \newline (all words) & 10.00 \\
+		\hline
+		
+		SVM + TF-IDF \newline (stopwords removed) & 7.88 \\
+		\hline
+		
+		SVM + GloVe & TBD \\
+		\hline
+		
+		
+	\end{tabular}
+	\caption{Average training time of SVM model variants.}
+	\label{table:SVMStorageRequirements}
+\end{table}
+
+\subsection{QRNN Model}
+
+\begin{table}[H]
 	\centering
 
 	\begin{tabular}{|p{3cm}|p{2cm}|}
 		\hline
 
-		\textbf{Language Model} & \textbf{Size (MB)   }                                                                                                                                                                                                                                                                                                                                                 \\
+		\textbf{QRNN Model} & \textbf{Size (MB)   }                                                                                                                                                                                                                                                                                                                                                 \\
 		\hline                                                                                                                                              
 		
-		PT Wiki  & 516  \\
+		QRNN + \newline General LM  & 516  \\
 		\hline
 		
-		PT + FT Wiki  & 599  \\
+		QRNN + \newline Fine-tuned LM  & 599  \\
 		\hline
 		
+		QRNN + \newline Domain Specific LM & TBD \\
+		\hline
 		
 		
 	\end{tabular}
