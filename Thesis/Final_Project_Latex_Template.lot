@@ -4,12 +4,10 @@
 \contentsline {table}{\numberline {3.1}{\ignorespaces Credibility Criteria\relax }}{19}{table.caption.26}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Micro averaged f1-Scores of all models\relax }}{26}{table.caption.39}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Average training time of NB model variants.\relax }}{27}{table.caption.40}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Average training time of SVM model variants.\relax }}{27}{table.caption.41}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Average training time of QRNN model variants\relax }}{28}{table.caption.42}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Average training time of NB model variants.\relax }}{28}{table.caption.43}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Average training time of SVM model variants.\relax }}{29}{table.caption.44}
-\contentsline {table}{\numberline {4.7}{\ignorespaces \textit {Insert Caption}\relax }}{29}{table.caption.45}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Performance of low credibility identification task via a single model approach.\relax }}{26}{table.caption.41}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Performance of low credibility identification task via an ensemble approach.\relax }}{27}{table.caption.43}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Average training time of all models.\relax }}{27}{table.caption.44}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Aggregated size of all models.\relax }}{28}{table.caption.45}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

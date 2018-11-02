@@ -27,8 +27,8 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Credibility Criteria and Appraisal}{section.3.2}% 27
 \BOOKMARK [1][-]{section.3.3}{3.3 Model Implementation}{chapter.3}% 28
 \BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Preprocessing}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Feature Selection}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Model Selection}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Feature Construction}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Model Construction}{section.3.3}% 31
 \BOOKMARK [1][-]{section.3.4}{3.4 Experiments}{chapter.3}% 32
 \BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Performance}{section.3.4}% 33
 \BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Training}{section.3.4}% 34
@@ -38,19 +38,13 @@
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Credibility Classification}{section.4.1}% 38
 \BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Low Credibility Identification}{section.4.1}% 39
 \BOOKMARK [1][-]{section.4.2}{4.2 Training Time}{chapter.4}% 40
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Naive Bayes Models}{section.4.2}% 41
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Support Vector Machine Models}{section.4.2}% 42
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 QRNN Model}{section.4.2}% 43
-\BOOKMARK [1][-]{section.4.3}{4.3 Model Storage Requirements}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Naive Bayes Models}{section.4.3}% 45
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Support Vector Machine Models}{section.4.3}% 46
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 QRNN Model}{section.4.3}% 47
-\BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 48
-\BOOKMARK [1][-]{section.5.1}{5.1 Model Performance}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{5.2 Real World Applications}{chapter.5}% 50
-\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 51
-\BOOKMARK [1][-]{section.6.1}{6.1 Future Work}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.2}{6.2 Conclusions}{chapter.6}% 53
-\BOOKMARK [0][-]{appendix.A}{A Exmaple}{}% 54
-\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 55
-\BOOKMARK [0][-]{section*.46}{Bibliography}{}% 56
+\BOOKMARK [1][-]{section.4.3}{4.3 Model Storage Requirements}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{5 Discussion}{}% 42
+\BOOKMARK [1][-]{section.5.1}{5.1 Model Performance}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{5.2 Real World Applications}{chapter.5}% 44
+\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 45
+\BOOKMARK [1][-]{section.6.1}{6.1 Future Work}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.2}{6.2 Conclusions}{chapter.6}% 47
+\BOOKMARK [0][-]{appendix.A}{A Exmaple}{}% 48
+\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 49
+\BOOKMARK [0][-]{section*.46}{Bibliography}{}% 50
