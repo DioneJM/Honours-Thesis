@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  1 NOV 2018 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  2 NOV 2018 22:14
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -965,116 +965,179 @@ Overfull \hbox (11.39752pt too wide) in paragraph at lines 756--768
  [][] 
  []
 
-<images/classifier-performance-figure-draft.jpg, id=699, 2609.75pt x 2031.59pt>
 
-File: images/classifier-performance-figure-draft.jpg Graphic file (type jpg)
-<use images/classifier-performance-figure-draft.jpg>
-Package pdftex.def Info: images/classifier-performance-figure-draft.jpg  used o
-n input line 776.
-(pdftex.def)             Requested size: 219.29715pt x 170.71652pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 784--789
+Underfull \hbox (badness 10000) in paragraph at lines 778--783
 
  []
 
-[26 <./images/classifier-performance-figure-draft.jpg>]
-Overfull \hbox (0.74936pt too wide) in paragraph at lines 794--794
+
+Overfull \hbox (0.74936pt too wide) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Language
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--794
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--795
+Underfull \hbox (badness 10000) in paragraph at lines 788--789
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 804--804
+Underfull \hbox (badness 1796) in paragraph at lines 798--798
 []|\OT1/cmr/m/n/12 PT Cor-
  []
 
 
-Overfull \hbox (19.93124pt too wide) in paragraph at lines 792--810
+Overfull \hbox (19.93124pt too wide) in paragraph at lines 786--804
  [][] 
  []
 
-
-Overfull \hbox (9.72287pt too wide) in paragraph at lines 851--851
+[26]
+Overfull \hbox (9.72287pt too wide) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Vocabulary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Storage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 \OT1/cmr/m/n/12 Size
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--851
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--851
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--851
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--851
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--851
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--851
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--851
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 851--852
-[]|\OT1/cmr/m/n/12 Criteria
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
@@ -1148,315 +1211,245 @@ Underfull \hbox (badness 10000) in paragraph at lines 857--858
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--861
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--864
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 849--869
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 843--863
 [][] 
  []
 
-[27]
-Overfull \hbox (9.72287pt too wide) in paragraph at lines 880--880
+
+Overfull \hbox (9.72287pt too wide) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Vocabulary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Storage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 \OT1/cmr/m/n/12 Size
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 []|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
+[]|\OT1/cmr/m/n/12 Criteria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 880--881
-[]|\OT1/cmr/m/n/12 Criteria
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 883--883
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 883--883
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 883--883
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 883--883
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 883--883
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 883--883
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 883--884
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--886
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 886--887
-\OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
- []
-
-
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 878--892
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 872--886
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Vector
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Storage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 \OT1/cmr/m/n/12 Size
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
+Underfull \hbox (badness 10000) in paragraph at lines 896--896
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--903
+Underfull \hbox (badness 10000) in paragraph at lines 896--897
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--906
+Underfull \hbox (badness 10000) in paragraph at lines 899--900
 \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 $
  []
 
 
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 900--911
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 894--905
  [][] 
  []
 
-[28] [29] [30
-
-]
+[28]
 Chapter 5.
-[31] [32
+[29
+
+] [30
 
 ]
 Chapter 6.
 
-LaTeX Warning: Reference `chap:ProposedWork' on page 33 undefined on input line
- 949.
+LaTeX Warning: Reference `chap:ProposedWork' on page 31 undefined on input line
+ 943.
 
-[33] [34
+[31] [32
 
 
 ]
 Appendix A.
-(Final_Project_Latex_Template.bbl [35
+(Final_Project_Latex_Template.bbl [33
 
-] [36
+] [34
 
 ]
 Missing character: There is no â in font cmr12!
@@ -1471,7 +1464,7 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [37]
+ [35]
 Underfull \hbox (badness 10000) in paragraph at lines 117--123
 \OT1/cmr/m/n/12 pdf ? \OMS/cmsy/m/n/12 f[] [] \OT1/cmr/m/n/12 tid = 46d1dda6-[]
 f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat 
@@ -1486,49 +1479,73 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-[38]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 247--252
 \OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
 es-[]and-[]their-[]compositionality .
  []
 
-[39] [40])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 979.
- [41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 979.
+[37] [38])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 973.
+ [39]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 973.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 979.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 979.
-Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
-anged.
-(rerunfilecheck)             Checksum: DC71CFEEF6E779D86998EB868301DAB7;3532.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 973.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 973.
 
+
+Package rerunfilecheck Warning: File `Final_Project_Latex_Template.out' has cha
+nged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Final_Project_Latex_Template.out':
+(rerunfilecheck)             Before: DC71CFEEF6E779D86998EB868301DAB7;3532
+(rerunfilecheck)             After:  3329BA0610336FDC83FE3CD519287164;3532.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 979.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 973.
  ) 
 Here is how much of TeX's memory you used:
- 8227 strings out of 493303
- 121052 string characters out of 3144913
- 224367 words of memory out of 3000000
- 11445 multiletter control sequences out of 15000+200000
+ 8225 strings out of 493303
+ 120871 string characters out of 3144913
+ 225367 words of memory out of 3000000
+ 11441 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
-<B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><B:/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (55 pages, 3639189 bytes).
+pdfTeX warning (dest): name{table.caption.51} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.48} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.46} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.44} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.52} has been referenced but does not exist
+, replaced by a fixed one
+
+<B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><B:/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><B:/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb>
+Output written on Final_Project_Latex_Template.pdf (53 pages, 769670 bytes).
 PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 211 named destinations out of 1000 (max. 500000)
- 456 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 905 PDF objects out of 1000 (max. 8388607)
+ 214 named destinations out of 1000 (max. 500000)
+ 451 words of extra memory for PDF output out of 10000 (max. 10000000)
 
