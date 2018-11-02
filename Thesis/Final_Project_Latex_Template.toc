@@ -53,12 +53,11 @@
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Classification Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{25}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{26}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Training Time}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}Storage Requirements}{27}{section.4.3}
-\contentsline {subsubsection}{Bag Of Words}{27}{section*.44}
-\contentsline {subsubsection}{TF-IDF}{28}{section*.46}
-\contentsline {subsubsection}{GloVe}{28}{section*.48}
+\contentsline {section}{\numberline {4.2}Training Time}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Storage Requirements}{25}{section.4.3}
+\contentsline {subsubsection}{Bag Of Words}{27}{section*.41}
+\contentsline {subsubsection}{TF-IDF}{27}{section*.43}
+\contentsline {subsubsection}{Language Model}{27}{section*.45}
 \contentsline {chapter}{\numberline {5}Discussion}{29}{chapter.5}
 \contentsline {section}{\numberline {5.1}Model Performance}{29}{section.5.1}
 \contentsline {section}{\numberline {5.2}Real World Applications}{29}{section.5.2}
@@ -67,4 +66,4 @@
 \contentsline {section}{\numberline {6.2}Conclusions}{31}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{33}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{33}{section.A.1}
-\contentsline {chapter}{Bibliography}{33}{section*.51}
+\contentsline {chapter}{Bibliography}{33}{section*.47}

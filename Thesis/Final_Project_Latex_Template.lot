@@ -3,15 +3,11 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Credibility Criteria\relax }}{19}{table.caption.26}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Micro averaged f1-Scores of baseline models\relax }}{25}{table.caption.39}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Average micro f1-Scores of baseline models with stopwords removed\relax }}{26}{table.caption.40}
-\contentsline {table}{\numberline {4.3}{\ignorespaces w2v with tf-idf weights\relax }}{26}{table.caption.41}
-\contentsline {table}{\numberline {4.4}{\ignorespaces \textit {Best performing accuracy scores}\relax }}{26}{table.caption.42}
-\contentsline {table}{\numberline {4.5}{\ignorespaces \textit {Insert Caption}\relax }}{27}{table.caption.43}
-\contentsline {table}{\numberline {4.6}{\ignorespaces \textit {Insert caption}\relax }}{27}{table.caption.45}
-\contentsline {table}{\numberline {4.7}{\ignorespaces \textit {Insert caption}\relax }}{28}{table.caption.47}
-\contentsline {table}{\numberline {4.8}{\ignorespaces \textit {Insert caption}\relax }}{28}{table.caption.49}
-\contentsline {table}{\numberline {4.9}{\ignorespaces \textit {Insert Caption}\relax }}{28}{table.caption.50}
+\contentsline {table}{\numberline {4.2}{\ignorespaces \textit {Insert Caption}\relax }}{25}{table.caption.40}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Micro averaged f1-Scores of all models\relax }}{26}{table.caption.39}
+\contentsline {table}{\numberline {4.3}{\ignorespaces \textit {Insert caption}\relax }}{27}{table.caption.42}
+\contentsline {table}{\numberline {4.4}{\ignorespaces \textit {Insert caption}\relax }}{27}{table.caption.44}
+\contentsline {table}{\numberline {4.5}{\ignorespaces \textit {Insert Caption}\relax }}{27}{table.caption.46}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
