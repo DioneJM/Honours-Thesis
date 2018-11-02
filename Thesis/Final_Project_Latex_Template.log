@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  2 NOV 2018 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  3 NOV 2018 00:14
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -757,13 +757,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 618--619
 
  []
 
-<images/ml-models.png, id=642, 442.65375pt x 201.75375pt>
+[21]
+<images/ml-models.png, id=653, 443.40656pt x 201.75375pt>
 File: images/ml-models.png Graphic file (type png)
 <use images/ml-models.png>
 Package pdftex.def Info: images/ml-models.png  used on input line 640.
-(pdftex.def)             Requested size: 374.5621pt x 170.71652pt.
-[21]
-<images/dl-models.png, id=657, 544.28343pt x 199.49532pt>
+(pdftex.def)             Requested size: 375.19913pt x 170.71652pt.
+<images/dl-models.png, id=656, 544.28343pt x 199.49532pt>
 File: images/dl-models.png Graphic file (type png)
 <use images/dl-models.png>
 Package pdftex.def Info: images/dl-models.png  used on input line 652.
@@ -773,7 +773,7 @@ Overfull \hbox (10.53835pt too wide) in paragraph at lines 652--653
  [][] 
  []
 
-[22 <./images/ml-models.png> <./images/dl-models.png>] [23] [24]
+[22 <./images/ml-models.png>] [23 <./images/dl-models.png>] [24]
 Chapter 4.
 
 LaTeX Warning: No positions in optional float specifier.
@@ -815,184 +815,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 700--701
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 709--709
-[]|\OT1/cmr/m/n/12 NB + TF-
+Underfull \hbox (badness 4193) in paragraph at lines 703--703
+[]|\OT1/cmr/m/n/12 NB + BoW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--709
-\OT1/cmr/m/n/12 IDF (stop-
+Underfull \hbox (badness 4193) in paragraph at lines 709--709
+[]|\OT1/cmr/m/n/12 NB + BoW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--712
-[]|\OT1/cmr/m/n/12 SVM +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 712--712
-\OT1/cmr/m/n/12 TF-IDF
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 722--722
-[]|\OT1/cmr/m/n/12 NB + TF-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 732--732
-[]|\OT1/cmr/m/n/12 SVM +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 732--732
-\OT1/cmr/m/n/12 GloVe
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 739--739
-[]|\OT1/cmr/m/n/12 SVM +
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 739--739
-\OT1/cmr/m/n/12 GloVe (TF-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 744--744
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
 []|\OT1/cmr/m/n/12 QRNN +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-[]|\OT1/cmr/m/n/12 QRNN +
+Underfull \hbox (badness 2538) in paragraph at lines 744--744
+\OT1/cmr/m/n/12 main Spe-cific
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\OT1/cmr/m/n/12 Do-main
- []
-
-
-Overfull \hbox (31.31438pt too wide) in paragraph at lines 698--754
+Overfull \hbox (37.00526pt too wide) in paragraph at lines 698--748
  [][] 
  []
 
 
-Overfull \hbox (4.42624pt too wide) in paragraph at lines 694--757
+Overfull \hbox (4.42624pt too wide) in paragraph at lines 694--751
 \OT1/cmr/bx/n/12 **REMEMBER TO RE-RUN EX-PER-I-MENTS WHEN LA-BELLING IS COM-
  []
 
 
-Overfull \hbox (9.72287pt too wide) in paragraph at lines 798--798
+Overfull \hbox (9.72287pt too wide) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Vocabulary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Storage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 \OT1/cmr/m/n/12 Size
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--798
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
+Underfull \hbox (badness 10000) in paragraph at lines 792--793
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 796--816
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 790--810
 [][] 
  []
 
 [25
 
 ] [26]
-Overfull \hbox (9.72287pt too wide) in paragraph at lines 827--827
+Overfull \hbox (9.72287pt too wide) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Vocabulary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Storage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 \OT1/cmr/m/n/12 Size
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 827--828
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
 []|\OT1/cmr/m/n/12 Criteria
  []
 
 
-Overfull \hbox (79.2781pt too wide) in paragraph at lines 825--839
+Overfull \hbox (79.2781pt too wide) in paragraph at lines 819--833
  [][] 
  []
 
@@ -1006,7 +966,7 @@ Chapter 5.
 Chapter 6.
 
 LaTeX Warning: Reference `chap:ProposedWork' on page 31 undefined on input line
- 879.
+ 873.
 
 [31] [32
 
@@ -1052,12 +1012,12 @@ es-[]and-[]their-[]compositionality .
  []
 
 [37] [38])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 909.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 903.
  [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 909.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 903.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 909.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 909.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 903.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 903.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: 84CFCF54C251282FB1C176DAC40F7EE9;3452.
@@ -1065,12 +1025,12 @@ anged.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 909.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 903.
  ) 
 Here is how much of TeX's memory you used:
  8208 strings out of 493303
  120577 string characters out of 3144913
- 230012 words of memory out of 3000000
+ 229012 words of memory out of 3000000
  11435 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1082,7 +1042,7 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (53 pages, 764223 bytes).
+Output written on Final_Project_Latex_Template.pdf (53 pages, 765163 bytes).
 PDF statistics:
  883 PDF objects out of 1000 (max. 8388607)
  203 named destinations out of 1000 (max. 500000)
