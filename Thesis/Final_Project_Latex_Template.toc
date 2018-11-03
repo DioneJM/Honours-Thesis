@@ -36,18 +36,18 @@
 \contentsline {subsection}{\numberline {3.3.1}Preprocessing}{20}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Feature Construction}{20}{subsection.3.3.2}
 \contentsline {subsubsection}{Bag of Words}{20}{section*.28}
-\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{20}{section*.29}
+\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{21}{section*.29}
 \contentsline {subsubsection}{GloVe}{21}{section*.30}
 \contentsline {subsubsection}{Language Models}{21}{section*.31}
 \contentsline {subsection}{\numberline {3.3.3}Model Construction}{21}{subsection.3.3.3}
-\contentsline {subsubsection}{Naive Bayes}{21}{section*.32}
+\contentsline {subsubsection}{Naive Bayes}{22}{section*.32}
 \contentsline {subsubsection}{Support Vector Machine}{22}{section*.33}
 \contentsline {subsubsection}{Quasi-Recurrent Neural Network}{22}{section*.35}
 \contentsline {section}{\numberline {3.4}Experiments}{23}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Performance}{23}{subsection.3.4.1}
 \contentsline {subsubsection}{Credibility Classification Experiment}{23}{section*.37}
-\contentsline {subsubsection}{Low Credibility Identification Experiment}{23}{section*.38}
-\contentsline {subsection}{\numberline {3.4.2}Training}{23}{subsection.3.4.2}
+\contentsline {subsubsection}{Low Credibility Identification Experiment}{24}{section*.38}
+\contentsline {subsection}{\numberline {3.4.2}Training}{24}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Storage}{24}{subsection.3.4.3}
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}

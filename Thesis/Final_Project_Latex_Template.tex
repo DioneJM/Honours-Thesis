@@ -525,10 +525,11 @@ The credibility criteria were developed by a team of three researchers from the 
 
 Prior to creating the dataset for this project, a small pilot experiment was conducted by the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced. In the pilot test of the credibility criteria, each of the three researchers manually and independently labelled the same set of 30 online articles. The team then measured how well their answers matched, resolving differences by discussion, and updating the definitions of the criteria to improve the consistency. \newline
 
-For the purposes of training and evaluating the performance of the machine learning and deep learning models for this non-standard classification task, the team then manually labelled an additional 470 online articles based on the criteria outlined in Table 3.1. Once labelled, the article's credibility was then quantified using a credibility score which is equivalent to the total number of labels an article has. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, I did not participate in this labelling process.\newline
+
+The final tool used by the three investigators included seven criteria, which were inspired and derived from existing checklist-based tools and designed specifically for use with vaccine-related online articles (Table 3.1). They then used the tool to manually assess an additional 470 articles; for each article, the investigators labelled whether the article satisfied each of the individual criteria. Once labelled, the article's credibility was then aggregated to a credibility score which is defined by the number of criteria that were satisfied. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, I did not participate in this labelling process.\newline
 
 
-When the team sampled articles for expert labelling, they over-sampled from online articles that were linked to published peer-reviewed research literature using Altmetric, an organisation that provides access to information about how often research articles are mentioned in online media. As a consequence, the proportion of online articles that met the first criterion (identifying the source of evidence) was higher than might be expected from a random sample (Figure \ref{fig:LabelDistribution}). Relatively few articles satisfied criterion 3 or criterion 7, while most articles satisfied criterion 4 and criterion 6. Overall, the resulting data were relatively unbalanced, which has implications in relation to the training of classifiers, as discussed in Chapter \ref{chap:Results}.
+When sampling articles, we expected to find relatively few high credibility articles, so the team over-sampled from the subset of articles that were directly linked to research literature. To do this, we used Altmetric, an organisation that provides access to information about how often research articles are mentioned in online media. As a consequence, the proportion of online articles that met the first criterion (identifying the source of evidence) was higher than might be expected from a random sample (Figure \ref{fig:LabelDistribution}). Relatively few articles satisfied criterion 3 or criterion 7, while most articles satisfied criterion 4 and criterion 6. Overall, the resulting data were relatively unbalanced, which has implications in relation to the training of classifiers, as discussed in Chapter \ref{chap:Results}.
 
 
 \begin{figure}[H]
@@ -598,6 +599,8 @@ Preprocessing of the unlabelled and expert-labelled articles of the dataset to o
 \subsection{Feature Construction}
 \label{sec:ModelFeatureConstruction}
 
+In document classification tasks, the way document text is transformed into a set of features can have a substantial impact on the overall performance. Traditional approaches to feature representation include simple methods that take the words from a corpus and assign values to them; for example, based on the frequency with which they occur in the text. More sophisticated methods are able to transform document text into multi-dimensional vector representations that captures information such as the similarity between words or the context in which a word is used in.
+
 
 
 \subsubsection{Bag of Words}
@@ -616,9 +619,9 @@ A pre-trained GloVe vector \cite{pennington2014glove} was also used for the eval
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
 
-A non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same hyperparameter settings and training scheme outlined in \cite{bradbury2016quasi} on the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of approximately 28,000 Wikipedia articles that meet either the 'Good' or 'Featured' article criteria \cite{Merity2016}. \newline
+A general, non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same hyperparameter settings and training scheme described by Bradbury et al. \cite{bradbury2016quasi} using the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of approximately 28,000 Wikipedia articles that meet either the `Good' or `Featured' article criteria \cite{Merity2016}. \newline
 
-The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the 2,878 unlabelled articles from the corpus in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing} sans the removal of webpage elements. 
+The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the 2,878 unlabelled articles from the corpus in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing}, except for the removal of webpage elements, which was unnecessary.
 
 \subsection{Model Construction}
 \label{sec:ModelSelection}
