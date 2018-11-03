@@ -460,13 +460,12 @@ Whilst transfer learning is useful to train models for non-standard tasks where 
 	\label{fig:TransferLearning}
 \end{figure}
 
-\section{Discussion}
-\label{sec:LitReviewDiscussion}
 
-\subsection{Scaling the Assessment of Quality and Credibility of Health Information}
+\section{Scaling the Assessment of Quality and Credibility of Health Information}
 \label{sec:ScalingAssessment}
 
-Among the studies that aim to assess the credibility and quality of information, the limited amount of articles that were evaluated was a common theme \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of online content. Due to the capabilities of deep learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles as they have shown the ability to develop high-level representations of the language and be able to differentiate between credible and misinformed articles.
+The limited amount of articles that were evaluated was a common theme among the studies that aim to assess the credibility and quality of information \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}.
+This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of the production and propagation of online content. Due to the capabilities of machine learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles on a large scale as models, such as deep learning models, have shown the ability to develop high-level representations of language which can then be leveraged to be able to differentiate between credible and misinformed articles.
 
 
 \chapter{Methods}
@@ -475,7 +474,7 @@ Among the studies that aim to assess the credibility and quality of information,
 \section{Approach}
 \label{sec:Approach}
 
-Through a review of the relevant literature, I found that there is value in being able to appraise the credibility of online health information for use in tools that could help limit the spread of misinformation. However, it is a challenge to apply credibility appraisal tools at scale because the process is time-consuming and often requires certain expertise. Tools for automating this task are therefore likely to be of value but to date most research in the area simply aims to label fake news or uses heuristics to identify misinformation available online. In this chapter, I describe the approach I used to address this challenge using machine learning to train classifiers capable of predicting whether an online article meets a set of credibility criteria.\newline
+Through a review of the relevant literature, I found that there is value in being able to appraise the credibility of online health information for use in tools that could help limit the spread of misinformation. However, it is a challenge to apply credibility appraisal tools at scale because the process is time-consuming and often requires a certain level of expertise to use. Tools for automating this task are therefore likely to be of value but to date most research in the area simply aims to label fake news or uses heuristics to identify misinformation available online. In this chapter, I describe the approach I used to address this challenge using machine learning to train classifiers capable of predicting whether an online article meets a set of credibility criteria.\newline
 
 This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework (Section \ref{sec:StudyData}). \newline
 
@@ -651,7 +650,7 @@ In addition to using a QRNN for constructing the fine-tuned LM, another variant 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[totalheight=6cm]{images/dl-models.png}
+	\includegraphics[totalheight=5.6cm]{images/dl-models.png}
 	\caption{Overview of the QRNN models implemented.}
 	\label{fig:DLModels}
 \end{figure}
@@ -668,12 +667,13 @@ Two experiments have been conducted to evaluate the performance of a model. The 
 
 \subsubsection{Credibility Classification Experiment}
 \label{sec:CredibilityClassificationExperiment}
-The credibility classification experiment aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. For each criteria, the respective NB and SVM model is employed along with the QRNN model and is then evaluated by measuring the micro averaged f1-scores. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article.
+The credibility classification experiment is a set of binary classification tasks which aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. 
+For each criteria, the respective NB and SVM model is employed along with the QRNN model to classify whether the article satisfies the criteria or not. The correctness of the model is then evaluated by measuring the micro averaged f1-scores, which is the harmonic mean of the precision and recall of a model's predictions. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
 
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
-The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles are separated into two separate classes based on this condition and the best performing model, which was determined from the results of the credibility classification experiment, is then applied and evaluated using the resulting micro averaged f1-scores. 
+The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. 
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
@@ -682,7 +682,7 @@ The training time for a model is another factor that must be considered when det
 
 \subsection{Storage}
 \label{sec:StorageExperiments}
-To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream is then recorded and reported in Section \ref{sec:StorageRequirements}.
+To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream of the model is then recorded and reported in Section \ref{sec:StorageRequirements}.
 
 
 
@@ -694,8 +694,9 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 \subsection{Credibility Classification}
 \label{sec:CredibilityClassificationResults}
 
-The performance of all 91 models were evaluated using the credibility classification experiment. 
+The performance of all 91 models were evaluated via the credibility classification experiment.
 
+\subsubsection{Naive Bayes}
 \begin{table}[H]
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -707,57 +708,96 @@ The performance of all 91 models were evaluated using the credibility classifica
 		\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
 		\hline
 
-		NB + BoW (all words)  & 0.79  & 0.70  & 0.86  & 0.84  & 0.79   & 0.75   & 0.82 & 0.792  \\
+		NB + BoW (all words)  & 0.79  & 0.70  & 0.86  & \textbf{0.84}  & 0.79   & \textbf{0.75 }  & \textbf{0.82} & 0.792  \\
 		\hline
 		
-		NB + BoW (stopwords \newline removed) & 0.85 &  0.79 &  \textbf{0.90}  &  0.84 &   \textbf{0.80}   &  0.74   &  0.80 & 0.820    \\
+		NB + BoW (stopwords \newline removed) & \textbf{0.85} &  0.79 &  \textbf{0.90}  &  \textbf{0.84} &   \textbf{0.80}   &  0.74   &  0.80 & \textbf{0.820}    \\
 		\hline
 		
 		NB + \newline TF-IDF \newline (all words)   & 0.79 & 0.74 & 0.87 & 0.80 & 0.79  & 0.62  & 0.80 & 0.773 \\
 		\hline
 		
-		NB + \newline TF-IDF \newline (stopwords \newline removed)  &  0.79 & 0.80  &  0.89 &  0.81 & 0.77   & 0.69   &  0.81 & 0.794  \\
+		NB + \newline TF-IDF \newline (stopwords \newline removed)  &  0.79 & \textbf{0.80}  &  0.89 &  0.81 & 0.77   & 0.69   &  0.81 & 0.794  \\
 		\hline
 		
 		NB + GloVe  & 0.82 & 0.78 & 0.89 & 0.82  & 0.78   & 0.68    & 0.83 & 0.800   \\
-		\hline
-		
-		SVM + BoW (all words)   & 0.82  & 0.70 & 0.86 & 0.80 & 0.68  & 0.75 &  \textbf{0.86} & 0.799                                                                                                                                  \\
-		\hline
-		
-		
-		SVM + BoW (stopwords \newline removed)  &  0.78 &  0.80  &  \textbf{0.90} &   \textbf{0.87} & 0.78  &  0.72   &  0.81 & 0.809 \\
-        \hline                                                                                                                                                                                                  
-		
-		SVM + \newline TF-IDF \newline (all words)   & 0.80 & 0.70 & 0.84 & 0.84 & \textbf{0.80}  & 0.68  &  0.82 & 0.783                                                                                                                                             \\
-		\hline
-		
-		SVM + \newline TF-IDF \newline (stopwords \newline removed)  &   \textbf{0.86} &  \textbf{0.85} & 0.89  &  0.86  &   \textbf{0.80}  & \textbf{0.77}  & 0.82 & \textbf{0.836}  \\
-		\hline
-
-		
-		SVM + GloVe  & 0.60 & 0.77 & 0.63 & 0.61 & 0.59  & 0.67 & 0.81 & 0.669                                                                                                                                           \\		   
-		\hline
-		
-		QRNN + \newline General LM  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39 & 0.379  \\
-		\hline
-		
-		QRNN + \newline Fine-tuned LM  & 0.42 & 0.39 & 0.44 & 0.40 & 0.41 & 0.41  & 0.43 & 0.414   \\
-		\hline
-		
-		QRNN + \newline Domain \newline Specific LM  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08 & 0.103\\
-		\hline                                                          
-		                                                                                                                                                                  
+		\hline                                                                                                                                                     
 	\end{tabular}}
-	\caption{Micro averaged f1-Scores of all models}
-	\label{table:AccuracyResults}
+	\caption{Micro averaged f1-Scores of the NB models}
+	\label{table:PerformanceResultsNB}
 \end{table}
+
+\subsubsection{Support Vector Machine}
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{2.5cm}|}
+			
+			
+			\hline
+			
+			\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
+			\hline
+			
+			SVM + BoW (all words)   & 0.82  & 0.70 & 0.86 & 0.80 & 0.68  & 0.75 &  \textbf{0.86} & 0.799                                                                                                                                  \\
+			\hline
+			
+			
+			SVM + BoW (stopwords \newline removed)  &  0.78 &  0.80  &  \textbf{0.90} &   \textbf{0.87} & 0.78  &  0.72   &  0.81 & 0.809 \\
+			\hline                                                                                                                                                                                                  
+			
+			SVM + \newline TF-IDF \newline (all words)   & 0.80 & 0.70 & 0.84 & 0.84 & \textbf{0.80}  & 0.68  &  0.82 & 0.783                                                                                                                                             \\
+			\hline
+			
+			SVM + \newline TF-IDF \newline (stopwords \newline removed)  &   \textbf{0.86} &  \textbf{0.85} & 0.89  &  0.86  &   \textbf{0.80}  & \textbf{0.77}  & 0.82 & \textbf{0.836}  \\
+			\hline
+			
+			
+			SVM + GloVe  & 0.60 & 0.77 & 0.63 & 0.61 & 0.59  & 0.67 & 0.81 & 0.669                                                                                                                                           \\		   
+			\hline
+			                                                       
+			
+	\end{tabular}}
+	\caption{Micro averaged f1-Scores of the SVM models}
+	\label{table:PerformanceResultsSVM}
+\end{table}
+
+\subsubsection{Quasi-Recurrent Neural Network}
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{2.5cm}|}
+			
+			
+			\hline
+			
+			\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
+			\hline
+			
+			QRNN + \newline General LM  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39 & 0.379  \\
+			\hline
+			
+			QRNN + \newline Fine-tuned LM  & \textbf{0.42} & \textbf{0.39} & \textbf{0.44} & \textbf{0.40} & \textbf{0.41} & \textbf{0.41}  & \textbf{0.43} & \textbf{0.414 }  \\
+			\hline
+			
+			QRNN + \newline Domain \newline Specific LM  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08 & 0.103\\
+			\hline                                                          
+			
+	\end{tabular}}
+	\caption{Micro averaged f1-Scores of the QRNN models}
+	\label{table:PerformanceResultsQRNN}
+\end{table}
+
 
 \subsection{Low Credibility Identification}
 \label{sec:LowCredibilityIdentificationResults}
 
 \subsubsection{Single Model Approach}
 \label{sec:SingleModelApproachResults}
+
+\textit{--This model was chosen because it had the highest average performance value (average micro f1-score) from all of the models evaluated.--}
 \begin{table}[H]
 	\centering
 	
@@ -781,6 +821,9 @@ The performance of all 91 models were evaluated using the credibility classifica
 
 \subsubsection{Ensemble Approach}
 \label{sec:EnsembleApproachResults}
+
+\textit{--This will be composed of the classifiers that had the highest f1 score for each criteria--}
+
 
 \begin{table}[H]
 	\centering
@@ -828,7 +871,7 @@ The performance of all 91 models were evaluated using the credibility classifica
 		NB + TF-IDF \newline (stopwords removed) & 5.05 \\
 		\hline
 		
-		NB + GloVe & 3628.82 \\
+		NB + GloVe & 3,628.82 \\
 		\hline                                                                                                                                             
 		
 		SVM + BoW  \newline (all words)  & 5.91  \\
@@ -843,7 +886,7 @@ The performance of all 91 models were evaluated using the credibility classifica
 		SVM + TF-IDF \newline (stopwords removed) & 5.58 \\
 		\hline
 		
-		SVM + GloVe & 3,435.51 \\
+		SVM + GloVe & 3,558.26 \\
 		\hline
 		
 	\end{tabular}
@@ -866,7 +909,7 @@ The performance of all 91 models were evaluated using the credibility classifica
 		QRNN + \newline Fine-tuned LM  & 292  \\
 		\hline
 		
-		QRNN + \newline Domain Specific LM  & TBD  \\
+		QRNN + \newline Domain Specific LM  & TBC  \\
 		\hline
 		
 		
@@ -900,7 +943,7 @@ The performance of all 91 models were evaluated using the credibility classifica
 		NB + TF-IDF \newline (stopwords removed) & 13.20 \\
 		\hline
 		
-		NB + GloVe & 25,410.00 \\
+		NB + GloVe & 25,410 \\
 		\hline
 		
 		SVM + BoW  (all words)  & 7.91  \\
@@ -915,16 +958,16 @@ The performance of all 91 models were evaluated using the credibility classifica
 		SVM + TF-IDF \newline (stopwords removed) & 7.88 \\
 		\hline
 		
-		SVM + GloVe & TBD \\
+		SVM + GloVe & 25,340 \\
 		\hline
 		
-		QRNN + \newline General LM  & 3612.70  \\
+		QRNN + \newline General LM  & 3,612.70  \\
 		\hline
 		
-		QRNN + \newline Fine-tuned LM  & 4193.35  \\
+		QRNN + \newline Fine-tuned LM  & 4,193.35  \\
 		\hline
 		
-		QRNN + \newline Domain Specific LM & TBD \\
+		QRNN + \newline Domain Specific LM & TBC \\
 		\hline
 		
 		

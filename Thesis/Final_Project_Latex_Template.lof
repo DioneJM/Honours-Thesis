@@ -10,7 +10,7 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of article scores amongst the expert-labelled articles.\relax }}{19}{figure.caption.25}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Example process of preprocessing phase showing the original HTML format (left), removal of superfluous content (middle) and the restructuring into a more standardised representation for feature construction (right).\relax }}{20}{figure.caption.27}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Overview of the NB and SVM models implemented.\relax }}{22}{figure.caption.34}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Overview of the QRNN models implemented.\relax }}{23}{figure.caption.36}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Overview of the QRNN models implemented.\relax }}{22}{figure.caption.36}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
