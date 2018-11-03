@@ -1,2 +1,10 @@
 Project/src/notebooks/pre_word2vec.model
 Project/src/notebooks/pre_word2vec.model.vectors.npy
+Project/src/notebook/models/nb_clf_glove_Cat1.*
+Project/src/notebook/models/nb_clf_glove_Cat2.*
+Project/src/notebook/models/nb_clf_glove_Cat3.*
+Project/src/notebook/models/svm_clf_glove_Cat1.*
+Project/src/notebook/models/svm_clf_glove_Cat2.*
+Project/src/notebook/models/svm_clf_glove_Cat3.*
+Project/src/notebook/models/svm_clf_glove_Cat4.*
+Project/src/notebook/models/svm_clf_glove_Cat5.*
