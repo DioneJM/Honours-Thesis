@@ -813,7 +813,7 @@ The performance of all 91 models were evaluated using the credibility classifica
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		\textbf{NB Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{Machine Learning \newline Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
 		NB + BoW (all words)  & 5.20  \\
@@ -846,6 +846,20 @@ The performance of all 91 models were evaluated using the credibility classifica
 		SVM + GloVe & 3,435.51 \\
 		\hline
 		
+	\end{tabular}
+	\caption{Average training time of NB and SVM models.}
+	\label{table:MLTrainingTime}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{QRNN Model} & \textbf{Epoch Completion \newline (minutes)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		
 		QRNN + General LM  & 271  \\
 		\hline
 		
@@ -858,7 +872,7 @@ The performance of all 91 models were evaluated using the credibility classifica
 		
 	\end{tabular}
 	\caption{Average training time of all models.}
-	\label{table:NBTrainingTime}
+	\label{table:QRNNTrainingTime}
 \end{table}
 
 \section{Model Storage Requirements}
@@ -904,10 +918,10 @@ The performance of all 91 models were evaluated using the credibility classifica
 		SVM + GloVe & TBD \\
 		\hline
 		
-		QRNN + \newline General LM  & 516  \\
+		QRNN + \newline General LM  & 3612.70  \\
 		\hline
 		
-		QRNN + \newline Fine-tuned LM  & 599  \\
+		QRNN + \newline Fine-tuned LM  & 4193.35  \\
 		\hline
 		
 		QRNN + \newline Domain Specific LM & TBD \\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  3 NOV 2018 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  3 NOV 2018 11:08
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -548,12 +548,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--335
  []
 
 [7] [8]
-<images/svm-example.png, id=501, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=503, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 374.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=506, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=508, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 383.
@@ -574,7 +574,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--402
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=528, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=530, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 412.
@@ -595,7 +595,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--446
  []
 
 [12]
-<images/transfer-learning.png, id=569, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=571, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 458.
@@ -708,13 +708,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 529--530
  []
 
 [16] [17]
-<images/label-distribution.png, id=613, 510.40688pt x 382.12762pt>
+<images/label-distribution.png, id=615, 510.40688pt x 382.12762pt>
 File: images/label-distribution.png Graphic file (type png)
 <use images/label-distribution.png>
 Package pdftex.def Info: images/label-distribution.png  used on input line 537.
 
 (pdftex.def)             Requested size: 228.02208pt x 170.71652pt.
-<images/article-score-distribution.png, id=615, 510.40688pt x 391.16138pt>
+<images/article-score-distribution.png, id=617, 510.40688pt x 391.16138pt>
 File: images/article-score-distribution.png Graphic file (type png)
 <use images/article-score-distribution.png>
 Package pdftex.def Info: images/article-score-distribution.png  used on input l
@@ -760,7 +760,7 @@ Overfull \vbox (115.99068pt too high) has occurred while \output is active []
 
 
 [19 <./images/article-score-distribution.png>]
-<images/Preprocessing-example.png, id=627, 481.04718pt x 148.30406pt>
+<images/Preprocessing-example.png, id=629, 481.04718pt x 148.30406pt>
 File: images/Preprocessing-example.png Graphic file (type png)
 <use images/Preprocessing-example.png>
 Package pdftex.def Info: images/Preprocessing-example.png  used on input line 5
@@ -772,12 +772,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 620--621
  []
 
 [21]
-<images/ml-models.png, id=658, 443.40656pt x 201.75375pt>
+<images/ml-models.png, id=660, 443.40656pt x 201.75375pt>
 File: images/ml-models.png Graphic file (type png)
 <use images/ml-models.png>
 Package pdftex.def Info: images/ml-models.png  used on input line 642.
 (pdftex.def)             Requested size: 375.19913pt x 170.71652pt.
-<images/dl-models.png, id=661, 544.28343pt x 200.24812pt>
+<images/dl-models.png, id=663, 544.28343pt x 200.24812pt>
 File: images/dl-models.png Graphic file (type png)
 <use images/dl-models.png>
 Package pdftex.def Info: images/dl-models.png  used on input line 654.
@@ -846,12 +846,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 751--751
 
 [25
 
-] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 892--892
+] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 906--906
 []|\OT1/cmr/m/n/12 SVM + BoW (all
  []
 
-[27] [28]
+[28]
 Chapter 5.
 [29
 
@@ -861,7 +861,7 @@ Chapter 5.
 Chapter 6.
 
 LaTeX Warning: Reference `chap:ProposedWork' on page 31 undefined on input line
- 937.
+ 951.
 
 [31] [32
 
@@ -907,15 +907,15 @@ es-[]and-[]their-[]compositionality .
  []
 
 [37] [38])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 967.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 981.
  [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 967.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 981.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 967.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 967.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 981.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 981.
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 5F981E9C13A0E017594D660B992B74CC;3546.
+(rerunfilecheck)             Checksum: B7A3F539E210E82E38899FF55783C8E0;3546.
 
 
 LaTeX Warning: There were undefined references.
@@ -923,13 +923,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 967.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 981.
  ) 
 Here is how much of TeX's memory you used:
- 8657 strings out of 493303
- 125565 string characters out of 3144913
- 248356 words of memory out of 3000000
- 11877 multiletter control sequences out of 15000+200000
+ 8659 strings out of 493303
+ 125605 string characters out of 3144913
+ 248433 words of memory out of 3000000
+ 11878 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -940,9 +940,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (53 pages, 769949 bytes).
+Output written on Final_Project_Latex_Template.pdf (53 pages, 770410 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 203 named destinations out of 1000 (max. 500000)
+ 889 PDF objects out of 1000 (max. 8388607)
+ 204 named destinations out of 1000 (max. 500000)
  451 words of extra memory for PDF output out of 10000 (max. 10000000)
 
