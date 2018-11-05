@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 NOV 2018 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 NOV 2018 21:03
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -370,6 +370,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (Final_Project_Latex_Template.aux
 
+LaTeX Warning: Label `table:PerformanceResultsNB' multiply defined.
+
+
+LaTeX Warning: Label `table:PerformanceResultsSVM' multiply defined.
+
+
+LaTeX Warning: Label `table:PerformanceResultsQRNN' multiply defined.
+
+
 LaTeX Warning: Label `table:NBStorageRequirements' multiply defined.
 
 
@@ -551,12 +560,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--335
  []
 
 [7] [8]
-<images/svm-example.png, id=516, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=522, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 374.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=521, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=527, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 383.
@@ -577,7 +586,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--402
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=543, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=549, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 412.
@@ -598,7 +607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--446
  []
 
 [12]
-<images/transfer-learning.png, id=584, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=590, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 458.
@@ -705,13 +714,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 529--530
  []
 
 [16] [17]
-<images/label-distribution.png, id=628, 511.31026pt x 391.16138pt>
+<images/label-distribution.png, id=634, 511.31026pt x 391.16138pt>
 File: images/label-distribution.png Graphic file (type png)
 <use images/label-distribution.png>
 Package pdftex.def Info: images/label-distribution.png  used on input line 537.
 
 (pdftex.def)             Requested size: 260.34346pt x 199.16928pt.
-<images/article-score-distribution.png, id=630, 510.40688pt x 391.16138pt>
+<images/article-score-distribution.png, id=636, 510.40688pt x 391.16138pt>
 File: images/article-score-distribution.png Graphic file (type png)
 <use images/article-score-distribution.png>
 Package pdftex.def Info: images/article-score-distribution.png  used on input l
@@ -757,7 +766,7 @@ Overfull \vbox (130.21706pt too high) has occurred while \output is active []
 
 
 [19 <./images/article-score-distribution.png>]
-<images/Preprocessing-example.png, id=642, 481.04718pt x 148.30406pt>
+<images/Preprocessing-example.png, id=648, 481.04718pt x 148.30406pt>
 File: images/Preprocessing-example.png Graphic file (type png)
 <use images/Preprocessing-example.png>
 Package pdftex.def Info: images/Preprocessing-example.png  used on input line 5
@@ -769,12 +778,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 622--623
  []
 
 [21]
-<images/ml-models.png, id=672, 443.40656pt x 201.75375pt>
+<images/ml-models.png, id=678, 443.40656pt x 201.75375pt>
 File: images/ml-models.png Graphic file (type png)
 <use images/ml-models.png>
 Package pdftex.def Info: images/ml-models.png  used on input line 644.
 (pdftex.def)             Requested size: 375.19913pt x 170.71652pt.
-<images/dl-models.png, id=675, 544.28343pt x 200.24812pt>
+<images/dl-models.png, id=681, 544.28343pt x 200.24812pt>
 File: images/dl-models.png Graphic file (type png)
 <use images/dl-models.png>
 Package pdftex.def Info: images/dl-models.png  used on input line 656.
@@ -839,169 +848,183 @@ Underfull \hbox (badness 4193) in paragraph at lines 735--735
 [25
 
 ]
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Underfull \hbox (badness 4013) in paragraph at lines 774--774
+[]|\OT1/cmr/bx/n/12 NB + BoW
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 774--774
+[]|\OT1/cmr/bx/n/12 NB + BoW
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 811--811
 []|\OT1/cmr/bx/n/12 Criteria
  []
 
 
-Overfull \hbox (3.25008pt too wide) in paragraph at lines 771--771
+Overfull \hbox (3.25008pt too wide) in paragraph at lines 811--811
 \OT1/cmr/bx/n/12 Performance| 
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (0.72543pt too wide) in paragraph at lines 795--795
-[]|\OT1/cmr/bx/n/12 Criteria
- []
-
-
-Overfull \hbox (3.25008pt too wide) in paragraph at lines 795--795
-\OT1/cmr/bx/n/12 Performance| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-\OT1/cmr/m/n/12 Fine-tuned
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (0.72543pt too wide) in paragraph at lines 874--874
+[]|\OT1/cmr/bx/n/12 Criteria
+ []
+
+
+Overfull \hbox (3.25008pt too wide) in paragraph at lines 874--874
+\OT1/cmr/bx/n/12 Performance| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
+\OT1/cmr/m/n/12 Fine-tuned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 887--888
+\OT1/cmr/bx/n/12 Fine-tuned
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
 []|\OT1/cmr/bx/n/12 Average Pre-dicted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
 []|\OT1/cmr/bx/n/12 Average Pre-dicted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--821
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
 \OT1/cmr/m/n/12 (stopwords
  []
 
-<images/single-model-performance.png, id=715, 369.38pt x 320.19624pt>
+<images/single-model-performance.png, id=726, 369.38pt x 320.19624pt>
 File: images/single-model-performance.png Graphic file (type png)
 <use images/single-model-performance.png>
 Package pdftex.def Info: images/single-model-performance.png  used on input lin
-e 828.
+e 946.
 (pdftex.def)             Requested size: 262.58853pt x 227.62204pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 852--852
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
 []|\OT1/cmr/bx/n/12 Average Pre-dicted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 852--852
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
 []|\OT1/cmr/bx/n/12 Average Pre-dicted
  []
 
-[27 <./images/single-model-performance.png>]
-<images/ensemble-performance.png, id=723, 369.38pt x 320.19624pt>
+<images/ensemble-performance.png, id=732, 369.38pt x 320.19624pt>
 File: images/ensemble-performance.png Graphic file (type png)
 <use images/ensemble-performance.png>
-Package pdftex.def Info: images/ensemble-performance.png  used on input line 85
-9.
+Package pdftex.def Info: images/ensemble-performance.png  used on input line 97
+7.
 (pdftex.def)             Requested size: 262.58853pt x 227.62204pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+[29 <./images/single-model-performance.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 992--992
 \OT1/cmr/m/n/12 (stopwords
  []
 
-<images/binary-performance.png, id=724, 369.38pt x 320.19624pt>
+<images/binary-performance.png, id=740, 369.38pt x 320.19624pt>
 File: images/binary-performance.png Graphic file (type png)
 <use images/binary-performance.png>
-Package pdftex.def Info: images/binary-performance.png  used on input line 886.
-
+Package pdftex.def Info: images/binary-performance.png  used on input line 1004
+.
 (pdftex.def)             Requested size: 262.58853pt x 227.62204pt.
-[28 <./images/ensemble-performance.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 896--897
+[30 <./images/ensemble-performance.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1015
 
  []
 
-[29 <./images/binary-performance.png>] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1022
+[31 <./images/binary-performance.png>] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1142
 []|\OT1/cmr/m/n/12 SVM + BoW (all
  []
 
-[31] [32
+[33] [34
 
 ]
 Chapter 5.
-[33] [34
+[35] [36
 
 ]
 Chapter 6.
 
-LaTeX Warning: Reference `chap:ProposedWork' on page 35 undefined on input line
- 1080.
+LaTeX Warning: Reference `chap:ProposedWork' on page 37 undefined on input line
+ 1200.
 
-[35] [36
+[37] [38
 
 
 ]
 Appendix A.
-(Final_Project_Latex_Template.bbl [37
+(Final_Project_Latex_Template.bbl [39
 
-] [38
+] [40
 
 ]
 Missing character: There is no â in font cmr12!
@@ -1016,7 +1039,7 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [39]
+ [41]
 Underfull \hbox (badness 10000) in paragraph at lines 117--123
 \OT1/cmr/m/n/12 pdf ? \OMS/cmsy/m/n/12 f[] [] \OT1/cmr/m/n/12 tid = 46d1dda6-[]
 f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat 
@@ -1031,23 +1054,23 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-[40]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 247--252
 \OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
 es-[]and-[]their-[]compositionality .
  []
 
-[41] [42])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1110.
- [43]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1110.
+[43] [44])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1230.
+ [45]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1230.
  (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1230.
 
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: E15F0C5971B9739C9C0C915DDA860867;3475.
+(rerunfilecheck)             Checksum: B89698CFE0A174D76041A3B702EB98CA;3475.
 
 
 LaTeX Warning: There were undefined references.
@@ -1055,12 +1078,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1230.
  ) 
 Here is how much of TeX's memory you used:
- 8697 strings out of 493303
- 126522 string characters out of 3144913
- 241286 words of memory out of 3000000
+ 8702 strings out of 493303
+ 126584 string characters out of 3144913
+ 247289 words of memory out of 3000000
  11897 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1072,9 +1095,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (57 pages, 822264 bytes).
+Output written on Final_Project_Latex_Template.pdf (59 pages, 827294 bytes).
 PDF statistics:
- 942 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
+ 957 PDF objects out of 1000 (max. 8388607)
+ 225 named destinations out of 1000 (max. 500000)
  458 words of extra memory for PDF output out of 10000 (max. 10000000)
 
