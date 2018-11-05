@@ -13,11 +13,11 @@
 \contentsline {table}{\numberline {4.8}{\ignorespaces Performance of low credibility identification task via an ensemble approach.\relax }}{29}{table.caption.52}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Performance of low credibility identification task via a binary classification approach.\relax }}{30}{table.caption.55}
 \contentsline {table}{\numberline {4.10}{\ignorespaces Average training time of models using count-based features.\relax }}{32}{table.caption.57}
-\contentsline {table}{\numberline {4.11}{\ignorespaces Average training time of models using statistical LMs.\relax }}{32}{table.caption.58}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Average training time of models using LMs.\relax }}{32}{table.caption.58}
 \contentsline {table}{\numberline {4.12}{\ignorespaces Average training time of models using pre-trained GloVe feature.\relax }}{32}{table.caption.59}
-\contentsline {table}{\numberline {4.13}{\ignorespaces Aggregated size of NB models.\relax }}{33}{table.caption.60}
-\contentsline {table}{\numberline {4.14}{\ignorespaces Aggregated size of SVM models.\relax }}{33}{table.caption.61}
-\contentsline {table}{\numberline {4.15}{\ignorespaces Aggregated size of QRNN models.\relax }}{33}{table.caption.62}
+\contentsline {table}{\numberline {4.13}{\ignorespaces Aggregated size of count-based models.\relax }}{33}{table.caption.60}
+\contentsline {table}{\numberline {4.14}{\ignorespaces Aggregated size of GloVe-based models.\relax }}{33}{table.caption.61}
+\contentsline {table}{\numberline {4.15}{\ignorespaces Aggregated size of LM-based models.\relax }}{33}{table.caption.62}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

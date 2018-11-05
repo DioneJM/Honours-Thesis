@@ -614,7 +614,7 @@ TF-IDF scores of the unigrams extracted from the expert-labelled articles which 
 \subsubsection{GloVe}
 \label{sec:FeatureSelectionGloVe}
 
-A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was accomplished by using the mean value of each word's vector representation. The GloVe vector used was trained on 6 billion tokens, with a vocabulary size of 400,000 and a has dimensionality of 300.
+A pre-trained global vector (GloVe) \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was accomplished by using the mean value of each word's vector representation. The GloVe vector used was trained on 6 billion tokens, with a vocabulary size of 400,000 and a has dimensionality of 300.
 
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
@@ -1011,9 +1011,7 @@ Performance of the QRNN-based models was lower than what was initially expected,
 \section{Training Time}
 \label{sec:TrainingTime}
 
-The training times reported for each model includes the time required to perform the feature-specific preprocessing requirements in addition to the training time of the classifier itself. This helps explain the substantial differences of the training times between models. \newline
-
-Since the size and complexity in constructing count-based features such as BoW and TF-IDF (Table \ref{table:CountTrainingTime}), especially when limited to an upper bound, is relatively lower when compared to the construction of statistical-based features such as a language model (Table \ref{table:QRNNTrainingTime}) and relatively smaller than a pre-trained feature such as GloVe (Table \ref{table:PreTrainedTrainingTime}), it is expected that the training times for models that utilise the count-based features are lower.
+The training times reported for each model includes the time required to perform the feature-specific preprocessing requirements in addition to the training time of the classifier itself. This helps explain the substantial differences of the training times between models. Since the size and complexity in constructing count-based features such as BoW and TF-IDF (Table \ref{table:CountTrainingTime}), especially when limited to an upper bound, is relatively lower when compared to the construction of statistical-based features such as a language model (Table \ref{table:QRNNTrainingTime}) and relatively smaller than a pre-trained feature such as GloVe (Table \ref{table:PreTrainedTrainingTime}), it is expected that the training times for models that utilise the count-based features are lower.
 
 \begin{table}[H]
 	\centering
@@ -1072,7 +1070,7 @@ Since the size and complexity in constructing count-based features such as BoW a
 		
 		
 	\end{tabular}
-	\caption{Average training time of models using statistical LMs.}
+	\caption{Average training time of models using LMs.}
 	\label{table:QRNNTrainingTime}
 \end{table}
 
@@ -1099,6 +1097,9 @@ Since the size and complexity in constructing count-based features such as BoW a
 \section{Model Storage Requirements}
 \label{sec:StorageRequirements}
 
+The reported sizes for each of the models are based on the model implmentations in Section \ref{sec:CredibilityClassificationResults}. Due to the model sizes staying relatively unchanged when trained for all criteria (e.g. The size of the NB + BoW (all words) model stayed practically unchanged when trained on each criteria), the aggregated model size of a given model trained on each criteria has been reported.
+
+Models that utilised count-based features (Table \ref{table:CountStorageRequirements}) unsurprisingly had the lowest storage requirements. This is due to its relatively simplistic representation of text in conjunction with the enforced limit on the number of words that are stored. On the other hand, models that utilised the pre-trained GloVe feature (Table \ref{table:PreTrainedStorageRequirements}) has a substantially higher storage requirement due to the feature having a substantially larger vocabulary and higher dimensionality. Whilst this is also explains the storage requirements of models that used LMs (Table \ref{table:LMStorageRequirements}), the LMs used were not trained as extensively as the pre-trained GloVe.
 
 \begin{table}[H]
 	\centering
@@ -1106,7 +1107,7 @@ Since the size and complexity in constructing count-based features such as BoW a
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		\textbf{NB Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
 		NB + BoW (all words)  & 11.10  \\
@@ -1121,24 +1122,6 @@ Since the size and complexity in constructing count-based features such as BoW a
 		NB + TF-IDF \newline (stopwords removed) & 13.20 \\
 		\hline
 		
-		NB + GloVe & 25,410 \\
-		\hline
-
-		
-		
-	\end{tabular}
-	\caption{Aggregated size of NB models.}
-	\label{table:NBStorageRequirements}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	
-	\begin{tabular}{|p{4.2cm}|p{5cm}|}
-		\hline
-		
-		\textbf{NB Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
-		\hline                                                                                                                                              
 		SVM + BoW  (all words)  & 7.91  \\
 		\hline
 		
@@ -1151,13 +1134,12 @@ Since the size and complexity in constructing count-based features such as BoW a
 		SVM + TF-IDF \newline (stopwords removed) & 7.88 \\
 		\hline
 		
-		SVM + GloVe & 25,340 \\
-		\hline
 
 		
+		
 	\end{tabular}
-	\caption{Aggregated size of SVM models.}
-	\label{table:NBStorageRequirements}
+	\caption{Aggregated size of count-based models.}
+	\label{table:CountStorageRequirements}
 \end{table}
 
 \begin{table}[H]
@@ -1166,7 +1148,27 @@ Since the size and complexity in constructing count-based features such as BoW a
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		\textbf{NB Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		NB + GloVe & 25,410 \\
+		\hline
+		
+		SVM + GloVe & 25,340 \\
+		\hline
+
+		
+	\end{tabular}
+	\caption{Aggregated size of GloVe-based models.}
+	\label{table:PreTrainedStorageRequirements}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		QRNN + \newline General LM  & \textbf{3,612.70}  \\
 		\hline
@@ -1176,8 +1178,8 @@ Since the size and complexity in constructing count-based features such as BoW a
 		
 		
 	\end{tabular}
-	\caption{Aggregated size of QRNN models.}
-	\label{table:NBStorageRequirements}
+	\caption{Aggregated size of LM-based models.}
+	\label{table:LMStorageRequirements}
 \end{table}
 
 
