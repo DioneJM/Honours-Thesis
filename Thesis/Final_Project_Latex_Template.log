@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 NOV 2018 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 NOV 2018 21:33
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -989,18 +989,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 992--992
 \OT1/cmr/m/n/12 (stopwords
  []
 
-<images/binary-performance.png, id=740, 369.38pt x 320.19624pt>
-File: images/binary-performance.png Graphic file (type png)
-<use images/binary-performance.png>
-Package pdftex.def Info: images/binary-performance.png  used on input line 1004
-.
-(pdftex.def)             Requested size: 262.58853pt x 227.62204pt.
+<images/binary-roc-curve.png, id=740, 395.4775pt x 279.0425pt>
+File: images/binary-roc-curve.png Graphic file (type png)
+<use images/binary-roc-curve.png>
+Package pdftex.def Info: images/binary-roc-curve.png  used on input line 1004.
+(pdftex.def)             Requested size: 241.95903pt x 170.71652pt.
 [30 <./images/ensemble-performance.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1014--1015
 
  []
 
-[31 <./images/binary-performance.png>] [32]
+[31 <./images/binary-roc-curve.png>] [32]
 Underfull \hbox (badness 10000) in paragraph at lines 1142--1142
 []|\OT1/cmr/m/n/12 SVM + BoW (all
  []
@@ -1082,7 +1081,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1230.
  ) 
 Here is how much of TeX's memory you used:
  8702 strings out of 493303
- 126584 string characters out of 3144913
+ 126574 string characters out of 3144913
  247289 words of memory out of 3000000
  11897 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
@@ -1095,7 +1094,7 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (59 pages, 827294 bytes).
+Output written on Final_Project_Latex_Template.pdf (59 pages, 828628 bytes).
 PDF statistics:
  957 PDF objects out of 1000 (max. 8388607)
  225 named destinations out of 1000 (max. 500000)
