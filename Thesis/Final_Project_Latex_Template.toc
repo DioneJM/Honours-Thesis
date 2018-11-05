@@ -53,20 +53,20 @@
 \contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Credibility Classification}{25}{subsection.4.1.1}
 \contentsline {subsubsection}{Naive Bayes}{26}{section*.39}
-\contentsline {subsubsection}{Support Vector Machine}{27}{section*.42}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{27}{section*.45}
-\contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{28}{subsection.4.1.2}
-\contentsline {subsubsection}{Single Model Approach}{28}{section*.48}
-\contentsline {subsubsection}{Ensemble Approach}{29}{section*.51}
-\contentsline {subsubsection}{Binary Classification Approach}{30}{section*.54}
-\contentsline {section}{\numberline {4.2}Training Time}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Model Storage Requirements}{32}{section.4.3}
-\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Model Performance}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Real World Applications}{35}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{37}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusions}{37}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{39}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{39}{section.A.1}
-\contentsline {chapter}{Bibliography}{39}{section*.63}
+\contentsline {subsubsection}{Support Vector Machine}{26}{section*.41}
+\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{27}{section*.43}
+\contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{27}{subsection.4.1.2}
+\contentsline {subsubsection}{Single Model Approach}{27}{section*.45}
+\contentsline {subsubsection}{Ensemble Approach}{28}{section*.48}
+\contentsline {subsubsection}{Binary Classification Approach}{29}{section*.51}
+\contentsline {section}{\numberline {4.2}Training Time}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Model Storage Requirements}{31}{section.4.3}
+\contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Model Performance}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Real World Applications}{33}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusions}{35}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{37}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{37}{section.A.1}
+\contentsline {chapter}{Bibliography}{37}{section*.60}

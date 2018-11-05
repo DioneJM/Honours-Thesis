@@ -701,41 +701,12 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 
 The performance of all 91 models were evaluated via the credibility classification experiment. Divided into the three main groups of models (NB, SVM and QRNN), the NB-based models (Table \ref{table:PerformanceResultsNB}) outperformed the SVM-based (Table \ref{table:PerformanceResultsSVM}) and QRNN-based models (Table \ref{table:PerformanceResultsQRNN}) overall with an aggregated average performance measure of 0.795, followed by SVM-based models with a measure of 0.780 and finally QRNN-based models with a measure of 0.397. Despite the NB-based models having performed better on average, the best performing model for labelling was the SVM-based, SVM + TF-IDF model with the stopwords removed from the article's text. \newline
 
-Performance of the QRNN-based models was lower than what was initially expected, however this can be theorised to be due to the relatively low number of training samples used for training the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018}, the number of training samples used to construct the discriminative fine-tuned LM for question classification was 5,500 which only improved the model's performance by 0.3\%
+Performance of the QRNN-based models was lower than what was initially expected, however this can be theorised to be due to the relatively low number of training samples used for training the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018}, the number of training samples used to construct the discriminative fine-tuned LM for question classification was 5,500 which only improved the model's performance by 0.3\%.
 
-\textit{Note \#1 for Adam: Im thinking of investigating the relationship between the resulting f1-scores for a criteria and the label imbalance of that criteria (See the average f1 scores for Criteria 3, the most imbalanced label also has the highest f1 scores). Do you think this is worthwhile?}
+
 
 
 \subsubsection{Naive Bayes}
-\begin{table}[H]
-	\centering
-	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{2.5cm}|}
-
-
-		\hline
-
-		\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
-		\hline
-
-		NB + BoW (all words)  & 0.79  & 0.70  & 0.86  & \textbf{0.84}  & 0.79   & \textbf{0.75 }  & \textbf{0.82} & 0.792  \\
-		\hline
-		
-		NB + BoW (stopwords \newline removed) & \textbf{0.85} &  0.79 &  \textbf{0.90}  &  \textbf{0.84} &   \textbf{0.80}   &  0.74   &  0.80 & \textbf{0.820}    \\
-		\hline
-		
-		NB + \newline TF-IDF \newline (all words)   & 0.79 & 0.74 & 0.87 & 0.80 & 0.79  & 0.62  & 0.80 & 0.773 \\
-		\hline
-		
-		NB + \newline TF-IDF \newline (stopwords \newline removed)  &  0.79 & \textbf{0.80}  &  0.89 &  0.81 & 0.77   & 0.69   &  0.81 & 0.794  \\
-		\hline
-		
-		NB + GloVe  & 0.82 & 0.78 & 0.89 & 0.82  & 0.78   & 0.68    & 0.83 & 0.800   \\
-		\hline                                                                                                                                                     
-	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the NB models}
-	\label{table:PerformanceResultsNB}
-\end{table}
 
 \begin{table}[H]
 	\centering
@@ -778,40 +749,6 @@ Performance of the QRNN-based models was lower than what was initially expected,
 
 \subsubsection{Support Vector Machine}
 
-\begin{table}[H]
-	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{2.5cm}|}
-			
-			
-			\hline
-			
-			\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
-			\hline
-			
-			SVM + BoW (all words)   & 0.82  & 0.70 & 0.86 & 0.80 & 0.68  & 0.75 &  \textbf{0.86} & 0.799                                                                                                                                  \\
-			\hline
-			
-			
-			SVM + BoW (stopwords \newline removed)  &  0.78 &  0.80  &  \textbf{0.90} &   \textbf{0.87} & 0.78  &  0.72   &  0.81 & 0.809 \\
-			\hline                                                                                                                                                                                                  
-			
-			SVM + \newline TF-IDF \newline (all words)   & 0.80 & 0.70 & 0.84 & 0.84 & \textbf{0.80}  & 0.68  &  0.82 & 0.783                                                                                                                                             \\
-			\hline
-			
-			SVM + \newline TF-IDF \newline (stopwords \newline removed)  &   \textbf{0.86} &  \textbf{0.85} & 0.89  &  0.86  &   \textbf{0.80}  & \textbf{0.77}  & 0.82 & \textbf{0.836}  \\
-			\hline
-			
-			
-			SVM + GloVe  & 0.60 & 0.77 & 0.63 & 0.61 & 0.59  & 0.67 & 0.81 & 0.669                                                                                                                                           \\		   
-			\hline
-			
-			                                                       
-			
-	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the SVM models}
-	\label{table:PerformanceResultsSVM}
-\end{table}
 
 \begin{table}[H]
 	\centering
@@ -854,27 +791,6 @@ Performance of the QRNN-based models was lower than what was initially expected,
 
 \subsubsection{Quasi-Recurrent Neural Network}
 
-\begin{table}[H]
-	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{2.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{2.5cm}|}
-			
-			
-			\hline
-			
-			\textbf{Model} & \textbf{Criteria 1    }                                                                       & \textbf{Criteria 2}    & \textbf{Criteria 3 }& \textbf{Criteria 4} & \textbf{Criteria 5} & \textbf{Criteria 6} & \textbf{Criteria 7         } & \textbf{Average \newline Performance}                                                                                                                                                                                                                                                                                                                                          \\
-			\hline
-			
-			QRNN + \newline General LM  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39 & 0.379  \\
-			\hline
-			
-			QRNN + \newline Fine-tuned LM  & \textbf{0.42} & \textbf{0.39} & \textbf{0.44} & \textbf{0.40} & \textbf{0.41} & \textbf{0.41}  & \textbf{0.43} & \textbf{0.414 }  \\
-			\hline
-			
-	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the QRNN models}
-	\label{table:PerformanceResultsQRNN}
-\end{table}
 
 \begin{table}[H]
 	\centering
