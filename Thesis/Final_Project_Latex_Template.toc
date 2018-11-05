@@ -52,20 +52,21 @@
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Credibility Classification}{25}{subsection.4.1.1}
-\contentsline {subsubsection}{Naive Bayes}{25}{section*.39}
+\contentsline {subsubsection}{Naive Bayes}{26}{section*.39}
 \contentsline {subsubsection}{Support Vector Machine}{26}{section*.41}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{26}{section*.43}
-\contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{26}{subsection.4.1.2}
-\contentsline {subsubsection}{Single Model Approach}{26}{section*.45}
-\contentsline {subsubsection}{Ensemble Approach}{27}{section*.47}
-\contentsline {section}{\numberline {4.2}Training Time}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}Model Storage Requirements}{28}{section.4.3}
-\contentsline {chapter}{\numberline {5}Discussion}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Model Performance}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Real World Applications}{29}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusions}{31}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{33}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{33}{section.A.1}
-\contentsline {chapter}{Bibliography}{33}{section*.52}
+\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{27}{section*.43}
+\contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{27}{subsection.4.1.2}
+\contentsline {subsubsection}{Single Model Approach}{27}{section*.45}
+\contentsline {subsubsection}{Ensemble Approach}{28}{section*.48}
+\contentsline {subsubsection}{Binary Classification Approach}{28}{section*.51}
+\contentsline {section}{\numberline {4.2}Training Time}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Model Storage Requirements}{31}{section.4.3}
+\contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Model Performance}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Real World Applications}{33}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusions}{35}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{37}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{37}{section.A.1}
+\contentsline {chapter}{Bibliography}{37}{section*.60}

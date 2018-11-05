@@ -671,12 +671,14 @@ Two experiments have been conducted to evaluate the performance of a model. The 
 \subsubsection{Credibility Classification Experiment}
 \label{sec:CredibilityClassificationExperiment}
 The credibility classification experiment is a set of binary classification tasks which aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. 
-For each criteria, the respective NB and SVM model is employed along with the QRNN model to classify whether the article satisfies the criteria or not. The correctness of the model is then evaluated by measuring the micro averaged f1-scores, which is the harmonic mean of the precision and recall of a model's predictions. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
+For each criteria, the respective NB and SVM model is employed along with the QRNN model to classify whether the article satisfies the criteria or not. The correctness of the model was then evaluated by measuring the micro averaged f1-scores via 10-fold cross-validation, which is the harmonic mean of the precision and recall of a model's predictions. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
 
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
 The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. 
+
+\textit{Need to include the three different approaches evaluated for this task (single model, ensemble and binary)}
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
@@ -697,7 +699,12 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 \subsection{Credibility Classification}
 \label{sec:CredibilityClassificationResults}
 
-The performance of all 91 models were evaluated via the credibility classification experiment.
+The performance of all 91 models were evaluated via the credibility classification experiment. Divided into the three main groups of models (NB, SVM and QRNN), the NB-based models (Table \ref{table:PerformanceResultsNB}) outperformed the SVM-based (Table \ref{table:PerformanceResultsSVM}) and QRNN-based models (Table \ref{table:PerformanceResultsQRNN}) overall with an aggregated average performance measure of 0.795, followed by SVM-based models with a measure of 0.780 and finally QRNN-based models with a measure of 0.397. Despite the NB-based models having performed better on average, the best performing model for labelling was the SVM-based, SVM + TF-IDF model with the stopwords removed from the article's text. \newline
+
+Performance of the QRNN-based models was lower than what was initially expected, however this can be theorised to be due to the relatively low number of training samples used for training the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018}, the number of training samples used to construct the discriminative fine-tuned LM for question classification was 5,500 which only improved the model's performance by 0.3\%
+
+\textit{Note \#1 for Adam: Im thinking of investigating the relationship between the resulting f1-scores for a criteria and the label imbalance of that criteria (See the average f1 scores for Criteria 3, the most imbalanced label also has the highest f1 scores). Do you think this is worthwhile?}
+
 
 \subsubsection{Naive Bayes}
 \begin{table}[H]
@@ -785,9 +792,6 @@ The performance of all 91 models were evaluated via the credibility classificati
 			QRNN + \newline Fine-tuned LM  & \textbf{0.42} & \textbf{0.39} & \textbf{0.44} & \textbf{0.40} & \textbf{0.41} & \textbf{0.41}  & \textbf{0.43} & \textbf{0.414 }  \\
 			\hline
 			
-			QRNN + \newline Domain \newline Specific LM  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08 & 0.103\\
-			\hline                                                          
-			
 	\end{tabular}}
 	\caption{Micro averaged f1-Scores of the QRNN models}
 	\label{table:PerformanceResultsQRNN}
@@ -803,24 +807,28 @@ The performance of all 91 models were evaluated via the credibility classificati
 \textit{--This model was chosen because it had the highest average performance value (average micro f1-score) from all of the models evaluated.--}
 \begin{table}[H]
 	\centering
-	
-	\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
-		\hline
-		
-		\textbf{Model} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted Score Differential}                                                                                                                                                                                                                                                                                                                                           \\
-		\hline                                                                                                                                              
-		
-		SVM + TF-IDF \newline (stopwords removed)  & XX & XX \\
-		\hline
-		
-		
-		
-	\end{tabular}
-	\caption{Performance of low credibility identification task via a single model approach.}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
+			\hline
+			
+			\textbf{Model} & \textbf{Precision} & \textbf{Recall} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
+			\hline                                                                                                                                              
+			SVM + \newline TF-IDF \newline (stopwords removed) & 0.89 & 0.89 & 0.89 & 0.52 & 2.14 \\
+			\hline
+			
+			
+			
+	\end{tabular}}
+	\caption{Performance of low credibility identification task via an ensemble approach.}
 	\label{table:SingleModelApproach}
 \end{table}
 
-\textit{--Insert confusion matrix here--}
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=8cm]{images/single-model-performance.png}
+	\caption{Performance of single model approach after 10-fold cross validation.}
+	\label{fig:SingleModelPerformance}
+\end{figure}
 
 \subsubsection{Ensemble Approach}
 \label{sec:EnsembleApproachResults}
@@ -830,28 +838,64 @@ The performance of all 91 models were evaluated via the credibility classificati
 
 \begin{table}[H]
 	\centering
-	
-	\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
 		\hline
-		
-		\textbf{Model} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted Score Differential}                                                                                                                                                                                                                                                                                                                                           \\
+
+		\textbf{Model} & \textbf{Precision} & \textbf{Recall} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
 		\hline                                                                                                                                              
-		
-		Ensemble & XX & XX \\
+		Ensemble & 0.91 & 0.91 & 0.91 & 0.55 & 2.0 \\
 		\hline
 		
 		
 		
-	\end{tabular}
+	\end{tabular}}
 	\caption{Performance of low credibility identification task via an ensemble approach.}
-	\label{table:SingleModelApproach}
+	\label{table:EnsembleApproach}
 \end{table}
 
-\textit{--Insert confusion matrix here--}
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=8cm]{images/ensemble-performance.png}
+	\caption{Performance of ensemble classifier after 10-fold cross validation.}
+	\label{fig:EnsemblePerformance}
+\end{figure}
+
+\subsubsection{Binary Classification Approach}
+\label{sec:BinaryApproachResults}
+
+\begin{table}[H]
+	\centering
+		\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|}
+			\hline
+			
+			\textbf{Model} & \textbf{Precision} & \textbf{Recall} & \textbf{Micro Averaged \newline f1-Score}                                                                                                                                                                                                                                                                                                                                    \\
+			\hline                                                                                                                                              
+			SVM + \newline TF-IDF \newline (stopwords removed) & 0.61 & 0.61 & 0.61 \\
+			\hline
+			
+			
+			
+	\end{tabular}
+	\caption{Performance of low credibility identification task via a binary classification approach.}
+	\label{table:BinaryApproach}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=8cm]{images/binary-performance.png}
+	\caption{Performance of binary classification approach after 10-fold cross validation.}
+	\label{fig:BinaryPerformance}
+\end{figure}
+
 
 
 \section{Training Time}
 \label{sec:TrainingTime}
+
+The training times reported for each model includes the time required to perform the feature-specific preprocessing requirements in addition to the training time of the classifier itself. This helps explain the substantial differences of the training times between models. \newline
+
+Since the size and complexity in constructing count-based features such as BoW and TF-IDF (Table \ref{table:CountTrainingTime}), especially when limited to an upper bound, is relatively lower when compared to the construction of statistical-based features such as a language model (Table \ref{table:QRNNTrainingTime}) and relatively smaller than a pre-trained feature such as GloVe (Table \ref{table:PreTrainedTrainingTime}), it is expected that the training times for models that utilise the count-based features are lower.
 
 \begin{table}[H]
 	\centering
@@ -859,7 +903,7 @@ The performance of all 91 models were evaluated via the credibility classificati
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		\textbf{Machine Learning \newline Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
 		NB + BoW (all words)  & 5.20  \\
@@ -874,9 +918,6 @@ The performance of all 91 models were evaluated via the credibility classificati
 		NB + TF-IDF \newline (stopwords removed) & 5.05 \\
 		\hline
 		
-		NB + GloVe & 3,628.82 \\
-		\hline                                                                                                                                             
-		
 		SVM + BoW  \newline (all words)  & 5.91  \\
 		\hline
 		
@@ -887,14 +928,11 @@ The performance of all 91 models were evaluated via the credibility classificati
 		\hline
 		
 		SVM + TF-IDF \newline (stopwords removed) & 5.58 \\
-		\hline
-		
-		SVM + GloVe & 3,558.26 \\
-		\hline
+		\hline                                                                                                                                           
 		
 	\end{tabular}
-	\caption{Average training time of NB and SVM models.}
-	\label{table:MLTrainingTime}
+	\caption{Average training time of models using count-based features.}
+	\label{table:CountTrainingTime}
 \end{table}
 
 \begin{table}[H]
@@ -903,22 +941,39 @@ The performance of all 91 models were evaluated via the credibility classificati
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		\textbf{QRNN Model} & \textbf{Epoch Completion \newline (minutes)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{Model} & \textbf{Epoch Completion \newline (minutes)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
-		QRNN + General LM  & 271  \\
+		QRNN + General LM  & \textbf{271}  \\
 		\hline
 		
 		QRNN + \newline Fine-tuned LM  & 292  \\
 		\hline
 		
-		QRNN + \newline Domain Specific LM  & TBC  \\
-		\hline
-		
 		
 	\end{tabular}
-	\caption{Average training time of all models.}
+	\caption{Average training time of models using statistical LMs.}
 	\label{table:QRNNTrainingTime}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                           
+		
+		NB + GloVe & 3,628.82 \\
+		\hline     
+		
+		SVM + GloVe & \textbf{3,558.26} \\
+		\hline                                                                                                                                        
+		
+	\end{tabular}
+	\caption{Average training time of models using pre-trained GloVe feature.}
+	\label{table:PreTrainedTrainingTime}
 \end{table}
 
 \section{Model Storage Requirements}
@@ -937,7 +992,7 @@ The performance of all 91 models were evaluated via the credibility classificati
 		NB + BoW (all words)  & 11.10  \\
 		\hline
 		
-		NB + BoW \newline (stopwords  removed)  & 11.00 \\
+		NB + BoW \newline (stopwords  removed)  & \textbf{11.00} \\
 		\hline
 		
 		NB + TF-IDF \newline (all words) & 13.20 \\
@@ -948,7 +1003,22 @@ The performance of all 91 models were evaluated via the credibility classificati
 		
 		NB + GloVe & 25,410 \\
 		\hline
+
 		
+		
+	\end{tabular}
+	\caption{Aggregated size of NB models.}
+	\label{table:NBStorageRequirements}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{NB Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
 		SVM + BoW  (all words)  & 7.91  \\
 		\hline
 		
@@ -963,21 +1033,34 @@ The performance of all 91 models were evaluated via the credibility classificati
 		
 		SVM + GloVe & 25,340 \\
 		\hline
+
 		
-		QRNN + \newline General LM  & 3,612.70  \\
+	\end{tabular}
+	\caption{Aggregated size of SVM models.}
+	\label{table:NBStorageRequirements}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{NB Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		QRNN + \newline General LM  & \textbf{3,612.70}  \\
 		\hline
 		
 		QRNN + \newline Fine-tuned LM  & 4,193.35  \\
 		\hline
 		
-		QRNN + \newline Domain Specific LM & TBC \\
-		\hline
-		
 		
 	\end{tabular}
-	\caption{Aggregated size of all models.}
+	\caption{Aggregated size of QRNN models.}
 	\label{table:NBStorageRequirements}
 \end{table}
+
+
 
 
 
