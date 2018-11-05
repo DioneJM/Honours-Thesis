@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 NOV 2018 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.24)  5 NOV 2018 23:43
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -817,7 +817,7 @@ File: images/single-model-performance.png Graphic file (type png)
 <use images/single-model-performance.png>
 Package pdftex.def Info: images/single-model-performance.png  used on input lin
 e 862.
-(pdftex.def)             Requested size: 262.58853pt x 227.62204pt.
+(pdftex.def)             Requested size: 229.76285pt x 199.16928pt.
 [27]
 Underfull \hbox (badness 10000) in paragraph at lines 886--886
 []|\OT1/cmr/bx/n/12 Average Pre-dicted
@@ -833,28 +833,29 @@ File: images/ensemble-performance.png Graphic file (type png)
 <use images/ensemble-performance.png>
 Package pdftex.def Info: images/ensemble-performance.png  used on input line 89
 3.
-(pdftex.def)             Requested size: 262.58853pt x 227.62204pt.
-[28 <./images/single-model-performance.png>]
+(pdftex.def)             Requested size: 229.76285pt x 199.16928pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 908--908
 \OT1/cmr/m/n/12 (stopwords
  []
 
-<images/binary-roc-curve.png, id=729, 395.4775pt x 279.0425pt>
+[28 <./images/single-model-performance.png> <./images/ensemble-performance.png>
+]
+<images/binary-roc-curve.png, id=730, 395.4775pt x 279.0425pt>
 File: images/binary-roc-curve.png Graphic file (type png)
 <use images/binary-roc-curve.png>
 Package pdftex.def Info: images/binary-roc-curve.png  used on input line 920.
 (pdftex.def)             Requested size: 241.95903pt x 170.71652pt.
-[29 <./images/ensemble-performance.png>] [30 <./images/binary-roc-curve.png>]
-[31]
+ [29 <./images/binary-roc-curve.png>] [30]
 Underfull \hbox (badness 10000) in paragraph at lines 1041--1041
 []|\OT1/cmr/m/n/12 SVM + BoW (all
  []
 
-[32]
-Chapter 5.
-[33
+[31] [32
 
-] [34
+]
+Chapter 5.
+[33] [34
 
 ]
 Chapter 6.
@@ -937,7 +938,7 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><B:/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsl12.pfb><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><B:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><B:/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Project_Latex_Template.pdf (57 pages, 824508 bytes).
+Output written on Final_Project_Latex_Template.pdf (57 pages, 824324 bytes).
 PDF statistics:
  946 PDF objects out of 1000 (max. 8388607)
  220 named destinations out of 1000 (max. 500000)

@@ -59,8 +59,8 @@
 \contentsline {subsubsection}{Single Model Approach}{27}{section*.45}
 \contentsline {subsubsection}{Ensemble Approach}{28}{section*.48}
 \contentsline {subsubsection}{Binary Classification Approach}{29}{section*.51}
-\contentsline {section}{\numberline {4.2}Training Time}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Model Storage Requirements}{31}{section.4.3}
+\contentsline {section}{\numberline {4.2}Training Time}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Model Storage Requirements}{30}{section.4.3}
 \contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Model Performance}{33}{section.5.1}
 \contentsline {section}{\numberline {5.2}Real World Applications}{33}{section.5.2}
