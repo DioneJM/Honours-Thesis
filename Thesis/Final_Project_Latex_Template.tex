@@ -709,7 +709,7 @@ In this chapter I detail the results of the experiments described in the previou
 \iffalse
 The performance of all 84 models were evaluated via the credibility classification experiment. Divided into the three main groups of models (NB, SVM and QRNN), the NB-based models (Table \ref{table:PerformanceResultsNB}) outperformed the SVM-based (Table \ref{table:PerformanceResultsSVM}) and QRNN-based models (Table \ref{table:PerformanceResultsQRNN}) overall with an aggregated average performance measure of 0.795, followed by SVM-based models with a measure of 0.780 and finally QRNN-based models with a measure of 0.397. Despite the NB-based models having performed better on average, the best performing model for labelling was the SVM-based, SVM + TF-IDF model with the stopwords removed from the article's text. \newline
 
-Performance of the QRNN-based models was lower than what was initially expected, however this can be theorised to be due to the relatively low number of training samples used for training the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018}, the number of training samples used to construct the discriminative fine-tuned LM for question classification was 5,500 which only improved the model's performance by 0.3\%.
+
 \fi
 
 I trained and tested the performance of NB and SVM classifiers in combination with two feature representations, BoW and TF-IDF, implementations of which as described in the prior chapter. For each criteria, all combinations of classifiers and feature representations was then trained to perform a binary classification task that aimed to predict whether a given article satisfied that criteria. This produced a combined total of 70 NB-based and SVM-based models. \newline
@@ -731,50 +731,51 @@ The performance of the models may have highly been influenced by the unbalanced 
 			\textbf{Criteria} &  & \textbf{BoW \newline (all words)  }                                                                       & \textbf{BoW \newline (stopwords removed)} &\textbf{TF-IDF \newline (all words) }& \textbf{TF-IDF \newline (stopwords removed)} & \textbf{GloVe} \\
 			\hline
 			
-			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } & NB & 0.79 & 0.85 & 0.79 & 0.79 & 0.82 \\ 
-			& SVM & 0.82 & 0.78 & 0.80 & 0.86 & 0.60 \\ 
+			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } 
+			& NB & 0.79 & 0.85 & 0.79 & 0.79 & 0.82 \\ 
+			& SVM & 0.82 & 0.78 & 0.80 & \textbf{0.86} & 0.60 \\ 
 			\hline
 			
 			
 			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Based on objective research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
-			& SVM & 0.70 & 0.80 & 0.70 & 0.85 & 0.77 \\ 
+			& SVM & 0.70 & 0.80 & 0.70 & \textbf{0.85} & 0.77 \\ 
 			\hline 
 			
 			
 			\multirowcell{3}{\textbf{Criteria 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
-			& NB & 0.86 & 0.90 & 0.87 & 0.89 & 0.89 \\ 
-			& SVM & 0.86 & 0.90 & 0.84 & 0.89 & 0.63 \\ & & & & & & \\ 
+			& NB & 0.86 & \textbf{0.90} & 0.87 & 0.89 & 0.89 \\ 
+			& SVM & 0.86 & \textbf{0.90} & 0.84 & 0.89 & 0.63 \\ & & & & & & \\ 
 			\hline 
 			
 			
 			\multirowcell{3}{\textbf{Criteria 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
 			& NB & 0.84 & 0.84 & 0.80 & 0.81 & 0.82 \\ 
-			& SVM & 0.80 & 0.87 & 0.84 & 0.86 & 0.61 \\ & & & & & & \\ 
+			& SVM & 0.80 & \textbf{0.87} & 0.84 & 0.86 & 0.61 \\ & & & & & & \\ 
 			\hline 
 			
 			
 			\multirowcell{2}{\textbf{Criteria 5:} \\ \textbf{Balanced information}} 
-			& NB & 0.79 & 0.80 & 0.79 & 0.77 & 0.78 \\ 
-			& SVM & 0.68 & 0.78 & 0.80 & 0.80 & 0.59 \\
+			& NB & 0.79 & \textbf{0.80} & 0.79 & 0.77 & 0.78 \\ 
+			& SVM & 0.68 & 0.78 & \textbf{0.80} & \textbf{0.80} & 0.59 \\
 			\hline 
 			
 			
 			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & NB & 0.75 & 0.74 & 0.62 & 0.69 & 0.68 \\ 
-			& SVM & 0.75 & 0.72 & 0.68 & 0.77 & 0.67 \\
+			& SVM & 0.75 & 0.72 & 0.68 & \textbf{0.77} & 0.67 \\
 			\hline 
 			
 			
 			\multirowcell{3}{\textbf{Criteria 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
 			& NB & 0.82 & 0.80 & 0.80 & 0.81 & 0.83 \\ 
-			& SVM & 0.86 & 0.81 & 0.82 & 0.82 & 0.81 \\ & & & & & & \\ 
+			& SVM & \textbf{0.86} & 0.81 & 0.82 & 0.82 & 0.81 \\ & & & & & & \\ 
 			\hline 
 			
 			
 			\multirowcell{2}{\textbf{Average} \textbf{Performance}} & NB & 0.792 & 0.820 & 0.773 & 0.794 & 0.800      \\ 
-			& SVM & 0.799 & 0.809 & 0.783 & 0.836 & 0.669      \\
+			& SVM & 0.799 & 0.809 & 0.783 & \textbf{0.836} & 0.669      \\
 			\hline                                                                                                                                          
 	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the NB and SVM based models}
+	\caption{Micro averaged f1-Scores of the NB and SVM based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
 	\label{table:PerformanceResultsNBSVM}
 \end{table}
 
@@ -795,52 +796,52 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 			\textbf{Criteria} &  & \textbf{General LM}                                                                       & \textbf{Fine-tuned LM}  \\
 			\hline
 			
-			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } & QRNN & 0.38 & 0.42 \\ 
+			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } & QRNN & 0.38 & \textbf{0.42} \\ 
 			&  & &\\ 
 			\hline
 			
 			
 			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Based on objective research}} 
-			& QRNN & 0.36 & 0.39 \\ 
+			& QRNN & 0.36 & \textbf{0.39} \\ 
 			&  & &\\ 
 			\hline 
 			
 			
 			\multirowcell{3}{\textbf{Criteria 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
-			& QRNN & 0.41 & 0.44 \\ 
+			& QRNN & 0.41 & \textbf{0.44} \\ 
 			& & &\\ & & &\\ 
 			\hline 
 			
 			
 			\multirowcell{3}{\textbf{Criteria 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
-			& QRNN & 0.37 & 0.40\\ 
+			& QRNN & 0.37 & \textbf{0.40}\\ 
 			& & &\\ & & &\\ 
 			\hline 
 			
 			
 			\multirowcell{2}{\textbf{Criteria 5:} \\ \textbf{Balanced information}} 
-			& QRNN & 0.36 & 0.41 \\ 
+			& QRNN & 0.36 & \textbf{0.41} \\ 
 			& & &\\
 			\hline 
 			
 			
-			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & QRNN & 0.38 & 0.41 \\ 
+			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & QRNN & 0.38 & \textbf{0.41} \\ 
 			& & &\\
 			\hline 
 			
 			
 			\multirowcell{3}{\textbf{Criteria 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
-			& QRNN & 0.39 & 0.43 \\ 
+			& QRNN & 0.39 & \textbf{0.43} \\ 
 			& & &\\ & & &\\ 
 			\hline 
 			
 			
 			\multirowcell{2}{\textbf{Average} \textbf{Performance}} 
-			& QRNN & 0.379 & 0.414      \\ 
+			& QRNN & 0.379 & \textbf{0.414}      \\ 
 			& & &      \\
 			\hline                                                                                                                                          
 	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the QRNN-based models}
+	\caption{Micro averaged f1-Scores of the QRNN-based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
 	\label{table:PerformanceResultsQRNN}
 \end{table}
 
@@ -1121,9 +1122,9 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 
 This chapter examines the feasibility of the implemented and evaluated models in the context of assessing the credibility of vaccine-related articles. The structure of this chapter is as follows. \newline
 
-The reliability of the results reported in Chapter \ref{chap:Results} is firstly evaluated by examining the consistency of the general trends that emerged from the various experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ConsistencyOfResults}). \newline
+The reliability of the results reported in Chapter \ref{chap:Results}, is firstly evaluated by examining the consistency of the general trends that emerged from the experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ConsistencyOfResults}). \newline
 
-Feasibility of the models are then determined by discussing the trade-offs associated between the outcome measures (as discussed in Section \ref{sec:Experiments}) and how the priority of each of these measures varies depending on the intended application (Section \ref{sec:ModelFeasibility}). \newline
+Feasibility of the models is then evaluated by determining the trade-offs associated between the outcome measures (as identified in Section \ref{sec:Experiments}) and how the priority or importance of each of these measures change depending on the type of application being created (Section \ref{sec:ModelFeasibility}). \newline
 
 Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:RealWorldApplication}).
 
@@ -1143,12 +1144,41 @@ Finally, the significance of the obtained results in the context of real-world a
 	\item The pattern of NB + GloVe $>$ SVM + GloVe
 \end{enumerate}
 
+Since the classification task performed by the models involve the classification of a novel set of labels (credibility criteria), it is unsuitable to directly compare the performance of the models with any prior work. However, by identifying trends from the reported results, it is possible to determine whether these trends are consistent with the trends found on similar classification tasks from existing literature and thus extrapolate the reliability of the results. \newline
+
+From the reported results, major trends that were identified are listed as follows:
+
+\begin{enumerate}
+	\item Utilisation of BoW were more successful overall when used in conjunction with NB classifiers rather than SVM classifiers.
+	\item Inversely, TF-IDF scores were more effective when paired with SVM classifiers than with NB classifiers.
+	\item Classical ML models (NB and SVM based models) consistently outperformed DL models (QRNN-based models) on classification tasks with limited training and testing data.
+	\item The process of fine-tuning a LM in order to learn task specific features consistently improved the model's performance.
+\end{enumerate}
+
+The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the first major trend described above. Both works presented results that showed better performance when using BoW with a NB classifier over a SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down') \cite{Pang2004}. Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon \cite{PRANCKEVICIUS2017}. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment discussed in Section \ref{sec:CredibilityClassificationResults} which showed had a higher overall performance across all seven criteria by a margin of 0.25\%. \newline
+
+The diminishing difference in performance between the NB-based models and the SVM-based models may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. utilised domain-specific information extracted from as features for the construction of their models. \newline
+
+
+
+\textit{The following paragraph discusses the consistency of TFIDF working better with SVMs rather than NBs}
+
+\textit{[-----------------]}
+
+\textit{The following paragraph discusses the consistencty of ML models outperforming DL models for text classification tasks with limited data}
+
+\textit{[-----------------]}
+
+\textit{The following paragraph discusses the consistent results of fine-tuned LMs outperforming general-domain LMs}
+
+While the performance of the QRNN-based models was lower than what was initially expected, this can be theorised to be due to the relatively low number of vaccine-related training samples utilised during the training of the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018} for the task of question classification, the number of training samples used to construct the discriminative fine-tuned LM was 5,500 which only improved the model's performance by 0.3\%. 
+
 \section{Model Feasibility}
 \label{sec:ModelFeasibility}
 Notes about what to talk about:
 \begin{enumerate}[-]
 	\item Discuss the trade-offs between optimising the performance, training time and storage requirements and the factors that affect these measures. 
-	\item What it means to be feasible e.g. it is application dependent and depending on the application some factors might be more important than others such as having a higher true negative rate can be alright but having a high false positive rate is usually always bad.
+	\item What it means to be feasible e.g. it is application dependent and depending on the application some factors might be more important than others such as having a higher true negative rate can be alright for some tasks and that having a high false positive rate is usually always bad.
 \end{enumerate}
 
 \section{Real World Applications}
@@ -1157,7 +1187,7 @@ Notes about what to talk about:
 So once the credibility of the results have been verified and also what the feasibility of a model entails, I can then talk about:
 
 \begin{enumerate}[-]
-	\item Possible applications of the models e.g. web browser extension, twitter bot, article filtering system and the priorities they have on the different measured outcome measures (accuracy, training time and storage requirements)
+	\item Possible applications of the models e.g. web browser extension, twitter bot, article filtering system and the differing priorities they have on the for outcome measures (accuracy, training time and storage requirements)
 \end{enumerate}
 
 \chapter{Conclusions and Future Work}
