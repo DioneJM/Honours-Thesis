@@ -1119,6 +1119,14 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 \chapter{Discussion}
 \label{chap:Discussion}
 
+This chapter examines the feasibility of the implemented and evaluated models in the context of assessing the credibility of vaccine-related articles. The structure of this chapter is as follows. \newline
+
+The reliability of the results reported in Chapter \ref{chap:Results} is firstly evaluated by examining the consistency of the general trends that emerged from the various experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ConsistencyOfResults}). \newline
+
+Feasibility of the models are then determined by discussing the trade-offs associated between the outcome measures (as discussed in Section \ref{sec:Experiments}) and how the priority of each of these measures varies depending on the intended application (Section \ref{sec:ModelFeasibility}). \newline
+
+Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:RealWorldApplication}).
+
 \section{Consistency of Results}
 \label{sec:ConsistencyOfResults}
 \textbf{Notes about what to talk about:}
@@ -1139,7 +1147,7 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 \label{sec:ModelFeasibility}
 Notes about what to talk about:
 \begin{enumerate}[-]
-	\item Discuss the trade-offs between optimising the performance, training time and storage requirements
+	\item Discuss the trade-offs between optimising the performance, training time and storage requirements and the factors that affect these measures. 
 	\item What it means to be feasible e.g. it is application dependent and depending on the application some factors might be more important than others such as having a higher true negative rate can be alright but having a high false positive rate is usually always bad.
 \end{enumerate}
 
