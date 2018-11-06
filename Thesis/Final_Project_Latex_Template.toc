@@ -53,9 +53,7 @@
 \contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Credibility Classification}{25}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{27}{subsection.4.1.2}
-\contentsline {subsubsection}{Single Model Approach}{27}{section*.41}
-\contentsline {subsubsection}{Ensemble Approach}{28}{section*.44}
-\contentsline {subsubsection}{Binary Classification Approach}{29}{section*.47}
+\contentsline {subsubsection}{Binary Classification Approach}{30}{section*.46}
 \contentsline {section}{\numberline {4.2}Training Time}{30}{section.4.2}
 \contentsline {section}{\numberline {4.3}Model Storage Requirements}{31}{section.4.3}
 \contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}
@@ -67,4 +65,4 @@
 \contentsline {section}{\numberline {6.2}Conclusions}{37}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{39}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{39}{section.A.1}
-\contentsline {chapter}{Bibliography}{39}{section*.56}
+\contentsline {chapter}{Bibliography}{39}{section*.55}
