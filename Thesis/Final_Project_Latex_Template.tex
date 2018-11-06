@@ -82,6 +82,8 @@
 \usepackage{float}
 \usepackage{framed}
 \usepackage[table]{xcolor}
+\usepackage{multirow}
+
 
 
 % The makeidx package makes your index for you.  To make an index entry,
@@ -123,6 +125,8 @@
 \usepackage{multirow}
 \usepackage{verbatim}
 \usepackage{enumerate}
+\usepackage{multirow, makecell}
+
 
 % Defining the symbols
 
@@ -632,7 +636,7 @@ For the software used to implement the models, the NB and SVM models were implem
 \subsubsection{Naive Bayes}
 \label{sec:ModelNB}
 
-A multinomial NB classifier was used for evaluation, based on the reasoning discussed in Section \ref{sec:NaiveBayes}. Along with the 3 types of features (BoW, TF-IDF and GloVe) and their variants (inclusion/exclusion of stopwords) used in conjunction with the NB classifier, a total of 35 NB models (7 criteria $\times$ 5 features evaluated) were developed (Figure \ref{fig:MLModels}). The hyperparameter values were optimised via grid search and evaluated using 10-fold cross-validation. 
+A multinomial Naive Bayes (NB) classifier was used for evaluation, based on the reasoning discussed in Section \ref{sec:NaiveBayes}. Along with the 3 types of features (BoW, TF-IDF and GloVe) and their variants (inclusion/exclusion of stopwords) used in conjunction with the NB classifier, a total of 35 NB models (7 criteria $\times$ 5 features evaluated) were developed (Figure \ref{fig:MLModels}). The hyperparameter values were optimised via grid search and evaluated using 10-fold cross-validation. 
 
 \subsubsection{Support Vector Machine}
 \label{sec:ModelSVM}
@@ -649,7 +653,7 @@ A linear support vector classifier (linear SVC), an SVM with a linear kernel, wa
 \subsubsection{Quasi-Recurrent Neural Network}
 \label{sec:ModelQRNN}
 
-In addition to using a QRNN for constructing the fine-tuned LM, another variant was implemented as a classifier. The architecture for the classifier was adapted from the experiments conducted by Bradbury et al. \cite{bradbury2016quasi} for sentiment classification. From this model, the number of units within each layer was increased to 2500 and the embedding size was changed to 150. The model was trained for up to 20 epochs with a batch size of 100, however the model began to converge after only 5 epochs. In contrast to the NB and SVM models, 21 QRNN models (7 classifier $\times$ 3 LM variants) were created (Figure \ref{fig:DLModels}).
+In addition to using a QRNN for constructing the fine-tuned and general LM, another variant was implemented as a classifier. The architecture for the classifier was adapted from the experiments conducted by Bradbury et al. \cite{bradbury2016quasi} for sentiment classification. From this model, the number of units within each layer was increased to 2500 and the embedding size was changed to 150. The model was trained for up to 20 epochs with a batch size of 100, however the model began to converge after only 5 epochs. In contrast to the NB and SVM models, 21 QRNN models (7 classifier $\times$ 3 LM variants) were created (Figure \ref{fig:DLModels}).
 
 \begin{figure}[H]
 	\centering
@@ -694,140 +698,149 @@ To minimise the frequency in which a model will have to be re-trained or re-crea
 \chapter{Results}
 \label{chap:Results}
 
+In this chapter I detail the results of the experiments described in the previous chapter. These are the results that come from testing the performance, training time, and storage requirements of the models in the classification task of predicting whether a document extracted from a web page satisfies each of the seven credibility criteria. The classifiers include the proposed QRNN-based deep learning approach as well as classifiers trained using NB and SVM methods.
+
 \section{Performance}
 \label{sec:AccuracyResults}
 \subsection{Credibility Classification}
 \label{sec:CredibilityClassificationResults}
 
-The performance of all 91 models were evaluated via the credibility classification experiment. Divided into the three main groups of models (NB, SVM and QRNN), the NB-based models (Table \ref{table:PerformanceResultsNB}) outperformed the SVM-based (Table \ref{table:PerformanceResultsSVM}) and QRNN-based models (Table \ref{table:PerformanceResultsQRNN}) overall with an aggregated average performance measure of 0.795, followed by SVM-based models with a measure of 0.780 and finally QRNN-based models with a measure of 0.397. Despite the NB-based models having performed better on average, the best performing model for labelling was the SVM-based, SVM + TF-IDF model with the stopwords removed from the article's text. \newline
+
+\iffalse
+The performance of all 84 models were evaluated via the credibility classification experiment. Divided into the three main groups of models (NB, SVM and QRNN), the NB-based models (Table \ref{table:PerformanceResultsNB}) outperformed the SVM-based (Table \ref{table:PerformanceResultsSVM}) and QRNN-based models (Table \ref{table:PerformanceResultsQRNN}) overall with an aggregated average performance measure of 0.795, followed by SVM-based models with a measure of 0.780 and finally QRNN-based models with a measure of 0.397. Despite the NB-based models having performed better on average, the best performing model for labelling was the SVM-based, SVM + TF-IDF model with the stopwords removed from the article's text. \newline
 
 Performance of the QRNN-based models was lower than what was initially expected, however this can be theorised to be due to the relatively low number of training samples used for training the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018}, the number of training samples used to construct the discriminative fine-tuned LM for question classification was 5,500 which only improved the model's performance by 0.3\%.
+\fi
 
+I trained and tested the performance of NB and SVM classifiers in combination with two feature representations, BoW and TF-IDF, implementations of which as described in the prior chapter. For each criteria, all combinations of classifiers and feature representations was then trained to perform a binary classification task that aimed to predict whether a given article satisfied that criteria. This produced a combined total of 70 NB-based and SVM-based models. \newline
 
+The performance of the models varied considerably across all criteria (Table \ref{table:PerformanceResultsNBSVM}). When considering both the NB and SVM based approaches, the models had the most difficulty in classifying criteria 6 producing the lowest micro averaged f1-score of 0.71, with the best performing model for this criteria being an SVM classifier paired with TF-IDF (stopwords removed) who achieved a score of 0.77. The models were most successful in labelling criteria 3 which had a micro averaged f1-score of 0.85 with the top performing model being a tie between the NB and SVM classifier paired with BoW (stopwords) with a score of 0.90. \newline
 
+Across all criteria, the SVM with TF-IDF (stopwords removed) was the best-performing of the models, followed by the NB classifier using BoW with stopwords removed. This shows that the removal of stopwords is beneficial in improving model performance which is consistent with other research done for text classification tasks [\textit{cite}]. \newline
 
-\subsubsection{Naive Bayes}
-
-\begin{table}[H]
-	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{2.6cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
-			
-			
-			\hline
-			
-			\textbf{Model} & \textbf{NB + BoW (all words)    }                                                                       & \textbf{NB + BoW (stopwords \newline removed)}    & \textbf{NB + \newline TF-IDF \newline (all words) }& \textbf{NB + \newline TF-IDF \newline (stopwords \newline removed)} & \textbf{NB + GloVe}                                                                                                                                                                                                                                                                                                                                    \\
-			\hline
-			
-			\textbf{Criteria 1}  & 0.79 & 0.85 & 0.79 & 0.79 & 0.82 \\ 
-			\hline
-			
-			\textbf{Criteria 2} & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
-			\hline
-			
-			\textbf{Criteria 3 } & 0.86 & 0.90 & 0.87 & 0.89 & 0.89 \\ 
-			\hline
-			
-			\textbf{Criteria 4}  & 0.84 & 0.84 & 0.80 & 0.81 & 0.82 \\ 
-			\hline
-			
-			\textbf{Criteria 5}  & 0.79 & 0.80 & 0.79 & 0.77 & 0.78 \\ 
-			\hline 
-			
-			\textbf{Criteria 6} & 0.75 & 0.74 & 0.62 & 0.69 & 0.68 \\ 
-			\hline      
-			
-			\textbf{Criteria 7} & 0.82 & 0.80 & 0.80 & 0.81 & 0.83 \\ 
-			\hline     
-			
-			\textbf{Average \newline Performance } & 0.792 & \textbf{0.820} & 0.773 & 0.794 & 0.800      \\
-			\hline                                                                                                                                          
-	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the NB models}
-	\label{table:PerformanceResultsNB}
-\end{table}
-
-\subsubsection{Support Vector Machine}
-
+The performance of the models may have highly been influenced by the unbalanced nature of the training data as the measured scores are proportionate to the imbalance of the label. This is most evident in the model performance for criteria 3, the most imbalanced label as shown in Figure \ref{fig:LabelDistribution}, where the models had the highest success in classifying. \newline
 
 \begin{table}[H]
 	\centering
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{2.7cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+		\begin{tabular}{|p{6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
 			
 			
 			\hline
 			
-			\textbf{Model} & \textbf{SVM + BoW (all words)    }                                                                       & \textbf{SVM + BoW (stopwords \newline removed)}    & \textbf{SVM + \newline TF-IDF \newline (all words) }& \textbf{SVM + \newline TF-IDF \newline (stopwords \newline removed)} & \textbf{SVM + GloVe}                                                                                                                                                                                                                                                                                                                                    \\
+			\textbf{Criteria} &  & \textbf{BoW \newline (all words)  }                                                                       & \textbf{BoW \newline (stopwords removed)} &\textbf{TF-IDF \newline (all words) }& \textbf{TF-IDF \newline (stopwords removed)} & \textbf{GloVe} \\
 			\hline
 			
-			\textbf{Criteria 1}  & 0.82 & 0.78 & 0.80 & \textbf{0.86} & 0.60 \\ 
+			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } & NB & 0.79 & 0.85 & 0.79 & 0.79 & 0.82 \\ 
+			& SVM & 0.82 & 0.78 & 0.80 & 0.86 & 0.60 \\ 
 			\hline
 			
-			\textbf{Criteria 2} & 0.70 & 0.80 & 0.70 & \textbf{0.85} & 0.77 \\ 
-			\hline
 			
-			\textbf{Criteria 3 } & 0.86 & \textbf{0.90} & 0.84 & 0.89 & 0.63 \\ 
-			\hline
-			
-			\textbf{Criteria 4}  & 0.80 & \textbf{0.87} & 0.84 & 0.86 & 0.61 \\ 
-			\hline
-			
-			\textbf{Criteria 5}  & 0.68 & 0.78 & \textbf{0.80} & \textbf{0.80} & 0.59 \\ 
+			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Information based research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
+			& SVM & 0.70 & 0.80 & 0.70 & 0.85 & 0.77 \\ 
 			\hline 
 			
-			\textbf{Criteria 6} & 0.75 & 0.72 & 0.68 & \textbf{0.77} & 0.67 \\ 
-			\hline      
 			
-			\textbf{Criteria 7} & \textbf{0.86} & 0.81 & 0.82 & 0.82 & 0.81 \\ 
-			\hline         
+			\multirowcell{3}{\textbf{Criteria 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
+			& NB & 0.86 & 0.90 & 0.87 & 0.89 & 0.89 \\ 
+			& SVM & 0.86 & 0.90 & 0.84 & 0.89 & 0.63 \\ & & & & & & \\ 
+			\hline 
 			
-			\textbf{Average \newline Performance } & 0.799 & 0.809 & 0.783 & \textbf{0.836} & 0.669      \\
-			\hline                                                                                                                                 
+			
+			\multirowcell{3}{\textbf{Criteria 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
+			& NB & 0.84 & 0.84 & 0.80 & 0.81 & 0.82 \\ 
+			& SVM & 0.80 & 0.87 & 0.84 & 0.86 & 0.61 \\ & & & & & & \\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criteria 5:} \\ \textbf{Balanced information}} 
+			& NB & 0.79 & 0.80 & 0.79 & 0.77 & 0.78 \\ 
+			& SVM & 0.68 & 0.78 & 0.80 & 0.80 & 0.59 \\
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & NB & 0.75 & 0.74 & 0.62 & 0.69 & 0.68 \\ 
+			& SVM & 0.75 & 0.72 & 0.68 & 0.77 & 0.67 \\
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criteria 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
+			& NB & 0.82 & 0.80 & 0.80 & 0.81 & 0.83 \\ 
+			& SVM & 0.86 & 0.81 & 0.82 & 0.82 & 0.81 \\ & & & & & & \\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Average} \textbf{Performance}} & NB & 0.792 & 0.820 & 0.773 & 0.794 & 0.800      \\ 
+			& SVM & 0.799 & 0.809 & 0.783 & 0.836 & 0.669      \\
+			\hline                                                                                                                                          
 	\end{tabular}}
-	\caption{Micro averaged f1-Scores of the SVM models}
-	\label{table:PerformanceResultsSVM}
+	\caption{Micro averaged f1-Scores of the NB and SVM based models}
+	\label{table:PerformanceResultsNBSVM}
 \end{table}
 
-\subsubsection{Quasi-Recurrent Neural Network}
+A similar approach was also taken for the QRNN classifiers, which were trained and tested in combination with two LM variants, a general LM and a fine-tuned LM, producing a total of 14 QRNN-based models. \newline
 
+The QRNN-based models performed poorer across all criteria compared to the other models (Table \ref{table:PerformanceResultsQRNN}) relative to the NB and SVM based models. The use of the fine-tuned LM with the QRNN classifier consistently reported an improved performance when compared to the use of the general language model. \newline
+
+Using the best classifiers for each criteria, I found that it was possible to predict whether or not an online article satisfied each of the 7 credibility criteria. The results suggest that while it may not be feasible to robustly predict all of the individual criteria, the classifiers would be useful in predicting the credibility score, defined by the number of criteria satisfied. This idea is expanded on in the following experiment.
 
 \begin{table}[H]
 	\centering
-
-		\begin{tabular}{|p{2.6cm}|p{3cm}|p{3cm}|}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{6cm}|p{2cm}|p{3cm}|p{3.3cm}|}
 			
 			
 			\hline
 			
-			\textbf{Model} & \textbf{QRNN + \newline General LM    }                                                                       & \textbf{QRNN + \newline Fine-tuned LM }                                                                                                                                                                                                                                                                                                                             \\
+			\textbf{Criteria} &  & \textbf{General LM}                                                                       & \textbf{Fine-tuned LM}  \\
 			\hline
 			
-			\textbf{Criteria 1}  & 0.38 & \textbf{0.42}  \\ 
+			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } & QRNN & 0.38 & 0.42 \\ 
+			&  & &\\ 
 			\hline
 			
-			\textbf{Criteria 2} & 0.36 & \textbf{0.39 } \\ 
-			\hline
 			
-			\textbf{Criteria 3 } & 0.41 & \textbf{0.44}  \\ 
-			\hline
-			
-			\textbf{Criteria 4}  & 0.37 & \textbf{0.40} \\ 
-			\hline
-			
-			\textbf{Criteria 5}  & 0.36 & \textbf{0.41} \\ 
+			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Information based research}} 
+			& QRNN & 0.36 & 0.39 \\ 
+			&  & &\\ 
 			\hline 
 			
-			\textbf{Criteria 6} & 0.38 & \textbf{0.41}  \\ 
-			\hline      
 			
-			\textbf{Criteria 7} & 0.39 & \textbf{0.43} \\ 
-			\hline     
+			\multirowcell{3}{\textbf{Criteria 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
+			& QRNN & 0.41 & 0.44 \\ 
+			& & &\\ & & &\\ 
+			\hline 
 			
-			\textbf{Average \newline Performance } & 0.379 & \textbf{0.414} \\
+			
+			\multirowcell{3}{\textbf{Criteria 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
+			& QRNN & 0.37 & 0.40\\ 
+			& & &\\ & & &\\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criteria 5:} \\ \textbf{Balanced information}} 
+			& QRNN & 0.36 & 0.41 \\ 
+			& & &\\
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & QRNN & 0.38 & 0.41 \\ 
+			& & &\\
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criteria 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
+			& QRNN & 0.39 & 0.43 \\ 
+			& & &\\ & & &\\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Average} \textbf{Performance}} 
+			& QRNN & 0.379 & 0.414      \\ 
+			& & &      \\
 			\hline                                                                                                                                          
-	\end{tabular}
-	\caption{Micro averaged f1-Scores of the QRNN models}
+	\end{tabular}}
+	\caption{Micro averaged f1-Scores of the QRNN-based models}
 	\label{table:PerformanceResultsQRNN}
 \end{table}
 
@@ -1097,9 +1110,6 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 	\caption{Aggregated size of LM-based models.}
 	\label{table:LMStorageRequirements}
 \end{table}
-
-
-
 
 
 \chapter{Discussion}

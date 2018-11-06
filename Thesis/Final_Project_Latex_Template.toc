@@ -52,13 +52,10 @@
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Credibility Classification}{25}{subsection.4.1.1}
-\contentsline {subsubsection}{Naive Bayes}{26}{section*.39}
-\contentsline {subsubsection}{Support Vector Machine}{26}{section*.41}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{27}{section*.43}
 \contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{27}{subsection.4.1.2}
-\contentsline {subsubsection}{Single Model Approach}{27}{section*.45}
-\contentsline {subsubsection}{Ensemble Approach}{28}{section*.48}
-\contentsline {subsubsection}{Binary Classification Approach}{29}{section*.51}
+\contentsline {subsubsection}{Single Model Approach}{27}{section*.41}
+\contentsline {subsubsection}{Ensemble Approach}{28}{section*.44}
+\contentsline {subsubsection}{Binary Classification Approach}{29}{section*.47}
 \contentsline {section}{\numberline {4.2}Training Time}{29}{section.4.2}
 \contentsline {section}{\numberline {4.3}Model Storage Requirements}{30}{section.4.3}
 \contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}
@@ -69,4 +66,4 @@
 \contentsline {section}{\numberline {6.2}Conclusions}{35}{section.6.2}
 \contentsline {chapter}{\numberline {A}Exmaple}{37}{appendix.A}
 \contentsline {section}{\numberline {A.1}Overview}{37}{section.A.1}
-\contentsline {chapter}{Bibliography}{37}{section*.60}
+\contentsline {chapter}{Bibliography}{37}{section*.56}
