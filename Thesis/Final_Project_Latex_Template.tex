@@ -736,7 +736,7 @@ The performance of the models may have highly been influenced by the unbalanced 
 			\hline
 			
 			
-			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Information based research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
+			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Based on objective research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
 			& SVM & 0.70 & 0.80 & 0.70 & 0.85 & 0.77 \\ 
 			\hline 
 			
@@ -780,7 +780,7 @@ The performance of the models may have highly been influenced by the unbalanced 
 
 A similar approach was also taken for the QRNN classifiers, which were trained and tested in combination with two LM variants, a general LM and a fine-tuned LM, producing a total of 14 QRNN-based models. \newline
 
-The QRNN-based models performed poorer across all criteria compared to the other models (Table \ref{table:PerformanceResultsQRNN}) relative to the NB and SVM based models. The use of the fine-tuned LM with the QRNN classifier consistently reported an improved performance when compared to the use of the general language model. \newline
+The QRNN-based models performed poorer across all criteria compared to the other models (Table \ref{table:PerformanceResultsQRNN}), relative to the NB and SVM based models. The use of the fine-tuned LM with the QRNN classifier consistently reported an improved performance over the models that used the general language model for each criteria. \newline
 
 Using the best classifiers for each criteria, I found that it was possible to predict whether or not an online article satisfied each of the 7 credibility criteria. The results suggest that while it may not be feasible to robustly predict all of the individual criteria, the classifiers would be useful in predicting the credibility score, defined by the number of criteria satisfied. This idea is expanded on in the following experiment.
 
@@ -800,7 +800,7 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 			\hline
 			
 			
-			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Information based research}} 
+			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Based on objective research}} 
 			& QRNN & 0.36 & 0.39 \\ 
 			&  & &\\ 
 			\hline 
@@ -848,10 +848,14 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 \subsection{Low Credibility Identification}
 \label{sec:LowCredibilityIdentificationResults}
 
+I tested and employed three different approaches for the identification of low credibility articles. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score that is less than 3 are deemed to be untrustworthy. The three approaches are referred to as the single model approach, ensemble approach and binary classification approach.
+
 \subsubsection{Single Model Approach}
 \label{sec:SingleModelApproachResults}
+The single model approach utilises the best overall performing model across all the criteria. The model used was determined from the credibility classification experiment which resulted in being the SVM with TF-IDF (stopwords removed) model. \newline
 
-\textit{--This model was chosen because it had the highest average performance value (average micro f1-score) from all of the models evaluated.--}
+
+
 \begin{table}[H]
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -1026,7 +1030,7 @@ The training times reported for each model includes the time required to perform
 \section{Model Storage Requirements}
 \label{sec:StorageRequirements}
 
-The reported sizes for each of the models are based on the model implmentations in Section \ref{sec:CredibilityClassificationResults}. Due to the model sizes staying relatively unchanged when trained for all criteria (e.g. The size of the NB + BoW (all words) model stayed practically unchanged when trained on each criteria), the aggregated model size of a given model trained on each criteria has been reported.
+The reported sizes for each of the models are based on the model implmentations in Section \ref{sec:CredibilityClassificationResults}. Due to the model sizes staying relatively unchanged when trained for all criteria (e.g. The size of the NB + BoW (all words) model stayed practically unchanged when trained on each criteria), the aggregated model size of a given model trained on each criteria has been reported. \newline
 
 Models that utilised count-based features (Table \ref{table:CountStorageRequirements}) unsurprisingly had the lowest storage requirements. This is due to its relatively simplistic representation of text in conjunction with the enforced limit on the number of words that are stored. On the other hand, models that utilised the pre-trained GloVe feature (Table \ref{table:PreTrainedStorageRequirements}) has a substantially higher storage requirement due to the feature having a substantially larger vocabulary and higher dimensionality. Whilst this is also explains the storage requirements of models that used LMs (Table \ref{table:LMStorageRequirements}), the LMs used were not trained as extensively as the pre-trained GloVe.
 
@@ -1115,13 +1119,38 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 \chapter{Discussion}
 \label{chap:Discussion}
 
-\section{Model Performance}
-\label{sec:ModelPerformance}
-\textit{Discuss and highlight the key points of what we have learnt based on the results obtained. E.g. The performance of the classifiers across the board, its performance relative to the other criteria (i.e. how the subjectivity of the criteria affected the performance of the classifier)}
+\section{Consistency of Results}
+\label{sec:ConsistencyOfResults}
+\textbf{Notes about what to talk about:}
+\begin{enumerate}[-]
+	\item How consistent these results are e.g. no stopwords $>$ having stopwords, ML models $>$ DL models with small datasets with prior literature
+	\item Then determine whether the results can be trusted to indicate the feasibility
+\end{enumerate}
+
+\textbf{Things to check the consistency on:}
+\begin{enumerate}[-]
+	\item The performance of SVM $>$ NB (?) $>$ QRNN(DL) for classification tasks with small datasets
+	\item The pattern of SVM + TF-IDF $>$ NB + TF-IDF (TFIDF works better with SVMs)
+	\item The pattern of NB + BoW $>$ SVM + BoW (BoW works better with NB)
+	\item The pattern of NB + GloVe $>$ SVM + GloVe
+\end{enumerate}
+
+\section{Model Feasibility}
+\label{sec:ModelFeasibility}
+Notes about what to talk about:
+\begin{enumerate}[-]
+	\item Discuss the trade-offs between optimising the performance, training time and storage requirements
+	\item What it means to be feasible e.g. it is application dependent and depending on the application some factors might be more important than others such as having a higher true negative rate can be alright but having a high false positive rate is usually always bad.
+\end{enumerate}
 
 \section{Real World Applications}
 \label{sec:RealWorldApplication}
 \textit{This is where I'll be talking about the performance of constructing and testing the low credibility classifiers}
+So once the credibility of the results have been verified and also what the feasibility of a model entails, I can then talk about:
+
+\begin{enumerate}[-]
+	\item Possible applications of the models e.g. web browser extension, twitter bot, article filtering system and the priorities they have on the different measured outcome measures (accuracy, training time and storage requirements)
+\end{enumerate}
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
