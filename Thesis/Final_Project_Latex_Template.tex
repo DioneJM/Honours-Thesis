@@ -680,8 +680,9 @@ For each criteria, the respective NB and SVM model is employed along with the QR
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
-The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. 
+The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. \newline
 
+The classification of low credibility articles was then carried out following two methodologies. The first methodology involves the calculation of the article's credibility score via the classification of each criteria, resulting in a total of seven binary classification tasks. The second methodology utilises the separated expert-labelled articles to construct a new binary label consisting of the labels `Credible' for articles that had a credibility score greater than or equal to 3 and a `Not Credible' label for the remaining articles. This method results in only a single binary classification where the model is trained to classify an unseen article as one of the aforementioned labels rather than carrying out the classification of each credibility criteria.
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
@@ -848,7 +849,7 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 \subsection{Low Credibility Identification}
 \label{sec:LowCredibilityIdentificationResults}
 
-I tested and employed three different approaches for constructing a model on the identification of low credibility articles. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score that is less than 3 are deemed to be untrustworthy. The three approaches are referred to as the single model approach, ensemble approach and binary classification approach.\newline
+I tested and employed three different approaches for constructing a model on the identification of low credibility articles. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score that is less than 3 are deemed to be untrustworthy. The three approaches are referred to as the single model approach, ensemble approach and binary classification approach. Where the single model and ensemble approach are variants of the first methodology.\newline
 
 The low credibility experiment was utilised to test three different approaches inspired from the results in the previous section. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score less than 3 are deemed to be untrustworthy. Based on this definition, there are three main methods that can be used to determine whether an article is untrustworthy. \newline
 
@@ -1161,6 +1162,11 @@ Feasibility of the models is then evaluated by determining the trade-offs associ
 
 Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:RealWorldApplication}).
 
+\section{Related Work}
+\label{sec:DiscussionRelatedWork}
+
+\subsection{title}
+
 \section{Consistency of Results}
 \label{sec:ConsistencyOfResults}
 
@@ -1190,10 +1196,9 @@ From the reported results, major trends that have been identified are:
 	\item The process of fine-tuning a LM in order to learn task specific features consistently improved the model's performance.
 \end{enumerate}
 
-The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the first major trend described above. Both works presented results that showed better performance when using BoW with a NB classifier over a SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down') \cite{Pang2004}. Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon \cite{PRANCKEVICIUS2017}. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment discussed in Section \ref{sec:CredibilityClassificationResults} which showed had a higher overall performance across all seven criteria by a margin of 0.25\%. \newline
+The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the first major trend described above. Both works presented results that showed better performance when using BoW with a NB classifier over a SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down') \cite{Pang2004}. Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon \cite{PRANCKEVICIUS2017}. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment reported in Section \ref{sec:CredibilityClassificationResults} which showed the NB-based model having a higher average performance by a margin of 0.25\%. \newline
 
-The diminishing difference in performance between the NB-based models and the SVM-based models may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. utilised domain-specific information extracted from as features for the construction of their models. The common factor in regards to the construction of the models resides within the preprocessing phase where only the stopwords of the text were removed. \newline
-
+The diminishing difference in performance between the NB-based models and the SVM-based models relative to the aforementioned literature may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. utilised domain-specific information extracted from as features for the construction of their models. The common factor in regards to the construction of the models resides within the preprocessing phase where only the stopwords of the text were removed. \newline
 
 
 \textit{The following paragraph discusses the consistency of TFIDF working better with SVMs rather than NBs}
