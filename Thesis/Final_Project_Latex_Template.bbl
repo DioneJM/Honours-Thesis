@@ -237,6 +237,12 @@ V.~Korde and C.~N. Mahender, ``{TEXT CLASSIFICATION AND CLASSIFIERS: A
   \url{http://aircconline.com/ijaia/V3N2/3212ijaia08.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{lazer2018science}
+D.~M. Lazer, M.~A. Baum, Y.~Benkler, A.~J. Berinsky, K.~M. Greenhill,
+  F.~Menczer, M.~J. Metzger, B.~Nyhan, G.~Pennycook, D.~Rothschild
+  \emph{et~al.}, ``The science of fake news,'' \emph{Science}, vol. 359, no.
+  6380, pp. 1094--1096, 2018.
+
 \bibitem{LeCun1999}
 \BIBentryALTinterwordspacing
 Y.~LeCun, P.~Haffner, L.~Bottou, and Y.~Bengio, ``{Object Recognition with
@@ -338,6 +344,11 @@ T.~PRANCKEVI{\v{C}}IUS and V.~Marcinkevicius, ``{Comparison of Na{\"{i}}ve
   [Online]. Available:
   \url{https://www.semanticscholar.org/paper/Comparison-of-Na{\"{i}}ve-Bayes-{\%}2C-Random-Forest-{\%}2C-Tree-{\%}2C-PRANCKEVI{\v{C}}IUS-Marcinkevicius/e853f8827a2b9c596296de296b482e1175f9713f?navId=similar-papers}
 \BIBentrySTDinterwordspacing
+
+\bibitem{qiu2017limited}
+X.~Qiu, D.~F. Oliveira, A.~S. Shirazi, A.~Flammini, and F.~Menczer, ``Limited
+  individual attention and online virality of low-quality information,''
+  \emph{Nature Human Behaviour}, vol.~1, no.~7, p. 0132, 2017.
 
 \bibitem{Rosenfeld2000}
 \BIBentryALTinterwordspacing
