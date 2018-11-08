@@ -455,7 +455,7 @@ The proposed method involves the use of an inductive learning technique \cite{Pa
 	\item Adapt the high-level representations of the classifier that uses the language model, while preserving the low-level representations, using gradual unfreezing \cite{Howard2018}
 \end{enumerate}
 
-Whilst transfer learning is useful to train models for non-standard tasks where access to data is limited, it is also an optimisation technique, using previously acquired knowledge, to save time or improve model performance \cite{Pan2009}. This potential performance improvement is illustrated in Figure \ref{fig:TransferLearning} and is also demonstrated by Howard et al. \cite{Howard2018} for common text classification tasks such as question, topic  classification and sentiment analysis.
+Whilst transfer learning is useful to train models for non-standard tasks where access to data is limited, it is also an optimisation technique, using previously acquired knowledge, to save time by providing an initial boost to the model's performance reducing the total amount of training time required \cite{Pan2009}. This potential performance improvement is illustrated in Figure \ref{fig:TransferLearning} and is also demonstrated by Howard et al. \cite{Howard2018} for common text classification tasks such as question, topic  classification and sentiment analysis.
 
 \begin{figure}[H]
 	\centering
@@ -478,7 +478,7 @@ This makes evaluating the credibility of online articles impractical when using 
 \section{Approach}
 \label{sec:Approach}
 
-Through a review of the relevant literature, I found that there is value in being able to appraise the credibility of online health information for use in tools that could help limit the spread of misinformation. However, it is a challenge to apply credibility appraisal tools at scale because the process is time-consuming and often requires a certain level of expertise to use. Tools for automating this task are therefore likely to be of value but to date most research in the area simply aims to label fake news or uses heuristics to identify misinformation available online. In this chapter, I describe the approach I used to address this challenge using machine learning to train classifiers capable of predicting whether an online article meets a set of credibility criteria.\newline
+Through a review of the relevant literature, we found that there is value in being able to appraise the credibility of online health information for use in tools that could help limit the spread of misinformation. However, it is a challenge to apply credibility appraisal tools at scale because the process is time-consuming and often requires a certain level of expertise to use. Tools for automating this task are therefore likely to be of value but to date most research in the area simply aims to label fake news or uses heuristics to identify misinformation available online. In this chapter, I describe the approach I used to address this challenge using machine learning to train classifiers capable of predicting whether an online article meets a set of credibility criteria.\newline
 
 This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework (Section \ref{sec:StudyData}). \newline
 
@@ -732,41 +732,41 @@ The performance of the models may have highly been influenced by the unbalanced 
 			\textbf{Criteria} &  & \textbf{BoW \newline (all words)  }                                                                       & \textbf{BoW \newline (stopwords removed)} &\textbf{TF-IDF \newline (all words) }& \textbf{TF-IDF \newline (stopwords removed)} & \textbf{GloVe} \\
 			\hline
 			
-			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } 
+			\multirowcell{2}{\textbf{Criterion 1:} \\ \textbf{Use of evidence} } 
 			& NB & 0.79 & 0.85 & 0.79 & 0.79 & 0.82 \\ 
 			& SVM & 0.82 & 0.78 & 0.80 & \textbf{0.86} & 0.60 \\ 
 			\hline
 			
 			
-			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Based on objective research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
+			\multirowcell{2}{\textbf{Criterion 2:} \\ \textbf{Based on objective research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
 			& SVM & 0.70 & 0.80 & 0.70 & \textbf{0.85} & 0.77 \\ 
 			\hline 
 			
 			
-			\multirowcell{3}{\textbf{Criteria 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
+			\multirowcell{3}{\textbf{Criterion 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
 			& NB & 0.86 & \textbf{0.90} & 0.87 & 0.89 & 0.89 \\ 
 			& SVM & 0.86 & \textbf{0.90} & 0.84 & 0.89 & 0.63 \\ & & & & & & \\ 
 			\hline 
 			
 			
-			\multirowcell{3}{\textbf{Criteria 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
+			\multirowcell{3}{\textbf{Criterion 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
 			& NB & 0.84 & 0.84 & 0.80 & 0.81 & 0.82 \\ 
 			& SVM & 0.80 & \textbf{0.87} & 0.84 & 0.86 & 0.61 \\ & & & & & & \\ 
 			\hline 
 			
 			
-			\multirowcell{2}{\textbf{Criteria 5:} \\ \textbf{Balanced information}} 
+			\multirowcell{2}{\textbf{Criterion 5:} \\ \textbf{Balanced information}} 
 			& NB & 0.79 & \textbf{0.80} & 0.79 & 0.77 & 0.78 \\ 
 			& SVM & 0.68 & 0.78 & \textbf{0.80} & \textbf{0.80} & 0.59 \\
 			\hline 
 			
 			
-			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & NB & 0.75 & 0.74 & 0.62 & 0.69 & 0.68 \\ 
+			\multirowcell{2}{\textbf{Criterion 6:} \\ \textbf{Simple Language}} & NB & 0.75 & 0.74 & 0.62 & 0.69 & 0.68 \\ 
 			& SVM & 0.75 & 0.72 & 0.68 & \textbf{0.77} & 0.67 \\
 			\hline 
 			
 			
-			\multirowcell{3}{\textbf{Criteria 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
+			\multirowcell{3}{\textbf{Criterion 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
 			& NB & 0.82 & 0.80 & 0.80 & 0.81 & 0.83 \\ 
 			& SVM & \textbf{0.86} & 0.81 & 0.82 & 0.82 & 0.81 \\ & & & & & & \\ 
 			\hline 
@@ -797,41 +797,41 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 			\textbf{Criteria} &  & \textbf{General LM}                                                                       & \textbf{Fine-tuned LM}  \\
 			\hline
 			
-			\multirowcell{2}{\textbf{Criteria 1:} \\ \textbf{Use of evidence} } & QRNN & 0.38 & \textbf{0.42} \\ 
+			\multirowcell{2}{\textbf{Criterion 1:} \\ \textbf{Use of evidence} } & QRNN & 0.38 & \textbf{0.42} \\ 
 			&  & &\\ 
 			\hline
 			
 			
-			\multirowcell{2}{\textbf{Criteria 2:} \\ \textbf{Based on objective research}} 
+			\multirowcell{2}{\textbf{Criterion 2:} \\ \textbf{Based on objective research}} 
 			& QRNN & 0.36 & \textbf{0.39} \\ 
 			&  & &\\ 
 			\hline 
 			
 			
-			\multirowcell{3}{\textbf{Criteria 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
+			\multirowcell{3}{\textbf{Criterion 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
 			& QRNN & 0.41 & \textbf{0.44} \\ 
 			& & &\\ & & &\\ 
 			\hline 
 			
 			
-			\multirowcell{3}{\textbf{Criteria 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
+			\multirowcell{3}{\textbf{Criterion 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
 			& QRNN & 0.37 & \textbf{0.40}\\ 
 			& & &\\ & & &\\ 
 			\hline 
 			
 			
-			\multirowcell{2}{\textbf{Criteria 5:} \\ \textbf{Balanced information}} 
+			\multirowcell{2}{\textbf{Criterion 5:} \\ \textbf{Balanced information}} 
 			& QRNN & 0.36 & \textbf{0.41} \\ 
 			& & &\\
 			\hline 
 			
 			
-			\multirowcell{2}{\textbf{Criteria 6:} \\ \textbf{Simple Language}} & QRNN & 0.38 & \textbf{0.41} \\ 
+			\multirowcell{2}{\textbf{Criterion 6:} \\ \textbf{Simple Language}} & QRNN & 0.38 & \textbf{0.41} \\ 
 			& & &\\
 			\hline 
 			
 			
-			\multirowcell{3}{\textbf{Criteria 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
+			\multirowcell{3}{\textbf{Criterion 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
 			& QRNN & 0.39 & \textbf{0.43} \\ 
 			& & &\\ & & &\\ 
 			\hline 
@@ -897,25 +897,25 @@ The second method, referred to as the ensemble approach, which leverages the bes
 		\textbf{Criteria} & \textbf{Model}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
-		\textbf{Criteria 1}  & SVM + TF-IDF (stopwords removed)  \\
+		\textbf{Criterion 1}  & SVM + TF-IDF (stopwords removed)  \\
 		\hline
 		
-		\textbf{Criteria 2} & SVM + TF-IDF (stopwords removed)  \\
+		\textbf{Criterion 2} & SVM + TF-IDF (stopwords removed)  \\
 		\hline
 		
-		\textbf{Criteria 3} & SVM + BoW (stopwords removed) \\
+		\textbf{Criterion 3} & SVM + BoW (stopwords removed) \\
 		\hline
 		
-		\textbf{Criteria 4} & SVM + BoW (stopwords removed) \\
+		\textbf{Criterion 4} & SVM + BoW (stopwords removed) \\
 		\hline
 		
-		\textbf{Criteria 5}  & SVM + TF-IDF (stopwords removed)  \\
+		\textbf{Criterion 5}  & SVM + TF-IDF (stopwords removed)  \\
 		\hline
 		
-		\textbf{Criteria 6} & SVM + TF-IDF (stopwords removed)  \\
+		\textbf{Criterion 6} & SVM + TF-IDF (stopwords removed)  \\
 		\hline
 		
-		\textbf{Criteria 7} & SVM + BoW (all words) \\
+		\textbf{Criterion 7} & SVM + BoW (all words) \\
 		\hline
 		                                                   		
 	\end{tabular}
@@ -1162,9 +1162,8 @@ This chapter examines the feasibility of the implemented and evaluated models in
 
 The reliability of the results reported in Chapter \ref{chap:Results}, is firstly evaluated by examining the consistency of the general trends that emerged from the experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ModelResults}). \newline
 
-Feasibility of the models is then evaluated by determining the trade-offs associated between the outcome measures (as identified in Section \ref{sec:Experiments}) and how the priority or importance of each of these measures change depending on the type of application being created (Section \ref{sec:ModelFeasibility}). \newline
 
-Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:RealWorldApplication}).
+In Section \ref{sec:RealWorldApplication}, the trade-offs associated between the outcome measures (as identified in Section \ref{sec:Experiments}) and how the priority or importance of each of these measures change depending on the type of application being created are discussed (Section \ref{sec:ModelFeasibility}). Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:PotentialApplications}).
 
 \iffalse
 \section{Related Work}
@@ -1201,22 +1200,35 @@ From the results reported in Section \ref{sec:CredibilityClassificationResults},
 \section{Real World Applications}
 \label{sec:RealWorldApplication}
 
-The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would likely matter more involve an \newline
+\textit{Note: Still a WIP}
+
+\subsection{Model Feasibility}
+\label{sec:ModelFeasibility}
+The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would matter more than training time would likely involve an application with an offline element or resource constrained environment such as a web browser extension or mobile application. On the other hand, the training time of a model would be highly prioritised in realtime environments or non-resource constrained environments with a remote connection to a server. \newline
 
 
+\subsection{Potential Applications}
+\label{sec:PotentialApplications}
 
+At its current state, reliable classification of 
 Because of the promising results produced by the model used for the binary approach on the identification of low credibility articles, the model can be deployed for a wide range of problems. Some possible applications of this model can include the implementation of a browser extension that informs a user whether the article they are viewing is credible, a service that filters content based on their credibility or to specifically collect low credibility articles to increase the dataset size for further refinement of the models.
 
 \chapter{Future Work and Conclusions}
 \label{chap:Conclusions}
-This section will be completed after the fulfilment of the proposed work detailed in Section \ref{chap:ProposedWork}
+
 
 \section{Future Work}
 \label{FutureWork}
 
+There are many directions in which one could take to further expand on the body of work contained in this thesis. A possible avenue to pursue is to overcome the various limitations encountered in this project. \newline
+
+One of the major limitations was the lack of training data available to train and evaluate the models. This can be overcome by, apart from simply collecting and expertly labelling more articles, investigating the feasibility of leveraging semi-supervised or unsupervised methods such as zero/one/few-shot learning or positive-unlabelled (PU) learning. \newline
+
+Applying and evaluating other deep learning architectures for both the creation of LMs and classifiers is also another viable option to explore as the time constraints of this project severely limited the architectures investigated due to the time intensive process of training and optimising a DL-based model.   \newline
+
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-
+This thesis investigated the effectiveness and feasibility in employing ML and DL-based models on automating the process of evaluating the credibility of online articles, specifically articles related to vaccination. From the experiments conducted, it was determined that, for the current state of the project with its limitations, DL-based models were neither effective nor feasible for this task due to the relatively extremely limited amount of data available leaving the models unable to learn and generalise to a feasible degree. ML-based models using standard feature representations and NB and SVM classifiers however, showed promising signs on its capability to identify and classify select credibility criteria and SVM classifiers trained on TF-IDF scores showed to great effect its ability on differentiating between and classifying low credibility and high credibility criteria.
 
 
 \clearemptydoublepage

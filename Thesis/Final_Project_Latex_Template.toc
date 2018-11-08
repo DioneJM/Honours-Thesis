@@ -60,10 +60,12 @@
 \contentsline {section}{\numberline {4.3}Model Storage Requirements}{32}{section.4.3}
 \contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}
 \contentsline {section}{\numberline {5.1}Model Results}{35}{section.5.1}
-\contentsline {subsubsection}{Outperformance of Machine Learning over Deep Learning based models}{36}{section*.58}
+\contentsline {subsubsection}{Outperformance of Machine Learning over Deep Learning based models}{35}{section*.58}
 \contentsline {subsubsection}{Utilisation of BoW by NB and SVM classifiers}{36}{section*.59}
 \contentsline {subsubsection}{Utilisation of TF-IDF by NB and SVM classifiers}{37}{section*.60}
 \contentsline {section}{\numberline {5.2}Real World Applications}{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Model Feasibility}{37}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Potential Applications}{37}{subsection.5.2.2}
 \contentsline {chapter}{\numberline {6}Future Work and Conclusions}{39}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future Work}{39}{section.6.1}
 \contentsline {section}{\numberline {6.2}Conclusions}{39}{section.6.2}
