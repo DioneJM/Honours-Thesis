@@ -83,7 +83,7 @@
 \usepackage{framed}
 \usepackage[table]{xcolor}
 \usepackage{multirow}
-
+\usepackage{tabularx}
 
 
 % The makeidx package makes your index for you.  To make an index entry,
@@ -609,7 +609,7 @@ In document classification tasks, the way document text is transformed into a se
 
 \subsubsection{Bag of Words}
 \label{sec:FeatureSelectionBoW}
-Two unigram BoW model variants were constructed using the expert-labelled articles; both of which were limited to a maximum of 20,000 n-grams. Identical BoW models were also constructed for different maximum unigram amounts, specifically, BoW models for 5,000 and 10,000 unigrams were also tested. The first BoW model included all of the words that appeared within the articles. The second BoW model was constructed by removing common English stopwords such as 'the', 'is' and 'are' listed in NLTK's English stopwords corpus \cite{Bird2009} were removed.
+Two unigram BoW model variants were constructed using the expert-labelled articles; both of which were limited to a maximum of 20,000 n-grams. Identical BoW models were also constructed for different maximum unigram amounts, specifically, BoW models for 5,000 and 10,000 unigrams were also tested. The first BoW model included all of the words that appeared within the articles. The second BoW model was constructed by removing common English stopwords such as `the', `is' and `are' listed in NLTK's English stopwords corpus \cite{Bird2009}.
 
 \subsubsection{Term Frequency - Inverse Document Frequency}
 \label{sec:FeatureSelectionTFIDF}
@@ -623,7 +623,7 @@ A pre-trained global vector (GloVe) \cite{pennington2014glove} was also used for
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
 
-A general, non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same hyperparameter settings and training scheme described by Bradbury et al. \cite{bradbury2016quasi} using the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of approximately 28,000 Wikipedia articles that meet either the `Good' or `Featured' article criteria \cite{Merity2016}. \newline
+A general, non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same architecture, hyperparameter settings and training scheme described by Bradbury et al. \cite{bradbury2016quasi} using the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of approximately 28,000 Wikipedia articles that meet either the `Good' or `Featured' article criteria \cite{Merity2016}. \newline
 
 The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the 2,878 unlabelled articles from the corpus in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing}, except for the removal of webpage elements, which was unnecessary.
 
@@ -665,7 +665,7 @@ In addition to using a QRNN for constructing the fine-tuned and general LM, anot
 \section{Experiments}
 \label{sec:Experiments}
 
-Considering the context of this project, other factors such as the size of the model and its training speed must be considered in addition to its capability on correctly producing the correct labels to determine the feasibility of deploying the model for a real-world application. 
+Considering the context of this project and its overarching goal, other factors such as the size of the model and its training speed must be considered in addition to its capability on correctly producing the correct labels to determine the feasibility of deploying the model for a real-world application. 
 
 \subsection{Performance}
 \label{sec:PerformanceExperiments}
@@ -675,30 +675,30 @@ Two experiments have been conducted to evaluate the performance of a model. The 
 \subsubsection{Credibility Classification Experiment}
 \label{sec:CredibilityClassificationExperiment}
 The credibility classification experiment is a set of binary classification tasks which aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. 
-For each criteria, the respective NB and SVM model is employed along with the QRNN model to classify whether the article satisfies the criteria or not. The correctness of the model was then evaluated by measuring the micro averaged f1-scores via 10-fold cross-validation, which is the harmonic mean of the precision and recall of a model's predictions. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
+For each criteria, the respective NB, SVM and QRNN models produces a prediction on whether the article satisfies the criteria or not. The correctness of the model was then evaluated by measuring the micro averaged f1-scores, the harmonic mean of the precision and recall of a model's predictions via 10-fold cross-validation. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
 
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
 The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. \newline
 
-The classification of low credibility articles was then carried out following two methodologies. The first methodology involves the calculation of the article's credibility score via the classification of each criteria, resulting in a total of seven binary classification tasks. The second methodology utilises the separated expert-labelled articles to construct a new binary label consisting of the labels `Credible' for articles that had a credibility score greater than or equal to 3 and a `Not Credible' label for the remaining articles. This method results in only a single binary classification where the model is trained to classify an unseen article as one of the aforementioned labels rather than carrying out the classification of each credibility criteria.
+The classification of low credibility articles was then carried out following two methodologies. The first methodology involves the calculation of the article's credibility score via the classification of each criteria, resulting in a total of seven binary classification tasks. The second methodology utilises the separated expert-labelled articles to construct a new binary label consisting of the labels `High Credibility' for articles that had a credibility score greater than or equal to 3 and a `Low Credibility' label for articles with a credibility score of less than 3. This method results in only a single binary classification as the model is trained to classify an unseen article as one of the aforementioned labels rather than carrying out the classification of each credibility criteria.
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
-The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will require to be constantly re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN classifiers and also  the creation of the LM. The reported training times in Section \ref{sec:TrainingTime} are for the best performing NB and SVM-based models, which were trained within a c5.2xlarge instance utilising all CPU cores. The reported training times for the QRNN classifier and LM were obtained using the P3 instances and utilising only a single K80 GPU.
+The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will be required to constantly be re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN based models and also  the creation of the LM. The reported training times in Section \ref{sec:TrainingTime} are for the best performing NB and SVM-based models, which were trained within a c5.2xlarge instance utilising all CPU cores. The reported training times for the QRNN classifier and LM were obtained using the P3 instances and utilising only a single K80 GPU.
 
 
 \subsection{Storage}
 \label{sec:StorageExperiments}
-To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream of the model is then recorded and reported in Section \ref{sec:StorageRequirements}.
+To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using \textit{pickle} and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream of the model is then recorded, measured and reported in Section \ref{sec:StorageRequirements}.
 
 
 
 \chapter{Results}
 \label{chap:Results}
 
-In this chapter I detail the results of the experiments described in the previous chapter. These are the results that come from testing the performance, training time, and storage requirements of the models in the classification task of predicting whether a document extracted from a web page satisfies each of the seven credibility criteria. The classifiers include the proposed QRNN-based deep learning approach as well as classifiers trained using NB and SVM methods.
+In this chapter I detail the results of the experiments described in the previous chapter. These are the results that come from testing the performance, training time, and storage requirements of the models in the classification task of predicting whether a document extracted from a web page satisfies each of the seven credibility criteria. The model include the proposed QRNN-based deep learning approach as well as models trained using NB and SVM methods.
 
 \section{Performance}
 \label{sec:AccuracyResults}
@@ -722,6 +722,7 @@ The performance of the models may have highly been influenced by the unbalanced 
 
 \begin{table}[H]
 	\centering
+	\caption{Micro-averaged f1-Scores of the NB and SVM based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|p{6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
 			
@@ -775,7 +776,6 @@ The performance of the models may have highly been influenced by the unbalanced 
 			& SVM & 0.799 & 0.809 & 0.783 & \textbf{0.836} & 0.669      \\
 			\hline                                                                                                                                          
 	\end{tabular}}
-	\caption{Micro-averaged f1-Scores of the NB and SVM based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
 	\label{table:PerformanceResultsNBSVM}
 \end{table}
 
@@ -787,7 +787,8 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 
 \begin{table}[H]
 	\centering
-	\resizebox{\textwidth}{!}{%
+	\caption{Micro-averaged f1-Scores of the QRNN-based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
+
 		\begin{tabular}{|p{6cm}|p{2cm}|p{3cm}|p{3.3cm}|}
 			
 			
@@ -840,8 +841,7 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 			& QRNN & 0.379 & \textbf{0.414}      \\ 
 			& & &      \\
 			\hline                                                                                                                                          
-	\end{tabular}}
-	\caption{Micro-averaged f1-Scores of the QRNN-based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
+	\end{tabular}
 	\label{table:PerformanceResultsQRNN}
 \end{table}
 
@@ -849,46 +849,48 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 \subsection{Low Credibility Identification}
 \label{sec:LowCredibilityIdentificationResults}
 
-I tested and employed three different approaches for constructing a model on the identification of low credibility articles. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score that is less than 3 are deemed to be untrustworthy. The three approaches are referred to as the single model approach, ensemble approach and binary classification approach. Where the single model and ensemble approach are variants of the first methodology.\newline
+I tested and evaluated three different approaches for constructing a model on the identifying low credibility articles. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score that is less than 3 are deemed to have low credibility. The three approaches are referred to as the single model approach, ensemble approach and binary classification approach. Where the single model and ensemble approach are variants of the first methodology described in Section \ref{sec:LowCredibilityIdentification} and the binary classification approach being the second.\newline
 
-The low credibility experiment was utilised to test three different approaches inspired from the results in the previous section. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score less than 3 are deemed to be untrustworthy. Based on this definition, there are three main methods that can be used to determine whether an article is untrustworthy. \newline
+\subsubsection{Single Model Approach}
+The the single model approach was implemented by utilising the overall best performing model i.e. the model with the highest average performance across Table \ref{table:PerformanceResultsNBSVM} and Table \ref{table:PerformanceResultsQRNN}. Thus, the model used to evaluate the single model approach will be SVM with TF-IDF scores (stopwords removed). \newline
 
-The first method, the single model approach, utilises the overall best performing model. The best performing model is defined to be the model with the highest average performance across Table \ref{table:PerformanceResultsNBSVM} and Table \ref{table:PerformanceResultsQRNN}. Thus, the model used to evaluate the single model approach will be SVM with TF-IDF scores (stopwords removed). \newline
+In contrast to the average performance of the model reported in Table \ref{table:PerformanceResultsNBSVM} having a micro-averaged f1-score of 0.836, it is more able to successfully perform this classification task, with an improvement in performance of 8.85\%. This is due to the increased leeway with regards to the condition for producing a correct classification as the model is only required to predict a credibility score between 0 to 2 for low credibility articles and 3 to 7 for high credibility articles. This makes it capable for a model to correctly classify an article as low credibility or high credibility even if each criteria was misclassified so as long as the resulting credibility score remains within the correct range. In the context of the purpose of this experiment however, this is a non-issue as an article that is assumed to have correctly been labelle as having low credibility without accounting which criteria the article failed to satisfy is still likely to contain misinformed content.
 
 \begin{table}[H]
 	\centering
+	\caption{Performance of low credibility identification task via an ensemble approach.}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
 			\hline
 			
 			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro-averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
 			\hline                                                                                                                                              
-			SVM + \newline TF-IDF \newline (stopwords removed) & 0.89 & 0.89 & 0.89 & 0.52 & 2.14 \\
+			SVM + \newline TF-IDF \newline (stopwords removed) & 0.91 & 0.91 & 0.91 & 0.70 & 1.89 \\
 			\hline
 			
 			
 			
 	\end{tabular}}
-	\caption{Performance of low credibility identification task via an ensemble approach.}
+
 	\label{table:SingleModelApproach}
 \end{table}
 
-In contrast to the average performance of the model reported in Table \ref{table:PerformanceResultsNBSVM} having a micro-averaged f1-score of 0.836, it is more able to successfully classify low credibility articles, with an improvement in performance of 8.85\%. This is due to the increased leeway with regards to the condition for producing a correct classification as the model is only required to predict a credibility score between 0 and 2 for untrustworthy articles and 3 to 7 for trustworthy articles.
+
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[totalheight=7cm]{images/single-model-performance.png}
-	\caption{Performance of single model approach after 10-fold cross validation.}
+	\caption{Confusion matrix of labels produced with the single model approach after 10-fold cross validation.}
 	\label{fig:SingleModelPerformance}
 \end{figure}
 
-
-The second method, referred to as the ensemble approach, which leverages the best performing models for each criteria (Table \ref{table:EnsembleModel}). The ensemble classifier produced the highest performance results of the three classifiers (Table \ref{table:EnsembleApproach}) with a micro-averaged f1-score of 0.91, an improvement of 7.82\% from its average performance.
+\subsubsection{Ensemble Approach}
+The second method, referred to as the ensemble approach, which leverages the best performing models for each criteria (Table \ref{table:EnsembleModel}). The ensemble models produced the highest performance results of the three classifiers (Table \ref{table:EnsembleApproach}) with a micro-averaged f1-score of 0.91, an improvement of 7.82\% from its average performance.
 
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Architecture of the ensemble model.}
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -917,26 +919,26 @@ The second method, referred to as the ensemble approach, which leverages the bes
 		\hline
 		                                                   		
 	\end{tabular}
-	\caption{Architecture of the ensemble model.}
 	\label{table:EnsembleModel}
 \end{table}
 
 
 \begin{table}[H]
 	\centering
+	\caption{Performance of low credibility identification task via an ensemble approach.}
 	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
 		\hline
 
 		\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
 		\hline                                                                                                                                              
-		Ensemble & 0.91 & 0.91 & 0.91 & 0.55 & 2.0 \\
+		Ensemble & 0.91 & 0.91 & 0.91 & 0.71 & 1.98 \\
 		\hline
 		
 		
 		
 	\end{tabular}}
-	\caption{Performance of low credibility identification task via an ensemble approach.}
+
 	\label{table:EnsembleApproach}
 \end{table}
 
@@ -952,25 +954,33 @@ The second method, referred to as the ensemble approach, which leverages the bes
 
 \begin{table}[H]
 	\centering
-		\begin{tabular}{|p{2cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+	\caption{Performance of low credibility identification task via a binary classification approach.}
+	\begin{tabular}{|p{2cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
 			\hline
 			
 			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline f1-Score}                                                                                                                                                                                                                                                                                                                                    \\
 			\hline                                                                                                                                              
-			SVM + \newline TF-IDF \newline (stopwords removed) & 0.61 & 0.61 & 0.61 \\
+			SVM + \newline TF-IDF \newline (stopwords removed) & 0.89 & 0.89 & 0.89 \\
 			\hline
 			
 			
 			
 	\end{tabular}
-	\caption{Performance of low credibility identification task via a binary classification approach.}
+
 	\label{table:BinaryApproach}
 \end{table}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[totalheight=6cm]{images/binary-roc-curve.png}
+	\includegraphics[totalheight=7cm]{images/binary-performance.png}
 	\caption{Performance of binary classification approach after 10-fold cross validation.}
+	\label{fig:BinaryPerformance}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=6cm]{images/binary-roc-curve.png}
+	\caption{Expected true positive and false positive rate of binary classification approach}
 	\label{fig:BinaryPerformance}
 \end{figure}
 
@@ -983,7 +993,7 @@ The training times reported for each model includes the time required to perform
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Average training time of models using count-based features.}
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -1015,7 +1025,6 @@ The training times reported for each model includes the time required to perform
 		\hline                                                                                                                                           
 		
 	\end{tabular}
-	\caption{Average training time of models using count-based features.}
 	\label{table:CountTrainingTime}
 \end{table}
 
@@ -1023,7 +1032,7 @@ The training times reported for each model includes the time required to perform
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Average training time of models using LMs.}	
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -1038,13 +1047,12 @@ The training times reported for each model includes the time required to perform
 		
 		
 	\end{tabular}
-	\caption{Average training time of models using LMs.}
 	\label{table:QRNNTrainingTime}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Average training time of models using pre-trained GloVe feature.}	
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -1058,7 +1066,6 @@ The training times reported for each model includes the time required to perform
 		\hline                                                                                                                                        
 		
 	\end{tabular}
-	\caption{Average training time of models using pre-trained GloVe feature.}
 	\label{table:PreTrainedTrainingTime}
 \end{table}
 
@@ -1071,7 +1078,7 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Aggregated size of count-based models.}	
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -1081,7 +1088,7 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 		NB + BoW (all words)  & 11.10  \\
 		\hline
 		
-		NB + BoW \newline (stopwords  removed)  & \textbf{11.00} \\
+		NB + BoW \newline (stopwords  removed)  & 11.00 \\
 		\hline
 		
 		NB + TF-IDF \newline (all words) & 13.20 \\
@@ -1106,13 +1113,12 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 		
 		
 	\end{tabular}
-	\caption{Aggregated size of count-based models.}
 	\label{table:CountStorageRequirements}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Aggregated size of GloVe-based models.}	
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -1126,13 +1132,12 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 
 		
 	\end{tabular}
-	\caption{Aggregated size of GloVe-based models.}
 	\label{table:PreTrainedStorageRequirements}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	
+	\caption{Aggregated size of LM-based models.}	
 	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
@@ -1146,7 +1151,6 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 		
 		
 	\end{tabular}
-	\caption{Aggregated size of LM-based models.}
 	\label{table:LMStorageRequirements}
 \end{table}
 
@@ -1156,81 +1160,54 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 
 This chapter examines the feasibility of the implemented and evaluated models in the context of assessing the credibility of vaccine-related articles. The structure of this chapter is as follows. \newline
 
-The reliability of the results reported in Chapter \ref{chap:Results}, is firstly evaluated by examining the consistency of the general trends that emerged from the experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ConsistencyOfResults}). \newline
+The reliability of the results reported in Chapter \ref{chap:Results}, is firstly evaluated by examining the consistency of the general trends that emerged from the experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ModelResults}). \newline
 
 Feasibility of the models is then evaluated by determining the trade-offs associated between the outcome measures (as identified in Section \ref{sec:Experiments}) and how the priority or importance of each of these measures change depending on the type of application being created (Section \ref{sec:ModelFeasibility}). \newline
 
 Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:RealWorldApplication}).
 
+\iffalse
 \section{Related Work}
 \label{sec:DiscussionRelatedWork}
 
-\subsection{title}
-
-\section{Consistency of Results}
-\label{sec:ConsistencyOfResults}
-
-\iffalse
-\textbf{Notes about what to talk about:}
-\begin{enumerate}[-]
-	\item How consistent these results are e.g. no stopwords $>$ having stopwords, ML models $>$ DL models with small datasets with prior literature
-	\item Then determine whether the results can be trusted to indicate the feasibility
-\end{enumerate}
-
-\textbf{Things to check the consistency on:}
-\begin{enumerate}[-]
-	\item The performance of SVM $>$ NB (?) $>$ QRNN(DL) for classification tasks with small datasets
-	\item The pattern of SVM + TF-IDF $>$ NB + TF-IDF (TFIDF works better with SVMs)
-	\item The pattern of NB + GloVe $>$ SVM + GloVe
-\end{enumerate}
+This section will evaluate the reliability of the reported results of the model's performance and compare these results with existing literature. 
 \fi
 
-Since the classification task performed by the models involve the classification of a novel set of labels (credibility criteria), it is unsuitable to directly compare the performance of the models with any prior work. However, by identifying trends from the reported results, it is possible to determine whether these trends are consistent with the trends found on similar classification tasks from existing literature and thus extrapolate the reliability of the results. \newline
+\section{Model Results}
+\label{sec:ModelResults}
 
-From the reported results, major trends that have been identified are:
+As the classification task performed by the models involve classifying a novel set of labels (credibility criteria), it is unsuitable to directly compare the performance of the models with any prior work. However, by identifying trends from the reported results, it is possible to determine whether these trends are consistent with the trends found on similar classification tasks from existing literature and thus extrapolate the reliability of the results. The trends investigated are related to the differing performances between the ML and DL models and the choice of feature and its impact on the performance of the classifier.
 
-\begin{enumerate}
-	\item Utilisation of BoW were more successful overall when used in conjunction with NB classifiers rather than SVM classifiers.
-	\item Inversely, TF-IDF scores were more effective when paired with SVM classifiers rather than with NB classifiers.
-	\item Classical ML models (NB and SVM based models) consistently outperformed DL models (QRNN-based models) on classification tasks with limited training and testing data.
-	\item The process of fine-tuning a LM in order to learn task specific features consistently improved the model's performance.
-\end{enumerate}
+\subsubsection{Outperformance of Machine Learning over Deep Learning based models}
 
-The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the first major trend described above. Both works presented results that showed better performance when using BoW with a NB classifier over a SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down') \cite{Pang2004}. Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon \cite{PRANCKEVICIUS2017}. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment reported in Section \ref{sec:CredibilityClassificationResults} which showed the NB-based model having a higher average performance by a margin of 0.25\%. \newline
+The performance of the of the QRNN-based models was substantially lower than the NB and SVM based models. Performance between the best QRNN-based model, QRNN with fine-tuned LM, and worst ML-based model, SVM trained with GloVe, had a difference of 0.255 outperforming the QRNN-based model by 61.5\%. There are various factors that could attribute to this, the main factors being the limited number of unlabelled and expert-labelled articles available for training. \newline
 
-The diminishing difference in performance between the NB-based models and the SVM-based models relative to the aforementioned literature may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. utilised domain-specific information extracted from as features for the construction of their models. The common factor in regards to the construction of the models resides within the preprocessing phase where only the stopwords of the text were removed. \newline
+Whilst transfer learning has successfully been applied to perform classification tasks in situations where data is limited \cite{Glorot2011} \cite{Radford2018}, the size of the task-specific dataset used is significantly larger than the combined number of unlabelled and expert-labelled samples used for this project. When compared to the work conducted by Howard et al. \cite{Howard2018} for the task of question classification, the number of training samples used to construct the discriminative fine-tuned LM was 5,500 which only improved the model's performance by 0.3\%. This is in contrast to the 3,348 unlabelled samples used for fine-tuning the LM, improving over the general LM by 9.2\% and the 470 samples used for training the classifier. \newline
 
+\subsubsection{Utilisation of BoW by NB and SVM classifiers}
 
-\textit{The following paragraph discusses the consistency of TFIDF working better with SVMs rather than NBs}
+NB classifiers trained on BoW generally outperformed similarly trained SVM classifiers. The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the this general trend. Both works presented results that showed better performance when using BoW with a NB classifier over an SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down'). Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment reported in Section \ref{sec:CredibilityClassificationResults} which showed the NB-based model having a higher average performance by a margin of 0.25\%. \newline
 
-\textit{[-----------------]}
+The diminishing difference in performance between the NB-based models and the SVM-based models relative to the aforementioned literature may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. also utilised domain-specific information extracted from as features for the construction of their models. The common factor in regards to the construction of the models resides within the preprocessing phase where only the stopwords of the text were removed. \newline
 
-\textit{The following paragraph discusses the consistencty of ML models outperforming DL models for text classification tasks with limited data}
+\subsubsection{Utilisation of TF-IDF by NB and SVM classifiers}
 
-\textit{[-----------------]}
+From the results reported in Section \ref{sec:CredibilityClassificationResults}, overall, SVM-based models trained using TF-IDF scores outperformed NB-based models especially with the removal of stopwords by 5.3\%. This trend remains consistent in other literature such as by Shahi et al. \cite{Shahi2018} and Jadav et al. \cite{Jadav2016}. Shahi et al. evaluated both NB and SVM classifiers on the classification of news topics from Nepali News which consisted of twenty target labels and reported the out-performance of SVM classifiers over NB classifiers when using TF-IDF scores. Jadav et al. reciprocated this sentiment who also reported an out-performance by SVM classifiers of 1.9\% on a sentiment analysis task across three separate datasets. 
 
-\textit{The following paragraph discusses the consistent results of fine-tuned LMs outperforming general-domain LMs}
+%\subsection{Model Effectiveness}
+%\label{sec:ModelEffectiveness}
 
-While the performance of the QRNN-based models was lower than what was initially expected, this can be theorised to be due to the relatively low number of vaccine-related training samples utilised during the training of the fine-tuned LM. When compared to the work conducted by Howard et al. \cite{Howard2018} for the task of question classification, the number of training samples used to construct the discriminative fine-tuned LM was 5,500 which only improved the model's performance by 0.3\%. 
-
-\section{Model Feasibility}
-\label{sec:ModelFeasibility}
-Notes about what to talk about:
-\begin{enumerate}[-]
-	\item Discuss the trade-offs between optimising the performance, training time and storage requirements and the factors that affect these measures. 
-	\item What it means to be feasible e.g. it is application dependent and depending on the application some factors might be more important than others such as having a higher true negative rate can be alright for some tasks and that having a high false positive rate is usually always bad.
-\end{enumerate}
 
 \section{Real World Applications}
 \label{sec:RealWorldApplication}
-\textit{This is where I'll be talking about the performance of constructing and testing the low credibility classifiers}
-So once the credibility of the results have been verified and also what the feasibility of a model entails, I can then talk about:
 
-\begin{enumerate}[-]
-	\item Possible applications of the models e.g. web browser extension, twitter bot, article filtering system and the differing priorities they have on the for outcome measures (accuracy, training time and storage requirements)
-\end{enumerate}
+The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would likely matter more involve an \newline
 
-\chapter{Conclusions and Future Work}
+
+
+Because of the promising results produced by the model used for the binary approach on the identification of low credibility articles, the model can be deployed for a wide range of problems. Some possible applications of this model can include the implementation of a browser extension that informs a user whether the article they are viewing is credible, a service that filters content based on their credibility or to specifically collect low credibility articles to increase the dataset size for further refinement of the models.
+
+\chapter{Future Work and Conclusions}
 \label{chap:Conclusions}
 This section will be completed after the fulfilment of the proposed work detailed in Section \ref{chap:ProposedWork}
 

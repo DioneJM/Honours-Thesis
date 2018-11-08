@@ -160,6 +160,13 @@ A.~Conneau, H.~Schwenk, Y.~{Le Cun}, and L.~{Loıc Barrault}, ``{Very Deep
   \url{https://arxiv.org/pdf/1606.01781.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Glorot2011}
+\BIBentryALTinterwordspacing
+X.~Glorot, A.~Bordes, and Y.~Bengio, ``{Domain Adaptation for Large-Scale
+  Sentiment Classification: A Deep Learning Approach},'' Tech. Rep., 2011.
+  [Online]. Available: \url{http://www.cs.jhu.edu/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Hall2017}
 \BIBentryALTinterwordspacing
 V.~Hall, E.~Banerjee, C.~Kenyon, A.~Strain, J.~Griffith, K.~Como-Sabetti,
@@ -198,6 +205,14 @@ F.~Informatik, ``{UNIVERSIT AT D ORTMUND Text Categorization with Support
   Vector Machines: Learning with Many Relevant F eatures Thorsten Joachims},''
   Tech. Rep., 1997. [Online]. Available:
   \url{https://www.cs.cornell.edu/people/tj/publications/joachims{\_}97b.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Jadav2016}
+\BIBentryALTinterwordspacing
+B.~M. Jadav and M.~E. Scholar, ``{Sentiment Analysis using Support Vector
+  Machine based on Feature Selection and Semantic Analysis},'' Tech. Rep.~13,
+  2016. [Online]. Available:
+  \url{https://pdfs.semanticscholar.org/7746/93175a159160697b5748561446313186b846.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Kaicker2010}
@@ -271,6 +286,13 @@ C.~Nogueira, D.~Santos, and M.~Gatti, ``{Deep Convolutional Neural Networks for
   \url{http://www.aclweb.org/anthology/C14-1008}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Radford2018}
+\BIBentryALTinterwordspacing
+A.~R. Openai, K.~N. Openai, T.~S. Openai, and I.~S. Openai, ``{Improving
+  Language Understanding by Generative Pre-Training},'' Tech. Rep. [Online].
+  Available: \url{https://gluebenchmark.com/leaderboard}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Pan2009}
 \BIBentryALTinterwordspacing
 S.~J. Pan and Q.~Yang, ``{A Survey on Transfer Learning},'' 2009. [Online].
@@ -330,6 +352,12 @@ M.~Sahami, S.~Dumais, D.~Heckerman, and E.~Horvitz, ``{A Bayesian approach to
   filtering junk e-mail},'' Tech. Rep. Cohen, 1998. [Online]. Available:
   \url{http://research.microsoft.com/en-us/um/people/horvitz/junkfilter.htm}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Shahi2018}
+T.~B. Shahi and A.~K. Pant, ``Nepali news classification using naïve bayes,
+  support vector machines and neural networks,'' in \emph{2018 International
+  Conference on Communication information and Computing Technology (ICCICT)},
+  Feb 2018, pp. 1--5.
 
 \bibitem{Socher}
 \BIBentryALTinterwordspacing

@@ -53,18 +53,20 @@
 \contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Credibility Classification}{25}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{27}{subsection.4.1.2}
-\contentsline {subsubsection}{Binary Classification Approach}{30}{section*.46}
-\contentsline {section}{\numberline {4.2}Training Time}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Model Storage Requirements}{31}{section.4.3}
-\contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Related Work}{33}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}title}{33}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Consistency of Results}{33}{section.5.2}
-\contentsline {section}{\numberline {5.3}Model Feasibility}{35}{section.5.3}
-\contentsline {section}{\numberline {5.4}Real World Applications}{35}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{37}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusions}{37}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{39}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{39}{section.A.1}
-\contentsline {chapter}{Bibliography}{39}{section*.55}
+\contentsline {subsubsection}{Single Model Approach}{27}{section*.41}
+\contentsline {subsubsection}{Ensemble Approach}{28}{section*.44}
+\contentsline {subsubsection}{Binary Classification Approach}{30}{section*.48}
+\contentsline {section}{\numberline {4.2}Training Time}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Model Storage Requirements}{32}{section.4.3}
+\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Model Results}{35}{section.5.1}
+\contentsline {subsubsection}{Outperformance of Machine Learning over Deep Learning based models}{36}{section*.58}
+\contentsline {subsubsection}{Utilisation of BoW by NB and SVM classifiers}{36}{section*.59}
+\contentsline {subsubsection}{Utilisation of TF-IDF by NB and SVM classifiers}{37}{section*.60}
+\contentsline {section}{\numberline {5.2}Real World Applications}{37}{section.5.2}
+\contentsline {chapter}{\numberline {6}Future Work and Conclusions}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusions}{39}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{41}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{41}{section.A.1}
+\contentsline {chapter}{Bibliography}{41}{section*.61}
