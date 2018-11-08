@@ -198,7 +198,7 @@
 % The text of your abstract
 \Abstract{
 \vspace{-1.5 cm}
-With the popularity and ubiquity of social media platforms in today's society, the amount and rate at which information propagates online greatly outnumbers the resources available that can evaluate the quality and credibility of the information that gets shared. This is becoming an increasingly growing issue due to the clickbait model that is commonly adopted by social media platforms and the lack of rigour surrounding the publishing of content online, causing an increase in the number of articles that contain misinformed content. This project aims to investigate the performance of deep learning techniques in evaluating the credibility of information of health-related articles.
+Misinformation is not a new phenomenon but the popularity and ubiquity of social media has meant that the rate at which information is produced and spreads greatly outpaces our ability to evaluate whether it is correct and unbiased. This is especially important in health and healthcare, where misinformation can influence attitudes and health behaviours that can lead to harm. In this project, I aimed to develop a novel approach to predicting the credibility of information presented on web pages using machine learning. To do this, I trained a series of supervised machine learning classifiers to predict the credibility of vaccine-related web pages. I used a dataset including the text extracted from 3,348 vaccine-related web pages, of which 470 were labelled by experts for credibility using a credibility appraisal checklist with 7 criteria. When predicting which of the 7 criteria were satisfied by an article, the standard approaches outperformed the deep learning approach. When the objective was to distinguish low credibility articles from all others, the best performing classifier was able to correctly label 92\% of unseen examples. The results indicate that automating credibility appraisal is feasible and that my approach could be implemented in practical tools for mitigating the spread of vaccine-related misinformation.
 
 }
 
@@ -251,7 +251,7 @@ With the popularity and ubiquity of social media platforms in today's society, t
 
 With the popularity and ubiquity of social media platforms in today's society, the amount and rate at which information propagates online greatly outnumbers the resources available that can evaluate the quality and credibility of the information that gets shared. This is becoming an increasingly growing issue due to the clickbait model that is commonly adopted by social media platforms and the lack of rigour surrounding the publishing of content online \cite{Sommariva2018}, causing an increase in the number of articles that contain misinformed content \cite{germanFN} \cite{Vosoughi}.\newline 
 
-The lack of resources that attempt to minimise the spread of misinformation can be attributed to the expert-level knowledge required to determine the credibility of information since a variety of factors such as the actual information, information sources, conflicts of interest and writing style of the article must be evaluated to be able to determine its quality and credibility. This issue is further exacerbated in specific domains such as for health-related content, as the spread of misinformation can have a detrimental effect on people and their communities that don't have access to these kinds of limited resources. \newline
+The lack of resources that attempt to minimise the spread of misinformation can be attributed to the expert-level knowledge required to determine the credibility of information since a variety of factors such as the actual information, information sources, conflicts of interest and writing style of the article must be evaluated to be able to determine its quality and credibility. This issue is further exacerbated in specific domains such as for health-related content, as the spread of misinformation can have a detrimental effect on people and their communities that do not have access to these kinds of limited resources. \newline
 
 Thus, by developing a method that is capable of automatically assessing the quality and credibility of an article - various methods that intervene between an article and a user can then be developed to minimise the spread and effects of misinformation as the reliance on expert-level knowledge is no longer present.
 
@@ -380,7 +380,7 @@ Consider the illustration shown in Figure \ref{fig:SVMExample} that presents thr
 	\label{fig:SVMExample}
 \end{figure}
 
-This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
+This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this is not true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
 
 \begin{figure}[H]
 	\centering
@@ -435,7 +435,7 @@ In the context of text classification, a typical CNN is composed of the followin
 	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction.
 \end{itemize}
 
-By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
+By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they do not require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
@@ -980,8 +980,8 @@ The second method, referred to as the ensemble approach, which leverages the bes
 \begin{figure}[H]
 	\centering
 	\includegraphics[totalheight=6cm]{images/binary-roc-curve.png}
-	\caption{Expected true positive and false positive rate of binary classification approach}
-	\label{fig:BinaryPerformance}
+	\caption{Expected true positive and false positive rate of binary classification approach.}
+	\label{fig:BinaryPerformanceAUC}
 \end{figure}
 
 
@@ -1158,19 +1158,8 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 \chapter{Discussion}
 \label{chap:Discussion}
 
-This chapter examines the feasibility of the implemented and evaluated models in the context of assessing the credibility of vaccine-related articles. The structure of this chapter is as follows. \newline
 
-The reliability of the results reported in Chapter \ref{chap:Results}, is firstly evaluated by examining the consistency of the general trends that emerged from the experiments via the comparison of results from prior literature on text classification tasks (Section \ref{sec:ModelResults}). \newline
-
-
-In Section \ref{sec:RealWorldApplication}, the trade-offs associated between the outcome measures (as identified in Section \ref{sec:Experiments}) and how the priority or importance of each of these measures change depending on the type of application being created are discussed (Section \ref{sec:ModelFeasibility}). Finally, the significance of the obtained results in the context of real-world applications is examined by investigating potential applications of these models based on the advantages and limitations of the top performing models (Section \ref{sec:PotentialApplications}).
-
-\iffalse
-\section{Related Work}
-\label{sec:DiscussionRelatedWork}
-
-This section will evaluate the reliability of the reported results of the model's performance and compare these results with existing literature. 
-\fi
+In this chapter, I discuss the feasibility of automating credibility appraisal for vaccine-related articles online.  I start by summarising what I found through the set of experiments comparing different machine learning methods, and compare the results to what has been found in other document classification tasks in other application domains (Section 5.1). I then discuss how the novel methods I developed here might be used in real world applications aimed at mitigating the spread of vaccine-related information online (Section 5.2).
 
 \section{Model Results}
 \label{sec:ModelResults}
@@ -1200,11 +1189,13 @@ From the results reported in Section \ref{sec:CredibilityClassificationResults},
 \section{Real World Applications}
 \label{sec:RealWorldApplication}
 
-\textit{Note: Still a WIP}
-
 \subsection{Model Feasibility}
 \label{sec:ModelFeasibility}
-The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would matter more than training time would likely involve an application with an offline element or resource constrained environment such as a web browser extension or mobile application. On the other hand, the training time of a model would be highly prioritised in realtime environments or non-resource constrained environments with a remote connection to a server. \newline
+The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. \newline
+
+The effectiveness and practicality a model based on its performance for instance can have varying meanings with regards to its false positive and false negative rates. Consider the performance of the single model and ensemble approach compared to the binary classification approach in identifying low and high credibility articles. Whilst the single model and ensemble approach reported a slightly higher micro-averaged f1-score (Table \ref{table:SingleModelApproach} and Table \ref{table:EnsembleApproach}) over the binary classification approach (Table \ref{table:BinaryApproach}), the binary classification approach (Figure \ref{fig:BinaryPerformance}) had a much lower false positive rate, misclassifying less low credibility articles as high credibility articles over the single model and ensemble approach (Figure \ref{fig:SingleModelPerformance} and Figure \ref{fig:EnsemblePerformance}). This indicates that for applications where having a lower false positive rate is important, such as when recommending a person whether to read and trust an article based on its credibility, the binary classification approach should be preferred over the single model and ensemble approach.\newline
+
+Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would matter more than training time would likely involve an application with an offline element or resource constrained environment such as a web browser extension or mobile application. On the other hand, the training time of a model would be highly prioritised in realtime environments or non-resource constrained environments with a remote connection to a server. \newline
 
 
 \subsection{Potential Applications}
@@ -1224,7 +1215,9 @@ There are many directions in which one could take to further expand on the body 
 
 One of the major limitations was the lack of training data available to train and evaluate the models. This can be overcome by, apart from simply collecting and expertly labelling more articles, investigating the feasibility of leveraging semi-supervised or unsupervised methods such as zero/one/few-shot learning or positive-unlabelled (PU) learning. \newline
 
-Applying and evaluating other deep learning architectures for both the creation of LMs and classifiers is also another viable option to explore as the time constraints of this project severely limited the architectures investigated due to the time intensive process of training and optimising a DL-based model.   \newline
+Applying and evaluating other deep learning architectures for both the creation of LMs and classifiers is also another viable option to explore as the time constraints of this project severely limited the architectures investigated due to the time intensive process of training and optimising a DL-based model leaving other architectures to remain untested.   \newline
+
+Exploring the effectiveness of the model's ability to classify the criteria and differentiating between low and high credibility articles for either a different or more generalised domain.
 
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
