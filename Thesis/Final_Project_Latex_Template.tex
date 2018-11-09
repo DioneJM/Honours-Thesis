@@ -80,6 +80,10 @@
 % wants superscript citations, use the overcite package instead of the cite package.
 \usepackage{cite}
 \usepackage{float}
+\usepackage{framed}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{tabularx}
 
 
 % The makeidx package makes your index for you.  To make an index entry,
@@ -121,6 +125,8 @@
 \usepackage{multirow}
 \usepackage{verbatim}
 \usepackage{enumerate}
+\usepackage{multirow, makecell}
+
 
 % Defining the symbols
 
@@ -143,7 +149,7 @@
 % For Senior and honors this is the year and month that you submit the thesis
 % For Masters and PhD, this is your graduation date
   \Year{2018}
-  \Month{November XX,}
+  \Month{November 9,}
   \Author{Dione Morales}
 
 % If you have a long title, split it between two lines. The \TitleBottom field defines the second line
@@ -192,7 +198,7 @@
 % The text of your abstract
 \Abstract{
 \vspace{-1.5 cm}
-With the popularity and ubiquity of social media platforms in today's society, the amount and rate at which information propagates online greatly outnumbers the resources available that can evaluate the quality and credibility of the information that gets shared. This is becoming an increasingly growing issue due to the clickbait model that is commonly adopted by social media platforms and the lack of rigour surrounding the publishing of content online, causing an increase in the number of articles that contain misinformed content. This project aims to investigate the performance of deep learning techniques in evaluating the credibility of information of health-related articles.
+Misinformation is not a new phenomenon but the popularity and ubiquity of social media has meant that the rate at which information is produced and spreads greatly outpaces our ability to evaluate whether it is correct and unbiased. This is especially important in health and healthcare, where misinformation can influence attitudes and health behaviours that can lead to harm. In this project, I aimed to develop a novel approach to predicting the credibility of information presented on web pages using machine learning. To do this, I trained a series of supervised machine learning classifiers to predict the credibility of vaccine-related web pages. I used a dataset including the text extracted from 3,348 vaccine-related web pages, of which 470 were labelled by experts for credibility using a credibility appraisal checklist with 7 criteria. When predicting which of the 7 criteria were satisfied by an article, the standard approaches outperformed the deep learning approach. When the objective was to distinguish low credibility articles from all others, the best performing classifier was able to correctly label 92\% of unseen examples. The results indicate that automating credibility appraisal is feasible and that my approach could be implemented in practical tools for mitigating the spread of vaccine-related misinformation.
 
 }
 
@@ -243,9 +249,9 @@ With the popularity and ubiquity of social media platforms in today's society, t
 \chapter{Introduction}
 \label{chap:Introduction}
 
-With the popularity and ubiquity of social media platforms in today's society, the amount and rate at which information propagates online greatly outnumbers the resources available that can evaluate the quality and credibility of the information that gets shared. This is becoming an increasingly growing issue due to the clickbait model that is commonly adopted by social media platforms and the lack of rigour surrounding the publishing of content online \cite{Sommariva2018}, causing an increase in the number of articles that contain misinformed content \cite{germanFN} \cite{Vosoughi}.\newline 
+With social media, people are no longer just passive consumers of news media but are actively involved in its production and sharing. While social media has led to a range of advantages by improving access to diverse views, it has also made it easier for misinformation to spread and persist \cite{qiu2017limited}. In a recent study in Nature, Vosoughi et al. \cite{Vosoughi} showed that false news spreads faster and further than true news. In Science, Lazer et al. \cite{lazer2018science} proposed two ways to address the spread of misinformation---empowering individuals and platform-level detection and intervention. \newline
 
-The lack of resources that attempt to minimise the spread of misinformation can be attributed to the expert-level knowledge required to determine the credibility of information since a variety of factors such as the actual information, information sources, conflicts of interest and writing style of the article must be evaluated to be able to determine its quality and credibility. This issue is further exacerbated in specific domains such as for health-related content, as the spread of misinformation can have a detrimental effect on people and their communities that don't have access to these kinds of limited resources. \newline
+Misinformation detection is a major challenge. Evaluating the credibility of information presented online often requires specific expertise and is resource-intensive. If we need to rely on expert appraisal to detect misinformation as it appears, it would be impossible to keep up. This is especially important for health information, where the spread of misinformation can have a detrimental effect on people and their communities that do not have access to these kinds of limited resources. \newline
 
 Thus, by developing a method that is capable of automatically assessing the quality and credibility of an article - various methods that intervene between an article and a user can then be developed to minimise the spread and effects of misinformation as the reliance on expert-level knowledge is no longer present.
 
@@ -296,13 +302,13 @@ To have the capability of automating the process of evaluating the quality or cr
 \subsubsection{DISCERN}
 \label{sec:DISCERN}
 
-DISCERN \cite{DISCERN} is a questionnaire designed to assess the reliability of a publication, it consists of 16 questions each with a Likert scale, ranging from 1 (no) to 5 (yes) and is divided into 3 sections. The first section (questions 1 - 8) investigate the reliability of the information and is comprised of questions such as "Are the aims clear?", "Is it balanced and unbiased?" and "Does it refer to areas of uncertainty?". The second section (questions 9 - 15) assesses the quality of information provided by the publication for treatment choices and is composed of questions such as "Does it describe the risks/benefits of each treatment?" and "Does it provide support for shared decision-making?". The final section (question 16) assesses the overall rating of the publication ("Based on the answers to all of the above questions, rate the overall quality of the publication as a source of information about treatment choices").
+DISCERN \cite{DISCERN} is a questionnaire designed to assess the reliability of a publication, it consists of 16 questions each with a Likert scale, ranging from 1 (no) to 5 (yes) and is divided into 3 sections. The first section (questions 1 - 8) investigate the reliability of the information and is comprised of questions such as `Are the aims clear?', `Is it balanced and unbiased?' and `Does it refer to areas of uncertainty?'. The second section (questions 9 - 15) assesses the quality of information provided by the publication for treatment choices and is composed of questions such as `Does it describe the risks/benefits of each treatment?' and `Does it provide support for shared decision-making?'. The final section (question 16) assesses the overall rating of the publication (`Based on the answers to all of the above questions, rate the overall quality of the publication as a source of information about treatment choices').
 
 
 \subsubsection{HealthNewsReview}
 \label{sec:HealthNewsReview}
 
-HealthNewsReview \cite{HealthNewsReview} provides a set of 10 criteria designed to act as a framework for evaluating the credibility of health-related media. The criteria is based on the various elements that all health-related media should consist of, the criteria is composed of criterion such as "Does the story compare the new approach with existing alternatives?", "Does the story use independent sources and identify conflicts of interest?" and "Does the story appear to rely solely or largely on a news release?".
+HealthNewsReview \cite{HealthNewsReview} provides a set of 10 criteria designed to act as a framework for evaluating the credibility of health-related media. The criteria is based on the various elements that all health-related media should consist of, the criteria is composed of criterion such as `Does the story compare the new approach with existing alternatives?', `Does the story use independent sources and identify conflicts of interest?' and `Does the story appear to rely solely or largely on a news release?'.
 
 \subsubsection{QIMR}
 \label{sec:QIMR}
@@ -374,7 +380,7 @@ Consider the illustration shown in Figure \ref{fig:SVMExample} that presents thr
 	\label{fig:SVMExample}
 \end{figure}
 
-This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this isn't true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
+This technique of determining the hyperplane requires that the two classes are linearly separable. In situations where this is not true, the kernel trick \cite{aizerman67theoretical} is applied which is essentially a function that maps data in a particular representation space to another representation space of a different dimension. This change in dimensionality can allow the classes to become linearly separable and thus a hyperplane can then be constructed that separates each class as illustrated in Figure \ref{fig:KernelTrick}.
 
 \begin{figure}[H]
 	\centering
@@ -396,7 +402,7 @@ For the task of text classification, there are commonly used, open datasets for 
 
 RNNs and LSTMs are commonly used for document classification, or NLP tasks in general, due to their ability to create language models that are able to capture the context and relationships of words within documents over long distances and represent this information at a much more sophisticated level when compared to traditional language models such as TF-IDF or n-grams \cite{Young}. \newline
  
-RNNs have had widespread use in solving NLP-related tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. Consequently, RNNs are capable of creating language models that account for the semantic meaning of words based on the previously occurring words in the sentence, allowing models to be capable of understanding the difference between similar words or phrases (e.g. that the word "dog" is likely referring to the animal whereas "hot dog" would be more likely to refer to food). Accounting for RNNs' capability in handling variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in classification tasks such as sentiment, question and topic classification \cite{Howard2018}.\newline
+RNNs have had widespread use in solving NLP-related tasks due to their ability in capturing the sequential nature of text at the character, word or sentence level. Consequently, RNNs are capable of creating language models that account for the semantic meaning of words based on the previously occurring words in the sentence, allowing models to be capable of understanding the difference between similar words or phrases (e.g. that the word `dog' is likely referring to the animal whereas `hot dog' would be more likely to refer to food). Accounting for RNNs' capability in handling variable length inputs (e.g. long sentences, paragraphs or documents), they have shown to produce state-of-the-art results in classification tasks such as sentiment, question and topic classification \cite{Howard2018}.\newline
 
 The simplest form of an RNN, as illustrated in Figure \ref{fig:RNN}, consists of three layers: the input layer $x_t$, hidden state $s_t$ and the output layer $o_t$, where $t$ represents the current timestep. The input layer is typically represented as a one-hot encoding or embedding, the output layer is the resulting output which can take many forms, most commonly, it is the output of the softmax function and the hidden state is essentially the memory of the network as it captures and incorporates the information from previous timesteps into the current one. The hidden state is calculated by evaluating Equation \ref{eq:HiddenState}:
 
@@ -429,7 +435,7 @@ In the context of text classification, a typical CNN is composed of the followin
 	\item Nonlinear activation function - Such as a ReLU function applied to the results to output a prediction.
 \end{itemize}
 
-By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they don't require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
+By stacking the kernels and pooling layers, deep CNNs can be constructed which can automatically capture an abstract and rich representation of the information \cite{Young}. These representations are considered to be efficient when compared to traditional representation methods (e.g. n-grams) as they do not require the storage of the entire vocabulary and is not as computationally intensive. CNNs are also more computationally efficient when compared to RNNs and LSTMs, CNNs typically require larger amounts of data in order to produce competitive results against its RNN and LSTM counterparts due to the higher number of trainable parameters that CNNs have. Another limitation of CNNs is their inability to model long-distance relationships and preserving the sequential nature of text within its representations.
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
@@ -449,7 +455,7 @@ The proposed method involves the use of an inductive learning technique \cite{Pa
 	\item Adapt the high-level representations of the classifier that uses the language model, while preserving the low-level representations, using gradual unfreezing \cite{Howard2018}
 \end{enumerate}
 
-Whilst transfer learning is useful to train models for non-standard tasks where access to data is limited, it is also an optimisation technique, using previously acquired knowledge, to save time or improve model performance \cite{Pan2009}. This potential performance improvement is illustrated in Figure \ref{fig:TransferLearning} and is also demonstrated by Howard et al. \cite{Howard2018} for common text classification tasks such as question, topic  classification and sentiment analysis.
+Whilst transfer learning is useful to train models for non-standard tasks where access to data is limited, it is also an optimisation technique, using previously acquired knowledge, to save time by providing an initial boost to the model's performance reducing the total amount of training time required \cite{Pan2009}. This potential performance improvement is illustrated in Figure \ref{fig:TransferLearning} and is also demonstrated by Howard et al. \cite{Howard2018} for common text classification tasks such as question, topic  classification and sentiment analysis.
 
 \begin{figure}[H]
 	\centering
@@ -458,13 +464,12 @@ Whilst transfer learning is useful to train models for non-standard tasks where 
 	\label{fig:TransferLearning}
 \end{figure}
 
-\section{Discussion}
-\label{sec:LitReviewDiscussion}
 
-\subsection{Scaling the Assessment of Quality and Credibility of Health Information}
+\section{Scaling the Assessment of Quality and Credibility of Health Information}
 \label{sec:ScalingAssessment}
 
-Among the studies that aim to assess the credibility and quality of information, the limited amount of articles that were evaluated was a common theme \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}. This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of online content. Due to the capabilities of deep learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles as they have shown the ability to develop high-level representations of the language and be able to differentiate between credible and misinformed articles.
+The limited amount of articles that were evaluated was a common theme among the studies that aim to assess the credibility and quality of information \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}.
+This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of the production and propagation of online content. Due to the capabilities of machine learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles on a large scale as models, such as deep learning models, have shown the ability to develop high-level representations of language which can then be leveraged to be able to differentiate between credible and misinformed articles.
 
 
 \chapter{Methods}
@@ -473,13 +478,13 @@ Among the studies that aim to assess the credibility and quality of information,
 \section{Approach}
 \label{sec:Approach}
 
-To achieve the overarching goal of this project which, as discussed in Section \ref{sec:Aims}, is to evaluate the performance of automation techniques, specifically, using deep learning models to automate the resource intensive task of determining the credibility of online articles, the task must be framed in a way that can be used by the models in order to be evaluated. \newline
+Through a review of the relevant literature, we found that there is value in being able to appraise the credibility of online health information for use in tools that could help limit the spread of misinformation. However, it is a challenge to apply credibility appraisal tools at scale because the process is time-consuming and often requires a certain level of expertise to use. Tools for automating this task are therefore likely to be of value but to date most research in the area simply aims to label fake news or uses heuristics to identify misinformation available online. In this chapter, I describe the approach I used to address this challenge using machine learning to train classifiers capable of predicting whether an online article meets a set of credibility criteria.\newline
 
-This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework. Details on the procurement process and the framework used to evaluate an article's credibility is outlined in Section \ref{sec:StudyData}. \newline
+This involved obtaining training and testing data consisting of online vaccine-related articles along with its associated credibility that were manually determined by a team of health professionals using a pre-existing framework (Section \ref{sec:StudyData}). \newline
 
-Once the dataset was created, a set of baseline models were implemented in order to have a baseline reference for the performance of the deep learning model. The baseline reference models comprised of the performance of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation methods and the state-of-the-art text classifier FastText. The implementation details of the baseline models and the implemented deep learning model is further discussed under Section \ref{sec:SystemModel}. \newline
+Once the dataset was created, a set of machine learning and deep learning models were implemented (Section \ref{sec:SystemModel}). The machine learning models comprised of the implementation of widely used text classifiers, Naive Bayes (NB) and Support Vector Machines (SVMs), in combination with a variety of textual representation methods. The deep learning model involved the construction of a Quasi-Recurrent Neural Network (QRNN) in conjunction with a fine-tuned language model (LM). \newline
 
-Section \ref{sec:Experiments} then outlines the comparison and analysis methodology for the performance of the deep learning model against the baseline implementations based on its ability to correctly predict the label for each criteria and other factors with regards to its feasibility in deploying the model for a real-world application.
+The models are then analysed and evaluated on their feasibility for real-world use based on their ability to correctly predict the label for each criteria and other factors such as the training time of the models and their storage requirements (Section \ref{sec:Experiments}).
 
 \section{Study Data}
 \label{sec:StudyData}
@@ -487,39 +492,70 @@ Section \ref{sec:Experiments} then outlines the comparison and analysis methodol
 \subsection{Dataset}
 \label{sec:Dataset}
 
-For the purposes of training and evaluating the performance of the baseline and deep learning models for this non-standard classification task, a dataset consisting of 3.5K unlabelled and manually labelled articles vaccine-related articles have been procured. \textit{\textbf{Insert that stuff Adam talked about in email feedback}}. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, the articles within the dataset were manually labelled by the team that developed the credibility criteria which will be discussed in Section \ref{sec:CredibilityCriteria}.\newline
+I obtained a set of vaccine-related online articles via the URLs included in a set of 6.59 million Twitter posts (tweets) from 1.86 million Twitter users collected between January 2017 and March 2018. There were 1.27 million unique URLs included in the set of tweets. A majority of the URLs led to web pages that could not be used as they were either broken or were links to other social media posts and YouTube videos. After removing web pages that could not be used in the analysis, I finally included a set of 3,348 vaccine-related online articles (the corpus). The content of the set of online articles included in the corpus ranged from descriptions of recent research to discussions (Figure \ref{fig:ArticleExample}). \newline
 
-The articles used during the labelling process were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the articles that have been collected and labelled are the ones being shared and discussed online. Once labelled, the article's credibility is then quantified using a credibility score which is equivalent to the total number of criteria satisfied by the article.
+\begin{figure}
+	\begin{framed}
+	\begin{quotation}
+		Thousands of parents describe their children as ‘fine’ one day, then their children suddenly develop autism (a neurological regression) after vaccines.\newline
+		
+		What does the science say? It agrees... \newline
+				
+		But first let’s go through the numbers. The increase in autism cases in the last three decades is truly shocking. Before the 1980s, autism was so rare, it was not even tracked. Remember the eye-opening movie RainMan with Dustin Hoffman? Before that movie came out in the early 1980s, many had no idea what autism was.\newline
+		
+		At that time, statistics put the rate of autism at 1 in every 8,000 children. By the mid-1990s, it was around 1 in 1000 children, but by the mid-2000s, it had risen to 1 in 250. The epidemic has continued and in 2017, the US National Center for Health Statistics just released the latest rate: 1 in every 36 children now have autism (link to report here). These skyrocketing rates clearly prove there is a true epidemic of autism in the United States.\newline
+		
+		So what is autism? Autism is brain damage caused by brain inflammation, which can be triggered by the heavy metals used as adjuvants (aka ingredients) in vaccines. Just as thousands of parents saw firsthand with their own children. Read some of these stories here.\newline
+		
+		Doctors usually try to deny any responsibility and connection to the vaccines they gave by saying “Autism is genetic.” But autism is even listed as a possible reaction (or side effect) of vaccines on some of the vaccine inserts. Unfortunately, doctors rarely see these inserts, favoring the pharmaceutical marketing sheets over real science.\newline
+		
+		So let’s get to that real science — the type that is NOT funded by the pharmaceutical industry that wants to sell vaccines and then the prescription drugs that these children are on to control the symptoms of autism, an issue possibly caused by the vaccines.\newline
+		
+		
+	\end{quotation}
+	\end{framed}
+	\caption{Excerpt from a low credibility vaccine-related online article \cite{AutismVaccine}.}
+	\label{fig:ArticleExample}
+\end{figure}
 
-\subsection{Credibility Criteria}
+The articles included in the corpus were collected by selectively accessing the extracted URLs embedded within tweets that contained specific keywords related to vaccination on Twitter. This was done to ensure that the articles used represented, to some degree, the articles that are most likely to contribute to the effects of the propagation of misinformation as the articles that have been collected and labelled are the ones being shared and discussed online. \newline
+
+
+
+
+\subsection{Credibility Criteria and Appraisal}
 \label{sec:CredibilityCriteria}
-The seven criteria defined in Table \ref{table:Criteria} was developed by a team of three health professionals for a separate and unpublished research project. This set of criteria will be used to define the structure and content that a vaccine-related health article must have in order to be considered as a credible source of information. The development and selection of the criteria was largely inspired by the tools and checklists discussed in Section \ref{sec:AssessingInformation} which has been adapted specifically for the evaluation of online articles pertaining to vaccines. Prior to creating the dataset for this project, a small pilot experiment was conducted by the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced. The pilot experiment involved each team member manually labelling the same set of \textbf{\textit{200 hundred billion}} articles after which each member's labels were compared and adjustments to the criteria were applied if a particular criteria was susceptible to inconsistent labelling.
+The credibility criteria were developed by a team of three researchers from the Centre for Health Informatics as part of a separate project funded by the National Health \& Medical Research Council. The seven criteria describe a set of desirable characteristics for online health information (Table \ref{table:Criteria}). The development of the criteria was based on a set of existing tools and checklists (see Section 2.1), which was adapted by the researchers to be applicable to online articles about vaccination. \newline
+
+Prior to creating the dataset for this project, a small pilot experiment was conducted by the team that developed the criteria to ensure that the simplicity and objectivity of each criteria allowed for consistent and reliable labels to be produced. In the pilot test of the credibility criteria, each of the three researchers manually and independently labelled the same set of 30 online articles. The team then measured how well their answers matched, resolving differences by discussion, and updating the definitions of the criteria to improve the consistency. \newline
 
 
+The final tool used by the three investigators included seven criteria, which were inspired and derived from existing checklist-based tools and designed specifically for use with vaccine-related online articles (Table 3.1). They then used the tool to manually assess an additional 470 articles; for each article, the investigators labelled whether the article satisfied each of the individual criteria. Once labelled, the article's credibility was then aggregated to a credibility score which is defined by the number of criteria that were satisfied. Due to the infeasibility of developing the expert-level knowledge and skill set required to manually label the articles given the time constraints of this project, I did not participate in this labelling process.\newline
 
-\subsection{Study Data Limitations}
-\label{sec:StudyDataLimitations}
-Because of the selective collection process for the articles, the procured dataset has become susceptible to sampling bias as it placed a higher priority on collecting articles that were discussed and shared rather than creating a collection of articles that showed a representative distribution of the credibility of vaccine-related articles published and available online. Effects of the biased sampling methods is illustrated in Figure \ref{fig:LabelDistribution} which shows that, for the majority of the categories, the articles collected are highly skewed to either satisfy or fail to satisfy a specific criteria. However, other factors such as the varying difficulty to satisfy a specific criteria also affect the imbalance of the label distribution.
+
+When sampling articles, we expected to find relatively few high credibility articles, so the team over-sampled from the subset of articles that were directly linked to research literature. To do this, we used Altmetric, an organisation that provides access to information about how often research articles are mentioned in online media. As a consequence, the proportion of online articles that met the first criterion (identifying the source of evidence) was higher than might be expected from a random sample (Figure \ref{fig:LabelDistribution}). Relatively few articles satisfied criterion 3 or criterion 7, while most articles satisfied criterion 4 and criterion 6. Overall, the resulting data were relatively unbalanced, which has implications in relation to the training of classifiers, as discussed in Chapter \ref{chap:Results}.
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[totalheight=6cm]{images/label-distribution.png}
-	\caption{Distribution of labels amongst the collected articles.}
+	\includegraphics[totalheight=7cm]{images/label-distribution.png}
+	\caption{Distribution of labels amongst the expert-labelled articles.}
 	\label{fig:LabelDistribution}
 \end{figure}
 
-This also highlights an issue in regards to the quantification of an article's credibility. Since the credibility score of an article is defined to be the total number of criteria that the article satisfies which implies that the weighting, or contribution, of each criteria are equivalent in making the article a more credible source. However, this is not reflective of the credibility criteria as the difficulty in satisfying a specific criteria, or its contribution in making an article more credible varies between each one. This causes the credibility score of an article to be biased towards credibility scores that have the highest number of combinations as shown in Figure \ref{fig:ArticleDistribution} making it difficult to differentiate and rank articles that achieved similar scores by satisfying different combinations of the credibility criteria.
+
+I then aggregated the total number of criteria met by an aritcle to produce a credibility score for each of the 470 documents, which produces a score that may take any integer value between 0 and 7. Partly because of the way the online articles were sampled for expert labelling, the credibility scores for the expert-labelled set were unevenly distributed. The largest proportion of the expert-labelled articles received a credibility score of 4; only 14 and 4 articles received a credibility score of 0 and 7, respectively (Figure \ref{fig:ArticleDistribution}).
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[totalheight=6.5cm]{images/article-score-distribution.png}
-	\caption{Distribution of article scores amongst the manually labelled articles.}
+	\includegraphics[totalheight=7cm]{images/article-score-distribution.png}
+	\caption{Distribution of article scores amongst the expert-labelled articles.}
 	\label{fig:ArticleDistribution}
 \end{figure}
 
 \begin{table}[H]
 	\centering
+	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|p{0.3cm}|p{5cm}|p{10cm}|}
 		\hline
 		\# & Criteria                                                                           & Description                                                                                                                                                                                                                                                                                                                                                             \\
@@ -542,7 +578,7 @@ This also highlights an issue in regards to the quantification of an article's c
 		7  & Is transparent about sponsorship and funding. & Score 1 if the article:\newline - Clearly distinguishes content intended to promote or sell a product from service from educational and scientific content\newline - Discloses sources of funding for the organisation/website
 		\\
 		\hline                                                                    
-	\end{tabular}
+	\end{tabular}}
 	\caption{Credibility Criteria}
 	\label{table:Criteria}
 \end{table}
@@ -555,355 +591,635 @@ This also highlights an issue in regards to the quantification of an article's c
 \subsection{Preprocessing}
 \label{sec:ModelPreprocessing}
 
-Preprocessing of the unlabelled and expert-labelled articles of the dataset to obtain its raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria. Once the unstructured article text was obtained, it was transformed into a structured representation via tokenising each article by sentences that consisted of unigrams. The entire process was ensured to be general and simple as the various features that have been implemented and tested would require various kinds of transformations as explained in further detail under their respective section in Section \ref{sec:ModelFeatureSelection}.
+Preprocessing of the unlabelled and expert-labelled articles of the dataset to obtain its raw article text was performed by removing the superfluous content from the web-scraped pages such as the HTML, CSS and JavaScript elements. They were removed as they were deemed to have no contribution to the credibility of the article's content with regards to the credibility criteria. Once the unstructured article text was obtained, it was transformed into a more functional representation via tokenising each article into sentences that consisted of unigrams (Figure \ref{fig:PreprocessingExample}). The steps involved in the preprocessing were designed to produce a standard set of documents that could then be used consistently across each of the approaches to constructing features (detailed in Section 3.3.2).
 
-\subsection{Feature Selection}
-\label{sec:ModelFeatureSelection}
+\begin{figure}[H]
+
+	\includegraphics[width=16cm]{images/Preprocessing-example.png}
+	\caption{Example process of preprocessing phase showing the original HTML format (left), removal of superfluous content (middle) and the restructuring into a more standardised representation for feature construction (right).}
+	\label{fig:PreprocessingExample}
+\end{figure}
+
+\subsection{Feature Construction}
+\label{sec:ModelFeatureConstruction}
+
+In document classification tasks, the way document text is transformed into a set of features can have a substantial impact on the overall performance. Traditional approaches to feature representation include simple methods that take the words from a corpus and assign values to them; for example, based on the frequency with which they occur in the text. More sophisticated methods are able to transform document text into multi-dimensional vector representations that captures information such as the similarity between words or the context in which a word is used in.
 
 
 
 \subsubsection{Bag of Words}
 \label{sec:FeatureSelectionBoW}
-Two n-gram BoW variants, a unigram and bigram BoW model, was constructed using the expert-labelled articles both of which were limited to a maximum of 20K n-grams. Similar BoW models were also constructed for different n-gram amounts, specifically, BoW models for 5K and 10K n-grams were also tested. Common English stopwords such as 'the', 'is' and 'are' listed in NLTK's English stopwords corpus \cite{Bird2009} were removed from the unigram BoW model but remained for the bigram BoW model.
+Two unigram BoW model variants were constructed using the expert-labelled articles; both of which were limited to a maximum of 20,000 n-grams. Identical BoW models were also constructed for different maximum unigram amounts, specifically, BoW models for 5,000 and 10,000 unigrams were also tested. The first BoW model included all of the words that appeared within the articles. The second BoW model was constructed by removing common English stopwords such as `the', `is' and `are' listed in NLTK's English stopwords corpus \cite{Bird2009}.
 
 \subsubsection{Term Frequency - Inverse Document Frequency}
 \label{sec:FeatureSelectionTFIDF}
-TF-IDF scores of the unigrams extracted from the expert-labelled articles which were limited to the top 10K scores were calculated and used for evaluation. The top 10K TF-IDF scores consisted of scores for unigrams that appeared in at least two expert-labelled articles with no maximum occurrence limit.
+TF-IDF scores of the unigrams extracted from the expert-labelled articles which were limited to the top 20,000 scores were calculated and used for evaluation. Two sets of scores were used for evaluation, the first set of scores was calculated with the inclusion of all words in the expert-labelled articles and the second set of scores was calculated with the removal of stopwords.
 
 \subsubsection{GloVe}
 \label{sec:FeatureSelectionGloVe}
 
-A pre-trained GloVe vector \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was achieved by using the mean value of each word's vector representation. The GloVe vector used was trained on six billion tokens, with a vocabulary size of 400K and a has dimensionality of 300.
+A pre-trained global vector (GloVe) \cite{pennington2014glove} was also used for the evaluation of the ML-based models. This was accomplished by using the mean value of each word's vector representation. The GloVe vector used was trained on 6 billion tokens, with a vocabulary size of 400,000 and a has dimensionality of 300.
 
 \subsubsection{Language Models}
 \label{sec:FeatureSelectionLM}
 
-A non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same hyperparameter settings and training scheme outlined in \cite{bradbury2016quasi} on the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of 28K Wikipedia articles that meet either the 'Good' or 'Featured' article criteria \cite{Merity2016}. \newline
+A general, non-domain specific language model (LM) was constructed for evaluating the DL-based model. This was achieved by training a Quasi-Recurrent Neural Network (QRNN) using the same architecture, hyperparameter settings and training scheme described by Bradbury et al. \cite{bradbury2016quasi} using the Wikitext-103 corpus. Wikitext-103 is a corpus consisting of approximately 28,000 Wikipedia articles that meet either the `Good' or `Featured' article criteria \cite{Merity2016}. \newline
 
-The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the 3.5K unlabelled articles from the dataset in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing} sans the removal of webpage elements. 
+The LM was then fine-tuned using the techniques proposed by Howard et al. \cite{Howard2018} by using the 2,878 unlabelled articles from the corpus in order to learn the task-specific features for classification. The Wikipedia articles used to create the non-domain specific LM also underwent the same preprocessing process described in Section \ref{sec:ModelPreprocessing}, except for the removal of webpage elements, which was unnecessary.
 
-
-
-\subsection{Model Selection}
+\subsection{Model Construction}
 \label{sec:ModelSelection}
 
-For the software used to implement the models, the machine learning-based models were implemented using scikit-learn, an open source machine learning library in Python \cite{scikit-learn}. The QRNN model for the language model and classifier was implemented using PyTorch \cite{paszke2017automatic} and the open-source software developed by Bradbury et al. \cite{bradbury2016quasi}. 
+In the context of this section, a model refers to the combination of a feature and classifier. The following sections detail the implementation process of the classifiers and the features used in conjunction to create the various models.
+For the software used to implement the models, the NB and SVM models were implemented using scikit-learn, an open source machine learning library in Python \cite{scikit-learn}. The QRNN model which utilised the LM and QRNN classifier was implemented using PyTorch \cite{paszke2017automatic} and the open-source software developed by Bradbury et al. \cite{bradbury2016quasi} and Howard et al. \cite{Howard2018}. 
 
 \subsubsection{Naive Bayes}
 \label{sec:ModelNB}
 
-A multinomial NB classifier was used for evaluation, based on the reasoning discussed in Section \ref{sec:NaiveBayes}. A total of seven classifiers, one for each credibility criteria, was constructed whose hyperparameters were optimised via grid search and evaluated using 10-fold cross-validation. The optimal hyperparameters for all classifier were identical with an alpha value of 1.0, with fit prior set to true and no class prior. 
+A multinomial Naive Bayes (NB) classifier was used for evaluation, based on the reasoning discussed in Section \ref{sec:NaiveBayes}. Along with the 3 types of features (BoW, TF-IDF and GloVe) and their variants (inclusion/exclusion of stopwords) used in conjunction with the NB classifier, a total of 35 NB models (7 criteria $\times$ 5 features evaluated) were developed (Figure \ref{fig:MLModels}). The hyperparameter values were optimised via grid search and evaluated using 10-fold cross-validation. 
 
 \subsubsection{Support Vector Machine}
 \label{sec:ModelSVM}
 
-A linear support vector classifier (linear SVC), an SVM with a linear kernel, was used for evaluation. Similar to Naive Bayes, a classifier was trained for each criteria and the hyperparameter values were optimised and evaluated using grid search and 10-fold cross-validation respectively. Whilst the resulting grid search for each classifier returned varying results for the optimal hyperparameter values, the results reported in Section \ref{sec:BaselineResults} used the same hyperparameter values for all classifiers. This was due to the performance of each classifier having similar results and remaining within the standard deviation of each other.  
+A linear support vector classifier (linear SVC), an SVM with a linear kernel, was used for evaluation. Similar to the implementation of the NB models, a classifier was trained for each criteria with the same set of features totalling 35 SVM models. The hyperparameter values were also optimised and evaluated using grid search and 10-fold cross-validation.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=6cm]{images/ml-models.png}
+	\caption{Overview of the NB and SVM models implemented.}
+	\label{fig:MLModels}
+\end{figure}
 
 \subsubsection{Quasi-Recurrent Neural Network}
 \label{sec:ModelQRNN}
 
-In addition to using a QRNN for constructing the fine-tuned LM, another variant was implemented as a classifier. The architecture of the model was adapted from the classifier that Bradbury et al. \cite{bradbury2016quasi} used for sentiment classification. From this model, the number of units within each layer was increased to 2500 and the embedding size was changed to 150. The model was trained for up to 20 epochs with a batch size of 100, however the model began to converge after only 5 epochs. In contrast to the ML-based classifiers, only a single QRNN was used to predict the correct label for each criteria via a softmax applied to the output layer.
+In addition to using a QRNN for constructing the fine-tuned and general LM, another variant was implemented as a classifier. The architecture for the classifier was adapted from the experiments conducted by Bradbury et al. \cite{bradbury2016quasi} for sentiment classification. From this model, the number of units within each layer was increased to 2500 and the embedding size was changed to 150. The model was trained for up to 20 epochs with a batch size of 100, however the model began to converge after only 5 epochs. In contrast to the NB and SVM models, 21 QRNN models (7 classifier $\times$ 3 LM variants) were created (Figure \ref{fig:DLModels}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=5.6cm]{images/dl-models.png}
+	\caption{Overview of the QRNN models implemented.}
+	\label{fig:DLModels}
+\end{figure}
 
 \section{Experiments}
 \label{sec:Experiments}
 
-Considering the context of this project, other factors such as the size of the model and its training speed must be considered in addition to its performance on correctly producing the correct labels to determine the feasibility of deploying the model for a real-world application. 
+Considering the context of this project and its overarching goal, other factors such as the size of the model and its training speed must be considered in addition to its capability on correctly producing the correct labels to determine the feasibility of deploying the model for a real-world application. 
 
-\subsection{Accuracy}
-\label{sec:AccuracyExperiments}
+\subsection{Performance}
+\label{sec:PerformanceExperiments}
 
 Two experiments have been conducted to evaluate the performance of a model. The credibility classification experiment is designed to determine the model's ability to produce the correct label on a criteria-level allowing for a more detailed insight on the reasoning for a particular article's credibility score. Whereas the low credibility identification experiment is designed to determine the model's ability to correctly determine whether an article is considered to have low credibility or not for situations where the detailed insight is not required.
 
 \subsubsection{Credibility Classification Experiment}
 \label{sec:CredibilityClassificationExperiment}
-The credibility classification experiment aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. For each criteria, the respective NB and SVM model is employed along with the QRNN model and is then evaluated by measuring the micro averaged f1-scores. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article.
+The credibility classification experiment is a set of binary classification tasks which aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. 
+For each criteria, the respective NB, SVM and QRNN models produces a prediction on whether the article satisfies the criteria or not. The correctness of the model was then evaluated by measuring the micro averaged f1-scores, the harmonic mean of the precision and recall of a model's predictions via 10-fold cross-validation. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
 
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
-The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score $< 3$. The manually labelled articles are separated into two separate classes based on this condition and the best performing model, which was determined from the results of the credibility classification experiment, is then applied and evaluated using the resulting micro averaged f1-scores. 
+The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. \newline
+
+The classification of low credibility articles was then carried out following two methodologies. The first methodology involves the calculation of the article's credibility score via the classification of each criteria, resulting in a total of seven binary classification tasks. The second methodology utilises the separated expert-labelled articles to construct a new binary label consisting of the labels `High Credibility' for articles that had a credibility score greater than or equal to 3 and a `Low Credibility' label for articles with a credibility score of less than 3. This method results in only a single binary classification as the model is trained to classify an unseen article as one of the aforementioned labels rather than carrying out the classification of each credibility criteria.
 
 \subsection{Training}
 \label{sec:TrainingExperiments}
-The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will require to be constantly re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN classifiers and also  the creation of the LM. The reported training times in Section \ref{sec:TrainingTime} are for the best performing NB and SVM-based models, which were trained within a c5.2xlarge instance utilising all CPU cores. The reported training times for the QRNN classifier and LM were obtained using the P3 instances and utilising only a single K80 GPU.
+The training time for a model is another factor that must be considered when determining the feasibility of deploying and using a model on a real-world application. This is because the model will be required to constantly be re-trained when additional article samples are incorporated as the model encounters new and never before seen information. To ensure consistent results, Amazon Web Service's EC2 instances \cite{AWS} have been used to act as an isolated environment for timing the training of the NB, SVM, QRNN based models and also  the creation of the LM. The reported training times in Section \ref{sec:TrainingTime} are for the best performing NB and SVM-based models, which were trained within a c5.2xlarge instance utilising all CPU cores. The reported training times for the QRNN classifier and LM were obtained using the P3 instances and utilising only a single K80 GPU.
 
 
 \subsection{Storage}
 \label{sec:StorageExperiments}
-To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using pickle and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream is then recorded and reported in Section \ref{sec:StorageRequirements}.
+To minimise the frequency in which a model will have to be re-trained or re-created, storing the model for later use is required. Since the entire implementation was completed using Python, the Python module \textit{pickle} was used to store the models externally. Pickle serialises any Python object into a byte stream allowing a model to be persistently stored. The NB and SVM-based models were stored using \textit{pickle} and the size of the resulting byte stream was then measured. The QRNN classifier and LM were stored using PyTorch's inbuilt save function, that acts as a wrapper over the \textit{pickle} module which provides storage optimisations for PyTorch objects. The resulting byte stream of the model is then recorded, measured and reported in Section \ref{sec:StorageRequirements}.
 
 
 
 \chapter{Results}
 \label{chap:Results}
 
-\textit{To justify the decision to treat each criteria as a set of binary classification tasks rather than a single multi-label classification task, experiments that compare the performance in terms of accuracy, speed, storage and training time for binary and multi-label classifiers will be conducted.}
+In this chapter I detail the results of the experiments described in the previous chapter. These are the results that come from testing the performance, training time, and storage requirements of the models in the classification task of predicting whether a document extracted from a web page satisfies each of the seven credibility criteria. The model include the proposed QRNN-based deep learning approach as well as models trained using NB and SVM methods.
+
+\section{Performance}
+\label{sec:AccuracyResults}
+\subsection{Credibility Classification}
+\label{sec:CredibilityClassificationResults}
 
 
-\section{Classification Performance}
-\label{sec:ClassificationPerformance}
-\subsection{Machine Learning Models}
-\label{sec:BaselineResults}
-\textbf{**REMEMBER TO RERUN EXPERIMENTS WHEN LABELLING IS COMPLETED**}
-- 
+\iffalse
+The performance of all 84 models were evaluated via the credibility classification experiment. Divided into the three main groups of models (NB, SVM and QRNN), the NB-based models (Table \ref{table:PerformanceResultsNB}) outperformed the SVM-based (Table \ref{table:PerformanceResultsSVM}) and QRNN-based models (Table \ref{table:PerformanceResultsQRNN}) overall with an aggregated average performance measure of 0.795, followed by SVM-based models with a measure of 0.780 and finally QRNN-based models with a measure of 0.397. Despite the NB-based models having performed better on average, the best performing model for labelling was the SVM-based, SVM + TF-IDF model with the stopwords removed from the article's text. \newline
+
+
+\fi
+
+I trained and tested the performance of NB and SVM classifiers in combination with two feature representations, BoW and TF-IDF, implementations of which as described in the prior chapter. For each criteria, all combinations of classifiers and feature representations was then trained to perform a binary classification task that aimed to predict whether a given article satisfied that criteria. This produced a combined total of 70 NB-based and SVM-based models. \newline
+
+The performance of the models varied considerably across all criteria (Table \ref{table:PerformanceResultsNBSVM}). When considering both the NB and SVM based approaches, the models had the most difficulty in classifying criteria 6 producing the lowest micro averaged f1-score of 0.71, with the best performing model for this criteria being an SVM classifier paired with TF-IDF (stopwords removed) who achieved a score of 0.77. The models were most successful in labelling criteria 3 which had a micro averaged f1-score of 0.85 with the top performing model being a tie between the NB and SVM classifier paired with BoW (stopwords) with a score of 0.90. \newline
+
+Across all criteria, the SVM with TF-IDF (stopwords removed) was the best-performing of the models, followed by the NB classifier using BoW with stopwords removed. \newline
+
+The performance of the models may have highly been influenced by the unbalanced nature of the training data as the measured scores are proportionate to the imbalance of the label. This is most evident in the model performance for criteria 3, the most imbalanced label as shown in Figure \ref{fig:LabelDistribution}, where the models had the highest success in classifying. \newline
+
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
-		\hline
-		Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline
-		NB + BoW  & 0.79 \newline ($\pm$ 0.16) & 0.70 \newline ($\pm$ 0.12) & 0.86 \newline ($\pm$ 0.07) & 0.84 \newline ($\pm$ 0.13) & 0.79 \newline ($\pm$ 0.04)  & 0.75 \newline ($\pm$ 0.07)  & 0.82 \newline ($\pm$ 0.07)   \\
-		\hline
-		
-		SVM + BoW  & 0.82 \newline ($\pm$ 0.7) & 0.70 \newline ($\pm$ 0.02) & 0.86 \newline ($\pm$ 0.03) & 0.80 \newline ($\pm$ 0.03) & 0.68 \newline ($\pm$ 0.07)  & 0.75 \newline ($\pm$ 0.7)  & 0.86 \newline ($\pm$ 0.05)                                                                                                                                             \\
-		\hline                                                                                                                                                                                                                
-				
-		NB + TF-IDF  & 0.79 \newline ($\pm$ 0.06) & 0.74 \newline ($\pm$ 0.07) & 0.87 \newline ($\pm$ 0.07) & 0.80 \newline ($\pm$ 0.04) & 0.79 \newline ($\pm$ 0.04)  & 0.62 \newline ($\pm$ 0.04)  & 0.80 \newline ($\pm$ 0.04)  \\
-		\hline
-		
-		SVM + TF-IDF  & 0.80 \newline ($\pm$ 0.03) & 0.70 \newline ($\pm$ 0.02) & 0.84 \newline ($\pm$ 0.01) & 0.84 \newline ($\pm$ 0.05) & 0.80 \newline ($\pm$ 0.02)  & 0.68 \newline ($\pm$ 0.02)  & 0.82 \newline ($\pm$ 0.03)                                                                                                                                             \\
-		\hline                                                                                                                                              
-		
-		NB + GloVe  & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00) & 0.89 \newline ($\pm$ 0.00) & 0.82 \newline ($\pm$ 0.00) & 0.78 \newline ($\pm$ 0.00)  & 0.68 \newline ($\pm$ 0.00)   & 0.83 \newline ($\pm$ 0.01)  \\
-		\hline
-		
-		SVM + GloVe  & 0.60 \newline ($\pm$ 0.29) & 0.77 \newline ($\pm$ 0.00) & 0.63 \newline ($\pm$ 0.37) & 0.61 \newline ($\pm$ 0.31) & 0.59 \newline ($\pm$ 0.25)  & 0.67 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01)                                                                                                                                              \\
-		\hline                                                                
-		                                                                                                                                                                  
-	\end{tabular}
-	\caption{Micro averaged f1-Scores of baseline models}
-	\label{table:BaselineAccuracy}
+	\caption{Micro-averaged f1-Scores of the NB and SVM based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
+			
+			
+			\hline
+			
+			\textbf{Criteria} &  & \textbf{BoW \newline (all words)  }                                                                       & \textbf{BoW \newline (stopwords removed)} &\textbf{TF-IDF \newline (all words) }& \textbf{TF-IDF \newline (stopwords removed)} & \textbf{GloVe} \\
+			\hline
+			
+			\multirowcell{2}{\textbf{Criterion 1:} \\ \textbf{Use of evidence} } 
+			& NB & 0.79 & 0.85 & 0.79 & 0.79 & 0.82 \\ 
+			& SVM & 0.82 & 0.78 & 0.80 & \textbf{0.86} & 0.60 \\ 
+			\hline
+			
+			
+			\multirowcell{2}{\textbf{Criterion 2:} \\ \textbf{Based on objective research}} & NB & 0.70 & 0.79 & 0.74 & 0.80 & 0.78 \\ 
+			& SVM & 0.70 & 0.80 & 0.70 & \textbf{0.85} & 0.77 \\ 
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criterion 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
+			& NB & 0.86 & \textbf{0.90} & 0.87 & 0.89 & 0.89 \\ 
+			& SVM & 0.86 & \textbf{0.90} & 0.84 & 0.89 & 0.63 \\ & & & & & & \\ 
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criterion 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
+			& NB & 0.84 & 0.84 & 0.80 & 0.81 & 0.82 \\ 
+			& SVM & 0.80 & \textbf{0.87} & 0.84 & 0.86 & 0.61 \\ & & & & & & \\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criterion 5:} \\ \textbf{Balanced information}} 
+			& NB & 0.79 & \textbf{0.80} & 0.79 & 0.77 & 0.78 \\ 
+			& SVM & 0.68 & 0.78 & \textbf{0.80} & \textbf{0.80} & 0.59 \\
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criterion 6:} \\ \textbf{Simple Language}} & NB & 0.75 & 0.74 & 0.62 & 0.69 & 0.68 \\ 
+			& SVM & 0.75 & 0.72 & 0.68 & \textbf{0.77} & 0.67 \\
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criterion 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
+			& NB & 0.82 & 0.80 & 0.80 & 0.81 & 0.83 \\ 
+			& SVM & \textbf{0.86} & 0.81 & 0.82 & 0.82 & 0.81 \\ & & & & & & \\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Average} \textbf{Performance}} & NB & 0.792 & 0.820 & 0.773 & 0.794 & 0.800      \\ 
+			& SVM & 0.799 & 0.809 & 0.783 & \textbf{0.836} & 0.669      \\
+			\hline                                                                                                                                          
+	\end{tabular}}
+	\label{table:PerformanceResultsNBSVM}
 \end{table}
 
-\textit{The following are draft results for BoW/Tf-idf with stopwords removed}
+A similar approach was also taken for the QRNN classifiers, which were trained and tested in combination with two LM variants, a general LM and a fine-tuned LM, producing a total of 14 QRNN-based models. \newline
+
+The QRNN-based models performed poorer across all criteria compared to the other models (Table \ref{table:PerformanceResultsQRNN}), relative to the NB and SVM based models. The use of the fine-tuned LM with the QRNN classifier consistently reported an improved performance over the models that used the general language model for each criteria. \newline
+
+Using the best classifiers for each criteria, I found that it was possible to predict whether or not an online article satisfied each of the 7 credibility criteria. The results suggest that while it may not be feasible to robustly predict all of the individual criteria, the classifiers would be useful in predicting the credibility score, defined by the number of criteria satisfied. This idea is expanded on in the following experiment.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
-		\hline
-		Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline
-		NB + BoW  & 0.85 \newline ($\pm$ 0.06) &  0.79 \newline ($\pm$ 0.08)  & 0.90 \newline ($\pm$ 0.03)  &  0.84 \newline ($\pm$ 0.12)  &  0.80 \newline ($\pm$ 0.07)   &  0.74 \newline ($\pm$ 0.09)   &  0.80 \newline ($\pm$ 0.07)    \\
-		\hline
-		
-		SVM + BoW  &  0.78 \newline ($\pm$ 0.07)  &  0.80 \newline ($\pm$ 0.11)  & 0.90 \newline ($\pm$ 0.04)  &  0.87 \newline ($\pm$ 0.08)  & 0.78 \newline ($\pm$ 0.08)   &  0.72 \newline ($\pm$ 0.08)   &  0.81 \newline ($\pm$ 0.06)  \\
-		\hline                                                                                                                                                                                                                
-				
-		NB + TF-IDF  &  0.79 \newline ($\pm$ 0.01)  & 0.80 \newline ($\pm$ 0.02)  &  0.89 \newline ($\pm$ 0.00)  &  0.81 \newline ($\pm$ 0.02)  & 0.77 \newline ($\pm$ 0.01)   & 0.69 \newline ($\pm$ 0.02)   &  0.81 \newline ($\pm$ 0.02)   \\
-		\hline
-		
-		SVM + TF-IDF  &  0.86 \newline ($\pm$ 0.06)  & 0.85 \newline ($\pm$ 0.08)  & 0.89 \newline ($\pm$ 0.02)  &  0.86 \newline ($\pm$ 0.08)  &  0.80 \newline ($\pm$ 0.08)   & 0.77 \newline ($\pm$ 0.08)   & 0.82 \newline ($\pm$ 0.07)  \\
-		\hline                                                                                                                                                                                                                                                                                                                             
+	\caption{Micro-averaged f1-Scores of the QRNN-based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
+
+		\begin{tabular}{|p{6cm}|p{2cm}|p{3cm}|p{3.3cm}|}
+			
+			
+			\hline
+			
+			\textbf{Criteria} &  & \textbf{General LM}                                                                       & \textbf{Fine-tuned LM}  \\
+			\hline
+			
+			\multirowcell{2}{\textbf{Criterion 1:} \\ \textbf{Use of evidence} } & QRNN & 0.38 & \textbf{0.42} \\ 
+			&  & &\\ 
+			\hline
+			
+			
+			\multirowcell{2}{\textbf{Criterion 2:} \\ \textbf{Based on objective research}} 
+			& QRNN & 0.36 & \textbf{0.39} \\ 
+			&  & &\\ 
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criterion 3:} \\ \textbf{ Explains limitations and} \\ \textbf{uncertainties}} 
+			& QRNN & 0.41 & \textbf{0.44} \\ 
+			& & &\\ & & &\\ 
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criterion 4:} \\ \textbf{No sensationalist or} \\ \textbf{exaggerated language}} 
+			& QRNN & 0.37 & \textbf{0.40}\\ 
+			& & &\\ & & &\\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criterion 5:} \\ \textbf{Balanced information}} 
+			& QRNN & 0.36 & \textbf{0.41} \\ 
+			& & &\\
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Criterion 6:} \\ \textbf{Simple Language}} & QRNN & 0.38 & \textbf{0.41} \\ 
+			& & &\\
+			\hline 
+			
+			
+			\multirowcell{3}{\textbf{Criterion 7:} \\ \textbf{Statement of funding} \\ \textbf{or conflicts of interest}} 
+			& QRNN & 0.39 & \textbf{0.43} \\ 
+			& & &\\ & & &\\ 
+			\hline 
+			
+			
+			\multirowcell{2}{\textbf{Average} \textbf{Performance}} 
+			& QRNN & 0.379 & \textbf{0.414}      \\ 
+			& & &      \\
+			\hline                                                                                                                                          
 	\end{tabular}
-	\caption{Average micro f1-Scores of baseline models with stopwords removed}
-	\label{table:BaselineAccuracy}
+	\label{table:PerformanceResultsQRNN}
 \end{table}
 
-\textit{The following are draft results using tf-idf weighted w2v}
+
+\subsection{Low Credibility Identification}
+\label{sec:LowCredibilityIdentificationResults}
+
+I tested and evaluated three different approaches for constructing a model on the identifying low credibility articles. As described in Section \ref{sec:LowCredibilityIdentification} articles with a credibility score that is less than 3 are deemed to have low credibility. The three approaches are referred to as the single model approach, ensemble approach and binary classification approach. Where the single model and ensemble approach are variants of the first methodology described in Section \ref{sec:LowCredibilityIdentification} and the binary classification approach being the second.\newline
+
+\subsubsection{Single Model Approach}
+The the single model approach was implemented by utilising the overall best performing model i.e. the model with the highest average performance across Table \ref{table:PerformanceResultsNBSVM} and Table \ref{table:PerformanceResultsQRNN}. Thus, the model used to evaluate the single model approach will be SVM with TF-IDF scores (stopwords removed). \newline
+
+In contrast to the average performance of the model reported in Table \ref{table:PerformanceResultsNBSVM} having a micro-averaged f1-score of 0.836, it is more able to successfully perform this classification task, with an improvement in performance of 8.85\%. This is due to the increased leeway with regards to the condition for producing a correct classification as the model is only required to predict a credibility score between 0 to 2 for low credibility articles and 3 to 7 for high credibility articles. This makes it capable for a model to correctly classify an article as low credibility or high credibility even if each criteria was misclassified so as long as the resulting credibility score remains within the correct range. In the context of the purpose of this experiment however, this is a non-issue as an article that is assumed to have correctly been labelle as having low credibility without accounting which criteria the article failed to satisfy is still likely to contain misinformed content.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
-		\hline
-		Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline                                                                                                                                              
-		
-		NB + GloVe  & 0.78 \newline ($\pm$ 0.01) & 0.79 \newline ($\pm$ 0.00) & 0.90 \newline ($\pm$ 0.01) & 0.81 \newline ($\pm$ 0.01) & 0.77 \newline ($\pm$ 0.01)  & 0.68 \newline ($\pm$ 0.00)   & 0.81 \newline ($\pm$ 0.00)  \\
-		\hline
-		
-		SVM + GloVe  & 0.41 \newline ($\pm$ 0.27) & 0.40 \newline ($\pm$ 0.28) & 0.90 \newline ($\pm$ 0.01) & 0.60 \newline ($\pm$ 0.30) & 0.77 \newline ($\pm$ 0.01)  & 0.44 \newline ($\pm$ 0.17) & 0.60 \newline ($\pm$ 0.29)                                                                                                                                              \\
-		\hline
-		
-	\end{tabular}
-	\caption{w2v with tf-idf weights}
-	\label{table:w2vtfidf}
+	\caption{Performance of low credibility identification task via an ensemble approach.}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
+			\hline
+			
+			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro-averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
+			\hline                                                                                                                                              
+			SVM + \newline TF-IDF \newline (stopwords removed) & 0.91 & 0.91 & 0.91 & 0.70 & 1.89 \\
+			\hline
+			
+			
+			
+	\end{tabular}}
+
+	\label{table:SingleModelApproach}
 \end{table}
 
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[totalheight=6cm]{images/classifier-performance-figure-draft.jpg}
-	\caption{Effects of dataset size }
-	\label{fig:AccruracyFig}
+	\includegraphics[totalheight=7cm]{images/single-model-performance.png}
+	\caption{Confusion matrix of labels produced with the single model approach after 10-fold cross validation.}
+	\label{fig:SingleModelPerformance}
 \end{figure}
 
-\subsection{Deep Learning Model}
-\label{sec:DLModelPerformanceResults}
+\subsubsection{Ensemble Approach}
+The second method, referred to as the ensemble approach, which leverages the best performing models for each criteria (Table \ref{table:EnsembleModel}). The ensemble models produced the highest performance results of the three classifiers (Table \ref{table:EnsembleApproach}) with a micro-averaged f1-score of 0.91, an improvement of 7.82\% from its average performance.
 
-epochs = 5 \newline
-layers = 4 \newline
-units per layer = 2500 \newline
-batch size = 100 \newline
-embedding size = 150 \newline
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-		Language Model & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline       
-		
-		
-		PT Wiki  & 0.38 & 0.36 & 0.41 & 0.37 & 0.36  & 0.38  & 0.39  \\
+	\caption{Architecture of the ensemble model.}
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		PT + FT Wiki  & 0.42 & 0.39 & 0.44 & 0.40 & 0.41 & 0.41  & 0.43   \\
+		\textbf{Criteria} & \textbf{Model}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		
+		\textbf{Criterion 1}  & SVM + TF-IDF (stopwords removed)  \\
 		\hline
 		
-		PT Corpus  & 0.12 & 0.10 & 0.09 & 0.11 & 0.12  & 0.10 & 0.08\\
+		\textbf{Criterion 2} & SVM + TF-IDF (stopwords removed)  \\
 		\hline
 		
+		\textbf{Criterion 3} & SVM + BoW (stopwords removed) \\
+		\hline
 		
+		\textbf{Criterion 4} & SVM + BoW (stopwords removed) \\
+		\hline
 		
+		\textbf{Criterion 5}  & SVM + TF-IDF (stopwords removed)  \\
+		\hline
+		
+		\textbf{Criterion 6} & SVM + TF-IDF (stopwords removed)  \\
+		\hline
+		
+		\textbf{Criterion 7} & SVM + BoW (all words) \\
+		\hline
+		                                                   		
 	\end{tabular}
-	\caption{\textit{Best performing accuracy scores}}
-	\label{table:DLPerformance}
+	\label{table:EnsembleModel}
 \end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Performance of low credibility identification task via an ensemble approach.}
+	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
+		\hline
+
+		\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
+		\hline                                                                                                                                              
+		Ensemble & 0.91 & 0.91 & 0.91 & 0.71 & 1.98 \\
+		\hline
+		
+		
+		
+	\end{tabular}}
+
+	\label{table:EnsembleApproach}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=7cm]{images/ensemble-performance.png}
+	\caption{Performance of ensemble classifier after 10-fold cross validation.}
+	\label{fig:EnsemblePerformance}
+\end{figure}
+
+\subsubsection{Binary Classification Approach}
+\label{sec:BinaryApproachResults}
+
+\begin{table}[H]
+	\centering
+	\caption{Performance of low credibility identification task via a binary classification approach.}
+	\begin{tabular}{|p{2cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+			\hline
+			
+			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline f1-Score}                                                                                                                                                                                                                                                                                                                                    \\
+			\hline                                                                                                                                              
+			SVM + \newline TF-IDF \newline (stopwords removed) & 0.89 & 0.89 & 0.89 \\
+			\hline
+			
+			
+			
+	\end{tabular}
+
+	\label{table:BinaryApproach}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=7cm]{images/binary-performance.png}
+	\caption{Performance of binary classification approach after 10-fold cross validation.}
+	\label{fig:BinaryPerformance}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[totalheight=6cm]{images/binary-roc-curve.png}
+	\caption{Expected true positive and false positive rate of binary classification approach.}
+	\label{fig:BinaryPerformanceAUC}
+\end{figure}
+
+
 
 \section{Training Time}
 \label{sec:TrainingTime}
 
+The training times reported for each model includes the time required to perform the feature-specific preprocessing requirements in addition to the training time of the classifier itself. Information about training times can provide additional support for selecting one approach over others, especially in environments where ongoing training may be needed to update tools used in practice. Since the size and complexity in constructing count-based features such as BoW and TF-IDF (Table \ref{table:CountTrainingTime}), especially when limited to an upper bound, is relatively lower when compared to the construction of statistical-based features such as a language model (Table \ref{table:QRNNTrainingTime}) and relatively smaller than a pre-trained feature such as GloVe (Table \ref{table:PreTrainedTrainingTime}), it is expected that the training times for models that utilise the count-based features are lower.
+
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{3cm}|p{5.5cm}|}
+	\caption{Average training time of models using count-based features.}
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
-		Language Model & Epoch Completion (minutes)                                                                                                                                                                                                                                                                                                                                                    \\
+		
+		\textbf{Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
-		PT Wiki  & 271  \\
+		NB + BoW (all words)  & 5.20  \\
 		\hline
 		
-		PT + FT Wiki  & 292  \\
+		NB + BoW \newline (stopwords  removed)  & \textbf{4.86}  \\
 		\hline
 		
+		NB + TF-IDF \newline (all words) & 5.05 \\
+		\hline
+		
+		NB + TF-IDF \newline (stopwords removed) & 5.05 \\
+		\hline
+		
+		SVM + BoW  \newline (all words)  & 5.91  \\
+		\hline
+		
+		SVM + BoW \newline (stopwords removed)  & 4.87  \\
+		\hline
+		
+		SVM + TF-IDF \newline (all words) & 5.35 \\
+		\hline
+		
+		SVM + TF-IDF \newline (stopwords removed) & 5.58 \\
+		\hline                                                                                                                                           
+		
+	\end{tabular}
+	\label{table:CountTrainingTime}
+\end{table}
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Average training time of models using LMs.}	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{Model} & \textbf{Epoch Completion \newline (minutes)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		
+		QRNN + General LM  & \textbf{271}  \\
+		\hline
+		
+		QRNN + \newline Fine-tuned LM  & 292  \\
+		\hline
 		
 		
 	\end{tabular}
-	\caption{\textit{Insert Caption}}
-	\label{table:DLTrainingTime}
+	\label{table:QRNNTrainingTime}
 \end{table}
 
-\section{Storage Requirements}
+\begin{table}[H]
+	\centering
+	\caption{Average training time of models using pre-trained GloVe feature.}	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{Model} & \textbf{Training Time (seconds)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                           
+		
+		NB + GloVe & 3,628.82 \\
+		\hline     
+		
+		SVM + GloVe & \textbf{3,558.26} \\
+		\hline                                                                                                                                        
+		
+	\end{tabular}
+	\label{table:PreTrainedTrainingTime}
+\end{table}
+
+\section{Model Storage Requirements}
 \label{sec:StorageRequirements}
 
-\textit{This will probably be focusing the features used rather than the model itself}
+The reported sizes for each of the models are based on the model implmentations in Section \ref{sec:CredibilityClassificationResults}. Due to the model sizes staying relatively unchanged when trained for all criteria (e.g. The size of the NB + BoW (all words) model stayed practically unchanged when trained on each criteria), the aggregated model size of a given model trained on each criteria has been reported. \newline
 
-The performance listed along with the varying parameters of the baseline features will be obtained from the respective best performing classifier as identified in \ref{sec:ClassificationPerformance}
-
-\subsubsection{Bag Of Words}
-\label{sec:BoWStorageRequirements}
-
-\begin{table}[H]
-	
-	\begin{tabular}{|p{1.7cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-		Vocabulary Size & Storage Size (MB) & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline      
-		
-		5,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		10,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline 
-		
-		15,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline                                                                                                                                    
-		
-		20,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-		
-		
-		
-	\end{tabular}
-	\caption{\textit{Insert caption}}
-	\label{table:BoWStorage}
-\end{table}
-
-\subsubsection{TF-IDF}
-\label{sec:TFIDFStorageRequirements}
+Models that utilised count-based features (Table \ref{table:CountStorageRequirements}) unsurprisingly had the lowest storage requirements. This is due to its relatively simplistic representation of text in conjunction with the enforced limit on the number of words that are stored. On the other hand, models that utilised the pre-trained GloVe feature (Table \ref{table:PreTrainedStorageRequirements}) has a substantially higher storage requirement due to the feature having a substantially larger vocabulary and higher dimensionality. Whilst this is also explains the storage requirements of models that used LMs (Table \ref{table:LMStorageRequirements}), the LMs used were not trained as extensively as the pre-trained GloVe.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-		Vocabulary Size & Storage Size (MB) & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline      
-		
-		5,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
+	\caption{Aggregated size of count-based models.}	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
 		\hline
 		
-		10,000  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline 
-		
-		
-		
-	\end{tabular}
-	\caption{\textit{Insert caption}}
-	\label{table:TFIDFStorage}
-\end{table}
-
-\subsubsection{GloVe}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|p{1.7cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.6cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|p{1.65cm}|}
-		\hline
-		Vector Length & Storage Size (MB) & Criteria 1                                                                           & Criteria 2    & Criteria 3 & Criteria 4 & Criteria 5 & Criteria 6 & Criteria 7                                                                                                                                                                                                                                                                                                                                                          \\
-		\hline                                                                                                                                               
-		
-		200  & 100 & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY) & 0.XX \newline ($\pm$ 0.YY)  & 0.XX \newline ($\pm$ 0.YY)   & 0.XX \newline ($\pm$ 0.YY)  \\
-		\hline
-
-		
-		
-	\end{tabular}
-	\caption{\textit{Insert caption}}
-	\label{table:w2vStorage}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|p{3cm}|p{2cm}|}
-		\hline
-		Language Model & Size (MB)                                                                                                                                                                                                                                                                                                                                                    \\
+		\textbf{Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
 		\hline                                                                                                                                              
 		
-		PT Wiki  & 516  \\
+		NB + BoW (all words)  & 11.10  \\
 		\hline
 		
-		PT + FT Wiki  & 599  \\
+		NB + BoW \newline (stopwords  removed)  & 11.00 \\
 		\hline
 		
+		NB + TF-IDF \newline (all words) & 13.20 \\
+		\hline
+		
+		NB + TF-IDF \newline (stopwords removed) & 13.20 \\
+		\hline
+		
+		SVM + BoW  (all words)  & 7.91  \\
+		\hline
+		
+		SVM + BoW \newline (stopwords removed)  & \textbf{7.87}  \\
+		\hline
+		
+		SVM + TF-IDF \newline (all words) & 10.00 \\
+		\hline
+		
+		SVM + TF-IDF \newline (stopwords removed) & 7.88 \\
+		\hline
+		
+
 		
 		
 	\end{tabular}
-	\caption{\textit{Insert Caption}}
-	\label{table:DLStorageRequirements}
+	\label{table:CountStorageRequirements}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Aggregated size of GloVe-based models.}	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		NB + GloVe & 25,410 \\
+		\hline
+		
+		SVM + GloVe & 25,340 \\
+		\hline
+
+		
+	\end{tabular}
+	\label{table:PreTrainedStorageRequirements}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Aggregated size of LM-based models.}	
+	\begin{tabular}{|p{4.2cm}|p{5cm}|}
+		\hline
+		
+		\textbf{Model} & \textbf{Size (MB)}                                                                                                                                                                                                                                                                                                                                                    \\
+		\hline                                                                                                                                              
+		QRNN + \newline General LM  & \textbf{3,612.70}  \\
+		\hline
+		
+		QRNN + \newline Fine-tuned LM  & 4,193.35  \\
+		\hline
+		
+		
+	\end{tabular}
+	\label{table:LMStorageRequirements}
 \end{table}
 
 
 \chapter{Discussion}
 \label{chap:Discussion}
 
-\section{Model Performance}
-\label{sec:ModelPerformance}
-\textit{Discuss and highlight the key points of what we have learnt based on the results obtained. E.g. The performance of the classifiers across the board, its performance relative to the other criteria (i.e. how the subjectivity of the criteria affected the performance of the classifier)}
+
+In this chapter, I discuss the feasibility of automating credibility appraisal for vaccine-related articles online.  I start by summarising what I found through the set of experiments comparing different machine learning methods, and compare the results to what has been found in other document classification tasks in other application domains (Section 5.1). I then discuss how the novel methods I developed here might be used in real world applications aimed at mitigating the spread of vaccine-related information online (Section 5.2).
+
+\section{Model Results}
+\label{sec:ModelResults}
+
+As the classification task performed by the models involve classifying a novel set of labels (credibility criteria), it is unsuitable to directly compare the performance of the models with any prior work. However, by identifying trends from the reported results, it is possible to determine whether these trends are consistent with the trends found on similar classification tasks from existing literature and thus extrapolate the reliability of the results. The trends investigated are related to the differing performances between the ML and DL models and the choice of feature and its impact on the performance of the classifier.
+
+\subsubsection{Outperformance of Machine Learning over Deep Learning based models}
+
+The performance of the of the QRNN-based models was substantially lower than the NB and SVM based models. Performance between the best QRNN-based model, QRNN with fine-tuned LM, and worst ML-based model, SVM trained with GloVe, had a difference of 0.255 outperforming the QRNN-based model by 61.5\%. There are various factors that could attribute to this, the main factors being the limited number of unlabelled and expert-labelled articles available for training. \newline
+
+Whilst transfer learning has successfully been applied to perform classification tasks in situations where data is limited \cite{Glorot2011} \cite{Radford2018}, the size of the task-specific dataset used is significantly larger than the combined number of unlabelled and expert-labelled samples used for this project. When compared to the work conducted by Howard et al. \cite{Howard2018} for the task of question classification, the number of training samples used to construct the discriminative fine-tuned LM was 5,500 which only improved the model's performance by 0.3\%. This is in contrast to the 3,348 unlabelled samples used for fine-tuning the LM, improving over the general LM by 9.2\% and the 470 samples used for training the classifier. \newline
+
+\subsubsection{Utilisation of BoW by NB and SVM classifiers}
+
+NB classifiers trained on BoW generally outperformed similarly trained SVM classifiers. The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the this general trend. Both works presented results that showed better performance when using BoW with a NB classifier over an SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down'). Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment reported in Section \ref{sec:CredibilityClassificationResults} which showed the NB-based model having a higher average performance by a margin of 0.25\%. \newline
+
+The diminishing difference in performance between the NB-based models and the SVM-based models relative to the aforementioned literature may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. also utilised domain-specific information extracted from as features for the construction of their models. The common factor in regards to the construction of the models resides within the preprocessing phase where only the stopwords of the text were removed. \newline
+
+\subsubsection{Utilisation of TF-IDF by NB and SVM classifiers}
+
+From the results reported in Section \ref{sec:CredibilityClassificationResults}, overall, SVM-based models trained using TF-IDF scores outperformed NB-based models especially with the removal of stopwords by 5.3\%. This trend remains consistent in other literature such as by Shahi et al. \cite{Shahi2018} and Jadav et al. \cite{Jadav2016}. Shahi et al. evaluated both NB and SVM classifiers on the classification of news topics from Nepali News which consisted of twenty target labels and reported the out-performance of SVM classifiers over NB classifiers when using TF-IDF scores. Jadav et al. reciprocated this sentiment who also reported an out-performance by SVM classifiers of 1.9\% on a sentiment analysis task across three separate datasets. 
+
+%\subsection{Model Effectiveness}
+%\label{sec:ModelEffectiveness}
+
 
 \section{Real World Applications}
 \label{sec:RealWorldApplication}
-\textit{This is where I'll be talking about the performance of constructing and testing the low credibility classifiers}
 
-\chapter{Conclusions and Future Work}
+\subsection{Model Feasibility}
+\label{sec:ModelFeasibility}
+The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. \newline
+
+The effectiveness and practicality a model based on its performance for instance can have differing meanings with regards to its false positive and false negative rates. Consider the performance of the single model and ensemble approach compared to the binary classification approach in identifying low and high credibility articles. Whilst the single model and ensemble approach reported a slightly higher micro-averaged f1-score (Table \ref{table:SingleModelApproach} and Table \ref{table:EnsembleApproach}) over the binary classification approach (Table \ref{table:BinaryApproach}), the binary classification approach (Figure \ref{fig:BinaryPerformance}) had a much lower false positive rate, misclassifying less low credibility articles as high credibility articles over the single model and ensemble approach (Figure \ref{fig:SingleModelPerformance} and Figure \ref{fig:EnsemblePerformance}). This indicates that for applications where having a lower false positive rate is important, such as when recommending a person whether to read and trust an article based on its credibility, the binary classification approach should be preferred over the single model and ensemble approach.\newline
+
+Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would matter more than training time would likely involve an application with an offline element or resource constrained environment such as a web browser extension or mobile application. On the other hand, the training time of a model would be highly prioritised in realtime environments or non-resource constrained environments with a remote connection to a server. \newline
+
+
+\subsection{Potential Applications}
+\label{sec:PotentialApplications}
+
+At its current state, reliable classification of 
+Because of the promising results produced by the model used for the binary approach on the identification of low credibility articles, the model can be deployed for a wide range of problems. Some possible applications of this model can include the implementation of a browser extension that informs a user whether the article they are viewing is credible, a service that filters content based on their credibility or to specifically collect low credibility articles to increase the dataset size for further refinement of the models.
+
+\chapter{Future Work and Conclusions}
 \label{chap:Conclusions}
-This section will be completed after the fulfilment of the proposed work detailed in Section \ref{chap:ProposedWork}
+
 
 \section{Future Work}
 \label{FutureWork}
 
+There are many directions in which one could take to further expand on the body of work contained in this thesis. One of the major limitations was the lack of training data available to train and evaluate the models. This can be overcome by, apart from simply collecting and expertly labelling more articles, investigating the feasibility of leveraging semi-supervised or unsupervised methods such as zero/one/few-shot learning or positive-unlabelled (PU) learning. \newline
+
+Applying and evaluating other deep learning architectures for both the creation of LMs and classifiers is also another interesting direction to explore as the time constraints of this project severely limited the architectures investigated due to the time intensive process of training and optimising a DL-based model leaving many DL architectures to remain unevaluated.   \newline
+
+Exploring the effectiveness of the model's ability to classify the criteria and differentiating between low and high credibility articles for either a different or more generalised domain 
+
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-
+This thesis investigated the effectiveness and feasibility in employing ML and DL-based models on automating the process of evaluating the credibility of online articles, specifically articles related to vaccination. From the experiments conducted, it was determined that, for the current state of the project with its limitations, DL-based models were neither effective nor feasible for this task due to the relatively extremely limited amount of data available leaving the models unable to learn and generalise to a feasible degree. ML-based models using standard feature representations and NB and SVM classifiers however, showed promising signs on its capability to identify and classify select credibility criteria and SVM classifiers trained on TF-IDF scores showed to great effect its ability on differentiating between and classifying low credibility and high credibility criteria.
 
 
 \clearemptydoublepage

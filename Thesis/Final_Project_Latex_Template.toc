@@ -26,46 +26,49 @@
 \contentsline {subsubsection}{Convolutional Neural Networks}{11}{section*.20}
 \contentsline {subsection}{\numberline {2.2.4}Classifying Documents with Limited Labelled Examples}{12}{subsection.2.2.4}
 \contentsline {subsubsection}{Transfer Learning}{12}{section*.21}
-\contentsline {section}{\numberline {2.3}Discussion}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Scaling the Assessment of Quality and Credibility of Health Information}{13}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.3}Scaling the Assessment of Quality and Credibility of Health Information}{13}{section.2.3}
 \contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Approach}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Study Data}{16}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Dataset}{16}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Credibility Criteria}{16}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Study Data Limitations}{16}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Model Implementation}{19}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Preprocessing}{19}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Feature Selection}{19}{subsection.3.3.2}
-\contentsline {subsubsection}{Bag of Words}{19}{section*.26}
-\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{19}{section*.27}
-\contentsline {subsubsection}{GloVe}{19}{section*.28}
-\contentsline {subsubsection}{Language Models}{19}{section*.29}
-\contentsline {subsection}{\numberline {3.3.3}Model Selection}{20}{subsection.3.3.3}
-\contentsline {subsubsection}{Naive Bayes}{20}{section*.30}
-\contentsline {subsubsection}{Support Vector Machine}{20}{section*.31}
-\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{20}{section*.32}
-\contentsline {section}{\numberline {3.4}Experiments}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Accuracy}{21}{subsection.3.4.1}
-\contentsline {subsubsection}{Credibility Classification Experiment}{21}{section*.33}
-\contentsline {subsubsection}{Low Credibility Identification Experiment}{21}{section*.34}
-\contentsline {subsection}{\numberline {3.4.2}Training}{21}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Storage}{22}{subsection.3.4.3}
-\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Classification Performance}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Machine Learning Models}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Deep Learning Model}{24}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Training Time}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Storage Requirements}{25}{section.4.3}
-\contentsline {subsubsection}{Bag Of Words}{26}{section*.41}
-\contentsline {subsubsection}{TF-IDF}{26}{section*.43}
-\contentsline {subsubsection}{GloVe}{27}{section*.45}
-\contentsline {chapter}{\numberline {5}Discussion}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Model Performance}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Real World Applications}{29}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conclusions}{31}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{33}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{33}{section.A.1}
-\contentsline {chapter}{Bibliography}{33}{section*.48}
+\contentsline {subsection}{\numberline {3.2.2}Credibility Criteria and Appraisal}{16}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Model Implementation}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Preprocessing}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Feature Construction}{20}{subsection.3.3.2}
+\contentsline {subsubsection}{Bag of Words}{20}{section*.28}
+\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency}{21}{section*.29}
+\contentsline {subsubsection}{GloVe}{21}{section*.30}
+\contentsline {subsubsection}{Language Models}{21}{section*.31}
+\contentsline {subsection}{\numberline {3.3.3}Model Construction}{21}{subsection.3.3.3}
+\contentsline {subsubsection}{Naive Bayes}{22}{section*.32}
+\contentsline {subsubsection}{Support Vector Machine}{22}{section*.33}
+\contentsline {subsubsection}{Quasi-Recurrent Neural Network}{22}{section*.35}
+\contentsline {section}{\numberline {3.4}Experiments}{23}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Performance}{23}{subsection.3.4.1}
+\contentsline {subsubsection}{Credibility Classification Experiment}{23}{section*.37}
+\contentsline {subsubsection}{Low Credibility Identification Experiment}{24}{section*.38}
+\contentsline {subsection}{\numberline {3.4.2}Training}{24}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Storage}{24}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Performance}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Credibility Classification}{25}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Low Credibility Identification}{27}{subsection.4.1.2}
+\contentsline {subsubsection}{Single Model Approach}{27}{section*.41}
+\contentsline {subsubsection}{Ensemble Approach}{28}{section*.44}
+\contentsline {subsubsection}{Binary Classification Approach}{30}{section*.48}
+\contentsline {section}{\numberline {4.2}Training Time}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Model Storage Requirements}{32}{section.4.3}
+\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Model Results}{35}{section.5.1}
+\contentsline {subsubsection}{Outperformance of Machine Learning over Deep Learning based models}{35}{section*.58}
+\contentsline {subsubsection}{Utilisation of BoW by NB and SVM classifiers}{36}{section*.59}
+\contentsline {subsubsection}{Utilisation of TF-IDF by NB and SVM classifiers}{36}{section*.60}
+\contentsline {section}{\numberline {5.2}Real World Applications}{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Model Feasibility}{37}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Potential Applications}{37}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Future Work and Conclusions}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}Conclusions}{39}{section.6.2}
+\contentsline {chapter}{\numberline {A}Exmaple}{41}{appendix.A}
+\contentsline {section}{\numberline {A.1}Overview}{41}{section.A.1}
+\contentsline {chapter}{Bibliography}{41}{section*.61}

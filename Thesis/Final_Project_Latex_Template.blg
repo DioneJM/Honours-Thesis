@@ -9,12 +9,22 @@ Repeated entry---line 619 of file my_reference.bib
  : @techreport{Merity2016
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 760 of file my_reference.bib
+ : @article{Shahi2018
+ :                   ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 796 of file my_reference.bib
+ :  
+ :  year = {2018}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtranS.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for normal IEEE work.
 Warning--to sort, need author, organization, or key in UnderstandingKernel
 Warning--to sort, need author, organization, or key in RNNDiagram
+Warning--to sort, need author, organization, or key in AutismVaccine
 Warning--to sort, need author, organization, or key in DISCERN
 Warning--to sort, need author, organization, or key in HealthNewsReview
 Warning--to sort, need author, organization, or key in AWS
@@ -25,8 +35,12 @@ Warning--missing institution in Batchelor2009
 Warning--missing institution in Cambria2017
 Warning--empty year in Cipriani
 Warning--empty journal in Conneau2017
+Warning--missing institution in Glorot2011
+Warning--missing institution in Hassan
+Warning--empty year in Hassan
 Warning--missing institution in Howard2018
 Warning--missing institution in Informatik1997
+Warning--missing institution in Jadav2016
 Warning--missing institution in Kaicker2010
 Warning--missing institution in Kim
 Warning--empty year in Kim
@@ -36,7 +50,10 @@ Warning--missing institution in Mikolov
 Warning--empty year in Mikolov
 Warning--missing institution in Nogueira
 Warning--empty year in Nogueira
+Warning--missing institution in Radford2018
+Warning--empty year in Radford2018
 Warning--empty journal in Pan2009
+Warning--missing institution in Pang2004
 Warning--empty journal in Pasupa2016
 Warning--missing institution in Rosenfeld2000
 Warning--missing institution in Sahami
@@ -51,4 +68,4 @@ Warning--empty journal in Zhang
 Warning--empty journal in Zhou2015
 
 Done.
-(There were 2 error messages)
+(There were 4 error messages)

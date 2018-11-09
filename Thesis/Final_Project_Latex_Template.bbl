@@ -27,6 +27,12 @@
   Available: \url{https://aws.amazon.com/ec2/instance-types/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{AutismVaccine}
+\BIBentryALTinterwordspacing
+``{AUTISM {\&} VACCINES: IS THERE A LINK?}'' [Online]. Available:
+  \url{https://www.learntherisk.org/autism/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{DISCERN}
 \BIBentryALTinterwordspacing
 ``{DISCERN - The DISCERN Instrument}.'' [Online]. Available:
@@ -154,6 +160,13 @@ A.~Conneau, H.~Schwenk, Y.~{Le Cun}, and L.~{Loıc Barrault}, ``{Very Deep
   \url{https://arxiv.org/pdf/1606.01781.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Glorot2011}
+\BIBentryALTinterwordspacing
+X.~Glorot, A.~Bordes, and Y.~Bengio, ``{Domain Adaptation for Large-Scale
+  Sentiment Classification: A Deep Learning Approach},'' Tech. Rep., 2011.
+  [Online]. Available: \url{http://www.cs.jhu.edu/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Hall2017}
 \BIBentryALTinterwordspacing
 V.~Hall, E.~Banerjee, C.~Kenyon, A.~Strain, J.~Griffith, K.~Como-Sabetti,
@@ -162,6 +175,14 @@ V.~Hall, E.~Banerjee, C.~Kenyon, A.~Strain, J.~Griffith, K.~Como-Sabetti,
   \emph{MMWR. Morbidity and Mortality Weekly Report}, vol.~66, no.~27, pp.
   713--717, jul 2017. [Online]. Available:
   \url{http://www.cdc.gov/mmwr/volumes/66/wr/mm6627a1.htm}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Hassan}
+\BIBentryALTinterwordspacing
+S.~Hassan, M.~Rafi, and M.~{Shahid Shaikh}, ``{Comparing SVM and Na{\"{i}}ve
+  Bayes Classifiers for Text Categorization with Wikitology as knowledge
+  enrichment},'' Tech. Rep. [Online]. Available:
+  \url{https://arxiv.org/ftp/arxiv/papers/1202/1202.4063.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Hochreiter1997}
@@ -186,6 +207,14 @@ F.~Informatik, ``{UNIVERSIT AT D ORTMUND Text Categorization with Support
   \url{https://www.cs.cornell.edu/people/tj/publications/joachims{\_}97b.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Jadav2016}
+\BIBentryALTinterwordspacing
+B.~M. Jadav and M.~E. Scholar, ``{Sentiment Analysis using Support Vector
+  Machine based on Feature Selection and Semantic Analysis},'' Tech. Rep.~13,
+  2016. [Online]. Available:
+  \url{https://pdfs.semanticscholar.org/7746/93175a159160697b5748561446313186b846.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Kaicker2010}
 \BIBentryALTinterwordspacing
 J.~Kaicker, V.~{Borg Debono}, W.~Dang, N.~Buckley, and L.~Thabane,
@@ -207,6 +236,12 @@ V.~Korde and C.~N. Mahender, ``{TEXT CLASSIFICATION AND CLASSIFIERS: A
   Applications (IJAIA)}, vol.~3, no.~2, 2012. [Online]. Available:
   \url{http://aircconline.com/ijaia/V3N2/3212ijaia08.pdf}
 \BIBentrySTDinterwordspacing
+
+\bibitem{lazer2018science}
+D.~M. Lazer, M.~A. Baum, Y.~Benkler, A.~J. Berinsky, K.~M. Greenhill,
+  F.~Menczer, M.~J. Metzger, B.~Nyhan, G.~Pennycook, D.~Rothschild
+  \emph{et~al.}, ``The science of fake news,'' \emph{Science}, vol. 359, no.
+  6380, pp. 1094--1096, 2018.
 
 \bibitem{LeCun1999}
 \BIBentryALTinterwordspacing
@@ -244,6 +279,12 @@ T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``{Distributed Representations of
   \url{https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Mitchell}
+\BIBentryALTinterwordspacing
+T.~Mitchell, ``{Twenty Newsgroups Data Set}.'' [Online]. Available:
+  \url{https://archive.ics.uci.edu/ml/datasets/Twenty+Newsgroups}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Nogueira}
 \BIBentryALTinterwordspacing
 C.~Nogueira, D.~Santos, and M.~Gatti, ``{Deep Convolutional Neural Networks for
@@ -251,10 +292,24 @@ C.~Nogueira, D.~Santos, and M.~Gatti, ``{Deep Convolutional Neural Networks for
   \url{http://www.aclweb.org/anthology/C14-1008}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Radford2018}
+\BIBentryALTinterwordspacing
+A.~R. Openai, K.~N. Openai, T.~S. Openai, and I.~S. Openai, ``{Improving
+  Language Understanding by Generative Pre-Training},'' Tech. Rep. [Online].
+  Available: \url{https://gluebenchmark.com/leaderboard}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Pan2009}
 \BIBentryALTinterwordspacing
 S.~J. Pan and Q.~Yang, ``{A Survey on Transfer Learning},'' 2009. [Online].
   Available: \url{http://socrates.acadiau.ca/courses/comp/dsilver/NIPS95}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Pang2004}
+\BIBentryALTinterwordspacing
+B.~Pang and L.~Lee, ``{A Sentimental Education: Sentiment Analysis Using
+  Subjectivity Summarization Based on Minimum Cuts},'' Tech. Rep., 2004.
+  [Online]. Available: \url{www.cs.cornell.edu/people/pabo/movie-}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Pasupa2016}
@@ -281,6 +336,20 @@ J.~Pennington, R.~Socher, and C.~D. Manning, ``Glove: Global vectors for word
   \url{http://www.aclweb.org/anthology/D14-1162}
 \BIBentrySTDinterwordspacing
 
+\bibitem{PRANCKEVICIUS2017}
+\BIBentryALTinterwordspacing
+T.~PRANCKEVI{\v{C}}IUS and V.~Marcinkevicius, ``{Comparison of Na{\"{i}}ve
+  Bayes , Random Forest , Decision Tree , Support Vector Machines , and
+  Logistic Regression Classifiers for Text Reviews Classification},'' 2017.
+  [Online]. Available:
+  \url{https://www.semanticscholar.org/paper/Comparison-of-Na{\"{i}}ve-Bayes-{\%}2C-Random-Forest-{\%}2C-Tree-{\%}2C-PRANCKEVI{\v{C}}IUS-Marcinkevicius/e853f8827a2b9c596296de296b482e1175f9713f?navId=similar-papers}
+\BIBentrySTDinterwordspacing
+
+\bibitem{qiu2017limited}
+X.~Qiu, D.~F. Oliveira, A.~S. Shirazi, A.~Flammini, and F.~Menczer, ``Limited
+  individual attention and online virality of low-quality information,''
+  \emph{Nature Human Behaviour}, vol.~1, no.~7, p. 0132, 2017.
+
 \bibitem{Rosenfeld2000}
 \BIBentryALTinterwordspacing
 R.~Rosenfeld, ``{TWO DECADES OF STATISTICAL LANGUAGE MODELING: WHERE DO WE GO
@@ -294,6 +363,12 @@ M.~Sahami, S.~Dumais, D.~Heckerman, and E.~Horvitz, ``{A Bayesian approach to
   filtering junk e-mail},'' Tech. Rep. Cohen, 1998. [Online]. Available:
   \url{http://research.microsoft.com/en-us/um/people/horvitz/junkfilter.htm}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Shahi2018}
+T.~B. Shahi and A.~K. Pant, ``Nepali news classification using naïve bayes,
+  support vector machines and neural networks,'' in \emph{2018 International
+  Conference on Communication information and Computing Technology (ICCICT)},
+  Feb 2018, pp. 1--5.
 
 \bibitem{Socher}
 \BIBentryALTinterwordspacing
@@ -311,28 +386,18 @@ R.~Som and N.~P. Gunawardana, ``{Internet chemotherapy information is of good
   \url{http://www.nature.com/articles/bjc2012223}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Sommariva2018}
-\BIBentryALTinterwordspacing
-S.~Sommariva, C.~Vamos, L.~U.-L. Mantzarlis, Alexios~Dao, and D.~{Martinez
-  Tyson}, ``{Spreading the (Fake) News: Exploring Health Messages on Social
-  Media and the Implications for Health Professionals Using a Case Study},''
-  \emph{American Journal of Health Education}, vol.~49, no.~4, pp. 246--255,
-  jul 2018. [Online]. Available:
-  \url{https://www.tandfonline.com/doi/full/10.1080/19325037.2018.1473178}
-\BIBentrySTDinterwordspacing
-
-\bibitem{germanFN}
-\BIBentryALTinterwordspacing
-``{Germany investigating unprecedented spread of fake news online | World news
-  | The Guardian},'' 2017. [Online]. Available:
-  \url{https://www.theguardian.com/world/2017/jan/09/germany-investigating-spread-fake-news-online-russia-election}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Vosoughi}
 \BIBentryALTinterwordspacing
 S.~Vosoughi, D.~Roy, and S.~Aral, ``{SI:The spread of true and false news
   online},'' Tech. Rep. 6380, 2018. [Online]. Available:
   \url{http://science.sciencemag.org/content/sci/359/6380/1146.full.pdf{\%}0Ahttp://www.sciencemag.org/lookup/doi/10.1126/science.aap9559}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Wang2012}
+\BIBentryALTinterwordspacing
+S.~Wang and C.~D. Manning, ``{Baselines and bigrams: simple, good sentiment and
+  topic classification},'' pp. 90--94, 2012. [Online]. Available:
+  \url{https://dl.acm.org/citation.cfm?id=2390688}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Weston}
