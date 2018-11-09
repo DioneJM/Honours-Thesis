@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  9 NOV 2018 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.1)  9 NOV 2018 23:41
 entering extended mode
 **./Final_Project_Latex_Template.tex
 (Final_Project_Latex_Template.tex
@@ -453,7 +453,7 @@ LaTeX Info: Redefining \nameref on input line 213.
 \@outlinefile=\write3
 \openout3 = `Final_Project_Latex_Template.out'.
 
-<MQlogo_stacked.pdf, id=207, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=199, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 221.
@@ -564,12 +564,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--339
  []
 
 [7] [8]
-<images/svm-example.png, id=534, 118.4425pt x 128.98187pt>
+<images/svm-example.png, id=526, 118.4425pt x 128.98187pt>
 File: images/svm-example.png Graphic file (type png)
 <use images/svm-example.png>
 Package pdftex.def Info: images/svm-example.png  used on input line 378.
 (pdftex.def)             Requested size: 182.91165pt x 199.16928pt.
-<images/kernel-trick.png, id=539, 501.875pt x 234.37563pt>
+<images/kernel-trick.png, id=531, 501.875pt x 234.37563pt>
 File: images/kernel-trick.png Graphic file (type png)
 <use images/kernel-trick.png>
 Package pdftex.def Info: images/kernel-trick.png  used on input line 387.
@@ -590,7 +590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--406
  []
 
 [10 <./images/kernel-trick.png>]
-<images/RNN.jpg, id=561, 797.98125pt x 320.19624pt>
+<images/RNN.jpg, id=553, 797.98125pt x 320.19624pt>
 File: images/RNN.jpg Graphic file (type jpg)
 <use images/RNN.jpg>
 Package pdftex.def Info: images/RNN.jpg  used on input line 416.
@@ -611,7 +611,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 449--450
  []
 
 [12]
-<images/transfer-learning.png, id=602, 262.48062pt x 214.8025pt>
+<images/transfer-learning.png, id=594, 262.48062pt x 214.8025pt>
 File: images/transfer-learning.png Graphic file (type png)
 <use images/transfer-learning.png>
 Package pdftex.def Info: images/transfer-learning.png  used on input line 462.
@@ -696,13 +696,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 533--534
  []
 
 [16] [17]
-<images/label-distribution.png, id=646, 511.31026pt x 391.16138pt>
+<images/label-distribution.png, id=638, 511.31026pt x 391.16138pt>
 File: images/label-distribution.png Graphic file (type png)
 <use images/label-distribution.png>
 Package pdftex.def Info: images/label-distribution.png  used on input line 541.
 
 (pdftex.def)             Requested size: 260.34346pt x 199.16928pt.
-<images/article-score-distribution.png, id=648, 510.40688pt x 391.16138pt>
+<images/article-score-distribution.png, id=640, 510.40688pt x 391.16138pt>
 File: images/article-score-distribution.png Graphic file (type png)
 <use images/article-score-distribution.png>
 Package pdftex.def Info: images/article-score-distribution.png  used on input l
@@ -748,7 +748,7 @@ Overfull \vbox (130.21706pt too high) has occurred while \output is active []
 
 
 [19 <./images/article-score-distribution.png>]
-<images/Preprocessing-example.png, id=660, 481.04718pt x 148.30406pt>
+<images/Preprocessing-example.png, id=652, 481.04718pt x 148.30406pt>
 File: images/Preprocessing-example.png Graphic file (type png)
 <use images/Preprocessing-example.png>
 Package pdftex.def Info: images/Preprocessing-example.png  used on input line 5
@@ -760,12 +760,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 626--627
  []
 
 [21]
-<images/ml-models.png, id=690, 444.15938pt x 204.01219pt>
+<images/ml-models.png, id=682, 444.15938pt x 204.01219pt>
 File: images/ml-models.png Graphic file (type png)
 <use images/ml-models.png>
 Package pdftex.def Info: images/ml-models.png  used on input line 648.
 (pdftex.def)             Requested size: 371.68842pt x 170.71652pt.
-<images/dl-models.png, id=693, 545.78906pt x 201.75375pt>
+<images/dl-models.png, id=685, 545.78906pt x 201.75375pt>
 File: images/dl-models.png Graphic file (type png)
 <use images/dl-models.png>
 Package pdftex.def Info: images/dl-models.png  used on input line 660.
@@ -875,7 +875,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 873--873
 \OT1/cmr/m/n/12 (stopwords
  []
 
-<images/single-model-performance.png, id=740, 384.43625pt x 331.2375pt>
+<images/single-model-performance.png, id=732, 384.43625pt x 331.2375pt>
 File: images/single-model-performance.png Graphic file (type png)
 <use images/single-model-performance.png>
 Package pdftex.def Info: images/single-model-performance.png  used on input lin
@@ -911,7 +911,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 940--940
 []|\OT1/cmr/bx/n/12 Average Pre-dicted
  []
 
-<images/ensemble-performance.png, id=749, 384.43625pt x 331.2375pt>
+<images/ensemble-performance.png, id=741, 384.43625pt x 331.2375pt>
 File: images/ensemble-performance.png Graphic file (type png)
 <use images/ensemble-performance.png>
 Package pdftex.def Info: images/ensemble-performance.png  used on input line 94
@@ -933,13 +933,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 963--963
  []
 
 [29 <./images/ensemble-performance.png>]
-<images/binary-performance.png, id=756, 384.43625pt x 331.2375pt>
+<images/binary-performance.png, id=748, 384.43625pt x 331.2375pt>
 File: images/binary-performance.png Graphic file (type png)
 <use images/binary-performance.png>
 Package pdftex.def Info: images/binary-performance.png  used on input line 975.
 
 (pdftex.def)             Requested size: 231.15627pt x 199.16928pt.
-<images/binary-roc-curve.png, id=757, 395.4775pt x 279.0425pt>
+<images/binary-roc-curve.png, id=749, 395.4775pt x 279.0425pt>
 File: images/binary-roc-curve.png Graphic file (type png)
 <use images/binary-roc-curve.png>
 Package pdftex.def Info: images/binary-roc-curve.png  used on input line 982.
@@ -1010,107 +1010,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1226
+
+ []
+
 [39
 
-] [40]
-Appendix A.
-(Final_Project_Latex_Template.bbl [41
+] [40] (Final_Project_Latex_Template.bbl [41
 
 
 
-] [42
+] [42] [43] [44])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1244.
+ [45]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1244.
 
-] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 117--123
-\OT1/cmr/m/n/12 pdf ? \OMS/cmsy/m/n/12 f[] [] \OT1/cmr/m/n/12 tid = 46d1dda6-[]
-f576-[]4f5e-[]ad53-[]d550f1cd9990\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 & [] acdnat 
-= 1534726962\OMS/cmsy/m/n/12 f[] []
- []
-
-[44] [45]
-Underfull \hbox (badness 10000) in paragraph at lines 276--281
-\OT1/cmr/m/n/12 5021-[]distributed-[]representations-[]of-[]words-[]and-[]phras
-es-[]and-[]their-[]compositionality .
- []
-
-[46]
-Underfull \hbox (badness 1715) in paragraph at lines 341--347
-\OT1/cmr/m/n/12 able: [][]$https : / / www . semanticscholar . org / paper / Co
-mparison-[]of-[]Na\OMS/cmsy/m/n/12 fn\OT1/cmr/m/n/12 unhbox \OMS/cmsy/m/n/12 n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-\OT1/cmr/m/n/12 voidb @ x \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 bgroup \OMS/cmsy/m
-/n/12 n \OT1/cmr/m/n/12 let \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 unhbox \OMS/cmsy
-/m/n/12 n \OT1/cmr/m/n/12 voidb @ x \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 setbox \
-OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 @tempboxa \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 
-hbox\OMS/cmsy/m/n/12 fn\OT1/cmr/m/n/12 OT1 \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 i
- \OMS/cmsy/m/n/12 n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-\OT1/cmr/m/n/12 global \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 mathchardef \OMS/cmsy
-/m/n/12 n \OT1/cmr/m/n/12 accent @ spacefactor \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/
-12 spacefactor [] \OMS/cmsy/m/n/12 n\OT1/cmr/m/n/12 accent127 \OMS/cmsy/m/n/12 
-n \OT1/cmr/m/n/12 OT1 \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 i \OMS/cmsy/m/n/12 n \
-OT1/cmr/m/n/12 egroup \OMS/cmsy/m/n/12 n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-\OT1/cmr/m/n/12 spacefactor \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 accent @ spacefa
-ctor [] ve-[]Bayes-[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 % [] 2C-[]Random-[]Fores
-t-[]\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 % [] 2C-[]Tree-[]\OMS/cmsy/m/n/12 f\OT1/c
-mr/m/n/12 % []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-\OT1/cmr/m/n/12 2C-[]PRANCKEVI\OMS/cmsy/m/n/12 fn\OT1/cmr/m/n/12 unhbox \OMS/cm
-sy/m/n/12 n \OT1/cmr/m/n/12 voidb @ x \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 bgroup
- \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 let \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 unhb
-ox \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 voidb @ x \OMS/cmsy/m/n/12 n \OT1/cmr/m/n
-/12 setbox \OMS/cmsy/m/n/12 n
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-\OT1/cmr/m/n/12 @tempboxa \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 hbox\OMS/cmsy/m/n/
-12 f\OT1/cmr/m/n/12 C \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 global \OMS/cmsy/m/n/1
-2 n \OT1/cmr/m/n/12 mathchardef \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 accent @ spa
-cefactor \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 spacefactor []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-\OMS/cmsy/m/n/12 n\OT1/cmr/m/n/12 accent20C \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 
-egroup \OMS/cmsy/m/n/12 n \OT1/cmr/m/n/12 spacefactor \OMS/cmsy/m/n/12 n \OT1/c
-mr/m/n/12 accent @ spacefactor [] IUS-[]Marcinkevicius /
- []
-
-[47])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1247.
- [48]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1247.
- (Final_Project_Latex_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1247.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1247.
+(Final_Project_Latex_Template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1244.
 
 Package rerunfilecheck Info: File `Final_Project_Latex_Template.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 7CC3E2F3AD4D674126207B07B86E5383;3632.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1247.
+(rerunfilecheck)             Checksum: 0FF82262BB931B2E2792D9BFEC89FEB9;3524.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1244.
  ) 
 Here is how much of TeX's memory you used:
- 8899 strings out of 492973
- 131528 string characters out of 3135933
- 267035 words of memory out of 3000000
- 12390 multiletter control sequences out of 15000+200000
+ 8883 strings out of 492973
+ 131308 string characters out of 3135933
+ 268357 words of memory out of 3000000
+ 12380 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,22n,43p,1737b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,22n,43p,1737b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
@@ -1120,9 +1052,9 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Final_Project_Latex_Template.pdf (62 pages, 879937 bytes).
+Output written on Final_Project_Latex_Template.pdf (59 pages, 848527 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 479 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 233 named destinations out of 1000 (max. 500000)
+ 463 words of extra memory for PDF output out of 10000 (max. 10000000)
 

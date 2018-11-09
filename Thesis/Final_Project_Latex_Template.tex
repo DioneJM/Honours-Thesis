@@ -149,7 +149,7 @@
 % For Senior and honors this is the year and month that you submit the thesis
 % For Masters and PhD, this is your graduation date
   \Year{2018}
-  \Month{November XX,}
+  \Month{November 9,}
   \Author{Dione Morales}
 
 % If you have a long title, split it between two lines. The \TitleBottom field defines the second line
@@ -198,7 +198,7 @@
 % The text of your abstract
 \Abstract{
 \vspace{-1.5 cm}
-Misinformation is not a new phenomenon but the popularity and ubiquity of social media has meant that the rate at which information is produced and spreads greatly outpaces our ability to evaluate whether it is correct and unbiased. This is especially important in health and healthcare, where misinformation can influence attitudes and health behaviours that can lead to harm. In this project, I aimed to develop a novel approach to predicting the credibility of information presented on web pages using machine learning. To do this, I trained a series of supervised machine learning classifiers to predict the credibility of vaccine-related web pages. I used a dataset including the text extracted from 3,348 vaccine-related web pages, of which 470 were labelled by experts for credibility using a credibility appraisal checklist with 7 criteria. When predicting which of the 7 criteria were satisfied by an article, the standard approaches outperformed the deep learning approach. When the objective was to distinguish low credibility articles from all others, the best performing classifier was able to correctly label 92\% of unseen examples. The results indicate that automating credibility appraisal is feasible and that my approach could be implemented in practical tools for mitigating the spread of vaccine-related misinformation.
+Misinformation is not a new phenomenon but the popularity and ubiquity of social media has meant that the rate at which information is produced and spreads greatly outpaces our ability to evaluate whether it is correct and unbiased. This is especially important in health and healthcare, where misinformation can influence attitudes and health behaviours that can lead to harm. In this project, we examine whether a deep learning approach can outperform the standard classifier approach specifically for vaccine-related misinformation. We compare a series of supervised machine learning classifiers with the deep learning system. The approach taken was to extract the text from 3,348 vaccine-related web pages. Of these 470 were labelled by experts for credibility using a credibility appraisal checklist with 7 criteria. When predicting which of the 7 criteria were satisfied by an article, the standard approaches outperformed the deep learning approach, with the best performing standard approach reported a micro-averaged F1-score of 0.836 and the deep learning approaching reported a score of 0.422. When the objective was to distinguish low credibility articles from all others, the best performing classifier reported a score of 0.91 when classifying among the unseen examples. This research indicates that the deep learning approach does not currently outperform the standard machine learning approach for health misinformation texts. The results indicate that automating credibility appraisal is feasible and that my approach could be implemented in practical tools for mitigating the spread of vaccine-related misinformation.
 
 }
 
@@ -270,7 +270,7 @@ The effects of vaccination and their relation to causing autism within children 
 \section{Aims}
 \label{sec:Aims}
 
-With the primary objective of this project being the evaluation on the effectiveness of deep learning models in determining the credibility of online vaccine-related health articles. Due to the complexity of this project, a set of activities - divided into main goals and stretch goals, have been defined to ensure that the completion of this project remains feasible in the given time frame. The completion of all activities categorized as main goals will signal the realization of the primary objective and the completion of the project. Stretch goals are activities of interest that have been identified as non-essential to the completion of the primary objective but will be worked on after the completion of the project.
+The primary aim of the project is to evaluate the feasibility of using machine learning to automate the credibility appraisal of vaccine-related articles online. In particular, I examined the use of a deep learning approach and compared it to standard supervised machine learning methods for a document classification task. To do this I reviewed the literature to investigate current approaches to credibility appraisal and find appropriate methods for undertaking similarly-structured document classification tasks. I then designed a set of experiments to compare machine learning approaches in terms of their performance, timing, and storage requirements.
 
 \subsubsection{Main Goals}
 \label{sec:MainGoals}
@@ -282,7 +282,7 @@ With the primary objective of this project being the evaluation on the effective
 \subsubsection{Stretch Goals}
 \label{sec:StretchGoals}
 \begin{itemize}
-	\item Evaluate the effect of transfer learning methods on the training time and performance of the proposed deep neural network method.
+	\item Compare neural network architectures that take advantage of transfer learning to potentially improve training time and performance.
 \end{itemize}
 
 
@@ -439,7 +439,7 @@ By stacking the kernels and pooling layers, deep CNNs can be constructed which c
 
 \subsection{Classifying Documents with Limited Labelled Examples}
 \label{sec:TransferLearning}
-Typically, large amounts of training data is required to train a deep learning model in learning the language model for state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Conneau2017} \cite{Zhang}. For situations where you are required to procure a completely new dataset, such as training a deep learning model for a non-standard text classification task, it can be unfeasible  or not worthwhile to invest the time and resources in creating the dataset. 
+Typically, large amounts of training data is required to train a deep learning model in learning the language model for state of the art results, in the task of document classification for instance, the size of commonly used non-domain specific datasets range from hundreds of thousands of training examples to millions \cite{Zhang} \cite{Conneau2017}. For situations where you are required to procure a completely new dataset, such as training a deep learning model for a non-standard text classification task, it can be unfeasible  or not worthwhile to invest the time and resources in creating the dataset. 
 
 \subsubsection{Transfer Learning}
 \label{sec:TransferLearningReview}
@@ -468,7 +468,7 @@ Whilst transfer learning is useful to train models for non-standard tasks where 
 \section{Scaling the Assessment of Quality and Credibility of Health Information}
 \label{sec:ScalingAssessment}
 
-The limited amount of articles that were evaluated was a common theme among the studies that aim to assess the credibility and quality of information \cite{Batchelor2009} \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012}.
+The limited amount of articles that were evaluated was a common theme among the studies that aim to assess the credibility and quality of information \cite{CanteyBanasiak2017} \cite{Cipriani} \cite{Kaicker2010} \cite{Som2012} \cite{Batchelor2009}.
 This makes evaluating the credibility of online articles impractical when using the existing assessment tools as described in Section \ref{sec:Checklists}, due to the persistence, pace and volume of the production and propagation of online content. Due to the capabilities of machine learning models, they can be leveraged to accomplish the task of automatically assessing the credibility of online articles on a large scale as models, such as deep learning models, have shown the ability to develop high-level representations of language which can then be leveraged to be able to differentiate between credible and misinformed articles.
 
 
@@ -539,7 +539,7 @@ When sampling articles, we expected to find relatively few high credibility arti
 \begin{figure}[H]
 	\centering
 	\includegraphics[totalheight=7cm]{images/label-distribution.png}
-	\caption{Distribution of labels amongst the expert-labelled articles.}
+	\caption{Distribution of labels among the expert-labelled articles.}
 	\label{fig:LabelDistribution}
 \end{figure}
 
@@ -549,7 +549,7 @@ I then aggregated the total number of criteria met by an aritcle to produce a cr
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[totalheight=7cm]{images/article-score-distribution.png}
-	\caption{Distribution of article scores amongst the expert-labelled articles.}
+	\caption{Distribution of article scores among the expert-labelled articles.}
 	\label{fig:ArticleDistribution}
 \end{figure}
 
@@ -675,12 +675,12 @@ Two experiments have been conducted to evaluate the performance of a model. The 
 \subsubsection{Credibility Classification Experiment}
 \label{sec:CredibilityClassificationExperiment}
 The credibility classification experiment is a set of binary classification tasks which aims to determine a model's ability in correctly identifying whether an article either satisfies or doesn't satisfy a certain criteria. 
-For each criteria, the respective NB, SVM and QRNN models produces a prediction on whether the article satisfies the criteria or not. The correctness of the model was then evaluated by measuring the micro averaged f1-scores, the harmonic mean of the precision and recall of a model's predictions via 10-fold cross-validation. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
+For each criteria, the respective NB, SVM and QRNN models produces a prediction on whether the article satisfies the criteria or not. The correctness of the model was then evaluated by measuring the micro averaged F1-scores, the harmonic mean of the precision and recall of a model's predictions via 10-fold cross-validation. This experiment attempts to assess the feasibility in providing insight on the factors that attributed to the credibility of an article in addition to identifying the model(s) that best classify a specific criteria.
 
 
 \subsubsection{Low Credibility Identification Experiment}
 \label{sec:LowCredibilityIdentification}
-The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged f1-scores. \newline
+The Low Credibility Identification Experiment was designed to evaluate the capability of a model to identify low credibility articles which have been defined to be articles with a credibility score lower than 3. The expert-labelled articles were then separated into two  classes based on this condition and the best performing model(s), determined from the results of the credibility classification experiment, was then applied and evaluated using the calculated micro averaged F1-scores. \newline
 
 The classification of low credibility articles was then carried out following two methodologies. The first methodology involves the calculation of the article's credibility score via the classification of each criteria, resulting in a total of seven binary classification tasks. The second methodology utilises the separated expert-labelled articles to construct a new binary label consisting of the labels `High Credibility' for articles that had a credibility score greater than or equal to 3 and a `Low Credibility' label for articles with a credibility score of less than 3. This method results in only a single binary classification as the model is trained to classify an unseen article as one of the aforementioned labels rather than carrying out the classification of each credibility criteria.
 
@@ -714,7 +714,7 @@ The performance of all 84 models were evaluated via the credibility classificati
 
 I trained and tested the performance of NB and SVM classifiers in combination with two feature representations, BoW and TF-IDF, implementations of which as described in the prior chapter. For each criteria, all combinations of classifiers and feature representations was then trained to perform a binary classification task that aimed to predict whether a given article satisfied that criteria. This produced a combined total of 70 NB-based and SVM-based models. \newline
 
-The performance of the models varied considerably across all criteria (Table \ref{table:PerformanceResultsNBSVM}). When considering both the NB and SVM based approaches, the models had the most difficulty in classifying criteria 6 producing the lowest micro averaged f1-score of 0.71, with the best performing model for this criteria being an SVM classifier paired with TF-IDF (stopwords removed) who achieved a score of 0.77. The models were most successful in labelling criteria 3 which had a micro averaged f1-score of 0.85 with the top performing model being a tie between the NB and SVM classifier paired with BoW (stopwords) with a score of 0.90. \newline
+The performance of the models varied considerably across all criteria (Table \ref{table:PerformanceResultsNBSVM}). When considering both the NB and SVM based approaches, the models had the most difficulty in classifying criteria 6 producing the lowest micro averaged F1-score of 0.71, with the best performing model for this criteria being an SVM classifier paired with TF-IDF (stopwords removed) who achieved a score of 0.77. The models were most successful in labelling criteria 3 which had a micro averaged F1-score of 0.85 with the top performing model being a tie between the NB and SVM classifier paired with BoW (stopwords) with a score of 0.90. \newline
 
 Across all criteria, the SVM with TF-IDF (stopwords removed) was the best-performing of the models, followed by the NB classifier using BoW with stopwords removed. \newline
 
@@ -722,7 +722,7 @@ The performance of the models may have highly been influenced by the unbalanced 
 
 \begin{table}[H]
 	\centering
-	\caption{Micro-averaged f1-Scores of the NB and SVM based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
+	\caption{Micro-averaged F1-Scores of the NB and SVM based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|p{6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
 			
@@ -787,7 +787,7 @@ Using the best classifiers for each criteria, I found that it was possible to pr
 
 \begin{table}[H]
 	\centering
-	\caption{Micro-averaged f1-Scores of the QRNN-based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
+	\caption{Micro-averaged F1-Scores of the QRNN-based models. The best performing model(s) for a given criteria and overall best performing model is highlighted in bold.}
 
 		\begin{tabular}{|p{6cm}|p{2cm}|p{3cm}|p{3.3cm}|}
 			
@@ -854,7 +854,7 @@ I tested and evaluated three different approaches for constructing a model on th
 \subsubsection{Single Model Approach}
 The the single model approach was implemented by utilising the overall best performing model i.e. the model with the highest average performance across Table \ref{table:PerformanceResultsNBSVM} and Table \ref{table:PerformanceResultsQRNN}. Thus, the model used to evaluate the single model approach will be SVM with TF-IDF scores (stopwords removed). \newline
 
-In contrast to the average performance of the model reported in Table \ref{table:PerformanceResultsNBSVM} having a micro-averaged f1-score of 0.836, it is more able to successfully perform this classification task, with an improvement in performance of 8.85\%. This is due to the increased leeway with regards to the condition for producing a correct classification as the model is only required to predict a credibility score between 0 to 2 for low credibility articles and 3 to 7 for high credibility articles. This makes it capable for a model to correctly classify an article as low credibility or high credibility even if each criteria was misclassified so as long as the resulting credibility score remains within the correct range. In the context of the purpose of this experiment however, this is a non-issue as an article that is assumed to have correctly been labelle as having low credibility without accounting which criteria the article failed to satisfy is still likely to contain misinformed content.
+In contrast to the average performance of the model reported in Table \ref{table:PerformanceResultsNBSVM} having a micro-averaged F1-score of 0.836, it is more able to successfully perform this classification task, with an improvement in performance of 8.85\%. This is due to the increased leeway with regards to the condition for producing a correct classification as the model is only required to predict a credibility score between 0 to 2 for low credibility articles and 3 to 7 for high credibility articles. This makes it capable for a model to correctly classify an article as low credibility or high credibility even if each criteria was misclassified so as long as the resulting credibility score remains within the correct range. In the context of the purpose of this experiment however, this is a non-issue as an article that is assumed to have correctly been labelle as having low credibility without accounting which criteria the article failed to satisfy is still likely to contain misinformed content.
 
 \begin{table}[H]
 	\centering
@@ -863,7 +863,7 @@ In contrast to the average performance of the model reported in Table \ref{table
 		\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
 			\hline
 			
-			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro-averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
+			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro-averaged \newline F1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
 			\hline                                                                                                                                              
 			SVM + \newline TF-IDF \newline (stopwords removed) & 0.91 & 0.91 & 0.91 & 0.70 & 1.89 \\
 			\hline
@@ -885,7 +885,7 @@ In contrast to the average performance of the model reported in Table \ref{table
 \end{figure}
 
 \subsubsection{Ensemble Approach}
-The second method, referred to as the ensemble approach, which leverages the best performing models for each criteria (Table \ref{table:EnsembleModel}). The ensemble models produced the highest performance results of the three classifiers (Table \ref{table:EnsembleApproach}) with a micro-averaged f1-score of 0.91, an improvement of 7.82\% from its average performance.
+The second method, referred to as the ensemble approach, which leverages the best performing models for each criteria (Table \ref{table:EnsembleModel}). The ensemble models produced the highest performance results of the three classifiers (Table \ref{table:EnsembleApproach}) with a micro-averaged F1-score of 0.91, an improvement of 7.82\% from its average performance.
 
 
 \begin{table}[H]
@@ -930,7 +930,7 @@ The second method, referred to as the ensemble approach, which leverages the bes
 	\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{3.5cm}|p{4.5cm}|p{4.5cm}|}
 		\hline
 
-		\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline f1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
+		\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline F1-Score} & \textbf{Average Predicted  Score Differential \newline (Correctly Labelled)}       & \textbf{Average Predicted Score Differential \newline (Incorrectly Labelled)}                                                                                                                                                                                                                                                                                                                                     \\
 		\hline                                                                                                                                              
 		Ensemble & 0.91 & 0.91 & 0.91 & 0.71 & 1.98 \\
 		\hline
@@ -945,7 +945,7 @@ The second method, referred to as the ensemble approach, which leverages the bes
 \begin{figure}[H]
 	\centering
 	\includegraphics[totalheight=7cm]{images/ensemble-performance.png}
-	\caption{Performance of ensemble classifier after 10-fold cross validation.}
+	\caption{Confusion matrix of labels produced with the ensemble approach after 10-fold cross validation.}
 	\label{fig:EnsemblePerformance}
 \end{figure}
 
@@ -958,7 +958,7 @@ The second method, referred to as the ensemble approach, which leverages the bes
 	\begin{tabular}{|p{2cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
 			\hline
 			
-			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline f1-Score}                                                                                                                                                                                                                                                                                                                                    \\
+			\textbf{Model} & \textbf{Micro-averaged Precision} & \textbf{Micro-averaged Recall} & \textbf{Micro Averaged \newline F1-Score}                                                                                                                                                                                                                                                                                                                                    \\
 			\hline                                                                                                                                              
 			SVM + \newline TF-IDF \newline (stopwords removed) & 0.89 & 0.89 & 0.89 \\
 			\hline
@@ -973,7 +973,7 @@ The second method, referred to as the ensemble approach, which leverages the bes
 \begin{figure}[H]
 	\centering
 	\includegraphics[totalheight=7cm]{images/binary-performance.png}
-	\caption{Performance of binary classification approach after 10-fold cross validation.}
+	\caption{Confusion matrix of labels produced with the binary classification approach after 10-fold cross validation.}
 	\label{fig:BinaryPerformance}
 \end{figure}
 
@@ -1159,7 +1159,7 @@ Models that utilised count-based features (Table \ref{table:CountStorageRequirem
 \label{chap:Discussion}
 
 
-In this chapter, I discuss the feasibility of automating credibility appraisal for vaccine-related articles online.  I start by summarising what I found through the set of experiments comparing different machine learning methods, and compare the results to what has been found in other document classification tasks in other application domains (Section 5.1). I then discuss how the novel methods I developed here might be used in real world applications aimed at mitigating the spread of vaccine-related information online (Section 5.2).
+In this chapter, we discuss the feasibility of automating credibility appraisal for vaccine-related articles online.  We start by summarising what we found through the set of experiments comparing different machine learning methods, and compare the results to what has been found in other document classification tasks in other application domains (Section 5.1). We then discuss how the novel methods we developed here might be used in real world applications aimed at mitigating the spread of vaccine-related information online (Section 5.2).
 
 \section{Model Results}
 \label{sec:ModelResults}
@@ -1174,7 +1174,7 @@ Whilst transfer learning has successfully been applied to perform classification
 
 \subsubsection{Utilisation of BoW by NB and SVM classifiers}
 
-NB classifiers trained on BoW generally outperformed similarly trained SVM classifiers. The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the this general trend. Both works presented results that showed better performance when using BoW with a NB classifier over an SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down'). Similarly, Pranckevicius et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment reported in Section \ref{sec:CredibilityClassificationResults} which showed the NB-based model having a higher average performance by a margin of 0.25\%. \newline
+NB classifiers trained on BoW generally outperformed similarly trained SVM classifiers. The sentiment classification task using the subjectivity dataset \cite{Pang2004} evaluated by Wang et al. \cite{Wang2012} and the product-review classification task performed by Pranckevičius et al. \cite{PRANCKEVICIUS2017} attained results that aligned with the this general trend. Both works presented results that showed better performance when using BoW with a NB classifier over an SVM classifier. The work conducted by Wang et al. involved evaluating a linear SVM and multinomial NB classifier in combination with a unigram BoW model to perform a binary sentiment analysis task on movie reviews (`thumbs up', `thumbs down'). Similarly, Pranckevičius   et al., performed a multi-class classification task, that aimed to predict the resulting product review score (ranging from 1 to 5) from reviews on Amazon. For the sentiment analysis task, the NB-based model had an improved performance of 5.5\% over the SVM-based model and the product-review classification task reported an improvement of 2.4\% by the NB-based model over the SVM-based model. These results align with the measurements obtained from the classification experiment reported in Section \ref{sec:CredibilityClassificationResults} which showed the NB-based model having a higher average performance by a margin of 0.25\%. \newline
 
 The diminishing difference in performance between the NB-based models and the SVM-based models relative to the aforementioned literature may have a relation to the increasing number of classes being classified in these tasks. This is somewhat supported by the results obtained by Hassan et al. \cite{Hassan} who evaluated NB and SVM based models using the 20 Newsgroups dataset \cite{Mitchell} which consists of 20 classes where the baseline performance of the SVM-based models outperformed the NB-based models by 25\%. This however does not conclusively explain the diminishing difference as Hassan et al. also utilised domain-specific information extracted from as features for the construction of their models. The common factor in regards to the construction of the models resides within the preprocessing phase where only the stopwords of the text were removed. \newline
 
@@ -1193,7 +1193,7 @@ From the results reported in Section \ref{sec:CredibilityClassificationResults},
 \label{sec:ModelFeasibility}
 The feasibility of deploying a model for a real-world application is entirely dependent on the nature of the application. \newline
 
-The effectiveness and practicality a model based on its performance for instance can have differing meanings with regards to its false positive and false negative rates. Consider the performance of the single model and ensemble approach compared to the binary classification approach in identifying low and high credibility articles. Whilst the single model and ensemble approach reported a slightly higher micro-averaged f1-score (Table \ref{table:SingleModelApproach} and Table \ref{table:EnsembleApproach}) over the binary classification approach (Table \ref{table:BinaryApproach}), the binary classification approach (Figure \ref{fig:BinaryPerformance}) had a much lower false positive rate, misclassifying less low credibility articles as high credibility articles over the single model and ensemble approach (Figure \ref{fig:SingleModelPerformance} and Figure \ref{fig:EnsemblePerformance}). This indicates that for applications where having a lower false positive rate is important, such as when recommending a person whether to read and trust an article based on its credibility, the binary classification approach should be preferred over the single model and ensemble approach.\newline
+The effectiveness and practicality a model based on its performance for instance can have differing meanings with regards to its false positive and false negative rates. Consider the performance of the single model and ensemble approach compared to the binary classification approach in identifying low and high credibility articles. Whilst the single model and ensemble approach reported a slightly higher micro-averaged F1-score (Table \ref{table:SingleModelApproach} and Table \ref{table:EnsembleApproach}) over the binary classification approach (Table \ref{table:BinaryApproach}), the binary classification approach (Figure \ref{fig:BinaryPerformance}) had a much lower false positive rate, misclassifying less low credibility articles as high credibility articles over the single model and ensemble approach (Figure \ref{fig:SingleModelPerformance} and Figure \ref{fig:EnsemblePerformance}). This indicates that for applications where having a lower false positive rate is important, such as when recommending a person whether to read and trust an article based on its credibility, the binary classification approach should be preferred over the single model and ensemble approach.\newline
 
 Given that the performance of the model is suitable to the point of deployment, the biggest factors that affect the usability and practicality of a model is the size of the model and the amount of time required to train it. Depending on the application, the priority and importance of these two factors will vary. For instance, situations where the size of the model would matter more than training time would likely involve an application with an offline element or resource constrained environment such as a web browser extension or mobile application. On the other hand, the training time of a model would be highly prioritised in realtime environments or non-resource constrained environments with a remote connection to a server. \newline
 
@@ -1221,24 +1221,21 @@ Exploring the effectiveness of the model's ability to classify the criteria and 
 
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-This thesis investigated the effectiveness and feasibility in employing ML and DL-based models on automating the process of evaluating the credibility of online articles, specifically articles related to vaccination. From the experiments conducted, it was determined that, for the current state of the project with its limitations, DL-based models were neither effective nor feasible for this task due to the relatively extremely limited amount of data available leaving the models unable to learn and generalise to a feasible degree. ML-based models using standard feature representations and NB and SVM classifiers however, showed promising signs on its capability to identify and classify select credibility criteria and SVM classifiers trained on TF-IDF scores showed to great effect its ability on differentiating between and classifying low credibility and high credibility criteria.
 
+Misinformation is a topical and important problem in society. While vaccination is a well-known and important example where misinformation is known to have caused harm globally \cite{larson2018biggest}, health misinformation in general has the potential to influence attitudes and health behaviours in detrimental ways. To be able to mitigate the spread and persistence of health misinformation we need to be able to first identify information that is not credible so that we can monitor its spread and intervene. This has been a major challenge in the past because credibility appraisal is resource-intensive when done by humans. \newline
+
+In this project, I sought to address this challenge directly. I developed the core components that would be required to automate credibility appraisal, and evaluating their performance, training time, and storage requirements. Framing the problem of credibility appraisal as a document classification task, my specific aims were to implement and evaluate a series of machine learning methods for predicting the credibility of vaccine-related articles from their text. In particular, I evaluated the use of deep learning for this task and through a critical analysis of the literature, decided to test a QRNN based architecture that used transfer learning. The results showed that the deep learning approach was consistently less accurate than traditional machine learning approaches by approximately 49.5\%  and this is likely a consequence of the small volume of expert-labelled examples I had available as training data. The results also showed that it is feasible to produce a model that is capable of accurately identifying low credibility information. A model of this type could be used directly in a range of tools that may be useful for reducing the spread of misinformation on social media.
 
 \clearemptydoublepage
 
-%\phantomsection \addcontentsline{toc}{chapter}{Index}
+%\phantomsection \addconten tsline{toc}{chapter}{Index}
 % \renewcommand{\baselinestretch}{1} \small \normalsize
 % \printindex
-
-\appendix
-\chapter{Exmaple}
-\section{Overview}
-This is an example entry in the appendix
 
 
 
 %\input{Bibliography/biblio3}
-\bibliographystyle{IEEEtranS}
+\bibliographystyle{ieeetr}
 %\bibliographystyle{acm}
 \bibliography{my_reference}
 %\bibliography{Bibliography/biblio4}

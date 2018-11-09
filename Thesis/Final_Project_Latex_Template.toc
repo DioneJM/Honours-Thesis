@@ -69,6 +69,4 @@
 \contentsline {chapter}{\numberline {6}Future Work and Conclusions}{39}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future Work}{39}{section.6.1}
 \contentsline {section}{\numberline {6.2}Conclusions}{39}{section.6.2}
-\contentsline {chapter}{\numberline {A}Exmaple}{41}{appendix.A}
-\contentsline {section}{\numberline {A.1}Overview}{41}{section.A.1}
 \contentsline {chapter}{Bibliography}{41}{section*.61}
