@@ -9,23 +9,23 @@ Misinformation is not a new phenomenon but the popularity and ubiquity of social
 In this project, I developed a novel approach to predicting the credibility of information in vaccine-related news articles by evaluating the effectiveness and feasibility of machine learning techniques (Naive Bayes and Support Vector Machines) and a deep learning technique ([Quasi Recurrent Neural Network](https://github.com/salesforce/pytorch-qrnn/)) on the classification of credibility criteria. The NB, SVM and QRNN classifiers were all trained and evaluated on an expertly labelled dataset of 470 vaccine-related articles.
 
 ### Machine Learning Models
-![](Thesis\images\ml-models.png)
+![](Thesis/images/ml-models.png)
 
 ### Deep Learning Models
 
-![](Thesis\images\dl-models.png)
+![](Thesis/images/dl-models.png)
 
 ## Results
 
 The models were evaluated on two classification tasks, the first task being determining whether a given article satisfies a specific criteria related to credibility and the second task aims to determine whether a given article is either low or high credidibility.
 
 ### Credibility Satisfaction Task - ML Models (Micro-averaged F1 Score)
-![](Thesis\images\ml-performance.png)
+![](Thesis/images/ml-performance.png)
 
 ### Credibility Satisfaction Task - DL Models (Micro-averaged F1 Score)
-![](Thesis\images\dl-performance.png)
+![](Thesis/images/dl-performance.png)
 
 ### Identification of Low Credibility Sources (SVM Classifier with TF-IDF scores of article words without stopwords)
 
-![](Thesis\images\binary-roc-curve.png)
+![](Thesis/images/binary-roc-curve.png)
 
